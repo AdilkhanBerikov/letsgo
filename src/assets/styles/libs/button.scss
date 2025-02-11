@@ -1,0 +1,15 @@
+@use "../variables/variables" as *;
+
+.button {
+  padding: 12px 81px 8px 78px;
+  display: inline-block;
+  background-color: $color-yellow;
+  border: none;
+  border-radius: 25px;
+  font: 700 17px $font-family-main;
+  line-height: 30px;
+  color: $color-blue-dark;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}

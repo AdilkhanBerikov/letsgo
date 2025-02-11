@@ -1,0 +1,34 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Основной шрифт
+$font-family-main: "Blogger Sans", "Arial", sans-serif;
+
+// Вес, размер и межстрочный интервал
+$font-body-medium: 500 16px/1.6 $font-family-main;
+$font-caption-medium: 500 14px/1.6 $font-family-main;
+$font-small-medium: 500 12px/1.6 $font-family-main;
+
+$font-body-bold: 700 16px/1.6 $font-family-main;
+$font-caption-bold: 700 14px/1.6 $font-family-main;
+$font-small-bold: 700 12px/1.6 $font-family-main;
+
+$font-heading: 700 96px $font-family-main;
+$font-h1: 700 59.3px/1.2 $font-family-main;
+$font-h2: 700 36.65px $font-family-main;
+$font-h3: 700 22.65px/1.4 $font-family-main;
+
+// colors.scss
+$color-white: #ffffff;
+$color-grey: #CCCCCC;
+$color-grey-dark: #444444;
+$color-blue-dark: #161C35;
+$color-blue-dark-2: #192144;
+$color-blue: #1D2E5B;
+$color-blue-light-1: #EDEFF6;
+$color-blue-light-2: #DFE3F0;
+$color-yellow: #FFD74B;
+$color-yellow-dark: #FFBD30;
+$color-red: #F47E7E;
+$color-orange: #FF8D30;

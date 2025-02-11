@@ -1,0 +1,170 @@
+@use "../variables/variables" as *;
+
+@media (min-width: $mobile-width) {
+  .page-header {
+    background-color: $color-blue-dark;
+    position: relative;
+  }
+
+  .header-nav {
+    position: relative;
+    width: auto;
+  }
+
+  .toggle {
+    width: 25px;
+    height: 11px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: currentColor;
+      transition: transform 0.3s, opacity 0.3s;
+      border-radius: 2px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  .header-toggle {
+    color: $color-white;
+  }
+
+  .scroll-toggle {
+    color: $color-grey;
+  }
+
+  .mobile-toggle {
+    color: $color-grey;
+  }
+
+  .mobile-menu.-open .toggle {
+    &::before {
+      transform: rotate(45deg) translateY(5px);
+    }
+
+    &::after {
+      transform: rotate(-45deg) translateY(-6px);
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: $color-white;
+  }
+
+  .mobile-menu__header {
+    padding: 25px 25px;
+    margin-bottom: 51px;
+    display: grid;
+    grid-template-columns: max-content min-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-menu__wrapper {
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px; /* Растягиваем на всю ширину */
+    height: auto; /* Позволяем адаптироваться по контенту */
+    max-height: 100vh; /* Не выходить за границы экрана */
+    display: grid;
+    gap: 51px;
+  }
+
+  .mobile-menu__list {
+    text-align: center;
+    font: 500 30px $font-family-main;
+    color: $color-blue-dark-2;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu__button {
+    text-align: center;
+  }
+
+  .mobile-menu__footer {
+    margin-bottom: 41px;
+    display: grid;
+    gap: 41px;
+  }
+
+  .mobile-menu__contacts {
+    display: grid;
+    grid-template-rows: min-content min-content;
+  }
+
+  .mobile-menu__contacts-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .mobile-menu__contacts-text {
+    font: 700 16px $font-family-main;
+    line-height: 18px;
+    color: $color-blue-dark-2;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu__socials {
+    display: flex;
+    gap: 27px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scroll-menu__nav {
+    position: relative;
+    width: auto;
+  }
+
+  .scroll-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 1;
+    transform: translateY(-100%); /* Прячем меню за пределы экрана */
+    transition: transform 0.3s ease-in-out;
+    padding: 27px 25px 31px 25px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content min-content;
+    justify-content: space-between;
+  }
+
+  /* Когда меню появляется */
+  .scroll-menu.-fixed {
+    transform: translateY(0);
+  }
+
+  .section {
+    height: 1500px;
+    background: $color-grey;
+  }
+}

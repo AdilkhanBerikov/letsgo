@@ -2,4 +2,4 @@
 # letsgo
 =======
 Погнали
->>>>>>> ef1abc5 (first commit)
+> > > > > > > ef1abc5 (first commit)

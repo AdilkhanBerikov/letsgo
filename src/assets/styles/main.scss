@@ -1,1 +1,7 @@
-@import "/node_modules/reset.css/reset.css";
+@use "/node_modules/reset.css/reset.css" as *;
+@use "global" as *;
+@use "font" as *;
+@use "variables/variables" as *;
+@use "libs/libs" as *;
+@use "common/common" as *;
+@use "header/header" as *;

@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+}
+
+.grid.-header {
+  margin-top: 19px;
+  margin-bottom: 19px;
+  grid-template-columns: max-content min-content;
+  justify-content: space-between;
+  align-items: center;
+}
