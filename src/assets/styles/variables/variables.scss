@@ -1,34 +1,137 @@
+// Адаптивные размеры
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$page-body-min-width: 320px;
+$mobile-menu-wrapper-max-width: 320px;
+
+
+//Переходы
+$transition-duration: 0.3s;
+
 
 // Основной шрифт
 $font-family-main: "Blogger Sans", "Arial", sans-serif;
+// Миксин для сокращенной записи шрифтов
+@mixin font($weight, $size, $line-height) {
+  font: #{$weight} #{$size}/#{$line-height} $font-family-main;
+}
+// Заголовки
+$font-mobile-h1: 700 36px/40px $font-family-main;
+$font-mobile-h2: 500 30px/35px $font-family-main;
+$font-mobile-h3: 700 24px/24px $font-family-main;
+$font-mobile-h4: 700 21px/21px $font-family-main;
+$font-mobile-h5: 700 18px/18px $font-family-main;
+$font-mobile-h6: 700 17px/30px $font-family-main;
+// Основной текст
+$font-mobile-body-bold: 700 16px/18px $font-family-main;
+$font-mobile-body-medium: 500 16px/18px $font-family-main;
+$font-mobile-body-regular: 400 16px/22px $font-family-main;
+$font-mobile-body-small: 300 16px/18px $font-family-main;
+// Меню
+$font-mobile-button: $font-mobile-h6;
+$font-mobile-menu-list: $font-mobile-h2;
+$font-mobile-menu-contacts: $font-mobile-body-bold;
 
-// Вес, размер и межстрочный интервал
-$font-body-medium: 500 16px/1.6 $font-family-main;
-$font-caption-medium: 500 14px/1.6 $font-family-main;
-$font-small-medium: 500 12px/1.6 $font-family-main;
-
-$font-body-bold: 700 16px/1.6 $font-family-main;
-$font-caption-bold: 700 14px/1.6 $font-family-main;
-$font-small-bold: 700 12px/1.6 $font-family-main;
-
-$font-heading: 700 96px $font-family-main;
-$font-h1: 700 59.3px/1.2 $font-family-main;
-$font-h2: 700 36.65px $font-family-main;
-$font-h3: 700 22.65px/1.4 $font-family-main;
 
 // colors.scss
+//Основные цвета
 $color-white: #ffffff;
 $color-grey: #CCCCCC;
 $color-grey-dark: #444444;
-$color-blue-dark: #161C35;
-$color-blue-dark-2: #192144;
 $color-blue: #1D2E5B;
 $color-blue-light-1: #EDEFF6;
 $color-blue-light-2: #DFE3F0;
+$color-blue-dark: #161C35;
+$color-blue-dark-opacity: rgba($color-blue-dark, 0.3);
+$color-blue-dark-2: #192144;
+$color-blue-dark-2-opacity-medium: rgba($color-blue-dark-2, 0.6);
+$color-blue-dark-2-opacity-light: rgba($color-blue-dark-2, 0.3);
+$color-blue-dark-3: #121936;
 $color-yellow: #FFD74B;
 $color-yellow-dark: #FFBD30;
+$color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
 $color-red: #F47E7E;
 $color-orange: #FF8D30;
+// Компонентные цвета
+//buttons
+$color-button-text: $color-blue-dark;
+$color-button-active-text-opacity: $color-blue-dark-opacity;
+$color-button-background: $color-yellow;
+$color-button-background-hover: $color-yellow-dark;
+//toggle
+$color-header-toggle: $color-white;
+$color-mobile-toggle: $color-grey;
+$color-scroll-toggle: $color-grey;
+//mobile-menu
+$color-mobile-menu-background: $color-white;
+$color-mobile-menu-item-text: $color-blue-dark-2;
+$color-mobile-menu-item-text-span-before: $color-yellow-dark;
+$color-mobile-menu-item-text-active: $color-yellow-dark-opacity;
+$color-mobile-menu-contacts-text: $color-blue-dark-2;
+$color-mobile-menu-contacts-text-hover: $color-yellow-dark;
+$color-mobile-menu-contacts-text-active: $color-yellow-dark-opacity;
+$color-mobile-menu-contacts-icon: $color-yellow;
+$color-mobile-menu-contacts-icon-background: $color-blue-dark-3;
+$color-mobile-menu-contacts-icon-hover: $color-yellow-dark;
+$color-mobile-menu-contacts-icon-active: $color-yellow-dark-opacity;
+$color-mobile-menu-socials-icon: $color-blue-dark-2;
+//scroll-menu
+$color-scroll-menu-background: $color-white;
+//page-header
+$color-page-header-background: $color-blue-dark;
+$color-page-header-scrolled-background: $color-white;
+
+
+:root {
+  @each $name, $value in (
+    "white": $color-white,
+    "grey": $color-grey,
+    "grey-dark": $color-grey-dark,
+    "blue": $color-blue,
+    "blue-light-1": $color-blue-light-1,
+    "blue-light-2": $color-blue-light-2,
+    "blue-dark": $color-blue-dark,
+    "blue-dark-opacity": $color-blue-dark-opacity,
+    "blue-dark-2": $color-blue-dark-2,
+    "blue-dark-2-opacity-medium": $color-blue-dark-2-opacity-medium,
+    "blue-dark-2-opacity-light": $color-blue-dark-2-opacity-light,
+    "blue-dark-3": $color-blue-dark-3,
+    "yellow": $color-yellow,
+    "yellow-dark": $color-yellow-dark,
+    "yellow-dark-opacity": $color-yellow-dark-opacity,
+    "red": $color-red,
+    "orange": $color-orange,
+
+    // Компонентные цвета
+    //buttons
+    "button-text": $color-blue-dark,
+    "button-active-text-opacity": $color-blue-dark-opacity,
+    "button-background": $color-yellow,
+    "button-background-hover": $color-yellow-dark,
+    //toggle
+    "header-toggle": $color-white,
+    "mobile-toggle": $color-grey,
+    "scroll-toggle": $color-grey,
+    //mobile-menu
+    "mobile-menu-background": $color-white,
+    "mobile-menu-item-text": $color-blue-dark-2,
+    "mobile-menu-item-text-span-before": $color-yellow-dark,
+    "mobile-menu-item-text-active": $color-yellow-dark-opacity,
+    "mobile-menu-contacts-text": $color-blue-dark-2,
+    "mobile-menu-contacts-text-hover": $color-yellow-dark,
+    "mobile-menu-contacts-text-active": $color-yellow-dark-opacity,
+    "mobile-menu-contacts-icon": $color-yellow,
+    "mobile-menu-contacts-icon-background": $color-blue-dark-3,
+    "mobile-menu-contacts-icon-hover": $color-yellow-dark,
+    "mobile-menu-contacts-icon-active": $color-yellow-dark-opacity,
+    "mobile-menu-socials-icon": $color-blue-dark-2,
+    //scroll-menu
+    "scroll-menu-background": $color-white,
+    //page-header
+    "page-header-background": $color-blue-dark,
+    "page-header-scrolled-background": $color-white,
+  ) {
+    --color-#{"" + $name}: #{$value}; // Принудительное приведение к строке
+  }
+}

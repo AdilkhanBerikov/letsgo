@@ -1,0 +1,15 @@
+@use "../variables/variables" as *;
+
+.socials-icon {
+  color: $color-mobile-menu-socials-icon;
+  transition: color $transition-duration ease;
+
+  &:hover,
+  &:active {
+    color: $color-blue-dark-2-opacity-medium;
+  }
+
+  &:active {
+    color: $color-blue-dark-2-opacity-light;
+  }
+}

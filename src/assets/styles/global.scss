@@ -1,3 +1,5 @@
+@use "variables/variables" as *;
+
 *,
 *::after,
 *::before {
@@ -13,11 +15,10 @@
 
 .page__body {
   margin: 0;
-  min-width: 320px;
+  min-width: $page-body-min-width;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: start;
   overflow-x: hidden;
 }
 

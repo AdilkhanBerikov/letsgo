@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
     <title>Погнали</title>
-    <link href="./assets/styles/main.scss" rel="stylesheet">
+    <link href="./assets/styles/main.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
   <header class="page-header">
     <div class="grid -header box">
       <a class="header__logo" href="#">
-        <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+        <img class="logo-default" src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+        <img class="logo-scrolled" src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
       </a>
-      <nav class="header-nav -open -close">
-        <button class="toggle header-toggle" type="button"></button>
+      <nav class="header-nav">
+        <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
       </nav>
     </div>
   </header>
@@ -23,55 +24,85 @@
     g
   </section>
 
-  <section class="mobile-menu -open -close">
+  <section class="mobile-menu">
     <div class="mobile-menu__header">
       <a class="mobile-menu__logo" href="#">
         <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
       </a>
       <div class="mobile-menu__toggle">
-        <button class="toggle mobile-toggle" type="button"></button>
+        <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
       </div>
     </div>
     <div class="mobile-menu__wrapper">
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">О сервисе</a>
+          <a class="mobile-menu__link" href="#">
+            <span data-hover="О сервисе">
+              О сервисе
+            </span>
+          </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">Направления</a>
+          <a class="mobile-menu__link" href="#">
+            <span data-hover="Направления">
+              Направления
+            </span>
+          </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">Попутчики</a>
+          <a class="mobile-menu__link" href="#">
+            <span data-hover="Попутчики">
+              Попутчики
+            </span>
+          </a>
         </li>
       </ul>
       <div class="mobile-menu__button">
-        <button class="button" type="button">Авторизация</button>
+        <a class="button" href="#">Авторизация</a>
       </div>
       <div class="mobile-menu__footer">
         <ul class="mobile-menu__contacts">
           <li class="mobile-menu__contacts-item">
-            <img class="mobile-menu__contacts-icon" src="assets/images/icons/contacts_icon_mobile.svg" width="45" height="45" alt="Mobile Icon">
-            <p class="mobile-menu__contacts-text">8 800 555-86-28</p>
+            <a href="tel:88005558628" class="mobile-menu__contacts-link">
+              <div class="mobile-menu__contacts-icon -phone">
+                <svg width="18" height="17" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
+                </svg>
+              </div>
+              <p class="mobile-menu__contacts-text">8 800 555-86-28</p>
+            </a>
           </li>
           <li class="mobile-menu__contacts-item">
-            <img class="mobile-menu__contacts-icon" src="assets/images/icons/contacts_icon_mail.svg" width="45" height="45" alt="Mobile Icon">
-            <p class="mobile-menu__contacts-text">mail@htmlacademy.ru</p>
+            <a href="mailto:mail@htmlacademy.ru" class="mobile-menu__contacts-link">
+              <div class="mobile-menu__contacts-icon -mail">
+                <svg width="24" height="25" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
+                </svg>
+              </div>
+              <p class="mobile-menu__contacts-text">mail@htmlacademy.ru</p>
+            </a>
           </li>
         </ul>
         <ul class="mobile-menu__socials">
           <li class="mobile-menu__socials-item">
-            <a href="#">
-              <img src="assets/images/icons/icon_facebook.svg" width="11" height="21" alt="Facebook icon">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="11" height="21" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="mobile-menu__socials-item">
-            <a href="#">
-              <img src="assets/images/icons/icon_vkontakte.svg" width="23" height="12" alt="vkontakte icon">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="23" height="12" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="mobile-menu__socials-item">
-            <a href="#">
-              <img src="assets/images/icons/icon_instagram.svg" width="18" height="18" alt="instagram icon">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="18" height="18" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -79,69 +110,7 @@
     </div>
   </section>
 
-  <section class="scroll-menu -open -close">
-    <a class="scroll-menu__logo" href="#">
-      <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
-    </a>
-    <div class="scroll-menu__nav">
-      <button class="toggle scroll-toggle" type="button"></button>
-    </div>
-  </section>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const nav = document.querySelector(".header-nav");
-      const toggles = document.querySelectorAll(".toggle"); // Все кнопки-бургеры
-      const menu = document.querySelector(".mobile-menu");
-      const scrollMenu = document.querySelector(".scroll-menu");
-
-      // Функция переключения меню
-      function toggleMenu() {
-        menu.classList.toggle("-open");
-
-        // Переключаем стили бургера на крестик
-        toggles.forEach((btn) => {
-          btn.classList.toggle("-active");
-        });
-
-        // Управление видимостью меню
-        if (menu.classList.contains("-open")) {
-          menu.style.opacity = "1";
-          menu.style.visibility = "visible";
-        } else {
-          menu.style.opacity = "0";
-          menu.style.visibility = "hidden";
-        }
-      }
-
-      // Обработчик клика на бургер
-      toggles.forEach((btn) => {
-        btn.addEventListener("click", function (event) {
-          event.stopPropagation();
-          toggleMenu();
-        });
-      });
-
-      // Закрытие меню при клике вне его
-      document.addEventListener("click", function (event) {
-        if (!menu.contains(event.target) && !nav.contains(event.target)) {
-          menu.classList.remove("-open");
-          toggles.forEach((btn) => btn.classList.remove("-active"));
-          menu.style.opacity = "0";
-          menu.style.visibility = "hidden";
-        }
-      });
-
-      // Фиксирование scroll-menu при скролле
-      window.addEventListener("scroll", function () {
-        if (window.scrollY > 100) {
-          scrollMenu.classList.add("-fixed");
-        } else {
-          scrollMenu.classList.remove("-fixed");
-        }
-      });
-    });
-  </script>
+  <script src="assets/scripts/menu.js" type="module" defer></script>
 
   </body>
 </html>

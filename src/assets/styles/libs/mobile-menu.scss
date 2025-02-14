@@ -1,0 +1,195 @@
+@use "../variables/variables" as *;
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  background-color: $color-mobile-menu-background;
+  transition: opacity $transition-duration ease, visibility $transition-duration ease;
+
+  &.-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu__header {
+  padding: 25px 25px;
+  margin-bottom: 51px;
+  display: grid;
+  grid-template-columns: max-content min-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu__wrapper {
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $mobile-menu-wrapper-max-width; /* Растягиваем на всю ширину */
+  height: auto; /* Позволяем адаптироваться по контенту */
+  max-height: 100vh; /* Не выходить за границы экрана */
+  display: grid;
+  gap: 51px;
+}
+
+.mobile-menu__list {
+  text-align: center;
+}
+
+//.mobile-menu__item a {
+//  padding: 0 10px;
+//  margin: 0 5px;
+//  position: relative;
+//  display: inline-block;
+//  outline: none;
+//  text-decoration: none;
+//  text-transform: uppercase;
+//  font: $font-mobile-menu-list;
+//  color: $color-mobile-menu-item-text;
+//  overflow: hidden;
+//}
+//
+//.mobile-menu__item a span {
+//  position: relative;
+//  display: inline-block;
+//  -webkit-transition: -webkit-transform 0.3s;
+//  -moz-transition: -moz-transform 0.3s;
+//  transition: transform 0.3s;
+//}
+//
+//.mobile-menu__item a span::before {
+//  content: attr(data-hover);
+//  position: absolute;
+//  width: 100%;
+//  top: 100%;
+//  font-weight: 700;
+//  letter-spacing: -0.7px;
+//  color: $color-mobile-menu-item-text-span-before;
+//  -webkit-transform: translate3d(0, 0, 0);
+//  -moz-transform: translate3d(0, 0, 0);
+//  transform: translate3d(0, 0, 0);
+//  white-space: nowrap;
+//}
+//
+//.mobile-menu__item a:hover span, .mobile-menu__item a:focus span {
+//  -webkit-transform: translateY(-100%);
+//  -moz-transform: translateY(-100%);
+//  transform: translateY(-100%);
+//}
+//
+//.mobile-menu__item a:active span::before {
+//  color: $color-mobile-menu-item-text-active;
+//}
+
+.mobile-menu__item a {
+  padding: 0 10px;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: $font-mobile-menu-list;
+  color: $color-mobile-menu-item-text;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+
+    &::before {
+      content: attr(data-hover);
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      font-weight: 700;
+      letter-spacing: -0.7px;
+      color: $color-mobile-menu-item-text-span-before;
+      transform: translate3d(0, 0, 0);
+      white-space: nowrap;
+    }
+  }
+
+  &:hover span,
+  &:focus span {
+    transform: translateY(-100%);
+  }
+
+  &:active span::before {
+    color: $color-mobile-menu-item-text-active;
+  }
+}
+
+.mobile-menu__button {
+  text-align: center;
+}
+
+.mobile-menu__footer {
+  margin-bottom: 41px;
+  display: grid;
+  gap: 41px;
+}
+
+.mobile-menu__contacts {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.mobile-menu__contacts-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: $color-mobile-menu-contacts-text;
+  transition: color $transition-duration ease;
+
+  &:hover,
+  &:active {
+    color: $color-mobile-menu-contacts-text-hover;
+
+    .mobile-menu__contacts-icon svg {
+      transition: inherit;
+      color: $color-mobile-menu-contacts-icon-hover;
+    }
+  }
+
+  &:active {
+    color: $color-mobile-menu-contacts-text-active;
+
+    .mobile-menu__contacts-icon svg {
+      color: $color-mobile-menu-contacts-icon-active;
+    }
+  }
+}
+
+.mobile-menu__contacts-icon {
+  background-color: $color-mobile-menu-contacts-icon-background;
+  border-radius: 50%;
+  color: $color-mobile-menu-contacts-icon;
+
+  &.-phone {
+    padding: 14px 13.5px;
+  }
+
+  &.-mail {
+    padding: 11px 10px 9px 11px;
+  }
+}
+
+.mobile-menu__contacts-text {
+   font: $font-mobile-menu-contacts;
+   text-transform: uppercase;
+ }
+
+.mobile-menu__socials {
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+}
