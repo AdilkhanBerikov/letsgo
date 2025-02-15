@@ -4,6 +4,8 @@ node_modules
 .sass-cache
 /.nuxt
 /.output
+src/assets/styles/main.css
+src/assets/styles/main.css.map
 
 # local env files
 .env
