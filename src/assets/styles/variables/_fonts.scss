@@ -1,0 +1,21 @@
+// Основной шрифт
+$font-family-main: "Blogger Sans", "Arial", sans-serif;
+
+// Заголовки
+$font-mobile-h1: 700 36px/40px $font-family-main;
+$font-mobile-h2: 500 30px/35px $font-family-main;
+$font-mobile-h3: 700 24px/24px $font-family-main;
+$font-mobile-h4: 700 21px/21px $font-family-main;
+$font-mobile-h5: 700 18px/18px $font-family-main;
+$font-mobile-h6: 700 17px/30px $font-family-main;
+
+// Основной текст
+$font-mobile-body-bold: 700 16px/18px $font-family-main;
+$font-mobile-body-medium: 500 16px/18px $font-family-main;
+$font-mobile-body-regular: 400 16px/22px $font-family-main;
+$font-mobile-body-small: 300 16px/18px $font-family-main;
+
+// Меню
+$font-mobile-button: $font-mobile-h6;
+$font-mobile-menu-link: $font-mobile-h2;
+$font-mobile-menu-contacts: $font-mobile-body-bold;

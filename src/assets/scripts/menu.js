@@ -1,21 +1,34 @@
-// Импортируем функции из модулей
-import { toggleMenu, closeMenuOnClick } from "./events.js";
-import { handleScroll } from "./scroll.js";
-
-// Ждем, пока загрузится весь HTML
 document.addEventListener("DOMContentLoaded", function () {
-  const toggles = document.querySelectorAll(".toggle"); // Находим все кнопки-бургеры
+  const header = document.querySelector(".page-header");
+  const menu = document.querySelector(".mobile-menu");
+  const toggles = document.querySelectorAll(".toggle");
 
-  // Вешаем обработчик на все бургеры
-  toggles.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      toggleMenu(); // Запускаем функцию переключения меню
-    });
-  });
+  function toggleMenu() {
+    if (!menu || toggles.length === 0) return;
+    menu.classList.toggle("-open");
+    toggles.forEach((btn) => btn.classList.toggle("-active"));
+  }
 
-  closeMenuOnClick(); // Запускаем функцию закрытия меню при клике вне его
+  function closeMenuOnClick(event) {
+    if (!menu || toggles.length === 0) return;
+    const nav = document.querySelector(".header-nav");
 
-  // Добавляем слушатель события скролла
+    if (!menu.contains(event.target) && !nav.contains(event.target)) {
+      menu.classList.remove("-open");
+      toggles.forEach((btn) => btn.classList.remove("-active"));
+    }
+  }
+
+  function handleScroll() {
+    if (window.scrollY > 0) {
+      header.classList.add("-scrolled");
+    } else {
+      header.classList.remove("-scrolled");
+    }
+  }
+
+  toggles.forEach((btn) => btn.addEventListener("click", toggleMenu));
+  document.addEventListener("click", closeMenuOnClick);
   window.addEventListener("scroll", handleScroll);
-  handleScroll(); // Запускаем функцию сразу, чтобы проверить состояние при загрузке
+  handleScroll();
 });

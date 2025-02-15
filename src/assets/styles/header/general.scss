@@ -1,7 +1,7 @@
-@use "../variables/variables" as *;
+@use "../variables" as *;
 
 .page-header {
-  background-color: $color-page-header-background;
+  background-color: var(--color-page-header-background);
   position: relative;
 
   .logo-scrolled {
@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: $color-page-header-scrolled-background;
+    background-color: var(--color-page-header-scrolled-background);
     transition: all $transition-duration ease-in-out;
 
     .grid.-header {
@@ -30,7 +30,7 @@
     }
 
     .toggle {
-      color: $color-scroll-toggle; // Меняем цвет бургера
+      color: var(--color-scroll-toggle); // Меняем цвет бургера
     }
   }
 }
@@ -41,11 +41,11 @@
 }
 
 .header-toggle {
-  color: $color-header-toggle;
+  color: var(--color-header-toggle);
 }
 
 .mobile-toggle {
-  color: $color-mobile-toggle;
+  color: var(--color-mobile-toggle);
 }
 
 .section {

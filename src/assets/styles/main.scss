@@ -1,11 +1,7 @@
-@use "variables/variables" as *;
-@use "../../../node_modules/reset.css/reset.css" as *;
-@use "font" as *;
+@use "../../../node_modules/reset.css/reset.css";
+@use "variables" as *;
+@use "font";
 @use "global";
-@use "grids/grids";
-@use "libs/button";
-@use "libs/box";
-@use "libs/icons";
-@use "libs/toggle";
-@use "libs/mobile-menu";
-@use "header/header";
+@use "common";
+@use "libs";
+@use "header";

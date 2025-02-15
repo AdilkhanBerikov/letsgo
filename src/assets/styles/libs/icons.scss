@@ -1,15 +1,60 @@
-@use "../variables/variables" as *;
+@use "../variables" as *;
+
+.contacts-link {
+  --contacts-text-color: var(--color-mobile-menu-contacts-text);
+  --contacts-icon-color: var(--color-mobile-menu-contacts-icon);
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: var(--contacts-text-color);
+  transition: color $transition-duration ease;
+
+  .contacts-icon svg {
+    color: var(--contacts-icon-color);
+    transition: inherit;
+  }
+
+  &:hover {
+    --contacts-text-color: var(--color-mobile-menu-contacts-text-hover);
+    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-hover);
+  }
+
+  &:active {
+    --contacts-text-color: var(--color-mobile-menu-contacts-text-active);
+    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-active);
+  }
+}
+
+.contacts-icon {
+  background-color: var(--color-mobile-menu-contacts-icon-background);
+  border-radius: 50%;
+  color: var(--color-mobile-menu-contacts-icon);
+
+  &.-phone {
+    padding: 14px 13.5px;
+  }
+
+  &.-mail {
+    padding: 11px 10px 9px 11px;
+  }
+}
+
+.contacts-text {
+  font: $font-mobile-menu-contacts;
+  text-transform: uppercase;
+}
 
 .socials-icon {
-  color: $color-mobile-menu-socials-icon;
+  color: var(--color-mobile-menu-socials-icon);
   transition: color $transition-duration ease;
 
   &:hover,
   &:active {
-    color: $color-blue-dark-2-opacity-medium;
+    color: var(--color-mobile-menu-socials-icon-hover);
   }
 
   &:active {
-    color: $color-blue-dark-2-opacity-light;
+    color: var(--color-mobile-menu-socials-icon-active);
   }
 }

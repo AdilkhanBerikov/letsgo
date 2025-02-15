@@ -1,28 +1,24 @@
-@use "../variables/variables" as *;
+@use "../variables" as *;
 
-@mixin button-style($bg-color, $text-color) {
+.button {
   padding: 12px 81px 8px 78px;
   display: inline-block;
-  background-color: $bg-color;
+  background-color: var(--color-button-background);
   border: none;
   border-radius: 25px;
   font: $font-mobile-button;
-  color: $text-color;
+  color: var(--color-button-text);
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   transition: background-color $transition-duration;
-}
-
-.button {
-  @include button-style($color-button-background, $color-blue-dark);
 
   &:hover {
-    background-color: $color-button-background-hover;
+    background-color: var(--color-button-background-hover);
   }
 
   &:active {
-    color: $color-button-active-text-opacity;
+    color: var(--color-button-active-text-opacity);
   }
 }
 

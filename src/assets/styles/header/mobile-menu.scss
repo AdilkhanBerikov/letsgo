@@ -1,0 +1,106 @@
+@use "../variables" as *;
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  background-color: var(--color-mobile-menu-background);
+  transition: opacity $transition-duration ease, visibility $transition-duration ease;
+
+  &.-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu__header {
+  padding: 25px 25px;
+  margin-bottom: 51px;
+  display: grid;
+  grid-template-columns: max-content min-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu__wrapper {
+  --mobile-menu-wrapper-max-width: 320px;
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--mobile-menu-wrapper-max-width); /* Растягиваем на всю ширину */
+  height: auto; /* Позволяем адаптироваться по контенту */
+  max-height: 100vh; /* Не выходить за границы экрана */
+  display: grid;
+  gap: 51px;
+}
+
+.mobile-menu__list {
+  text-align: center;
+}
+
+.mobile-menu__link {
+  padding: 0 10px;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: $font-mobile-menu-link;
+  color: var(--color-mobile-menu-link-text);
+  overflow: hidden;
+
+  .mobile-menu__link-animation{
+    position: relative;
+    display: inline-block;
+    transition: transform $transition-duration;
+
+    &::before {
+      content: attr(data-hover);
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      font-weight: 700;
+      letter-spacing: -0.7px;
+      color: var(--color-mobile-menu-link-animation-text-before);
+      transform: translate3d(0, 0, 0);
+      white-space: nowrap;
+    }
+  }
+
+  &:hover .mobile-menu__link-animation,
+  &:focus .mobile-menu__link-animation {
+    transform: translateY(-100%);
+  }
+
+  &:active .mobile-menu__link-animation::before {
+    color: var(--color-mobile-menu-link-text-active);
+  }
+}
+
+.mobile-menu__button {
+  text-align: center;
+}
+
+.mobile-menu__footer {
+  margin-bottom: 41px;
+  display: grid;
+  gap: 41px;
+}
+
+.mobile-menu__contacts {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.mobile-menu__socials {
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+}
