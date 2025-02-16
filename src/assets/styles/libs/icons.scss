@@ -47,7 +47,8 @@
 
 .socials-icon {
   color: var(--color-mobile-menu-socials-icon);
-  transition: color $transition-duration ease, background-color $transition-duration ease;
+  transition: color $transition-duration ease;
+  z-index: 1;
 
   &:hover,
   &:active {
@@ -59,29 +60,38 @@
   }
 
   &.-footer {
-    background-color: var(--color-footer-social-icon-background);
-    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: var(--color-footer-social-icon-background);
+      border-radius: 50%;
+      transition: background-color $transition-duration ease;
+    }
 
     &:hover {
       color: var(--color-footer-social-icon-hover);
-      background-color: var(--color-footer-social-icon-background-hover);
+
+      &::before {
+        background-color: var(--color-footer-social-icon-background-hover);
+      }
     }
 
     &:active {
       color: var(--color-footer-social-icon-active);
-      background-color: var(--color-footer-social-icon-background-active);
+
+      &::before {
+        background-color: var(--color-footer-social-icon-background-active);
+      }
     }
-  }
-
-  &.-facebook {
-    padding: 11.5px 17px;
-  }
-
-  &.-vkontakte {
-    padding: 16px 11px;
-  }
-
-  &.-instagram {
-    padding: 13px 13.5px;
   }
 }

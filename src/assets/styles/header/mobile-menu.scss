@@ -8,7 +8,7 @@
   height: auto;
   opacity: 0;
   visibility: hidden;
-  z-index: 2;
+  z-index: 1000;
   background-color: var(--color-mobile-menu-background);
   transition: opacity $transition-duration ease, visibility $transition-duration ease;
 
