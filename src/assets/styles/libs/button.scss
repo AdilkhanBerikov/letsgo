@@ -6,7 +6,7 @@
   background-color: var(--color-button-background);
   border: none;
   border-radius: 25px;
-  font: $font-mobile-button;
+  font: var(--font-button);
   color: var(--color-button-text);
   text-transform: uppercase;
   text-align: center;

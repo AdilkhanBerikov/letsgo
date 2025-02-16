@@ -41,7 +41,7 @@
 }
 
 .contacts-text {
-  font: $font-mobile-menu-contacts;
+  font: var(--font-menu-contacts);
   text-transform: uppercase;
 }
 

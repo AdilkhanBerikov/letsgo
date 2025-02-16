@@ -1,21 +1,81 @@
 // Основной шрифт
 $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
-// Заголовки
-$font-mobile-h1: 700 36px/40px $font-family-main;
-$font-mobile-h2: 500 30px/35px $font-family-main;
-$font-mobile-h3: 700 24px/24px $font-family-main;
-$font-mobile-h4: 700 21px/21px $font-family-main;
-$font-mobile-h5: 700 18px/18px $font-family-main;
-$font-mobile-h6: 700 17px/30px $font-family-main;
+// Базовые переменные (по умолчанию – мобильные стили)
+:root {
+  --font-header-h1: 700 36px/40px #{$font-family-main};
+  --font-header-h2: 500 30px/35px #{$font-family-main};
+  --font-header-h3: 700 24px/24px #{$font-family-main};
+  --font-header-h4: 700 21px/21px #{$font-family-main};
+  --font-header-h5: 700 18px/18px #{$font-family-main};
+  --font-header-h6: 700 17px/30px #{$font-family-main};
 
-// Основной текст
-$font-mobile-body-bold: 700 16px/18px $font-family-main;
-$font-mobile-body-medium: 500 16px/18px $font-family-main;
-$font-mobile-body-regular: 400 16px/22px $font-family-main;
-$font-mobile-body-small: 300 16px/18px $font-family-main;
+  --font-body-bold: 700 16px/18px #{$font-family-main};
+  --font-body-medium: 500 16px/18px #{$font-family-main};
+  --font-body-regular: 400 16px/22px #{$font-family-main};
+  --font-body-small: 300 16px/18px #{$font-family-main};
 
-// Меню
-$font-mobile-button: $font-mobile-h6;
-$font-mobile-menu-link: $font-mobile-h2;
-$font-mobile-menu-contacts: $font-mobile-body-bold;
+  --font-caption-regular: 400 14px/14px #{$font-family-main};
+
+  //Header
+  --font-button: var(--font-header-h6);
+  --font-menu-link: var(--font-header-h2);
+  --font-menu-contacts: var(--font-body-bold);
+}
+
+// Адаптивные изменения для планшетов //надо будет перенастроить фонты будут первым этапом
+@media (min-width: 768px) {
+  :root {
+    --font-header-h1: 700 60px/70px #{$font-family-main};
+    --font-header-h2: 700 45px/45px #{$font-family-main};
+    --font-header-h3: 700 28px/28px #{$font-family-main};
+    --font-header-h4: 700 24px/24px #{$font-family-main};
+    --font-header-h5: 700 21px/25px #{$font-family-main};
+
+    --font-body-bold: 700 20px/20px #{$font-family-main};
+    --font-body-medium: 500 20px/20px #{$font-family-main};
+    --font-body-regular: 400 20px/23px #{$font-family-main};
+    --font-body-small: 300 28px/33px #{$font-family-main};
+
+    --font-caption-regular: 400 14px/14px #{$font-family-main};
+  }
+}
+
+// Адаптивные изменения для десктопов
+@media (min-width: 1024px) {
+  :root {
+    --font-header-h1: 700 48px/52px #{$font-family-main};
+    --font-header-h2: 500 38px/44px #{$font-family-main};
+    --font-header-h3: 700 32px/36px #{$font-family-main};
+    --font-header-h4: 700 28px/32px #{$font-family-main};
+    --font-header-h5: 700 24px/28px #{$font-family-main};
+    --font-header-h6: 700 20px/32px #{$font-family-main};
+
+    --font-body-bold: 700 20px/24px #{$font-family-main};
+    --font-body-medium: 500 20px/24px #{$font-family-main};
+    --font-body-regular: 400 20px/26px #{$font-family-main};
+    --font-body-small: 300 18px/22px #{$font-family-main};
+  }
+}
+
+//// Основной шрифт
+//$font-family-main: "Blogger Sans", "Arial", sans-serif;
+//
+//// Заголовки
+//$font-mobile-h1: 700 36px/40px $font-family-main;
+//$font-mobile-h2: 500 30px/35px $font-family-main;
+//$font-mobile-h3: 700 24px/24px $font-family-main;
+//$font-mobile-h4: 700 21px/21px $font-family-main;
+//$font-mobile-h5: 700 18px/18px $font-family-main;
+//$font-mobile-h6: 700 17px/30px $font-family-main;
+//
+//// Основной текст
+//$font-mobile-body-bold: 700 16px/18px $font-family-main;
+//$font-mobile-body-medium: 500 16px/18px $font-family-main;
+//$font-mobile-body-regular: 400 16px/22px $font-family-main;
+//$font-mobile-body-small: 300 16px/18px $font-family-main;
+//
+//// Меню
+//$font-mobile-button: $font-mobile-h6;
+//$font-mobile-menu-link: $font-mobile-h2;
+//$font-mobile-menu-contacts: $font-mobile-body-bold;

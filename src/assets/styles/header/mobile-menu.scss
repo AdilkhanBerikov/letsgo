@@ -28,11 +28,10 @@
 }
 
 .mobile-menu__wrapper {
-  --mobile-menu-wrapper-max-width: 320px;
   padding: 0 25px;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--mobile-menu-wrapper-max-width); /* Растягиваем на всю ширину */
+  max-width: $mobile-width; /* Растягиваем на всю ширину */
   height: auto; /* Позволяем адаптироваться по контенту */
   max-height: 100vh; /* Не выходить за границы экрана */
   display: grid;
@@ -51,7 +50,7 @@
   outline: none;
   text-decoration: none;
   text-transform: uppercase;
-  font: $font-mobile-menu-link;
+  font: var(--font-menu-link);
   color: var(--color-mobile-menu-link-text);
   overflow: hidden;
 
