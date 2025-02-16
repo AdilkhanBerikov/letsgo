@@ -1,5 +1,6 @@
 //Основные цвета
 $color-white: #ffffff;
+$color-grey-light: #F2F2F2;
 $color-grey: #CCCCCC;
 $color-grey-dark: #444444;
 $color-blue: #1D2E5B;
@@ -31,6 +32,7 @@ $color-orange: #FF8D30;
   --color-mobile-toggle: #{$color-grey};
   --color-scroll-toggle: #{$color-grey};
 
+  //Header
   /* Icons */
   --color-mobile-menu-contacts-text: #{$color-blue-dark-2};
   --color-mobile-menu-contacts-text-hover: #{$color-yellow-dark};
@@ -42,17 +44,27 @@ $color-orange: #FF8D30;
   --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
   --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
   --color-mobile-menu-socials-icon-active: #{$color-blue-dark-2-opacity-light};
-
   /* Mobile Menu */
   --color-mobile-menu-background: #{$color-white};
   --color-mobile-menu-link-text: #{$color-blue-dark-2};
   --color-mobile-menu-link-animation-text-before: #{$color-yellow-dark};
   --color-mobile-menu-link-text-active: #{$color-yellow-dark-opacity};
-
   /* Scroll Menu */
   --color-scroll-menu-background: #{$color-white};
-
   /* Page Header */
   --color-page-header-background: #{$color-blue-dark};
   --color-page-header-scrolled-background: #{$color-white};
+
+  //Footer
+  --color-footer-background: #{$color-white};
+
+  --color-footer-social-icon-hover: #{$color-blue-dark-2};
+  --color-footer-social-icon-active: #{$color-blue-dark-2-opacity-light};
+  --color-footer-social-icon-background: #{$color-yellow};
+  --color-footer-social-icon-background-hover: #{$color-yellow-dark};
+  --color-footer-social-icon-background-active: #{$color-yellow-dark};
+
+  --color-footer-footnote-border: #{$color-grey-light};
+  --color-footer-footnote-logo: #{$color-blue-dark-2};
+  --color-footer-footnote-text: #{$color-grey-dark};
 }

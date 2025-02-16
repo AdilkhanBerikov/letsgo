@@ -12,7 +12,7 @@
 
   .contacts-icon svg {
     color: var(--contacts-icon-color);
-    transition: inherit;
+    transition: color $transition-duration ease;
   }
 
   &:hover {
@@ -47,7 +47,7 @@
 
 .socials-icon {
   color: var(--color-mobile-menu-socials-icon);
-  transition: color $transition-duration ease;
+  transition: color $transition-duration ease, background-color $transition-duration ease;
 
   &:hover,
   &:active {
@@ -56,5 +56,32 @@
 
   &:active {
     color: var(--color-mobile-menu-socials-icon-active);
+  }
+
+  &.-footer {
+    background-color: var(--color-footer-social-icon-background);
+    border-radius: 50%;
+
+    &:hover {
+      color: var(--color-footer-social-icon-hover);
+      background-color: var(--color-footer-social-icon-background-hover);
+    }
+
+    &:active {
+      color: var(--color-footer-social-icon-active);
+      background-color: var(--color-footer-social-icon-background-active);
+    }
+  }
+
+  &.-facebook {
+    padding: 11.5px 17px;
+  }
+
+  &.-vkontakte {
+    padding: 16px 11px;
+  }
+
+  &.-instagram {
+    padding: 13px 13.5px;
   }
 }
