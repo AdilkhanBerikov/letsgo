@@ -1,8 +1,8 @@
 @use "../variables" as *;
 
-.contacts-link {
+.contacts__link {
   --contacts-text-color: var(--color-mobile-menu-contacts-text);
-  --contacts-icon-color: var(--color-mobile-menu-contacts-icon);
+  --contacts__icon-color: var(--color-mobile-menu-contacts__icon);
 
   display: flex;
   gap: 16px;
@@ -10,33 +10,40 @@
   color: var(--contacts-text-color);
   transition: color $transition-duration ease;
 
-  .contacts-icon svg {
-    color: var(--contacts-icon-color);
+  .contacts__icon {
     transition: color $transition-duration ease;
   }
 
   &:hover {
     --contacts-text-color: var(--color-mobile-menu-contacts-text-hover);
-    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-hover);
+    --contacts__icon-color: var(--color-mobile-menu-contacts__icon-hover);
   }
 
   &:active {
     --contacts-text-color: var(--color-mobile-menu-contacts-text-active);
-    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-active);
+    --contacts__icon-color: var(--color-mobile-menu-contacts__icon-active);
   }
 }
 
-.contacts-icon {
-  background-color: var(--color-mobile-menu-contacts-icon-background);
-  border-radius: 50%;
-  color: var(--color-mobile-menu-contacts-icon);
+.contacts__icon {
+  --contacts__icon-size: 45px;
+  position: relative;
+  width: var(--contacts__icon-size);
+  height: var(--contacts__icon-size);
+  z-index: 1;
+  color: var(--contacts__icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &.-phone {
-    padding: 14px 13.5px;
-  }
-
-  &.-mail {
-    padding: 11px 10px 9px 11px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--color-mobile-menu-contacts__icon-background);
+    border-radius: 50%;
   }
 }
 
@@ -45,27 +52,28 @@
   text-transform: uppercase;
 }
 
-.socials-icon {
-  color: var(--color-mobile-menu-socials-icon);
+.socials__icon {
+  color: var(--color-mobile-menu-socials__icon);
   transition: color $transition-duration ease;
   z-index: 1;
 
   &:hover,
   &:active {
-    color: var(--color-mobile-menu-socials-icon-hover);
+    color: var(--color-mobile-menu-socials__icon-hover);
   }
 
   &:active {
-    color: var(--color-mobile-menu-socials-icon-active);
+    color: var(--color-mobile-menu-socials__icon-active);
   }
 
   &.-footer {
+    --socials__icon-footer-size: 45px;
     position: relative;
+    width: var(--socials__icon-footer-size);
+    height: var(--socials__icon-footer-size);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
 
     &::before {
       content: "";

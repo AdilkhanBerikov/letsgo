@@ -4,7 +4,7 @@
   background-color: var(--color-page-header-background);
   position: relative;
 
-  .logo-scrolled {
+  .header__logo-scrolled {
     display: none;
   }
 
@@ -21,11 +21,11 @@
       margin-bottom: 25px;
     }
 
-    .logo-default {
+    .header__logo-default {
       display: none; // Скрываем светлый логотип
     }
 
-    .logo-scrolled {
+    .header__logo-scrolled {
       display: block; // Показываем темный логотип
     }
 
