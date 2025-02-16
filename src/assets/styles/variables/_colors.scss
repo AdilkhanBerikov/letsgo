@@ -1,0 +1,58 @@
+//Основные цвета
+$color-white: #ffffff;
+$color-grey: #CCCCCC;
+$color-grey-dark: #444444;
+$color-blue: #1D2E5B;
+$color-blue-light-1: #EDEFF6;
+$color-blue-light-2: #DFE3F0;
+$color-blue-dark: #161C35;
+$color-blue-dark-opacity: rgba($color-blue-dark, 0.3);
+$color-blue-dark-2: #192144;
+$color-blue-dark-2-opacity-medium: rgba($color-blue-dark-2, 0.6);
+$color-blue-dark-2-opacity-light: rgba($color-blue-dark-2, 0.3);
+$color-blue-dark-3: #121936;
+$color-yellow: #FFD74B;
+$color-yellow-dark: #FFBD30;
+$color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
+$color-red: #F47E7E;
+$color-orange: #FF8D30;
+
+
+:root {
+  /* Компонентные цвета */
+  /* Buttons */
+  --color-button-text: #{$color-blue-dark};
+  --color-button-active-text-opacity: #{$color-blue-dark-opacity};
+  --color-button-background: #{$color-yellow};
+  --color-button-background-hover: #{$color-yellow-dark};
+
+  /* Toggle */
+  --color-header-toggle: #{$color-white};
+  --color-mobile-toggle: #{$color-grey};
+  --color-scroll-toggle: #{$color-grey};
+
+  /* Icons */
+  --color-mobile-menu-contacts-text: #{$color-blue-dark-2};
+  --color-mobile-menu-contacts-text-hover: #{$color-yellow-dark};
+  --color-mobile-menu-contacts-text-active: #{$color-yellow-dark-opacity};
+  --color-mobile-menu-contacts-icon: #{$color-yellow};
+  --color-mobile-menu-contacts-icon-background: #{$color-blue-dark-3};
+  --color-mobile-menu-contacts-icon-hover: #{$color-yellow-dark};
+  --color-mobile-menu-contacts-icon-active: #{$color-yellow-dark-opacity};
+  --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
+  --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
+  --color-mobile-menu-socials-icon-active: #{$color-blue-dark-2-opacity-light};
+
+  /* Mobile Menu */
+  --color-mobile-menu-background: #{$color-white};
+  --color-mobile-menu-link-text: #{$color-blue-dark-2};
+  --color-mobile-menu-link-animation-text-before: #{$color-yellow-dark};
+  --color-mobile-menu-link-text-active: #{$color-yellow-dark-opacity};
+
+  /* Scroll Menu */
+  --color-scroll-menu-background: #{$color-white};
+
+  /* Page Header */
+  --color-page-header-background: #{$color-blue-dark};
+  --color-page-header-scrolled-background: #{$color-white};
+}

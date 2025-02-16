@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+}
+
+.page__body {
+  --page-body-min-width: 320px;
+  margin: 0;
+  min-width: var(--page-body-min-width);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 0;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}

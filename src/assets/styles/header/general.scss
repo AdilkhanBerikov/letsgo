@@ -1,0 +1,54 @@
+@use "../variables" as *;
+
+.page-header {
+  background-color: var(--color-page-header-background);
+  position: relative;
+
+  .logo-scrolled {
+    display: none;
+  }
+
+  &.-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-page-header-scrolled-background);
+    transition: all $transition-duration ease-in-out;
+
+    .grid.-header {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .logo-default {
+      display: none; // Скрываем светлый логотип
+    }
+
+    .logo-scrolled {
+      display: block; // Показываем темный логотип
+    }
+
+    .toggle {
+      color: var(--color-scroll-toggle); // Меняем цвет бургера
+    }
+  }
+}
+
+.header-nav {
+  position: relative;
+  width: auto;
+}
+
+.header-toggle {
+  color: var(--color-header-toggle);
+}
+
+.mobile-toggle {
+  color: var(--color-mobile-toggle);
+}
+
+.section {
+  height: 1500px;
+  background: $color-grey;
+}

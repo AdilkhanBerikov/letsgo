@@ -1,0 +1,64 @@
+@use "../variables" as *;
+
+.button {
+  padding: 12px 81px 8px 78px;
+  display: inline-block;
+  background-color: var(--color-button-background);
+  border: none;
+  border-radius: 25px;
+  font: var(--font-button);
+  color: var(--color-button-text);
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $transition-duration;
+
+  &:hover {
+    background-color: var(--color-button-background-hover);
+  }
+
+  &:active {
+    color: var(--color-button-active-text-opacity);
+  }
+}
+
+
+//@mixin button-style($bg-color, $text-color, $padding, $border-radius, $gap: 0) {
+//  display: inline-flex; // Используем flex для расположения текста и иконки
+//  align-items: center;
+//  justify-content: center;
+//  gap: $gap; // Расстояние между текстом и иконкой
+//  padding: $padding;
+//  background-color: $bg-color;
+//  border: none;
+//  border-radius: $border-radius;
+//  font: $font-mobile-button;
+//  color: $text-color;
+//  text-transform: uppercase;
+//  text-align: center;
+//  cursor: pointer;
+//  transition: background-color $transition-duration;
+//
+//  &:hover {
+//    background-color: lighten($bg-color, 10%);
+//  }
+//
+//  &:active {
+//    color: rgba($text-color, 0.8);
+//  }
+//}
+//
+//// Обычная кнопка
+//.button {
+//  @include button-style($color-button-background, $color-blue-dark, 12px 81px 8px 78px, 25px);
+//}
+//
+//// Кнопка с иконкой
+//.button--icon {
+//  @include button-style($color-button-background, $color-blue-dark, 10px 20px, 20px, 8px);
+//
+//  svg {
+//    width: 20px;
+//    height: 20px;
+//  }
+//}
