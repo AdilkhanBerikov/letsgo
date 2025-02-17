@@ -22,13 +22,13 @@
 }
 
 .footnote__text {
-  font: var(--font-footnote__text);
+  font: var(--font-footnote-text);
   line-height: 16px;
-  color: var(--color-footer-footnote__text);
+  color: var(--color-footer-footnote-text);
   transition: opacity $transition-duration;
 }
 
 .footnote__logo {
-  color: var(--color-footer-footnote__logo);
+  color: var(--color-footer-footnote-logo);
   transition: opacity $transition-duration;
 }

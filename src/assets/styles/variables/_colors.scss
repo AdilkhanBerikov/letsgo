@@ -37,13 +37,13 @@ $color-orange: #FF8D30;
   --color-mobile-menu-contacts-text: #{$color-blue-dark-2};
   --color-mobile-menu-contacts-text-hover: #{$color-yellow-dark};
   --color-mobile-menu-contacts-text-active: #{$color-yellow-dark-opacity};
-  --color-mobile-menu-contacts__icon: #{$color-yellow};
-  --color-mobile-menu-contacts__icon-background: #{$color-blue-dark-3};
-  --color-mobile-menu-contacts__icon-hover: #{$color-yellow-dark};
-  --color-mobile-menu-contacts__icon-active: #{$color-yellow-dark-opacity};
-  --color-mobile-menu-socials__icon: #{$color-blue-dark-2};
-  --color-mobile-menu-socials__icon-hover: #{$color-blue-dark-2-opacity-medium};
-  --color-mobile-menu-socials__icon-active: #{$color-blue-dark-2-opacity-light};
+  --color-mobile-menu-contacts-icon: #{$color-yellow};
+  --color-mobile-menu-contacts-icon-background: #{$color-blue-dark-3};
+  --color-mobile-menu-contacts-icon-hover: #{$color-yellow-dark};
+  --color-mobile-menu-contacts-icon-active: #{$color-yellow-dark-opacity};
+  --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
+  --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
+  --color-mobile-menu-socials-icon-active: #{$color-blue-dark-2-opacity-light};
   /* Mobile Menu */
   --color-mobile-menu-background: #{$color-white};
   --color-mobile-menu-link-text: #{$color-blue-dark-2};
@@ -65,6 +65,6 @@ $color-orange: #FF8D30;
   --color-footer-social-icon-background-active: #{$color-yellow-dark};
 
   --color-footer-footnote-border: #{$color-grey-light};
-  --color-footer-footnote__logo: #{$color-blue-dark-2};
-  --color-footer-footnote__text: #{$color-grey-dark};
+  --color-footer-footnote-logo: #{$color-blue-dark-2};
+  --color-footer-footnote-text: #{$color-grey-dark};
 }

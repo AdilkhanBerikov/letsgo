@@ -2,8 +2,7 @@
 
 .page-header {
   background-color: var(--color-page-header-background);
-  position: relative;
-  z-index: 999;
+  z-index: $z-index-md;
   transition: all $transition-duration ease-in-out;
 
   .header__logo-scrolled {

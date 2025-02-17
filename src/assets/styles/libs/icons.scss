@@ -2,7 +2,7 @@
 
 .contacts__link {
   --contacts-text-color: var(--color-mobile-menu-contacts-text);
-  --contacts__icon-color: var(--color-mobile-menu-contacts__icon);
+  --contacts-icon-color: var(--color-mobile-menu-contacts-icon);
 
   display: flex;
   gap: 16px;
@@ -16,22 +16,22 @@
 
   &:hover {
     --contacts-text-color: var(--color-mobile-menu-contacts-text-hover);
-    --contacts__icon-color: var(--color-mobile-menu-contacts__icon-hover);
+    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-hover);
   }
 
   &:active {
     --contacts-text-color: var(--color-mobile-menu-contacts-text-active);
-    --contacts__icon-color: var(--color-mobile-menu-contacts__icon-active);
+    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-active);
   }
 }
 
 .contacts__icon {
-  --contacts__icon-size: 45px;
+  --contacts-icon-size: 45px;
   position: relative;
-  width: var(--contacts__icon-size);
-  height: var(--contacts__icon-size);
-  z-index: 1;
-  color: var(--contacts__icon-color);
+  width: var(--contacts-icon-size);
+  height: var(--contacts-icon-size);
+  z-index: $z-index-low;
+  color: var(--contacts-icon-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,8 +41,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-color: var(--color-mobile-menu-contacts__icon-background);
+    z-index: $z-index-negative;
+    background-color: var(--color-mobile-menu-contacts-icon-background);
     border-radius: 50%;
   }
 }
@@ -53,24 +53,24 @@
 }
 
 .socials__icon {
-  color: var(--color-mobile-menu-socials__icon);
+  color: var(--color-mobile-menu-socials-icon);
   transition: color $transition-duration ease;
-  z-index: 1;
+  z-index: $z-index-low;
 
   &:hover,
   &:active {
-    color: var(--color-mobile-menu-socials__icon-hover);
+    color: var(--color-mobile-menu-socials-icon-hover);
   }
 
   &:active {
-    color: var(--color-mobile-menu-socials__icon-active);
+    color: var(--color-mobile-menu-socials-icon-active);
   }
 
   &.-footer {
-    --socials__icon-footer-size: 45px;
+    --socials-icon-footer-size: 45px;
     position: relative;
-    width: var(--socials__icon-footer-size);
-    height: var(--socials__icon-footer-size);
+    width: var(--socials-icon-footer-size);
+    height: var(--socials-icon-footer-size);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      z-index: $z-index-negative;
       background-color: var(--color-footer-social-icon-background);
       border-radius: 50%;
       transition: background-color $transition-duration ease;
