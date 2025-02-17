@@ -1,6 +1,6 @@
 @use "../variables" as *;
 
-.contacts-link {
+.contacts__link {
   --contacts-text-color: var(--color-mobile-menu-contacts-text);
   --contacts-icon-color: var(--color-mobile-menu-contacts-icon);
 
@@ -10,9 +10,8 @@
   color: var(--contacts-text-color);
   transition: color $transition-duration ease;
 
-  .contacts-icon svg {
-    color: var(--contacts-icon-color);
-    transition: inherit;
+  .contacts__icon {
+    transition: color $transition-duration ease;
   }
 
   &:hover {
@@ -26,17 +25,25 @@
   }
 }
 
-.contacts-icon {
-  background-color: var(--color-mobile-menu-contacts-icon-background);
-  border-radius: 50%;
-  color: var(--color-mobile-menu-contacts-icon);
+.contacts__icon {
+  --contacts-icon-size: 45px;
+  position: relative;
+  width: var(--contacts-icon-size);
+  height: var(--contacts-icon-size);
+  z-index: $z-index-low;
+  color: var(--contacts-icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &.-phone {
-    padding: 14px 13.5px;
-  }
-
-  &.-mail {
-    padding: 11px 10px 9px 11px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: $z-index-negative;
+    background-color: var(--color-mobile-menu-contacts-icon-background);
+    border-radius: 50%;
   }
 }
 
@@ -45,9 +52,10 @@
   text-transform: uppercase;
 }
 
-.socials-icon {
+.socials__icon {
   color: var(--color-mobile-menu-socials-icon);
   transition: color $transition-duration ease;
+  z-index: $z-index-low;
 
   &:hover,
   &:active {
@@ -56,5 +64,42 @@
 
   &:active {
     color: var(--color-mobile-menu-socials-icon-active);
+  }
+
+  &.-footer {
+    --socials-icon-footer-size: 45px;
+    position: relative;
+    width: var(--socials-icon-footer-size);
+    height: var(--socials-icon-footer-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: $z-index-negative;
+      background-color: var(--color-footer-social-icon-background);
+      border-radius: 50%;
+      transition: background-color $transition-duration ease;
+    }
+
+    &:hover {
+      color: var(--color-footer-social-icon-hover);
+
+      &::before {
+        background-color: var(--color-footer-social-icon-background-hover);
+      }
+    }
+
+    &:active {
+      color: var(--color-footer-social-icon-active);
+
+      &::before {
+        background-color: var(--color-footer-social-icon-background-active);
+      }
+    }
   }
 }

@@ -8,7 +8,7 @@
   height: auto;
   opacity: 0;
   visibility: hidden;
-  z-index: 2;
+  z-index: $z-index-lg;
   background-color: var(--color-mobile-menu-background);
   transition: opacity $transition-duration ease, visibility $transition-duration ease;
 
@@ -69,6 +69,7 @@
       color: var(--color-mobile-menu-link-animation-text-before);
       transform: translate3d(0, 0, 0);
       white-space: nowrap;
+      transition: color $transition-duration;
     }
   }
 

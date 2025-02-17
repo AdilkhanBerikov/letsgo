@@ -9,3 +9,10 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.grid.-footer {
+  margin-top: 37px;
+  margin-bottom: 19px;
+  grid-template-rows: min-content min-content max-content;
+  text-align: center;
+}

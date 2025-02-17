@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
     <title>Погнали</title>
-    <link href="./assets/styles/main.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
   <header class="page-header">
     <div class="grid -header box">
       <a class="header__logo" href="#">
-        <img class="logo-default" src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
-        <img class="logo-scrolled" src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        <img class="header__logo-default" src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+        <img class="header__logo-scrolled" src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
       </a>
       <nav class="header-nav">
         <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
@@ -21,7 +20,12 @@
   </header>
 
   <section class="section">
-    g
+    gфцвфцвфвфцв<br>
+    gфцвфцвфвфцв<br>
+    gфцвфцвфвфцв<br>
+    gфцвфцвфвфцв<br>
+    gфцвфцвфвфцв<br>
+    gфцвфцвфвфцв<br>
   </section>
 
   <section class="mobile-menu">
@@ -63,8 +67,8 @@
       <div class="mobile-menu__footer">
         <ul class="mobile-menu__contacts">
           <li class="mobile-menu__contacts-item">
-            <a href="tel:88005558628" class="contacts-link">
-              <div class="contacts-icon -phone">
+            <a href="tel:88005558628" class="contacts__link">
+              <div class="contacts__icon">
                 <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
                 </svg>
@@ -73,8 +77,8 @@
             </a>
           </li>
           <li class="mobile-menu__contacts-item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts-link">
-              <div class="contacts-icon -mail">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
+              <div class="contacts__icon">
                 <svg width="24" height="25" aria-hidden="true">
                   <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
                 </svg>
@@ -85,22 +89,22 @@
         </ul>
         <ul class="mobile-menu__socials">
           <li class="mobile-menu__socials-item">
-            <a class="socials-link" href="#">
-              <svg class="socials-icon" width="11" height="21" aria-hidden="true">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon" width="11" height="21" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="mobile-menu__socials-item">
-            <a class="socials-link" href="#">
-              <svg class="socials-icon" width="23" height="12" aria-hidden="true">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon" width="23" height="12" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="mobile-menu__socials-item">
-            <a class="socials-link" href="#">
-              <svg class="socials-icon" width="18" height="18" aria-hidden="true">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon" width="18" height="18" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -112,5 +116,52 @@
 
   <script src="assets/scripts/menu.js" type="module" defer></script>
 
+  <footer class="page-footer">
+    <div class="grid -footer box">
+      <a class="footer__logo" href="#">
+        <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+      </a>
+      <ul class="footer__socials">
+        <li class="footer__socials-item">
+          <a class="socials__link" href="#">
+            <div class="socials__icon -footer">
+              <svg  width="11" height="21" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="socials__link" href="#">
+            <div class="socials__icon -footer">
+              <svg width="23" height="12" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="socials__link" href="#">
+            <div class="socials__icon -footer">
+              <svg width="18" height="18" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="footnote">
+        <a class="footnote__link" href="#">
+          <span class="footnote__text">Разработано</span>
+          <svg class="footnote__logo" width="27" height="34" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-logo-academy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
   </body>
+
+  <script type="module" src="./index.js"></script>
+
 </html>
