@@ -17,6 +17,8 @@ $color-yellow-dark: #FFBD30;
 $color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
 $color-red: #F47E7E;
 $color-orange: #FF8D30;
+$color-orange-light: #FFA530;
+$color-orange-dark: #F26926;
 
 
 :root {
@@ -26,6 +28,14 @@ $color-orange: #FF8D30;
   --color-button-active-text-opacity: #{$color-blue-dark-opacity};
   --color-button-background: #{$color-yellow};
   --color-button-background-hover: #{$color-yellow-dark};
+  --color-button-call: #{$color-blue-dark};
+  --color-button-call-active: #{$color-blue-dark-opacity};
+  --color-button-call-before: #{$color-orange};
+  --color-button-call-before-hover: #{$color-orange-dark};
+  --color-button-mail: #{$color-blue-dark};
+  --color-button-mail-active: #{$color-blue-dark-opacity};
+  --color-button-mail-before: #{$color-yellow-dark};
+  --color-button-mail-before-hover: #{$color-orange};
 
   /* Toggle */
   --color-header-toggle: #{$color-white};
@@ -67,4 +77,17 @@ $color-orange: #FF8D30;
   --color-footer-footnote-border: #{$color-grey-light};
   --color-footer-footnote-logo: #{$color-blue-dark-2};
   --color-footer-footnote-text: #{$color-grey-dark};
+
+  //Main
+  //Main-section
+  --color-main-section-heading-text: #{$color-white};
+  --color-main-section-testimonials-before: #{$color-blue-dark};
+  --color-main-section-testimonials-text: #{$color-white};
+  --color-main-section-testimonials-author-text: #{$color-white};
+  --color-main-section-steps-item-background: #{$color-orange};
+  --color-main-section-steps-item-2-background: #{$color-orange-light};
+  --color-main-section-steps-item-3-background: #{$color-yellow-dark};
+  --color-main-section-steps-item-4-background: #{$color-yellow};
+  --color-main-section-steps-number: #{$color-white};
+  --color-main-section-steps-text: #{$color-blue-dark};
 }

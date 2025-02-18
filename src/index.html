@@ -19,15 +19,6 @@
     </div>
   </header>
 
-  <section class="section">
-    gфцвфцвфвфцв<br>
-    gфцвфцвфвфцв<br>
-    gфцвфцвфвфцв<br>
-    gфцвфцвфвфцв<br>
-    gфцвфцвфвфцв<br>
-    gфцвфцвфвфцв<br>
-  </section>
-
   <section class="mobile-menu">
     <div class="mobile-menu__header">
       <a class="mobile-menu__logo" href="#">
@@ -114,7 +105,71 @@
     </div>
   </section>
 
-  <script src="assets/scripts/menu.js" type="module" defer></script>
+  <main class="page__main">
+    <section class="main-section">
+      <div class="box">
+        <h1 class="main-section__heading">В путешествие<br>
+          с крутыми<br>
+          попутчиками!
+        </h1>
+<!--        <picture>-->
+<!--          <img class="main-section__background" src="assets/images/background/globe-back-mobile-1.png" width="320" height="569" alt="Планета">-->
+<!--        </picture>-->
+<!--        <picture class="main-section__picture">-->
+<!--          <img class="main-section__image" src="assets/images/background/traveller-illustration-mobile-1.png" width="192" height="255" alt="Путешественник">-->
+<!--        </picture>-->
+        <div class="main-section__button">
+          <a class="button__call" href="#">
+            <svg width="18" height="18" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-call"></use>
+            </svg>
+          </a>
+          <a class="button__mail" href="#">
+            <svg width="18" height="15.75" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
+            </svg>
+          </a>
+          <a class="button -alternate" href="#">Авторизация</a>
+        </div>
+        <blockquote class="testimonial">
+          <p class="testimonial-text">«Лучшее приложение,<br>
+            что я видел в жизни!»</p>
+          <footer class="testimonial-author">
+            Мурат Эльтазин,<br>
+            главный редактор<br>
+            газеты <cite>гаджетлайф</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="box">
+        <ol class="steps__list">
+          <li class="steps__item">
+            <span class="steps__number">1</span>
+            <p class="steps__text">Выберите<br>
+              направление</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number">2</span>
+            <p class="steps__text">Изучите идеи<br>
+              путешественников</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number">3</span>
+            <p class="steps__text">Находите тех,<br>
+              кто похож на вас</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number">4</span>
+            <p class="steps__text">Путешествуйте<br>
+              вместе!</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
 
   <footer class="page-footer">
     <div class="grid -footer box">
@@ -163,5 +218,6 @@
   </body>
 
   <script type="module" src="./index.js"></script>
+  <script src="assets/scripts/menu.js" type="module" defer></script>
 
 </html>
