@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.main-section {
+  padding-top: 41px;
+  //background-color: var(--color-page-main-section-background);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/background/globe-back-mobile-1.png");
+    background-color: var(--color-main-section-background);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -54px;
+    left: 0;
+    width: 100vw;
+    height: 569px;
+    z-index: $z-index-negative;
+  }
+}

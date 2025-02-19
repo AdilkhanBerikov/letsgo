@@ -80,10 +80,11 @@ $color-orange-dark: #F26926;
 
   //Main
   //Main-section
+  --color-main-section-background: #{$color-blue-dark};
   --color-main-section-heading-text: #{$color-white};
-  --color-main-section-testimonials-before: #{$color-blue-dark};
-  --color-main-section-testimonials-text: #{$color-white};
-  --color-main-section-testimonials-author-text: #{$color-white};
+  --color-main-section-testimonial-background: #{$color-blue-dark};
+  --color-main-section-testimonial-text: #{$color-white};
+  --color-main-section-testimonial-author-text: #{$color-white};
   --color-main-section-steps-item-background: #{$color-orange};
   --color-main-section-steps-item-2-background: #{$color-orange-light};
   --color-main-section-steps-item-3-background: #{$color-yellow-dark};

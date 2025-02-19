@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+
+.main-section__testimonial {
+  margin-top: -20px;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 48px 0 109px 50px;
+  position: relative;
+  background-color: var(--color-main-section-testimonial-background);
+  //max-width: 270px;
+  display: grid;
+  gap: 18px;
+  align-items: start;
+  justify-content: start;
+  z-index: $z-index-negative;
+}
+
+.main-section__testimonial-text {
+  font: var(--font-main-section-testimonial-text);
+  line-height: 22px;
+  color: var(--color-main-section-testimonial-text);
+}
+
+.main-section__testimonial-author {
+  font: var(--font-main-section-testimonial-author);
+  line-height: 22px;
+  color: var(--color-main-section-testimonial-author-text);
+}

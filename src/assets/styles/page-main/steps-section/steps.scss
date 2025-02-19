@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+.steps__list {
+  display: grid;
+}
+
+.steps__item {
+  margin-top: -80px;
+  padding: 22px 21px 102px 24px;
+  background-color: var(--color-main-section-steps-item-background);
+  border-radius: 10px 10px 0 0;
+  font: var(--font-main-section-steps-item);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  &:nth-child(2) {
+    background-color: var(--color-main-section-steps-item-2-background);
+  }
+
+  &:nth-child(3) {
+    padding-bottom: 76px;
+    background-color: var(--color-main-section-steps-item-3-background);
+  }
+
+  &:last-child {
+    margin-top: -60px;
+    padding-bottom: 24px;
+    border-radius: 10px;
+    background-color: var(--color-main-section-steps-item-4-background);
+  }
+}
+
+.steps__number {
+  color: var(--color-main-section-steps-number);
+}
+
+.steps__text {
+  color: var(--color-main-section-steps-text);
+}

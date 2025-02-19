@@ -1,0 +1,74 @@
+@use "../../variables" as *;
+
+.main-section__button {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__round {
+  --button-size: 40px;
+  width: var(--button-size);
+  height: var(--button-size);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color $transition-duration ease, color $transition-duration ease;
+  z-index: $z-index-low;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-button-default);
+    border-radius: 50%;
+    transition: background-color $transition-duration ease;
+    z-index: $z-index-negative;
+  }
+
+  &:hover::before {
+    background-color: var(--color-button-hover);
+  }
+
+  &:active {
+    color: var(--color-button-active);
+  }
+
+  &.-call {
+    color: var(--color-button-call);
+
+    &::before {
+      background-color: var(--color-button-call-before);
+    }
+
+    &:hover::before {
+      background-color: var(--color-button-call-before-hover);
+    }
+
+    &:active {
+      color: var(--color-button-call-active);
+    }
+  }
+
+  &.-mail {
+    color: var(--color-button-mail);
+
+    &::before {
+      background-color: var(--color-button-mail-before);
+    }
+
+    &:hover::before {
+      background-color: var(--color-button-mail-before-hover);
+    }
+
+    &:active {
+      color: var(--color-button-mail-active);
+    }
+  }
+}

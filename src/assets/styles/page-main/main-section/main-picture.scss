@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+//.page-main-section__picture {
+//  --page-main-section-picture-width: 270px;
+//  --page-main-section-picture-height: 255px;
+//  margin: auto;
+//  width: var(--page-main-section-picture-width);
+//  height: var(--page-main-section-picture-height);
+//  position: relative;
+//  display: block;
+//}
+
+.main-section__image {
+  //margin-left: calc(55px + 50vw - 160px);
+  position: relative;
+  top: 0;
+  left: calc(55px + 50vw - 160px);
+  z-index: $z-index-negative;
+}
