@@ -25,4 +25,44 @@
     padding: 10px 39px 10px 40px;
     line-height: 20px;
   }
+
+  &.-round {
+    --button-round-size: 40px;
+    padding: 0;
+    width: var(--button-round-size);
+    height: var(--button-round-size);
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:first-child {
+      background-color: var(--color-button-call-background);
+      color: var(--color-button-call);
+
+      &:hover {
+        background-color: var(--color-button-call-background-hover);
+      }
+
+      &:active {
+        color: var(--color-button-call-active);
+      }
+    }
+
+    &:last-child {
+      background-color: var(--color-button-mail-background);
+      color: var(--color-button-mail);
+
+      &:hover {
+        background-color: var(--color-button-mail-background-hover);
+      }
+
+      &:active {
+        color: var(--color-button-mail-active);
+      }
+    }
+  }
 }

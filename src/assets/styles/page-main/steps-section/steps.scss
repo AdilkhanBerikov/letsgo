@@ -1,5 +1,10 @@
 @use "../../variables" as *;
 
+.steps {
+  position: relative;
+  z-index: $z-index-sm;
+}
+
 .steps__list {
   display: grid;
 }

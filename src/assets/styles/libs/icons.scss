@@ -1,57 +1,5 @@
 @use "../variables" as *;
 
-.contacts__link {
-  --contacts-text-color: var(--color-mobile-menu-contacts-text);
-  --contacts-icon-color: var(--color-mobile-menu-contacts-icon);
-
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  color: var(--contacts-text-color);
-  transition: color $transition-duration ease;
-
-  .contacts__icon {
-    transition: color $transition-duration ease;
-  }
-
-  &:hover {
-    --contacts-text-color: var(--color-mobile-menu-contacts-text-hover);
-    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-hover);
-  }
-
-  &:active {
-    --contacts-text-color: var(--color-mobile-menu-contacts-text-active);
-    --contacts-icon-color: var(--color-mobile-menu-contacts-icon-active);
-  }
-}
-
-.contacts__icon {
-  --contacts-icon-size: 45px;
-  position: relative;
-  width: var(--contacts-icon-size);
-  height: var(--contacts-icon-size);
-  z-index: $z-index-low;
-  color: var(--contacts-icon-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: $z-index-negative;
-    background-color: var(--color-mobile-menu-contacts-icon-background);
-    border-radius: 50%;
-  }
-}
-
-.contacts-text {
-  font: var(--font-menu-contacts);
-  text-transform: uppercase;
-}
-
 .socials__icon {
   color: var(--color-mobile-menu-socials-icon);
   transition: color $transition-duration ease;

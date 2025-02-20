@@ -2,8 +2,19 @@
 
 .main-section {
   padding-top: 41px;
-  //background-color: var(--color-page-main-section-background);
+  background-color: var(--color-main-section-background);
+  //background-image: url("../images/illustration/traveller-illustration-mobile-1.png");
+  //background-repeat: no-repeat;
+  //background-position-y: 169px;
+  //background-position-x: calc(80px + 50vw - 160px);
   position: relative;
+
+  //background-image: url("../images/background/globe-back-mobile-1.png");
+  //background-color: var(--color-main-section-background);
+  //background-size: cover;
+  //background-position: center -54px;
+  //background-repeat: no-repeat;
+  //z-index: $z-index-negative;
 
   &::before {
     content: '';
@@ -17,6 +28,5 @@
     left: 0;
     width: 100vw;
     height: 569px;
-    z-index: $z-index-negative;
   }
 }

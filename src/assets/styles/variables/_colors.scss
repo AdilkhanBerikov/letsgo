@@ -30,12 +30,12 @@ $color-orange-dark: #F26926;
   --color-button-background-hover: #{$color-yellow-dark};
   --color-button-call: #{$color-blue-dark};
   --color-button-call-active: #{$color-blue-dark-opacity};
-  --color-button-call-before: #{$color-orange};
-  --color-button-call-before-hover: #{$color-orange-dark};
+  --color-button-call-background: #{$color-orange};
+  --color-button-call-background-hover: #{$color-orange-dark};
   --color-button-mail: #{$color-blue-dark};
   --color-button-mail-active: #{$color-blue-dark-opacity};
-  --color-button-mail-before: #{$color-yellow-dark};
-  --color-button-mail-before-hover: #{$color-orange};
+  --color-button-mail-background: #{$color-yellow-dark};
+  --color-button-mail-background-hover: #{$color-orange};
 
   /* Toggle */
   --color-header-toggle: #{$color-white};
@@ -44,16 +44,17 @@ $color-orange-dark: #F26926;
 
   //Header
   /* Icons */
-  --color-mobile-menu-contacts-text: #{$color-blue-dark-2};
-  --color-mobile-menu-contacts-text-hover: #{$color-yellow-dark};
-  --color-mobile-menu-contacts-text-active: #{$color-yellow-dark-opacity};
-  --color-mobile-menu-contacts-icon: #{$color-yellow};
-  --color-mobile-menu-contacts-icon-background: #{$color-blue-dark-3};
-  --color-mobile-menu-contacts-icon-hover: #{$color-yellow-dark};
-  --color-mobile-menu-contacts-icon-active: #{$color-yellow-dark-opacity};
   --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
   --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
   --color-mobile-menu-socials-icon-active: #{$color-blue-dark-2-opacity-light};
+  /* Contacts */
+  --color-contacts-text: #{$color-blue-dark-2};
+  --color-contacts-text-hover: #{$color-yellow-dark};
+  --color-contacts-text-active: #{$color-yellow-dark-opacity};
+  --color-contacts-icon: #{$color-yellow};
+  --color-contacts-icon-background: #{$color-blue-dark-3};
+  --color-contacts-icon-hover: #{$color-yellow-dark};
+  --color-contacts-icon-active: #{$color-yellow-dark-opacity};
   /* Mobile Menu */
   --color-mobile-menu-background: #{$color-white};
   --color-mobile-menu-link-text: #{$color-blue-dark-2};
