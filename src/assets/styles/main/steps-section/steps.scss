@@ -2,6 +2,7 @@
 
 .steps {
   position: relative;
+  background-color: var(--color-steps-background);
   z-index: $z-index-sm;
 }
 
@@ -12,34 +13,34 @@
 .steps__item {
   margin-top: -80px;
   padding: 22px 21px 102px 24px;
-  background-color: var(--color-main-section-steps-item-background);
+  background-color: var(--color-steps-item-background);
   border-radius: 10px 10px 0 0;
-  font: var(--font-main-section-steps-item);
+  font: var(--color-steps-item);
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
 
   &:nth-child(2) {
-    background-color: var(--color-main-section-steps-item-2-background);
+    background-color: var(--color-steps-item-2-background);
   }
 
   &:nth-child(3) {
     padding-bottom: 76px;
-    background-color: var(--color-main-section-steps-item-3-background);
+    background-color: var(--color-steps-item-3-background);
   }
 
   &:last-child {
     margin-top: -60px;
     padding-bottom: 24px;
     border-radius: 10px;
-    background-color: var(--color-main-section-steps-item-4-background);
+    background-color: var(--color-steps-item-4-background);
   }
 }
 
 .steps__number {
-  color: var(--color-main-section-steps-number);
+  color: var(--color-steps-number);
 }
 
 .steps__text {
-  color: var(--color-main-section-steps-text);
+  color: var(--color-steps-text);
 }

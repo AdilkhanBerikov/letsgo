@@ -1,13 +1,9 @@
 @use "../../variables" as *;
 
 .main-section__testimonial {
-  margin-top: -20px;
-  margin-left: -25px;
-  margin-right: -25px;
-  padding: 48px 0 109px 50px;
+  padding: 28px 0 109px 25px;
   position: relative;
   background-color: var(--color-main-section-testimonial-background);
-  //max-width: 270px;
   display: grid;
   gap: 18px;
   align-items: start;

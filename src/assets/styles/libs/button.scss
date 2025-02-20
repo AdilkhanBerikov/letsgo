@@ -39,7 +39,7 @@
     justify-content: center;
     cursor: pointer;
 
-    &:first-child {
+    &.-call {
       background-color: var(--color-button-call-background);
       color: var(--color-button-call);
 
@@ -52,7 +52,7 @@
       }
     }
 
-    &:last-child {
+    &.-mail {
       background-color: var(--color-button-mail-background);
       color: var(--color-button-mail);
 
