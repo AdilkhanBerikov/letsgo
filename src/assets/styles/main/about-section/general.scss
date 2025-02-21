@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.about-section {
+  border-radius: 0 0 30px 30px;
+  background-color: var(--color-about-section-background);
+  background-image: url("../images/background/mobile-about-section-background.png");
+  background-size: contain;
+  //background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.about-section__wrapper {
+  padding: 33px 0 82px 24px;
+  display: grid;
+  gap: 20px;
+}

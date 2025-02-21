@@ -30,7 +30,14 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-main-section-heading: var(--font-h1);
   --font-main-section-testimonial-text: var(--font-body-light);
   --font-main-section-testimonial-author: var(--font-body-bold);
+
+  //Steps
   --font-steps-item: var(--font-h5);
+
+  //About-section
+  --font-about-section-heading: var(--font-h3);
+  --font-about-section-discription: var(--font-body-light);
+  --font-about-section-text: var(--font-body-bold);
 }
 
 // Адаптивные изменения для планшетов //надо будет перенастроить фонты будут первым этапом
