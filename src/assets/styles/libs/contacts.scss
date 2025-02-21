@@ -1,0 +1,42 @@
+@use "../variables" as *;
+
+.contacts__link {
+  --contacts-text: var(--color-contacts-text);
+  --contacts-icon: var(--color-contacts-icon);
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: var(--contacts-text);
+  transition: color $transition-duration ease;
+
+  &:hover {
+    --contacts-text: var(--color-contacts-text-hover);
+    --contacts-icon: var(--color-contacts-icon-hover);
+  }
+
+  &:active {
+    --contacts-text: var(--color-contacts-text-active);
+    --contacts-icon: var(--color-contacts-icon-active);
+  }
+}
+
+.contacts__icon {
+  --contacts-icon-size: 45px;
+  width: var(--contacts-icon-size);
+  height: var(--contacts-icon-size);
+  border: none;
+  border-radius: 50%;
+  color: var(--contacts-icon);
+  background-color: var(--color-contacts-icon-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color $transition-duration ease;
+}
+
+.contacts__text {
+  font: var(--font-menu-contacts);
+  text-transform: uppercase;
+}

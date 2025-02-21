@@ -17,6 +17,8 @@ $color-yellow-dark: #FFBD30;
 $color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
 $color-red: #F47E7E;
 $color-orange: #FF8D30;
+$color-orange-light: #FFA530;
+$color-orange-dark: #F26926;
 
 
 :root {
@@ -26,6 +28,14 @@ $color-orange: #FF8D30;
   --color-button-active-text-opacity: #{$color-blue-dark-opacity};
   --color-button-background: #{$color-yellow};
   --color-button-background-hover: #{$color-yellow-dark};
+  --color-button-primary: #{$color-blue-dark};
+  --color-button-primary-active: #{$color-blue-dark-opacity};
+  --color-button-primary-background: #{$color-orange};
+  --color-button-primary-background-hover: #{$color-orange-dark};
+  --color-button-secondary: #{$color-blue-dark};
+  --color-button-secondary-active: #{$color-blue-dark-opacity};
+  --color-button-secondary-background: #{$color-yellow-dark};
+  --color-button-secondary-background-hover: #{$color-orange};
 
   /* Toggle */
   --color-header-toggle: #{$color-white};
@@ -34,16 +44,17 @@ $color-orange: #FF8D30;
 
   //Header
   /* Icons */
-  --color-mobile-menu-contacts-text: #{$color-blue-dark-2};
-  --color-mobile-menu-contacts-text-hover: #{$color-yellow-dark};
-  --color-mobile-menu-contacts-text-active: #{$color-yellow-dark-opacity};
-  --color-mobile-menu-contacts-icon: #{$color-yellow};
-  --color-mobile-menu-contacts-icon-background: #{$color-blue-dark-3};
-  --color-mobile-menu-contacts-icon-hover: #{$color-yellow-dark};
-  --color-mobile-menu-contacts-icon-active: #{$color-yellow-dark-opacity};
   --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
   --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
   --color-mobile-menu-socials-icon-active: #{$color-blue-dark-2-opacity-light};
+  /* Contacts */
+  --color-contacts-text: #{$color-blue-dark-2};
+  --color-contacts-text-hover: #{$color-yellow-dark};
+  --color-contacts-text-active: #{$color-yellow-dark-opacity};
+  --color-contacts-icon: #{$color-yellow};
+  --color-contacts-icon-background: #{$color-blue-dark-3};
+  --color-contacts-icon-hover: #{$color-yellow-dark};
+  --color-contacts-icon-active: #{$color-yellow-dark-opacity};
   /* Mobile Menu */
   --color-mobile-menu-background: #{$color-white};
   --color-mobile-menu-link-text: #{$color-blue-dark-2};
@@ -67,4 +78,21 @@ $color-orange: #FF8D30;
   --color-footer-footnote-border: #{$color-grey-light};
   --color-footer-footnote-logo: #{$color-blue-dark-2};
   --color-footer-footnote-text: #{$color-grey-dark};
+
+  //Main
+  //Main-section
+  --color-main-section-background: #{$color-blue-dark};
+  --color-main-section-heading-text: #{$color-white};
+  --color-main-section-testimonial-background: #{$color-blue-dark};
+  --color-main-section-testimonial-text: #{$color-white};
+  --color-main-section-testimonial-author-text: #{$color-white};
+
+  //Steps
+  --color-steps-background: #{$color-blue-dark-2};
+  --color-steps-item-background: #{$color-orange};
+  --color-steps-item-2-background: #{$color-orange-light};
+  --color-steps-item-3-background: #{$color-yellow-dark};
+  --color-steps-item-4-background: #{$color-yellow};
+  --color-steps-number: #{$color-white};
+  --color-steps-text: #{$color-blue-dark};
 }
