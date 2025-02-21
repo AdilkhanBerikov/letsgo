@@ -2,8 +2,8 @@
 
 .main-section {
   padding-top: 41px;
-  background-color: var(--color-main-section-background);
   position: relative;
+  background-color: var(--color-main-section-background);
 
   &::before {
     content: '';

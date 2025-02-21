@@ -4,10 +4,10 @@
   padding: 10px 81px 10px 78px;
   display: inline-block;
   background-color: var(--color-button-background);
-  border: none;
-  border-radius: 25px;
   font: var(--font-button);
   color: var(--color-button-text);
+  border: none;
+  border-radius: 25px;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
@@ -39,29 +39,29 @@
     justify-content: center;
     cursor: pointer;
 
-    &.-call {
-      background-color: var(--color-button-call-background);
-      color: var(--color-button-call);
+    &.-primary {
+      background-color: var(--color-button-primary-background);
+      color: var(--color-button-primary);
 
       &:hover {
-        background-color: var(--color-button-call-background-hover);
+        background-color: var(--color-button-primary-background-hover);
       }
 
       &:active {
-        color: var(--color-button-call-active);
+        color: var(--color-button-primary-active);
       }
     }
 
-    &.-mail {
-      background-color: var(--color-button-mail-background);
-      color: var(--color-button-mail);
+    &.secondary {
+      background-color: var(--color-button-secondary-background);
+      color: var(--color-button-secondary);
 
       &:hover {
-        background-color: var(--color-button-mail-background-hover);
+        background-color: var(--color-button-secondary-background-hover);
       }
 
       &:active {
-        color: var(--color-button-mail-active);
+        color: var(--color-button-secondary-active);
       }
     }
   }

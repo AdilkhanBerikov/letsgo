@@ -28,14 +28,14 @@ $color-orange-dark: #F26926;
   --color-button-active-text-opacity: #{$color-blue-dark-opacity};
   --color-button-background: #{$color-yellow};
   --color-button-background-hover: #{$color-yellow-dark};
-  --color-button-call: #{$color-blue-dark};
-  --color-button-call-active: #{$color-blue-dark-opacity};
-  --color-button-call-background: #{$color-orange};
-  --color-button-call-background-hover: #{$color-orange-dark};
-  --color-button-mail: #{$color-blue-dark};
-  --color-button-mail-active: #{$color-blue-dark-opacity};
-  --color-button-mail-background: #{$color-yellow-dark};
-  --color-button-mail-background-hover: #{$color-orange};
+  --color-button-primary: #{$color-blue-dark};
+  --color-button-primary-active: #{$color-blue-dark-opacity};
+  --color-button-primary-background: #{$color-orange};
+  --color-button-primary-background-hover: #{$color-orange-dark};
+  --color-button-secondary: #{$color-blue-dark};
+  --color-button-secondary-active: #{$color-blue-dark-opacity};
+  --color-button-secondary-background: #{$color-yellow-dark};
+  --color-button-secondary-background-hover: #{$color-orange};
 
   /* Toggle */
   --color-header-toggle: #{$color-white};

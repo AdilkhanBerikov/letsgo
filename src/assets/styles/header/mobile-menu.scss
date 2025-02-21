@@ -6,10 +6,10 @@
   left: 0;
   width: 100%;
   height: auto;
+  background-color: var(--color-mobile-menu-background);
   opacity: 0;
   visibility: hidden;
   z-index: $z-index-lg;
-  background-color: var(--color-mobile-menu-background);
   transition: opacity $transition-duration ease, visibility $transition-duration ease;
 
   &.-open {
@@ -47,11 +47,11 @@
   margin: 0 5px;
   position: relative;
   display: inline-block;
+  font: var(--font-menu-link);
+  color: var(--color-mobile-menu-link-text);
   outline: none;
   text-decoration: none;
   text-transform: uppercase;
-  font: var(--font-menu-link);
-  color: var(--color-mobile-menu-link-text);
   overflow: hidden;
 
   .mobile-menu__link-animation{

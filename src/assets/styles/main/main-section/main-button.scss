@@ -2,9 +2,9 @@
 
 .main-section__button {
   margin-top: -20px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   z-index: $z-index-sm;
 }
