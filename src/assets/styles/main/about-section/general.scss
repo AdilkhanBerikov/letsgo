@@ -7,6 +7,8 @@
   background-size: contain;
   //background-position: top right;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: $z-index-low;
 }
 
 .about-section__wrapper {

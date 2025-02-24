@@ -1,0 +1,74 @@
+@use "../../variables" as *;
+
+.direction-section__countries {
+  margin-bottom: 27px;
+  display: grid;
+  gap: 9px;
+}
+
+.direction-section__country {
+  display: grid;
+  border-radius: 10px;
+}
+
+.country__image {
+  //background-color: $color-grey-dark;
+  //background-image: url("../images/image/thailand-mobile-1.png");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //border-radius: 10px 10px 0 0;
+  margin-bottom: -11px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.country__body {
+  padding: 0 24px 24px 25px;
+  background-color: var(--color-country-body-background);
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+}
+
+.country__flag {
+  margin-top: -13px;
+}
+
+.country__title {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr 61px;
+  row-gap: 2px;
+  //column-gap: clamp(0px, calc(100vw - 320px), 100vw);
+  //justify-content: space-between;
+  //align-items: center;
+
+  //display: flex;
+  //justify-content: space-between;
+}
+
+.country__heading {
+  color: var(--color-country-heading-text);
+  font: var(--font-country-heading);
+}
+
+.country__subheading {
+  color: var(--color-country-subheading-text);
+  font: var(--font-country-subheading);
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.country__users {
+  display: flex;
+  align-self: start;
+  align-items: center;
+  gap: 5px;
+}
+
+.country__users-text {
+  color: var(--color-country-users-text);
+  font: var(--font-country-users);
+  line-height: 20px;
+}

@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+.direction-section__title {
+  margin-bottom: 60px;
+  padding-left: 24px;
+  display: grid;
+  gap: 19px;
+}
+
+.direction-section__heading {
+  color: var(--color-direction-section-heading);
+  font: var(--font-direction-section-heading);
+}
+
+.direction-section__description {
+  color: var(--color-direction-section-description);
+  font: var(--font-direction-section-description);
+  line-height: 22px;
+}

@@ -17,8 +17,11 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   --font-caption-regular: 400 14px/14px #{$font-family-main};
 
-  //Header
+  //Buttons
   --font-button: var(--font-h6);
+  --font-button-rectangle: var(--font-h5);
+
+  //Header
   --font-menu-link: var(--font-h2);
   --font-menu-contacts: var(--font-body-bold);
 
@@ -38,6 +41,14 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-about-section-heading: var(--font-h3);
   --font-about-section-discription: var(--font-body-light);
   --font-about-section-text: var(--font-body-bold);
+
+  //Direction-section
+  --font-direction-section-heading: var(--font-h3);
+  --font-direction-section-description: var(--font-body-light);
+
+  --font-country-heading: var(--font-h4);
+  --font-country-subheading: var(--font-body-medium);
+  --font-country-users: var(--font-body-medium);
 }
 
 // Адаптивные изменения для планшетов //надо будет перенастроить фонты будут первым этапом

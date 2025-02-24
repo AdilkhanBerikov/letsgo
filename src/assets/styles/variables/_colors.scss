@@ -1,9 +1,12 @@
 //Основные цвета
+$color-black: #000000;
 $color-white: #ffffff;
 $color-grey-light: #F2F2F2;
 $color-grey: #CCCCCC;
 $color-grey-dark: #444444;
+$color-grey-dark-opacity: rgba($color-grey-dark, 0.3);
 $color-blue: #1D2E5B;
+$color-blue-opacity: rgba($color-blue, 0.3);
 $color-blue-light-1: #EDEFF6;
 $color-blue-light-2: #DFE3F0;
 $color-blue-dark: #161C35;
@@ -36,6 +39,9 @@ $color-orange-dark: #F26926;
   --color-button-secondary-active: #{$color-blue-dark-opacity};
   --color-button-secondary-background: #{$color-yellow-dark};
   --color-button-secondary-background-hover: #{$color-orange};
+
+  --color-button-rectangle: #{$color-blue};
+  --color-button-rectangle-active: #{$color-blue-opacity};
 
   /* Toggle */
   --color-header-toggle: #{$color-white};
@@ -101,4 +107,14 @@ $color-orange-dark: #F26926;
   --color-about-section-heading: #{$color-orange};
   --color-about-section-description: #{$color-white};
   --color-about-section-text: #{$color-white};
+
+  //Direction-section
+  --color-direction-section-background: #{$color-blue-light-1};
+  --color-direction-section-heading: #{$color-orange};
+  --color-direction-section-description: #{$color-grey-dark};
+
+  --color-country-body-background: #{$color-white};
+  --color-country-heading-text: #{$color-black};
+  --color-country-subheading-text: #{$color-grey-dark-opacity};
+  --color-country-users-text: #{$color-blue-dark-opacity};
 }
