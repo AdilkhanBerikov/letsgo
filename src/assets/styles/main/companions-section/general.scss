@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.companions-section {
+  margin-top: -34px;
+  padding-top: 102px;
+  padding-bottom: 31px;
+  background-image: url("../images/background/mobile-companions-section-background.png");
+  background-repeat: no-repeat;
+  background-size: 297px 343px;
+  background-position: 0 69px;
+  background-color: var(--color-companions-section-background);
+  border-radius: 0 0 30px 30px;
+}

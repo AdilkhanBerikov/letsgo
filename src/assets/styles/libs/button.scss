@@ -67,12 +67,15 @@
   }
 
   &.-rectangle {
+    --button-rectangle-width: 270px;
     padding: 22px 23px;
     color: var(--color-button-rectangle);
     font: var(--font-button-rectangle);
     border-radius: 10px;
+    width: var(--button-rectangle-width);
     display: inline-flex;
-    gap: 107px;
+    justify-content: space-between;
+    //gap: 107px;
     align-items: center;
     text-transform: none;
 
