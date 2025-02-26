@@ -3,7 +3,7 @@ document.querySelectorAll('.progress').forEach(progress => {
   let level = parseInt(levelElement.textContent, 10);
 
   // Определяем процент заполнения через математический расчёт
-  let fillPercentage = level === 100 ? 100 : Math.max(5, Math.floor(level / 5) * 5);
+  const fillPercentage = (level > 97 && level < 100) ? 97 : level
 
   // Устанавливаем CSS переменную
   progress.querySelector('.progress__bar-circle').style.setProperty('--progress', fillPercentage);

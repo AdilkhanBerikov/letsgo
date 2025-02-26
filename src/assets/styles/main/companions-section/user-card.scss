@@ -70,8 +70,7 @@
   color: var(--color-user-card-name);
   font: var(--font-user-card-name);
 
-  &.-offline::before,
-  &.-online::before {
+  &::before {
     content: '';
     position: absolute;
     background-color: var(--color-user-card-name-offline-before);
@@ -80,10 +79,6 @@
     border-radius: 50%;
     top: 42%;
     left: -16px;
-  }
-
-  &.-offline::before {
-    background-color: var(--color-user-card-name-offline-before);
   }
 
   &.-online::before {
