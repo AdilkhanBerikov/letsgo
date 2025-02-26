@@ -19,12 +19,15 @@
 }
 
 .progress__bar-stroke {
+  $radius: 28px;
+  $circle-length: 2 * 3.1416 * $radius;
+
   fill: none;
   stroke: var(--color-progress-bar-stroke);
   stroke-width: 4;
   stroke-linecap: round;
-  stroke-dasharray: 176; /* Длина окружности = 2 × π × r = 2 × 3.1416 × 28 ≈ 176 */
-  stroke-dashoffset: calc(176 - (var(--progress) * 176 / 100)); /* Управление заполнением; 176 / 100 — определяет, сколько пикселей приходится на 1% заполнения. */
+  stroke-dasharray: $circle-length; /* Длина окружности = 2 × π × r = 2 × 3.1416 × 28 ≈ 176 */
+  stroke-dashoffset: calc($circle-length - (var(--progress) * $circle-length / 100)); /* Управление заполнением; 176 / 100 — определяет, сколько пикселей приходится на 1% заполнения. */
   transition: stroke-dashoffset $transition-duration-medium ease;
 }
 
@@ -39,7 +42,7 @@
 }
 
 .progress__level-number {
-  padding: 0 2px 0 2px;
+  padding: 0 2px;
   border-bottom: 1px solid var(--color-progress-bar-level-number-border);
   color: var(--color-progress-bar-level-number);
   font: var(--font-progress-bar-level-number);
@@ -49,20 +52,3 @@
   color: var(--color-progress-bar-level-text);
   font: var(--font-progress-bar-level-text);
 }
-
-//:root {
-//  --progress: 0;
-//}
-///* Модификаторы */
-//.-progress-1 { --progress: 1; }
-//.-progress-10 { --progress: 10; }
-//.-progress-20 { --progress: 20; }
-//.-progress-30 { --progress: 30; }
-//.-progress-40 { --progress: 40; }
-//.-progress-50 { --progress: 50; }
-//.-progress-60 { --progress: 60; }
-//.-progress-70 { --progress: 70; }
-//.-progress-80 { --progress: 80; }
-//.-progress-90 { --progress: 90; }
-//.-progress-99 { --progress: 95; }
-//.-progress-100 { --progress: 100; }

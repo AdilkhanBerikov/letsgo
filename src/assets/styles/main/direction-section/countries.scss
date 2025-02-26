@@ -8,7 +8,7 @@
 
 .direction-section__country {
   display: grid;
-  border-radius: 10px;
+  border-radius: $border-radius-large;
 }
 
 .country__image {
@@ -16,7 +16,7 @@
   //background-image: url("../images/image/thailand-mobile-1.png");
   //background-repeat: no-repeat;
   //background-size: cover;
-  //border-radius: 10px 10px 0 0;
+  //border-radius: $border-radius-large $border-radius-large 0 0;
   margin-bottom: -11px;
   width: 100%;
   height: auto;
@@ -26,7 +26,7 @@
 .country__body {
   padding: 0 24px 24px 25px;
   background-color: var(--color-country-body-background);
-  border-radius: 10px;
+  border-radius: $border-radius-large;
   display: grid;
   gap: 15px;
 }

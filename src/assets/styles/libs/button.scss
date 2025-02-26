@@ -7,7 +7,7 @@
   font: var(--font-button);
   color: var(--color-button-text);
   border: none;
-  border-radius: 25px;
+  border-radius: $border-radius-xl;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
@@ -71,7 +71,7 @@
     padding: 22px 23px;
     color: var(--color-button-rectangle);
     font: var(--font-button-rectangle);
-    border-radius: 10px;
+    border-radius: $border-radius-large;
     width: var(--button-rectangle-width);
     display: inline-flex;
     justify-content: space-between;

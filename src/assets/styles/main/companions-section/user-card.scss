@@ -8,7 +8,7 @@
 
 .user-card {
   display: grid;
-  border-radius: 10px;
+  border-radius: $border-radius-large;
   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
 
   &:hover {
@@ -40,7 +40,7 @@
   padding-bottom: 18px;
   position: relative;
   background-color: var(--color-user-card-body-background);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 $border-radius-large $border-radius-large;
   text-align: center;
   display: grid;
   gap: 13px;
@@ -54,6 +54,9 @@
 }
 
 .user-card__title {
+  margin: auto;
+  padding-left: 31px;
+  padding-right: 31px;
   text-align: center;
   display: grid;
   gap: 15px;
@@ -67,10 +70,11 @@
   color: var(--color-user-card-name);
   font: var(--font-user-card-name);
 
-  &.-women::before {
+  &.-offline::before,
+  &.-online::before {
     content: '';
     position: absolute;
-    background-color: var(--color-user-card-name-women-before);
+    background-color: var(--color-user-card-name-offline-before);
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -78,15 +82,12 @@
     left: -16px;
   }
 
-  &.-man::before {
-    content: '';
-    position: absolute;
-    background-color: var(--color-user-card-name-man-before);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    top: 42%;
-    left: -16px;
+  &.-offline::before {
+    background-color: var(--color-user-card-name-offline-before);
+  }
+
+  &.-online::before {
+    background-color: var(--color-user-card-name-online-before);
   }
 }
 
