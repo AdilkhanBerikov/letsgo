@@ -15,7 +15,7 @@
   margin-top: -80px;
   padding: 22px 21px 102px 24px;
   background-color: var(--color-steps-item-background);
-  border-radius: 10px 10px 0 0;
+  border-radius: $border-radius-large $border-radius-large 0 0;
   font: var(--font-steps-item);
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@
   &:last-child {
     margin-top: -60px;
     padding-bottom: 24px;
-    border-radius: 10px;
+    border-radius: $border-radius-large;
     background-color: var(--color-steps-item-4-background);
   }
 }

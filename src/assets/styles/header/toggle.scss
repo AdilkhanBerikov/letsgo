@@ -17,7 +17,7 @@
     height: 3px;
     background-color: currentColor;
     transition: transform $transition-duration, opacity $transition-duration;
-    border-radius: 2px;
+    border-radius: $border-radius-small;
   }
 
   &::before {

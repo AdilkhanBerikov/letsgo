@@ -1,9 +1,15 @@
 //Основные цвета
+$color-black: #000000;
+$color-black-opacity-medium: rgba($color-black, 0.6);
 $color-white: #ffffff;
+$color-white-opacity: rgba($color-white, 0.3);
 $color-grey-light: #F2F2F2;
 $color-grey: #CCCCCC;
 $color-grey-dark: #444444;
+$color-grey-dark-opacity: rgba($color-grey-dark, 0.3);
 $color-blue: #1D2E5B;
+$color-blue-opacity-light: rgba($color-blue, 0.15);
+$color-blue-opacity: rgba($color-blue, 0.3);
 $color-blue-light-1: #EDEFF6;
 $color-blue-light-2: #DFE3F0;
 $color-blue-dark: #161C35;
@@ -12,6 +18,7 @@ $color-blue-dark-2: #192144;
 $color-blue-dark-2-opacity-medium: rgba($color-blue-dark-2, 0.6);
 $color-blue-dark-2-opacity-light: rgba($color-blue-dark-2, 0.3);
 $color-blue-dark-3: #121936;
+$color-blue-dark-4: #101D41;
 $color-yellow: #FFD74B;
 $color-yellow-dark: #FFBD30;
 $color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
@@ -19,11 +26,12 @@ $color-red: #F47E7E;
 $color-orange: #FF8D30;
 $color-orange-light: #FFA530;
 $color-orange-dark: #F26926;
-
+$color-green: #81E31E;
+$color-сoral: #F97676;
 
 :root {
   /* Компонентные цвета */
-  /* Buttons */
+  //Buttons
   --color-button-text: #{$color-blue-dark};
   --color-button-active-text-opacity: #{$color-blue-dark-opacity};
   --color-button-background: #{$color-yellow};
@@ -37,17 +45,51 @@ $color-orange-dark: #F26926;
   --color-button-secondary-background: #{$color-yellow-dark};
   --color-button-secondary-background-hover: #{$color-orange};
 
-  /* Toggle */
+  --color-button-rectangle: #{$color-blue};
+  --color-button-rectangle-active: #{$color-blue-opacity};
+
+  //Toggle
   --color-header-toggle: #{$color-white};
   --color-mobile-toggle: #{$color-grey};
   --color-scroll-toggle: #{$color-grey};
 
-  //Header
-  /* Icons */
+  //Icons
   --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
   --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
   --color-mobile-menu-socials-icon-active: #{$color-blue-dark-2-opacity-light};
-  /* Contacts */
+  --color-transport-icon: #{$color-blue};
+  --color-transport-icon-off: #{$color-blue-opacity-light};
+  --color-transport-wrapper-after-background: #{$color-blue-dark-4};
+  --color-transport-wrapper-after-text: #{$color-white};
+  --color-transport-wrapper-before-border: #{$color-blue-dark-4};
+
+  //User-card
+  --color-user-card-hover-shadow: #{$color-black-opacity-medium};
+  --color-user-card-body-background: #{$color-white};
+  --color-user-card-name: #{$color-blue};
+  --color-user-card-name-offline-before: #{$color-сoral};
+  --color-user-card-name-online-before: #{$color-green};
+  --color-user-card-hashtags: #{$color-grey-dark};
+
+  //Progress-bar
+  --color-progress-bar-background: #{$color-black-opacity-medium};
+  --color-progress-bar-stroke: #{$color-orange};
+  --color-progress-bar-level-number: #{$color-white};
+  --color-progress-bar-level-number-border: #{$color-white-opacity};
+  --color-progress-bar-level-text: #{$color-white};
+
+  //Header
+  //Mobile Menu
+  --color-mobile-menu-background: #{$color-white};
+  --color-mobile-menu-link-text: #{$color-blue-dark-2};
+  --color-mobile-menu-link-animation-text-before: #{$color-yellow-dark};
+  --color-mobile-menu-link-text-active: #{$color-yellow-dark-opacity};
+  //Scroll Menu
+  --color-scroll-menu-background: #{$color-white};
+  //Page Header
+  --color-page-header-background: #{$color-blue-dark};
+  --color-page-header-scrolled-background: #{$color-white};
+  //Contacts
   --color-contacts-text: #{$color-blue-dark-2};
   --color-contacts-text-hover: #{$color-yellow-dark};
   --color-contacts-text-active: #{$color-yellow-dark-opacity};
@@ -55,16 +97,6 @@ $color-orange-dark: #F26926;
   --color-contacts-icon-background: #{$color-blue-dark-3};
   --color-contacts-icon-hover: #{$color-yellow-dark};
   --color-contacts-icon-active: #{$color-yellow-dark-opacity};
-  /* Mobile Menu */
-  --color-mobile-menu-background: #{$color-white};
-  --color-mobile-menu-link-text: #{$color-blue-dark-2};
-  --color-mobile-menu-link-animation-text-before: #{$color-yellow-dark};
-  --color-mobile-menu-link-text-active: #{$color-yellow-dark-opacity};
-  /* Scroll Menu */
-  --color-scroll-menu-background: #{$color-white};
-  /* Page Header */
-  --color-page-header-background: #{$color-blue-dark};
-  --color-page-header-scrolled-background: #{$color-white};
 
   //Footer
   --color-footer-background: #{$color-white};
@@ -101,4 +133,20 @@ $color-orange-dark: #F26926;
   --color-about-section-heading: #{$color-orange};
   --color-about-section-description: #{$color-white};
   --color-about-section-text: #{$color-white};
+
+  //Direction-section
+  --color-direction-section-background: #{$color-blue-light-1};
+  --color-direction-section-heading: #{$color-orange};
+  --color-direction-section-description: #{$color-grey-dark};
+
+  --color-country-body-background: #{$color-white};
+  --color-country-heading-text: #{$color-black};
+  --color-country-subheading-text: #{$color-grey-dark-opacity};
+  --color-country-users-text: #{$color-blue-dark-opacity};
+
+  //Companions-section
+  --color-companions-section-background: #{$color-blue-dark-2};
+  --color-companions-section-heading: #{$color-orange};
+  --color-companions-section-text: #{$color-white};
+  --color-companions-section-subheading: #{$color-white};
 }

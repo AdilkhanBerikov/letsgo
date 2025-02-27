@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.direction-section {
+  margin-top: -30px;
+  padding-top: 101px;
+  padding-bottom: 34px;
+  background-color: var(--color-direction-section-background);
+  border-radius: 0 0 $border-radius-xxl $border-radius-xxl;
+  position: relative;
+}
+
+.direction-section__wrapper {
+  display: grid;
+}
