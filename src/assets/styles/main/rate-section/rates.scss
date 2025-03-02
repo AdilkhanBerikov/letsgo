@@ -1,0 +1,55 @@
+@use "../../variables" as *;
+
+.rate-section__list {
+  padding-right: 45px;
+  display: grid;
+}
+
+.rate-section__item {
+  padding: 13px 0;
+  position: relative;
+  border-top: 1px solid var(--color-rate-section-item-border);
+  border-bottom: 1px solid var(--color-rate-section-item-border);
+  display: grid;
+  gap: 6px;
+
+  &::before {
+    --rate-section-item-size: 34px;
+    content: "2";
+    position: absolute;
+    top: 0;
+    right: -45px;
+    background-color: var(--color-rate-section-item-before-background-2);
+    font: var(--font-rate-section-item-before-text);
+    line-height: 16px;
+    color: var(--color-rate-section-item-before-text);
+    border-radius: 50%;
+    width: var(--rate-section-item-size);
+    height: var(--rate-section-item-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:first-child::before {
+    content: "1";
+    background-color: var(--color-rate-section-item-before-background-1);
+  }
+
+  &:last-child::before {
+    content: "3";
+    background-color: var(--color-rate-section-item-before-background-3);
+  }
+}
+
+.rate-section__name {
+  color: var(--color-rate-section-name);
+  font: var(--font-rate-section-name);
+  line-height: 16px;
+}
+
+.rate-section__price {
+  color: var(--color-rate-section-price);
+  font: var(--font-rate-section-price);
+  line-height: 16px;
+}

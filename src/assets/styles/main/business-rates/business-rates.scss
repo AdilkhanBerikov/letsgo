@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.business-rates__list {
+  padding: 0 26px 34px 26px;
+  display: grid;
+}
+
+.business-rates__item {
+  padding: 10.5px 0;
+  border-top: 1px solid var(--color-business-rates-item-border);
+  border-bottom: 1px solid var(--color-business-rates-item-border);
+  display: grid;
+}
+
+.business-rates__name {
+  font: var(--font-business-rates-name);
+  line-height: 22px;
+  color: var(--color-business-rates-name);
+}
+
+.business-rates__price {
+  font: var(--font-business-rates-price);
+  line-height: 22px;
+  color: var(--color-business-rates-price);
+}

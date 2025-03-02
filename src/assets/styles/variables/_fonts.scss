@@ -67,6 +67,19 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-companions-section-heading: var(--font-h3);
   --font-companions-section-text: var(--font-body-light);
   --font-companions-section-subheading: var(--font-body-bold);
+
+  //Rate-section
+  --font-rate-section-heading: var(--font-h3);
+  --font-rate-section-item-before-text: var(--font-body-regular);
+  --font-rate-section-name: var(--font-body-light);
+  --font-rate-section-price: var(--font-body-light);
+  --font-rate-section-button: var(--font-body-bold);
+
+  //Business-rates
+  --font-business-rates-heading: var(--font-h3);
+  --font-business-rates-name: var(--font-body-light);
+  --font-business-rates-price: var(--font-body-light);
+  --font-business-rates-button: var(--font-body-bold);
 }
 
 // Адаптивные изменения для планшетов //надо будет перенастроить фонты будут первым этапом
