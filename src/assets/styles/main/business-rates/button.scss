@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.business-rates__button {
+  padding: 17.5px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 $border-radius-xl $border-radius-xl;
+  color: var(--color-business-rates-button-text);
+  background-color: var(--color-business-rates-button-background);
+  font: var(--font-business-rates-button);
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color $transition-duration, color $transition-duration;
+
+  &:hover {
+    background-color: var(--color-business-rates-button-background-hover);
+  }
+
+  &:active {
+    color: var(--color-business-rates-button-text-active);
+    background-color: var(--color-business-rates-button-background-active);
+  }
+}
