@@ -1,0 +1,90 @@
+@use "../../variables" as *;
+
+.business-rates {
+  padding-top: 34px;
+  //display: none;
+  position: absolute;
+  left: calc(50% - 50vw + 25px);
+  bottom: 18px;
+  width: calc(100vw - 50px);
+  min-width: 270px;
+  background-color: var(--color-business-rates-background);
+  border-radius: $border-radius-xl;
+  z-index: $z-index-sm;
+  opacity: 0;
+  transform: translateY(30px); // Стартовая позиция ниже
+  visibility: hidden;
+  transition: opacity $transition-duration ease, transform $transition-duration ease, visibility 0s $transition-duration;
+
+  //position: absolute;
+  //bottom: 18px;
+  //left: calc(50% - 270px / 2);
+  &.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: opacity $transition-duration ease, transform $transition-duration ease, visibility 0s;
+  }
+}
+
+//.business-rates.is-visible {
+//  display: block;
+//  opacity: 1;
+//  //transform: translateY(0);
+//  //transition: opacity 0.4s ease, transform 0.4s ease;
+//}
+
+.business-rates__heading {
+  padding-bottom: 27px;
+  text-align: center;
+  font: var(--font-business-rates-heading);
+  color: var(--color-business-rates-heading);
+}
+
+.business-rates__list {
+  padding: 0 26px 34px 26px;
+  display: grid;
+}
+
+.business-rates__item {
+  padding: 10.5px 0;
+  border-top: 1px solid var(--color-business-rates-item-border);
+  border-bottom: 1px solid var(--color-business-rates-item-border);
+  display: grid;
+}
+
+.business-rates__name {
+  font: var(--font-business-rates-name);
+  line-height: 22px;
+  color: var(--color-business-rates-name);
+}
+
+.business-rates__price {
+  font: var(--font-business-rates-price);
+  line-height: 22px;
+  color: var(--color-business-rates-price);
+}
+
+.business-rates__button {
+  padding: 17.5px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 $border-radius-xl $border-radius-xl;
+  color: var(--color-business-rates-button-text);
+  background-color: var(--color-business-rates-button-background);
+  font: var(--font-business-rates-button);
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color $transition-duration, color $transition-duration;
+
+  &:hover {
+    background-color: var(--color-business-rates-button-background-hover);
+  }
+
+  &:active {
+    color: var(--color-business-rates-button-text-active);
+    background-color: var(--color-business-rates-button-background-active);
+  }
+}
