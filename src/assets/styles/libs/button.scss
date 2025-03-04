@@ -82,5 +82,9 @@
     &:active {
       color: var(--color-button-rectangle-active);
     }
+
+    &.-alternate {
+      --button-rectangle-width: 60px;
+    }
   }
 }

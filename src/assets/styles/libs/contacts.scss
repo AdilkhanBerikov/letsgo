@@ -19,6 +19,18 @@
     --contacts-text: var(--color-contacts-text-active);
     --contacts-icon: var(--color-contacts-icon-active);
   }
+
+  &.-alternate {
+    color: var(--color-contacts-alternate);
+
+    &:hover {
+      color: var(--color-contacts-alternate-hover);
+    }
+
+    &:active {
+      color: var(--color-contacts-alternate-active);
+    }
+  }
 }
 
 .contacts__icon {
