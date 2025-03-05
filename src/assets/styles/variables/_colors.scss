@@ -11,6 +11,7 @@ $color-grey-light-2: #E6E8F1;
 $color-grey: #CCCCCC;
 $color-grey-dark: #444444;
 $color-grey-dark-opacity: rgba($color-grey-dark, 0.3);
+$color-grey-dark-opacity-medium: rgba($color-grey-dark, 0.5);
 $color-blue: #1D2E5B;
 $color-blue-opacity-light: rgba($color-blue, 0.15);
 $color-blue-opacity: rgba($color-blue, 0.3);
@@ -27,10 +28,13 @@ $color-blue-dark-5: #132576;
 $color-blue-dark-5-opacity: rgba($color-blue-dark-5, 0.7);
 $color-blue-dark-5-opacity-light: rgba($color-blue-dark-5, 0.3);
 $color-yellow: #FFD74B;
+$color-yellow-opacity: rgba($color-yellow, 0.3);
 $color-yellow-dark: #FFBD30;
 $color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
-$color-red: #F47E7E;
+$color-red: #FF0000;
+$color-red-light: #F47E7E;
 $color-orange: #FF8D30;
+$color-orange-opacity: rgba($color-orange, 0.3);
 $color-orange-light: #FFA530;
 $color-orange-dark: #F26926;
 $color-green: #81E31E;
@@ -60,6 +64,18 @@ $color-сoral: #F97676;
   --color-mobile-toggle: #{$color-grey};
   --color-scroll-toggle: #{$color-grey};
 
+  //Contacts
+  --color-contacts-text: #{$color-blue-dark-2};
+  --color-contacts-text-hover: #{$color-yellow-dark};
+  --color-contacts-text-active: #{$color-yellow-dark-opacity};
+  --color-contacts-icon: #{$color-yellow};
+  --color-contacts-icon-background: #{$color-blue-dark-3};
+  --color-contacts-icon-hover: #{$color-yellow-dark};
+  --color-contacts-icon-active: #{$color-yellow-dark-opacity};
+  --color-contacts-alternate: #{$color-yellow};
+  --color-contacts-alternate-hover: #{$color-yellow-dark};
+  --color-contacts-alternate-active: #{$color-yellow-opacity};
+
   //Icons
   --color-mobile-menu-socials-icon: #{$color-blue-dark-2};
   --color-mobile-menu-socials-icon-hover: #{$color-blue-dark-2-opacity-medium};
@@ -85,6 +101,17 @@ $color-сoral: #F97676;
   --color-progress-bar-level-number-border: #{$color-white-opacity};
   --color-progress-bar-level-text: #{$color-white};
 
+  //Input
+  --color-input-background: #{$color-white};
+  --color-input-background-hover: #{$color-blue-light-1};
+  --color-input-background-focus-visible: #{$color-blue-dark-2};
+  --color-input-text: #{$color-grey-dark};
+  --color-input-text-focus-visible: #{$color-white};
+  --color-input-box-shadow-focus-visible: #{$color-white};
+  --color-input-caret-text: #{$color-grey-dark};
+  --color-input-placeholder-text: #{$color-grey-dark-opacity};
+  --color-input-placeholder-text-hover: #{$color-grey-dark-opacity-medium};
+
   //Header
   //Mobile Menu
   --color-mobile-menu-background: #{$color-white};
@@ -96,14 +123,6 @@ $color-сoral: #F97676;
   //Page Header
   --color-page-header-background: #{$color-blue-dark};
   --color-page-header-scrolled-background: #{$color-white};
-  //Contacts
-  --color-contacts-text: #{$color-blue-dark-2};
-  --color-contacts-text-hover: #{$color-yellow-dark};
-  --color-contacts-text-active: #{$color-yellow-dark-opacity};
-  --color-contacts-icon: #{$color-yellow};
-  --color-contacts-icon-background: #{$color-blue-dark-3};
-  --color-contacts-icon-hover: #{$color-yellow-dark};
-  --color-contacts-icon-active: #{$color-yellow-dark-opacity};
 
   //Footer
   --color-footer-background: #{$color-white};
@@ -182,4 +201,13 @@ $color-сoral: #F97676;
   --color-business-rates-button-background: #{$color-white-light};
   --color-business-rates-button-background-hover: #{$color-blue-light-1};
   --color-business-rates-button-background-active: #{$color-blue-light-1};
+
+  //Feedback-section
+  --color-feedback-section-background: #{$color-blue-dark-2};
+  --color-feedback-section-heading: #{$color-orange};
+  --color-feedback-section-registration: #{$color-white};
+  --color-feedback-section-link: #{$color-yellow};
+  --color-feedback-section-link-hover: #{$color-orange};
+  --color-feedback-section-link-active: #{$color-orange-opacity};
+  --color-feedback-section-questions-text: #{$color-white};
 }

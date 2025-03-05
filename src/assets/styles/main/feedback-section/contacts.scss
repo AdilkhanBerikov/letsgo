@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.feedback-section__questions {
+  margin-bottom: 17px;
+  text-align: center;
+  color: var(--color-feedback-section-questions-text);
+  font: var(--font-feedback-section-questions);
+  line-height: 22px;
+}
+
+.feedback-section__contacts {
+  display: grid;
+  justify-content: center;
+}

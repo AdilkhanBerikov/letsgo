@@ -1,0 +1,33 @@
+@use "../../variables" as *;
+
+.feedback-section__title {
+  margin-bottom: 29px;
+  text-align: center;
+  display: grid;
+  gap: 19px;
+}
+
+.feedback-section__heading {
+  color: var(--color-feedback-section-heading);
+  font: var(--font-feedback-section-heading);
+}
+
+.feedback-section__registration {
+  color: var(--color-feedback-section-registration);
+  font: var(--font-feedback-section-registration);
+  line-height: 22px;
+}
+
+.feedback-section__link {
+  color: var(--color-feedback-section-link);
+  text-decoration: underline;
+  transition: color $transition-duration;
+
+  &:hover {
+    color: var(--color-feedback-section-link-hover);
+  }
+
+  &:active {
+    color: var(--color-feedback-section-link-active);
+  }
+}
