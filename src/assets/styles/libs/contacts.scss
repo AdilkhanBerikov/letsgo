@@ -1,6 +1,6 @@
 @use "../variables" as *;
 
-.contacts__link {
+.contact__link {
   --contacts-text: var(--color-contacts-text);
   --contacts-icon: var(--color-contacts-icon);
 
@@ -33,7 +33,7 @@
   }
 }
 
-.contacts__icon {
+.contact__icon {
   --contacts-icon-size: 45px;
   width: var(--contacts-icon-size);
   height: var(--contacts-icon-size);
@@ -48,7 +48,7 @@
   transition: color $transition-duration ease;
 }
 
-.contacts__text {
+.contact__text {
   font: var(--font-menu-contacts);
   text-transform: uppercase;
 }

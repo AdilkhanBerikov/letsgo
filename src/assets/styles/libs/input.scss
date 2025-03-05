@@ -31,4 +31,10 @@
     color: var(--color-input-text-focus-visible);
     box-shadow: inset 0 0 0 4px var(--color-input-box-shadow-focus-visible); //box-shadow: [смещение по X] [смещение по Y] [размытие] [растяжение] [цвет];
   }
+
+  &.is-error {
+    &::placeholder {
+      color: red !important;
+    }
+  }
 }

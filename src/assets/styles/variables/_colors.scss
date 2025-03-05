@@ -42,6 +42,9 @@ $color-сoral: #F97676;
 
 :root {
   /* Компонентные цвета */
+  //Modal
+  --color-mobal-background: #{$color-black-opacity-medium};
+
   //Buttons
   --color-button-text: #{$color-blue-dark};
   --color-button-active-text-opacity: #{$color-blue-dark-opacity};
@@ -56,8 +59,10 @@ $color-сoral: #F97676;
   --color-button-secondary-background: #{$color-yellow-dark};
   --color-button-secondary-background-hover: #{$color-orange};
 
-  --color-button-rectangle: #{$color-blue};
-  --color-button-rectangle-active: #{$color-blue-opacity};
+  --color-button-square: #{$color-blue};
+  --color-button-square-active: #{$color-blue-opacity};
+  --color-button-square-before: #{$color-blue};
+  --color-button-square-before-active: #{$color-blue-opacity};
 
   //Toggle
   --color-header-toggle: #{$color-white};

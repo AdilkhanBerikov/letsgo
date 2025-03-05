@@ -1,0 +1,26 @@
+@use "../variables" as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-mobal-background);
+  z-index: $z-index-lg;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal__business-rates {
+  padding-top: 34px;
+  position: fixed;
+  top: calc(50% - (var(--business-rates-height) / 2));
+  left: calc(50% - (var(--business-rates-width) / 2));
+}
