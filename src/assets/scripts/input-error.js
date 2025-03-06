@@ -29,12 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showError() {
     input.classList.add("is-error");
-    input.value = ""; // Очищаем поле
-    input.placeholder = "Введите e-mail"; // Меняем плейсхолдер
   }
 
   function clearError() {
     input.classList.remove("is-error");
-    input.placeholder = "E-mail"; // Возвращаем стандартный плейсхолдер
   }
 });
