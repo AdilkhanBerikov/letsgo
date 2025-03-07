@@ -63,6 +63,13 @@ $color-сoral: #F97676;
   --color-button-square-active: #{$color-blue-opacity};
   --color-button-square-before: #{$color-blue};
   --color-button-square-before-active: #{$color-blue-opacity};
+  --color-button-square-secondary-background: #{$color-yellow};
+  --color-button-square-secondary-background-hover: #{$color-blue-dark-2};
+  --color-button-square-secondary-box-shadow: #{$color-blue-dark-2};
+  --color-button-square-secondary-text-hover: #{$color-white};
+  --color-button-square-secondary-text-active: #{$color-white-opacity};
+  --color-button-square-secondary-before-hover: #{$color-white};
+  --color-button-square-secondary-before-active: #{$color-white-opacity};
 
   //Toggle
   --color-header-toggle: #{$color-white};
@@ -216,4 +223,10 @@ $color-сoral: #F97676;
   --color-feedback-section-link-hover: #{$color-orange};
   --color-feedback-section-link-active: #{$color-orange-opacity};
   --color-feedback-section-questions-text: #{$color-white};
+
+  //Location-section
+  --color-location-section-background: #{$color-yellow};
+  --color-location-section-icon-background: #{$color-blue-dark-3};
+  --color-location-section-icon: #{$color-yellow};
+  --color-location-section-address-text: #{$color-blue};
 }

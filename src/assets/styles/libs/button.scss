@@ -69,6 +69,7 @@
   &.-square {
     padding: 22px 24px;
     position: relative;
+    width: 100%;
     color: var(--color-button-square);
     font: var(--font-button-square);
     border-radius: $border-radius-large;
@@ -100,6 +101,31 @@
 
     &.-alternate {
       padding: 22px 30px;
+      width: 0;
+    }
+
+    &.-secondary {
+      padding: 22px;
+      background-color: var(--color-button-square-secondary-background);
+      box-shadow: inset 0 0 0 3px var(--color-button-square-secondary-box-shadow);
+
+      &:hover {
+        color: var(--color-button-square-secondary-text-hover);
+        background-color: var(--color-button-square-secondary-background-hover);
+        box-shadow: none;
+
+        &::before {
+          border-left: 11px solid var(--color-button-square-secondary-before-hover);
+        }
+      }
+
+      &:active {
+        color: var(--color-button-square-secondary-text-active);
+
+        &::before {
+          border-left: 11px solid var(--color-button-square-secondary-before-active);
+        }
+      }
     }
   }
 }
@@ -109,5 +135,9 @@
 
   &.-alternate {
     margin-right: 108px;
+  }
+
+  &.-secondary {
+    margin-right: 56px;
   }
 }
