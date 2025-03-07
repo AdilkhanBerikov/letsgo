@@ -21,7 +21,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Buttons
   --font-button: var(--font-h6);
-  --font-button-rectangle: var(--font-h5);
+  --font-button-square: var(--font-h5);
 
   //User-card
   --font-user-card-name: var(--font-h4);
@@ -33,6 +33,11 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Icons
   --font-transport-wrapper-after: var(--font-tooltip);
+
+  //Input
+  --font-input-text: var(--font-h5);
+  --font-input-placeholder: var(--font-h5);
+  --font-feedback-section-questions: var(--font-body-light);
 
   //Header
   --font-menu-link: var(--font-h2);
@@ -80,6 +85,10 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-business-rates-name: var(--font-body-light);
   --font-business-rates-price: var(--font-body-light);
   --font-business-rates-button: var(--font-body-bold);
+
+  //Feedback-section
+  --font-feedback-section-heading: var(--font-h3);
+  --font-feedback-section-registration: var(--font-body-light);
 }
 
 // Адаптивные изменения для планшетов //надо будет перенастроить фонты будут первым этапом

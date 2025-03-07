@@ -1,38 +1,13 @@
-@use "../../variables" as *;
+@use "../../variables/index" as *;
 
 .business-rates {
-  padding-top: 34px;
-  //display: none;
-  position: absolute;
-  left: calc(50% - 50vw + 25px);
-  bottom: 18px;
-  width: calc(100vw - 50px);
-  min-width: 270px;
+  --business-rates-width: 270px;
+  --business-rates-height: 443px;
+  width: var(--business-rates-width);
+  height: var(--business-rates-height);
   background-color: var(--color-business-rates-background);
   border-radius: $border-radius-xl;
-  z-index: $z-index-sm;
-  opacity: 0;
-  transform: translateY(30px); // Стартовая позиция ниже
-  visibility: hidden;
-  transition: opacity $transition-duration ease, transform $transition-duration ease, visibility 0s $transition-duration;
-
-  //position: absolute;
-  //bottom: 18px;
-  //left: calc(50% - 270px / 2);
-  &.is-active {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-    transition: opacity $transition-duration ease, transform $transition-duration ease, visibility 0s;
-  }
 }
-
-//.business-rates.is-visible {
-//  display: block;
-//  opacity: 1;
-//  //transform: translateY(0);
-//  //transition: opacity 0.4s ease, transform 0.4s ease;
-//}
 
 .business-rates__heading {
   padding-bottom: 27px;
