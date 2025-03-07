@@ -33,8 +33,6 @@
   }
 
   &.is-error {
-    &::placeholder {
-      color: var(--color-input-is-error-placeholder);
-    }
+    color: var(--color-input-is-error-text);
   }
 }
