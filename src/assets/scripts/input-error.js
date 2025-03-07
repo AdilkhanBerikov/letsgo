@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const input = document.querySelector(".input");
+  const input = document.getElementById("input-id");
   const form = document.querySelector(".feedback-section__form");
 
   // Отключаем браузерную валидацию
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     clearError();
-    form.submit(); // Можно отправить форму, если всё хорошо
+    form.submit(); // Если форма отправляется стандартно
   });
 
   input.addEventListener("input", () => {

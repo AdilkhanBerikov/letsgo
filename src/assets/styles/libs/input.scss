@@ -33,6 +33,6 @@
   }
 
   &.is-error {
-    color: red !important;
+    color: var(--color-input-is-error-text);
   }
 }
