@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("input-id");
+  const input = document.getElementById("email");
   const form = document.querySelector(".feedback-section__form");
 
-  // Отключаем браузерную валидацию
+  if (!input || !form) {
+    console.error("Ошибка: элемент input или form не найден!");
+    return;
+  }
+
+  const defaultPlaceholder = input.placeholder; // Сохраняем оригинальный плейсхолдер
+
   form.setAttribute("novalidate", "");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Останавливаем отправку формы
+    event.preventDefault();
 
     if (!validateEmail(input.value)) {
       showError();
@@ -14,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     clearError();
-    form.submit(); // Если форма отправляется стандартно
+    console.log("Форма отправлена с email:", input.value);
   });
 
   input.addEventListener("input", () => {
@@ -29,9 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showError() {
     input.classList.add("is-error");
+    input.placeholder = "Введите e-mail"; // Меняем placeholder
+    input.value = ""; // Очищаем поле
   }
 
   function clearError() {
     input.classList.remove("is-error");
+    input.placeholder = defaultPlaceholder; // Возвращаем оригинальный placeholder
   }
 });
