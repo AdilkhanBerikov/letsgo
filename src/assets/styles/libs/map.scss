@@ -1,0 +1,10 @@
+@use "../variables" as *;
+
+.map {
+  margin-top: var(--map-margin-top-negative);
+  margin-bottom: var(--map-margin-bottom-negative);
+  display: block;
+  width: 100%;
+  max-width: 100vw;
+  height: 424px;
+}

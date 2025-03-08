@@ -59,17 +59,14 @@ $color-сoral: #F97676;
   --color-button-secondary-background: #{$color-yellow-dark};
   --color-button-secondary-background-hover: #{$color-orange};
 
-  --color-button-square: #{$color-blue};
-  --color-button-square-active: #{$color-blue-opacity};
-  --color-button-square-before: #{$color-blue};
-  --color-button-square-before-active: #{$color-blue-opacity};
-  --color-button-square-secondary-background: #{$color-yellow};
-  --color-button-square-secondary-background-hover: #{$color-blue-dark-2};
-  --color-button-square-secondary-box-shadow: #{$color-blue-dark-2};
-  --color-button-square-secondary-text-hover: #{$color-white};
-  --color-button-square-secondary-text-active: #{$color-white-opacity};
-  --color-button-square-secondary-before-hover: #{$color-white};
-  --color-button-square-secondary-before-active: #{$color-white-opacity};
+  --color-button-text-alternate: #{$color-blue};
+  --color-button-text-alternate-active: #{$color-blue-opacity};
+  --color-button-rectangle-filled-background: #{$color-yellow};
+  --color-button-rectangle-filled-background-hover: #{$color-blue-dark-2};
+  --color-button-rectangle-filled-box-shadow: #{$color-blue-dark-2};
+  --color-button-rectangle-filled-text: #{$color-blue};
+  --color-button-rectangle-filled-text-hover: #{$color-white};
+  --color-button-rectangle-filled-text-active: #{$color-white-opacity};
 
   //Toggle
   --color-header-toggle: #{$color-white};
