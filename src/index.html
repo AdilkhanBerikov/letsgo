@@ -53,7 +53,7 @@
         </li>
       </ul>
       <div class="mobile-menu__button">
-        <a class="button" href="#">Авторизация</a>
+        <a class="button -default" href="#">Авторизация</a>
       </div>
       <div class="mobile-menu__footer">
         <ul class="mobile-menu__contacts">
@@ -123,7 +123,7 @@
               <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
             </svg>
           </a>
-          <a class="button -alternate" href="#">Авторизация</a>
+          <a class="button -alternate -default" href="#">Авторизация</a>
         </div>
         <blockquote class="main-section__testimonial">
           <p class="main-section__testimonial-text">«Лучшее приложение,<br>
@@ -253,8 +253,11 @@
             </li>
           </ul>
           <div class="direction-section__button">
-            <a class="button -square" href="#">
+            <a class="button -rectangle -default -text" href="#">
               <p class="button__text">Показать все</p>
+              <svg class="button__icon" width="11" height="12" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -427,8 +430,11 @@
           </li>
         </ul>
         <div class="companions-section__button">
-          <a class="button -square" href="#">
-            <p class="button__text -alternate">Показать всех</p>
+          <a class="button -rectangle -default -text" href="#">
+            <p class="button__text">Показать всех</p>
+            <svg class="button__icon" width="11" height="12" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -488,7 +494,10 @@
         <form class="feedback-section__form" action="#" method="post">
           <label class="feedback-section__label" for="email"> E-mail </label>
           <input class="input" id="email" type="email" name="email" placeholder="E-mail" maxlength="254" autocomplete="email" required="">
-          <button class="feedback-section__button button -square -alternate" type="submit" aria-label="Отправить">
+          <button class="feedback-section__button button -square -default -text" type="submit" aria-label="Отправить">
+            <svg class="button__icon" width="11" height="12" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+            </svg>
           </button>
         </form>
         <p class="feedback-section__questions">
@@ -519,6 +528,35 @@
         </ul>
       </div>
     </section>
+
+    <section class="location-section">
+      <div class="box">
+        <div class="location-section__wrapper">
+          <div class="location-section__title">
+            <div class="location-section__icon">
+              <svg width="21" height="21" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-location"></use>
+              </svg>
+            </div>
+            <p class="location-section__address">
+              ул. Большая
+              Конюшенная, 19/8
+            </p>
+          </div>
+          <div class="location-section__button">
+            <a class="button -rectangle -outline" href="#">
+              <p class="button__text">Проложить маршрут</p>
+              <svg class="button__icon" width="11" height="12" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map" id="map">
+    </div>
 
   </main>
 
@@ -611,10 +649,14 @@
   </div>
   </body>
 
+<!--  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/v3/?apikey=1acd50a9-1f71-4aed-86ca-7e2ffacfd921&lang=ru_RU"></script>-->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9f7759d4-0835-436e-b174-2116e30f5edf&lang=ru_RU" type="text/javascript"></script>
+
   <script type="module" src="./index.js"></script>
   <script src="assets/scripts/menu.js" type="module" defer></script>
   <script src="assets/scripts/progress-bar.js" type="module" defer></script>
   <script src="assets/scripts/business-rates.js" type="module" defer></script>
   <script src="assets/scripts/input-error.js" type="module" defer></script>
+  <script src="assets/scripts/map.js" type="module" defer></script>
 
 </html>

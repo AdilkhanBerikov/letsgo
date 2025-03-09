@@ -4,14 +4,14 @@
   padding: 10px 81px 10px 78px;
   display: inline-block;
   background-color: var(--color-button-background);
-  font: var(--font-button);
   color: var(--color-button-text);
+  font: var(--font-button);
   border: none;
   border-radius: $border-radius-xxl;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  transition: background-color $transition-duration, color $transition-duration;
+  transition: background-color $transition-duration, color $transition-duration, box-shadow $transition-duration;
 
   &:hover {
     background-color: var(--color-button-background-hover);
@@ -26,88 +26,85 @@
     line-height: 20px;
   }
 
+  &.-round,
+  &.-rectangle,
+  &.-square {
+    border-radius: $border-radius-large;
+    display: inline-flex;
+    align-items: center;
+  }
+
   &.-round {
     --button-round-size: 40px;
     padding: 0;
     width: var(--button-round-size);
     height: var(--button-round-size);
     position: relative;
-    border: none;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
+  }
 
-    &.-primary {
-      background-color: var(--color-button-primary-background);
-      color: var(--color-button-primary);
-
-      &:hover {
-        background-color: var(--color-button-primary-background-hover);
-      }
-
-      &:active {
-        color: var(--color-button-primary-active);
-      }
-    }
-
-    &.secondary {
-      background-color: var(--color-button-secondary-background);
-      color: var(--color-button-secondary);
-
-      &:hover {
-        background-color: var(--color-button-secondary-background-hover);
-      }
-
-      &:active {
-        color: var(--color-button-secondary-active);
-      }
-    }
+  &.-rectangle {
+    padding: 22px 24px;
+    width: 100%;
+    font: var(--font-button-square);
+    justify-content: space-between;
+    text-transform: none;
   }
 
   &.-square {
-    padding: 22px 24px;
-    position: relative;
-    color: var(--color-button-square);
-    font: var(--font-button-square);
-    border-radius: $border-radius-large;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: none;
+    padding: 22px 25px;
+    justify-content: center;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 27px;
-      right: 23px;
-      width: 0;
-      height: 0;
-      border-left: 11px solid var(--color-button-square-before);
-      border-bottom: 5px solid transparent;
-      border-top: 5px solid transparent;
-      transition: border-color $transition-duration;
+  &.-text {
+    color: var(--color-button-text-alternate);
+
+    &:active {
+      color: var(--color-button-text-alternate-active);
+    }
+  }
+
+  &.-primary {
+    background-color: var(--color-button-primary-background);
+    color: var(--color-button-primary);
+
+    &:hover {
+      background-color: var(--color-button-primary-background-hover);
     }
 
     &:active {
-      color: var(--color-button-square-active);
-
-      &::before {
-        border-left: 11px solid var(--color-button-square-before-active);
-      }
-    }
-
-    &.-alternate {
-      padding: 22px 30px;
+      color: var(--color-button-primary-active);
     }
   }
-}
 
-.button__text {
-  margin-right: 117px;
+  &.-secondary {
+    background-color: var(--color-button-secondary-background);
+    color: var(--color-button-secondary);
 
-  &.-alternate {
-    margin-right: 108px;
+    &:hover {
+      background-color: var(--color-button-secondary-background-hover);
+    }
+
+    &:active {
+      color: var(--color-button-secondary-active);
+    }
+  }
+
+  &.-outline {
+    padding: 22px;
+    color: var(--color-button-rectangle-outline-text);
+    background-color: var(--color-button-rectangle-outline-background);
+    box-shadow: inset 0 0 0 3px var(--color-button-rectangle-outline-box-shadow);
+
+    &:hover {
+      color: var(--color-button-rectangle-outline-text-hover);
+      background-color: var(--color-button-rectangle-outline-background-hover);
+      box-shadow: none;
+    }
+
+    &:active {
+      color: var(--color-button-rectangle-outline-text-active);
+    }
   }
 }
