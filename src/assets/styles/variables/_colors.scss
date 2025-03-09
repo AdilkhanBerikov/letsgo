@@ -61,12 +61,12 @@ $color-сoral: #F97676;
 
   --color-button-text-alternate: #{$color-blue};
   --color-button-text-alternate-active: #{$color-blue-opacity};
-  --color-button-rectangle-filled-background: #{$color-yellow};
-  --color-button-rectangle-filled-background-hover: #{$color-blue-dark-2};
-  --color-button-rectangle-filled-box-shadow: #{$color-blue-dark-2};
-  --color-button-rectangle-filled-text: #{$color-blue};
-  --color-button-rectangle-filled-text-hover: #{$color-white};
-  --color-button-rectangle-filled-text-active: #{$color-white-opacity};
+  --color-button-rectangle-outline-background: #{$color-yellow};
+  --color-button-rectangle-outline-background-hover: #{$color-blue-dark-2};
+  --color-button-rectangle-outline-box-shadow: #{$color-blue-dark-2};
+  --color-button-rectangle-outline-text: #{$color-blue};
+  --color-button-rectangle-outline-text-hover: #{$color-white};
+  --color-button-rectangle-outline-text-active: #{$color-white-opacity};
 
   //Toggle
   --color-header-toggle: #{$color-white};

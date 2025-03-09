@@ -3,6 +3,8 @@
 .button {
   padding: 10px 81px 10px 78px;
   display: inline-block;
+  background-color: var(--color-button-background);
+  color: var(--color-button-text);
   font: var(--font-button);
   border: none;
   border-radius: $border-radius-xxl;
@@ -10,6 +12,14 @@
   text-align: center;
   cursor: pointer;
   transition: background-color $transition-duration, color $transition-duration, box-shadow $transition-duration;
+
+  &:hover {
+    background-color: var(--color-button-background-hover);
+  }
+
+  &:active {
+    color: var(--color-button-active-text-opacity);
+  }
 
   &.-alternate {
     padding: 10px 39px 10px 40px;
@@ -40,41 +50,11 @@
     font: var(--font-button-square);
     justify-content: space-between;
     text-transform: none;
-
-    &.-filled {
-      padding: 22px;
-      color: var(--color-button-rectangle-filled-text);
-      background-color: var(--color-button-rectangle-filled-background);
-      box-shadow: inset 0 0 0 3px var(--color-button-rectangle-filled-box-shadow);
-
-      &:hover {
-        color: var(--color-button-rectangle-filled-text-hover);
-        background-color: var(--color-button-rectangle-filled-background-hover);
-        box-shadow: none;
-      }
-
-      &:active {
-        color: var(--color-button-rectangle-filled-text-active);
-      }
-    }
   }
 
   &.-square {
     padding: 22px 25px;
     justify-content: center;
-  }
-
-  &.-default {
-    background-color: var(--color-button-background);
-    color: var(--color-button-text);
-
-    &:hover {
-      background-color: var(--color-button-background-hover);
-    }
-
-    &:active {
-      color: var(--color-button-active-text-opacity);
-    }
   }
 
   &.-text {
@@ -108,6 +88,23 @@
 
     &:active {
       color: var(--color-button-secondary-active);
+    }
+  }
+
+  &.-outline {
+    padding: 22px;
+    color: var(--color-button-rectangle-outline-text);
+    background-color: var(--color-button-rectangle-outline-background);
+    box-shadow: inset 0 0 0 3px var(--color-button-rectangle-outline-box-shadow);
+
+    &:hover {
+      color: var(--color-button-rectangle-outline-text-hover);
+      background-color: var(--color-button-rectangle-outline-background-hover);
+      box-shadow: none;
+    }
+
+    &:active {
+      color: var(--color-button-rectangle-outline-text-active);
     }
   }
 }
