@@ -1,4 +1,36 @@
-@use "../../variables" as *;
+@use "../variables" as *;
+
+.rate-section {
+  margin-top: var(--section-margin-top-negative);
+  padding-top: 67px;
+  padding-bottom: 38px;
+  background-color: var(--color-rate-section-background);
+  border-radius: 0 0 $border-radius-3xl $border-radius-3xl;
+  position: relative;
+  z-index: $z-index-low-3;
+}
+
+.rate-section__container {
+  padding-left: 25px;
+  display: grid;
+  gap: 31px;
+}
+
+.rate-section__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.rate-section__image {
+  display: block;
+}
+
+.rate-section__heading {
+  color: var(--color-rate-section-heading);
+  font: var(--font-rate-section-heading);
+}
 
 .rate-section__list {
   padding-right: 45px;
@@ -52,4 +84,25 @@
   color: var(--color-rate-section-price);
   font: var(--font-rate-section-price);
   line-height: 16px;
+}
+
+.rate-section__button {
+  margin-left: -28px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  background: none;
+  font: var(--font-rate-section-button);
+  line-height: 16px;
+  color: var(--color-rate-section-button-text);
+  cursor: pointer;
+  transition: color $transition-duration;
+
+  &:hover {
+    color: var(--color-rate-section-button-text-hover);
+  }
+
+  &:active {
+    color: var(--color-rate-section-button-text-active);
+  }
 }

@@ -1,4 +1,4 @@
-@use "../../variables" as *;
+@use "../variables" as *;
 
 .about-section {
   border-radius: 0 0 $border-radius-3xl $border-radius-3xl;
@@ -15,4 +15,21 @@
   padding: 33px 0 82px 24px;
   display: grid;
   gap: 20px;
+}
+
+.about-section__heading {
+  font: var(--font-about-section-heading);
+  color: var(--color-about-section-heading);
+}
+
+.about-section__description {
+  font: var(--font-about-section-discription);
+  line-height: 22px;
+  color: var(--color-about-section-description);
+}
+
+.about-section__text {
+  font: var(--font-about-section-text);
+  line-height: 22px;
+  color: var(--color-about-section-text);
 }

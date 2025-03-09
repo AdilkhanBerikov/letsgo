@@ -1,16 +1,5 @@
 @use "../../variables" as *;
 
-.direction-section__countries {
-  margin-bottom: 27px;
-  display: grid;
-  gap: 9px;
-}
-
-.direction-section__country {
-  display: grid;
-  border-radius: $border-radius-large;
-}
-
 .country__image {
   //background-color: $color-grey-dark;
   //background-image: url("../images/image/thailand-mobile-1.png");
