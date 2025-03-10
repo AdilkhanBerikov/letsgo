@@ -19,7 +19,7 @@
 }
 
 .mobile-menu__header {
-  padding: 25px 25px;
+  padding: 25px 0;
   margin-bottom: 51px;
   display: grid;
   grid-template-columns: max-content min-content;
@@ -27,11 +27,18 @@
   align-items: center;
 }
 
+.mobile-menu__logo-tablet {
+  display: none;
+}
+
+.mobile-menu__header-button {
+  display: none;
+}
+
 .mobile-menu__wrapper {
-  padding: 0 25px;
   margin-left: auto;
   margin-right: auto;
-  max-width: $mobile-width; /* Растягиваем на всю ширину */
+  max-width: 270px; /* Растягиваем на всю ширину */
   height: auto; /* Позволяем адаптироваться по контенту */
   max-height: 100vh; /* Не выходить за границы экрана */
   display: grid;
@@ -40,11 +47,10 @@
 
 .mobile-menu__list {
   text-align: center;
+  line-height: 0;
 }
 
 .mobile-menu__link {
-  padding: 0 10px;
-  margin: 0 5px;
   position: relative;
   display: inline-block;
   font: var(--font-menu-link);
@@ -103,4 +109,57 @@
   gap: 27px;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-menu__header {
+    padding: 40px 0;
+    margin-bottom: 55px;
+    grid-template-columns: max-content min-content max-content;
+  }
+
+  .mobile-menu__logo {
+    display: none;
+  }
+
+  .mobile-menu__logo-tablet {
+    display: block;
+  }
+
+  .mobile-menu__header-button {
+    display: block;
+  }
+
+  .mobile-menu__wrapper {
+    padding: 0 57px;
+    max-width: none; /* Растягиваем на всю ширину */
+    gap: 144px;
+  }
+
+  .mobile-menu__list {
+    text-align: start;
+  }
+
+  .mobile-menu__link {
+    .mobile-menu__link-animation {
+      &::before {
+        letter-spacing: -1.3px;
+      }
+    }
+  }
+
+  .mobile-menu__button {
+    display: none;
+  }
+
+  .mobile-menu__footer {
+    margin-bottom: 91px;
+    gap: 129px;
+  }
+
+  .mobile-menu__socials {
+    margin-left: 26px;
+    justify-content: start;
+    gap: 35px;
+  }
 }

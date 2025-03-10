@@ -1,6 +1,14 @@
+@use "../variables" as *;
+
 .box {
   margin-left: auto;
   margin-right: auto;
   padding-inline: 25px;
   min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .box {
+    padding-inline: 40px;
+  }
 }

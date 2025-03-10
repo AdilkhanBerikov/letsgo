@@ -12,95 +12,108 @@
       <a class="header__logo" href="#">
         <img class="header__logo-default" src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
         <img class="header__logo-scrolled" src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        <img class="header-tablet__logo-default " src="assets/images/logo/logo-tablet-white.png" width="166" height="42" alt="Logotype Let's go!">
+        <img class="header-tablet__logo-scrolled" src="assets/images/logo/logo-tablet-blue.png" width="164" height="42" alt="Logotype Let's go!">
       </a>
       <nav class="header-nav">
         <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
       </nav>
+      <div class="header__button">
+        <a class="button" href="#">Авторизация</a>
+      </div>
     </div>
   </header>
 
   <section class="mobile-menu">
-    <div class="mobile-menu__header">
-      <a class="mobile-menu__logo" href="#">
-        <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
-      </a>
-      <div class="mobile-menu__toggle">
-        <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
+    <div class="box">
+      <div class="mobile-menu__header">
+        <a class="mobile-menu__logo" href="#">
+          <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
+        </a>
+        <a class="mobile-menu__logo-tablet" href="#">
+          <img src="assets/images/logo/logo-tablet-blue.png" width="164" height="42" alt="Logotype Let's go!">
+        </a>
+        <div class="mobile-menu__toggle">
+          <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
+        </div>
+        <div class="mobile-menu__header-button">
+          <a class="button -alternate" href="#">Авторизация</a>
+        </div>
       </div>
-    </div>
-    <div class="mobile-menu__wrapper">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+      <div class="mobile-menu__wrapper">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
             <span class="mobile-menu__link-animation" data-hover="О сервисе">
               О сервисе
             </span>
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
             <span class="mobile-menu__link-animation" data-hover="Направления">
               Направления
             </span>
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
             <span class="mobile-menu__link-animation" data-hover="Попутчики">
               Попутчики
             </span>
-          </a>
-        </li>
-      </ul>
-      <div class="mobile-menu__button">
-        <a class="button -default" href="#">Авторизация</a>
-      </div>
-      <div class="mobile-menu__footer">
-        <ul class="mobile-menu__contacts">
-          <li class="contact">
-            <a href="tel:88005558628" class="contact__link">
-              <div class="contact__icon">
-                <svg width="18" height="17" aria-hidden="true">
-                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
-                </svg>
-              </div>
-              <p class="contact__text">8 800 555-86-28</p>
-            </a>
-          </li>
-          <li class="contact">
-            <a href="mailto:mail@htmlacademy.ru" class="contact__link">
-              <div class="contact__icon">
-                <svg width="24" height="25" aria-hidden="true">
-                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
-                </svg>
-              </div>
-              <p class="contact__text">mail@htmlacademy.ru</p>
             </a>
           </li>
         </ul>
-        <ul class="mobile-menu__socials">
-          <li class="mobile-menu__socials-item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon" width="11" height="21" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-menu__socials-item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon" width="23" height="12" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-menu__socials-item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon" width="18" height="18" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="mobile-menu__button">
+          <a class="button -alternate" href="#">Авторизация</a>
+        </div>
+        <div class="mobile-menu__footer">
+          <ul class="mobile-menu__contacts">
+            <li class="contact">
+              <a href="tel:88005558628" class="contact__link">
+                <div class="contact__wrapper">
+                  <svg class="contact__icon -mobile" width="18" height="17" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
+                  </svg>
+                </div>
+                <p class="contact__text">8 800 555-86-28</p>
+              </a>
+            </li>
+            <li class="contact">
+              <a href="mailto:mail@htmlacademy.ru" class="contact__link">
+                <div class="contact__wrapper">
+                  <svg class="contact__icon -mail" width="24" height="25" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
+                  </svg>
+                </div>
+                <p class="contact__text">mail@htmlacademy.ru</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__socials">
+            <li class="mobile-menu__socials-item">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon -facebook" width="11" height="21" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon -vkontakte" width="23" height="12" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon -instagram" width="18" height="18" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -123,7 +136,7 @@
               <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
             </svg>
           </a>
-          <a class="button -alternate -default" href="#">Авторизация</a>
+          <a class="button" href="#">Авторизация</a>
         </div>
         <blockquote class="main-section__testimonial">
           <p class="main-section__testimonial-text">«Лучшее приложение,<br>
@@ -253,7 +266,7 @@
             </li>
           </ul>
           <div class="direction-section__button">
-            <a class="button -rectangle -default -text" href="#">
+            <a class="button -rectangle -text" href="#">
               <p class="button__text">Показать все</p>
               <svg class="button__icon" width="11" height="12" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-play"></use>
@@ -430,7 +443,7 @@
           </li>
         </ul>
         <div class="companions-section__button">
-          <a class="button -rectangle -default -text" href="#">
+          <a class="button -rectangle -text" href="#">
             <p class="button__text">Показать всех</p>
             <svg class="button__icon" width="11" height="12" aria-hidden="true">
               <use xlink:href="assets/icons/icons.svg#icon-play"></use>
@@ -494,7 +507,7 @@
         <form class="feedback-section__form" action="#" method="post">
           <label class="feedback-section__label" for="email"> E-mail </label>
           <input class="input" id="email" type="email" name="email" placeholder="E-mail" maxlength="254" autocomplete="email" required="">
-          <button class="feedback-section__button button -square -default -text" type="submit" aria-label="Отправить">
+          <button class="feedback-section__button button -square -text" type="submit" aria-label="Отправить">
             <svg class="button__icon" width="11" height="12" aria-hidden="true">
               <use xlink:href="assets/icons/icons.svg#icon-play"></use>
             </svg>
@@ -507,8 +520,8 @@
         <ul class="feedback-section__contacts">
           <li class="contact">
             <a href="tel:88005558628" class="contact__link -alternate">
-              <div class="contact__icon">
-                <svg width="18" height="17" aria-hidden="true">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mobile" width="18" height="17" aria-hidden="true">
                   <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
                 </svg>
               </div>
@@ -517,8 +530,8 @@
           </li>
           <li class="contact">
             <a href="mailto:mail@htmlacademy.ru" class="contact__link -alternate">
-              <div class="contact__icon">
-                <svg width="24" height="25" aria-hidden="true">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mail" width="24" height="25" aria-hidden="true">
                   <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
                 </svg>
               </div>
