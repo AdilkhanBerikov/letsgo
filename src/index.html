@@ -10,12 +10,16 @@
   <header class="page-header">
     <div class="grid -header box">
       <a class="header__logo" href="#">
-        <img class="header__logo-default" src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
-        <img class="header__logo-scrolled" src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
-        <img class="header-tablet__logo-default " src="assets/images/logo/logo-tablet-white.png" width="166" height="42" alt="Logotype Let's go!">
-        <img class="header-tablet__logo-scrolled" src="assets/images/logo/logo-tablet-blue.png" width="164" height="42" alt="Logotype Let's go!">
+        <picture class="header__logo-default">
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-white.png" width="166" height="42">
+          <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+        </picture>
+        <picture class="header__logo-scrolled">
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+          <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        </picture>
       </a>
-      <nav class="header-nav">
+      <nav class="header__nav">
         <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
       </nav>
       <div class="header__button">
@@ -28,10 +32,10 @@
     <div class="box">
       <div class="mobile-menu__header">
         <a class="mobile-menu__logo" href="#">
-          <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
-        </a>
-        <a class="mobile-menu__logo-tablet" href="#">
-          <img src="assets/images/logo/logo-tablet-blue.png" width="164" height="42" alt="Logotype Let's go!">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+            <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
+          </picture>
         </a>
         <div class="mobile-menu__toggle">
           <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>

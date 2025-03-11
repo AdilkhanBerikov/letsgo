@@ -10,6 +10,12 @@
   grid-template-columns: max-content min-content;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: max-content min-content max-content;
+  }
 }
 
 //.grid.-main {
@@ -25,12 +31,4 @@
   margin-bottom: 19px;
   grid-template-rows: min-content min-content max-content;
   text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .grid.-header {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    grid-template-columns: max-content min-content max-content;
-  }
 }

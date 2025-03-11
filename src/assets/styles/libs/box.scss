@@ -5,10 +5,8 @@
   margin-right: auto;
   padding-inline: 25px;
   min-width: 320px;
-}
 
-@media (min-width: $tablet-width) {
-  .box {
+  @media (min-width: $tablet-width) {
     padding-inline: 40px;
   }
 }

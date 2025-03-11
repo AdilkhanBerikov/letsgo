@@ -25,14 +25,20 @@
   grid-template-columns: max-content min-content;
   justify-content: space-between;
   align-items: center;
-}
 
-.mobile-menu__logo-tablet {
-  display: none;
+  @media (min-width: $tablet-width) {
+    padding: 40px 0;
+    margin-bottom: 55px;
+    grid-template-columns: max-content min-content max-content;
+  }
 }
 
 .mobile-menu__header-button {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .mobile-menu__wrapper {
@@ -43,11 +49,21 @@
   max-height: 100vh; /* Не выходить за границы экрана */
   display: grid;
   gap: 51px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 57px;
+    max-width: none;
+    gap: 144px;
+  }
 }
 
 .mobile-menu__list {
   text-align: center;
   line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
 
 .mobile-menu__link {
@@ -76,6 +92,10 @@
       transform: translate3d(0, 0, 0);
       white-space: nowrap;
       transition: color $transition-duration;
+
+      @media (min-width: $tablet-width) {
+        letter-spacing: -1.3px;
+      }
     }
   }
 
@@ -91,12 +111,21 @@
 
 .mobile-menu__button {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .mobile-menu__footer {
   margin-bottom: 41px;
   display: grid;
   gap: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 91px;
+    gap: 129px;
+  }
 }
 
 .mobile-menu__contacts {
@@ -109,55 +138,8 @@
   gap: 27px;
   justify-content: center;
   align-items: center;
-}
 
-@media (min-width: $tablet-width) {
-  .mobile-menu__header {
-    padding: 40px 0;
-    margin-bottom: 55px;
-    grid-template-columns: max-content min-content max-content;
-  }
-
-  .mobile-menu__logo {
-    display: none;
-  }
-
-  .mobile-menu__logo-tablet {
-    display: block;
-  }
-
-  .mobile-menu__header-button {
-    display: block;
-  }
-
-  .mobile-menu__wrapper {
-    padding: 0 57px;
-    max-width: none; /* Растягиваем на всю ширину */
-    gap: 144px;
-  }
-
-  .mobile-menu__list {
-    text-align: start;
-  }
-
-  .mobile-menu__link {
-    .mobile-menu__link-animation {
-      &::before {
-        letter-spacing: -1.3px;
-      }
-    }
-  }
-
-  .mobile-menu__button {
-    display: none;
-  }
-
-  .mobile-menu__footer {
-    margin-bottom: 91px;
-    gap: 129px;
-  }
-
-  .mobile-menu__socials {
+  @media (min-width: $tablet-width) {
     margin-left: 26px;
     justify-content: start;
     gap: 35px;

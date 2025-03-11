@@ -13,6 +13,10 @@
   cursor: pointer;
   transition: background-color $transition-duration, color $transition-duration, box-shadow $transition-duration;
 
+  @media (min-width: $tablet-width) {
+    padding: 15px 28px 15px 29px;
+  }
+
   &:hover {
     background-color: var(--color-button-background-hover);
   }
@@ -23,6 +27,11 @@
 
   &.-alternate {
     padding: 15px 81px 15px 78px;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px 35px 15px 33px;
+      font-weight: 400;
+    }
   }
 
   &.-round,
@@ -104,17 +113,6 @@
 
     &:active {
       color: var(--color-button-rectangle-outline-text-active);
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    padding: 15px 28px 15px 29px;
-
-    &.-alternate {
-      padding: 15px 35px 15px 33px;
-      font-weight: 400;
     }
   }
 }

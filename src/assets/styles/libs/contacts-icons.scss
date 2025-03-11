@@ -10,6 +10,10 @@
   color: var(--contacts-text);
   transition: color $transition-duration ease;
 
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+
   &:hover {
     --contacts-text: var(--color-contacts-text-hover);
     --contact-wrapper: var(--color-contact-wrapper-hover);
@@ -46,38 +50,34 @@
   justify-content: center;
   cursor: pointer;
   transition: color $transition-duration ease;
-}
 
-.contact__text {
-  font: var(--font-menu-contacts);
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .contact__link {
-    gap: 23px;
-  }
-
-  .contact__wrapper {
+  @media (min-width: $tablet-width) {
     --contact-wrapper-tablet-size: 68px;
     width: var(--contact-wrapper-tablet-size);
     height: var(--contact-wrapper-tablet-size);
   }
+}
 
-  .contact__icon {
+.contact__icon {
 
-    &.-mobile{
+  @media (min-width: $tablet-width) {
+    &.-mobile {
       --contact-icon-tablet-mobile-width: 27.2px;
       --contact-icon-tablet-mobile-height: 25.69px;
       width: var(--contact-icon-tablet-mobile-width);
       height: var(--contact-icon-tablet-mobile-height);
     }
 
-    &.-mail{
+    &.-mail {
       --contact-icon-tablet-mail-width: 35.51px;
       --contact-icon-tablet-mail-height: 37.78px;
       width: var(--contact-icon-mail-mobile-width);
       height: var(--contact-icon-tablet-mail-height);
     }
   }
+}
+
+.contact__text {
+  font: var(--font-menu-contacts);
+  text-transform: uppercase;
 }
