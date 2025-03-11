@@ -40,6 +40,10 @@
     border-radius: $border-radius-large;
     display: inline-flex;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      border-radius: $border-radius-xl;
+    }
   }
 
   &.-round {
@@ -55,9 +59,13 @@
   &.-rectangle {
     padding: 22px 24px;
     width: 100%;
-    font: var(--font-button-square);
+    font: var(--font-button-rectangle);
     justify-content: space-between;
     text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 28px 33px;
+    }
   }
 
   &.-square {
@@ -114,5 +122,15 @@
     &:active {
       color: var(--color-button-rectangle-outline-text-active);
     }
+  }
+}
+
+.button__icon {
+
+  @media (min-width: $tablet-width) {
+    --button-icon-tablet-width: 14px;
+    --button-icon-tablet-height: 13px;
+    width: var(--button-icon-tablet-width);
+    height: var(--button-icon-tablet-height);
   }
 }

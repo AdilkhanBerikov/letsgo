@@ -4,10 +4,6 @@
   position: relative;
   background-color: var(--color-steps-background);
   z-index: $z-index-sm;
-
-  @media (min-width: $tablet-width) {
-    background-color: var(--color-steps-background-tablet);
-  }
 }
 
 .steps__list {
@@ -82,10 +78,6 @@
 
 .steps__number {
   color: var(--color-steps-number);
-
-  @media (min-width: $tablet-width) {
-    font: var(--font-steps-number-tablet);
-  }
 }
 
 .steps__text {

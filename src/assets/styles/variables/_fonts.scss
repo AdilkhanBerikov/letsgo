@@ -21,7 +21,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Buttons
   --font-button: var(--font-h6);
-  --font-button-square: var(--font-h5);
+  --font-button-rectangle: var(--font-h5);
 
   //User-card
   --font-user-card-name: var(--font-h4);
@@ -34,7 +34,6 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   //Icons
   //Contact-icons
   --font-menu-contacts: var(--font-body-bold);
-
   //Transport-icons
   --font-transport-wrapper-after: var(--font-tooltip);
 
@@ -54,11 +53,9 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-main-section-heading: var(--font-h1);
   --font-main-section-testimonial-text: var(--font-body-light);
   --font-main-section-testimonial-author: var(--font-body-bold);
-  --font-main-section-testimonial-author-tablet: var(--font-body-bold-tablet);
 
   //Steps
   --font-steps-item: var(--font-h5);
-  --font-steps-number-tablet: var(--font-h5-tablet);
 
   //About-section
   --font-about-section-heading: var(--font-h3);
@@ -104,7 +101,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   :root {
     --font-h1: 700 60px/70px #{$font-family-main};
     --font-h2: 500 60px/71px #{$font-family-main}; //поменял
-    --font-h3: 700 24px/24px #{$font-family-main};
+    --font-h3: 700 45px/45px #{$font-family-main}; //поменял
     --font-h4: 700 21px/21px #{$font-family-main};
     --font-h5: 700 24px/24px #{$font-family-main}; //поменял
     --font-h5-tablet: 700 30px/30px #{$font-family-main}; //другое
@@ -119,6 +116,16 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-caption-regular: 400 14px/14px #{$font-family-main};
 
     --font-tooltip: 400 20px/20px #{$font-family-main};
+
+    //Main
+    //Main-section
+    --font-main-section-testimonial-author: var(--font-body-bold-tablet);
+
+    //Steps
+    --font-steps-item: var(--font-h5-tablet);
+
+    //About-section
+    --font-about-section-text: var(--font-body-bold-tablet);
   }
 }
 

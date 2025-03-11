@@ -133,7 +133,6 @@ $color-сoral: #F97676;
   --color-scroll-menu-background: #{$color-white};
   //Page Header
   --color-page-header-background: #{$color-blue-dark};
-  --color-page-header-background-tablet: #{$color-blue-dark-6};
   --color-page-header-scrolled-background: #{$color-white};
 
   //Footer
@@ -152,7 +151,6 @@ $color-сoral: #F97676;
   //Main
   //Main-section
   --color-main-section-background: #{$color-blue-dark};
-  --color-main-section-background-tablet: #{$color-blue-dark-6};
   --color-main-section-heading-text: #{$color-white};
   --color-main-section-testimonial-background: #{$color-blue-dark};
   --color-main-section-testimonial-text: #{$color-white};
@@ -160,7 +158,6 @@ $color-сoral: #F97676;
 
   //Steps
   --color-steps-background: #{$color-blue-dark-2};
-  --color-steps-background-tablet: #{$color-blue-dark-6};
   --color-steps-item-background: #{$color-orange};
   --color-steps-item-2-background: #{$color-orange-light};
   --color-steps-item-3-background: #{$color-yellow-dark};
@@ -230,4 +227,21 @@ $color-сoral: #F97676;
   --color-location-section-icon-background: #{$color-blue-dark-3};
   --color-location-section-icon: #{$color-yellow};
   --color-location-section-address-text: #{$color-blue};
+}
+
+@media (min-width: 768px) {
+  :root {
+    //Page Header
+    --color-page-header-background: #{$color-blue-dark-6};
+
+    //Main
+    //Main-section
+    --color-main-section-background: #{$color-blue-dark-6};
+
+    //Steps
+    --color-steps-background: #{$color-blue-dark-6};
+
+    //About-section
+    --color-about-section-background: #{$color-blue-dark-6};
+  }
 }
