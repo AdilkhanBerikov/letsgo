@@ -57,7 +57,7 @@
   z-index: $z-index-low;
 
   @media (min-width: $tablet-width) {
-    padding: 86px 0 350px 32px;
+    padding: 0 0 350px 32px;
     background-color: transparent;
     gap: 45px;
   }

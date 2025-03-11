@@ -58,6 +58,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Steps
   --font-steps-item: var(--font-h5);
+  --font-steps-number-tablet: var(--font-h5-tablet);
 
   //About-section
   --font-about-section-heading: var(--font-h3);
@@ -105,7 +106,8 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-h2: 500 60px/71px #{$font-family-main}; //поменял
     --font-h3: 700 24px/24px #{$font-family-main};
     --font-h4: 700 21px/21px #{$font-family-main};
-    --font-h5: 700 18px/18px #{$font-family-main};
+    --font-h5: 700 24px/24px #{$font-family-main}; //поменял
+    --font-h5-tablet: 700 30px/30px #{$font-family-main}; //другое
     --font-h6: 700 20px/20px #{$font-family-main}; //поменял
 
     --font-body-bold: 700 28px/28px #{$font-family-main}; //поменял
