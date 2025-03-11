@@ -54,6 +54,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-main-section-heading: var(--font-h1);
   --font-main-section-testimonial-text: var(--font-body-light);
   --font-main-section-testimonial-author: var(--font-body-bold);
+  --font-main-section-testimonial-author-tablet: var(--font-body-bold-tablet);
 
   //Steps
   --font-steps-item: var(--font-h5);
@@ -100,7 +101,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
 @media (min-width: 768px) {
   :root {
-    --font-h1: 700 36px/40px #{$font-family-main};
+    --font-h1: 700 60px/70px #{$font-family-main};
     --font-h2: 500 60px/71px #{$font-family-main}; //поменял
     --font-h3: 700 24px/24px #{$font-family-main};
     --font-h4: 700 21px/21px #{$font-family-main};
@@ -108,9 +109,10 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-h6: 700 20px/20px #{$font-family-main}; //поменял
 
     --font-body-bold: 700 28px/28px #{$font-family-main}; //поменял
+    --font-body-bold-tablet: 700 21px/25px #{$font-family-main}; //другое
     --font-body-medium: 500 16px/18px #{$font-family-main};
     --font-body-regular: 400 16px/22px #{$font-family-main};
-    --font-body-light: 300 16px/18px #{$font-family-main};
+    --font-body-light: 300 28px/33px #{$font-family-main}; //поменял
 
     --font-caption-regular: 400 14px/14px #{$font-family-main};
 

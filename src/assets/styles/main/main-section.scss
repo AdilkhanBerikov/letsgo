@@ -5,6 +5,11 @@
   position: relative;
   background-color: var(--color-main-section-background);
 
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    background-color: var(--color-main-section-background-tablet);
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -17,6 +22,13 @@
     left: 0;
     width: 100vw;
     height: 477px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/background/globe-back-tablet-1.png");
+      background-color: var(--color-main-section-background-tablet);
+      top: 255px;
+      height: 612px;
+    }
   }
 }
 
@@ -28,6 +40,10 @@
   text-align: center;
   font: var(--font-main-section-heading);
   color: var(--color-main-section-heading-text);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
+  }
 }
 
 .main-section__testimonial {
@@ -39,18 +55,33 @@
   align-items: start;
   justify-content: start;
   z-index: $z-index-low;
+
+  @media (min-width: $tablet-width) {
+    padding: 86px 0 350px 32px;
+    background-color: transparent;
+    gap: 45px;
+  }
 }
 
 .main-section__testimonial-text {
   font: var(--font-main-section-testimonial-text);
   line-height: 22px;
   color: var(--color-main-section-testimonial-text);
+
+  @media (min-width: $tablet-width) {
+    line-height: 33px;
+  }
 }
 
 .main-section__testimonial-author {
   font: var(--font-main-section-testimonial-author);
   line-height: 22px;
   color: var(--color-main-section-testimonial-author-text);
+
+  @media (min-width: $tablet-width) {
+    font: var(--font-main-section-testimonial-author-tablet);
+    line-height: 25px;
+  }
 }
 
 .main-section__button {
@@ -60,4 +91,8 @@
   align-items: center;
   justify-content: center;
   z-index: $z-index-sm;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
