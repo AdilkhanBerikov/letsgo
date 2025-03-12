@@ -74,7 +74,21 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
+    position: relative;
     gap: 10px;
+
+    &::before {
+      --direction-section-countries-before-size: 141px;
+      content: "";
+      position: absolute;
+      top: -38px;
+      left: -35px;
+      background-color: var(--color-tablet-direction-section-countries-before);
+      border-radius: $border-radius-xl;
+      width: var(--direction-section-countries-before-size);
+      height: var(--direction-section-countries-before-size);
+      z-index: $z-index-negative;
+    }
   }
 }
 

@@ -110,7 +110,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-body-bold: 700 28px/28px #{$font-family-main}; //поменял
     --font-body-bold-tablet: 700 21px/25px #{$font-family-main}; //другое
     --font-body-medium: 500 20px/20px #{$font-family-main}; //поменял
-    --font-body-regular: 400 16px/22px #{$font-family-main};
+    --font-body-regular: 400 20px/23px #{$font-family-main}; //поменял
     --font-body-light: 300 28px/33px #{$font-family-main}; //поменял
 
     --font-caption-regular: 400 14px/14px #{$font-family-main};
@@ -126,6 +126,13 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
     //About-section
     --font-about-section-text: var(--font-body-bold-tablet);
+
+    //Companions-section
+    --font-companions-section-subheading: var(--font-body-bold-tablet);
+
+    //Progress-bar
+    --font-progress-bar-level-number: var(--font-h5);
+    --font-progress-bar-level-text: var(--font-caption-regular);
   }
 }
 
