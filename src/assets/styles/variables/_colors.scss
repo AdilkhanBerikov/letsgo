@@ -245,5 +245,10 @@ $color-сoral: #F97676;
 
     //About-section
     --color-about-section-background: #{$color-blue-dark-6};
+
+    //Rate-section
+    --color-rate-section-background: #{$color-blue-light-1};
+    --color-rate-section-price-before-tablet: #{$color-white-dark-2};
+    --color-rate-section-button-icon-background: #{$color-white-dark-2};
   }
 }
