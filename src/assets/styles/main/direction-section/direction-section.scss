@@ -8,10 +8,34 @@
   border-radius: 0 0 $border-radius-3xl $border-radius-3xl;
   position: relative;
   z-index: $z-index-low-5;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 133px;
+    padding-bottom: 80px;
+    border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 120px;
+      right: 40px;
+      background-image: url("../images/background/direction-section-flags-background.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 278px;
+      height: 574px;
+      z-index: $z-index-negative;
+    }
+  }
 }
 
 .direction-section__wrapper {
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
 }
 
 .direction-section__title {
@@ -19,6 +43,13 @@
   padding-left: 24px;
   display: grid;
   gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+    padding-left: 0;
+    position: relative;
+    gap: 57px;
+  }
 }
 
 .direction-section__heading {
@@ -30,17 +61,32 @@
   color: var(--color-direction-section-description);
   font: var(--font-direction-section-description);
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 33px;
+  }
 }
 
 .direction-section__countries {
   margin-bottom: 27px;
   display: grid;
   gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+    gap: 10px;
+  }
 }
 
 .direction-section__country {
   display: grid;
   border-radius: $border-radius-large;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    border-radius: $border-radius-xl;
+  }
 }
 
 .direction-section__button {
