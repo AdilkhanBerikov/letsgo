@@ -113,6 +113,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-body-regular: 400 20px/23px #{$font-family-main}; //поменял
     --font-body-regular-tablet: 400 28px/28px #{$font-family-main}; //поменял
     --font-body-light: 300 28px/33px #{$font-family-main}; //поменял
+    --font-body-light-tablet: 300 22px/28px #{$font-family-main}; //поменял
 
     --font-caption-regular: 400 14px/14px #{$font-family-main};
 
@@ -138,6 +139,11 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     //Rate-section
     --font-rate-section-item-before-text: var(--font-body-regular-tablet);
     --font-rate-section-button: var(--font-h6);
+
+    //Business-rates
+    --font-business-rates-name: var(--font-body-light-tablet);
+    --font-business-rates-price: var(--font-body-light-tablet);
+    --font-business-rates-button: var(--font-h5);
   }
 }
 

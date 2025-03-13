@@ -23,4 +23,8 @@
   position: fixed;
   top: calc(50% - (var(--business-rates-height) / 2));
   left: calc(50% - (var(--business-rates-width) / 2));
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
 }
