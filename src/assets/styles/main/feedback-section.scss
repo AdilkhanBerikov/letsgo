@@ -8,6 +8,12 @@
   border-radius: 0 0 $border-radius-3xl $border-radius-3xl;
   position: relative;
   z-index: $z-index-low-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 136px;
+    padding-bottom: 60px;
+    border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
+  }
 }
 
 .feedback-section__title {
@@ -15,6 +21,11 @@
   text-align: center;
   display: grid;
   gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    gap: 59px;
+  }
 }
 
 .feedback-section__heading {
@@ -26,6 +37,17 @@
   color: var(--color-feedback-section-registration);
   font: var(--font-feedback-section-registration);
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 32px;
+  }
+}
+
+.mobile-break {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .feedback-section__link {
@@ -46,6 +68,12 @@
   margin-bottom: 29px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .feedback-section__label {
@@ -54,6 +82,10 @@
 
 .feedback-section__button {
   margin-left: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .feedback-section__questions {
@@ -62,9 +94,19 @@
   color: var(--color-feedback-section-questions-text);
   font: var(--font-feedback-section-questions);
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    line-height: 30px;
+  }
 }
 
 .feedback-section__contacts {
   display: grid;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    justify-content: start;
+  }
 }

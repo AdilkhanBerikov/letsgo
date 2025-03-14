@@ -71,6 +71,11 @@
   &.-square {
     padding: 22px 25px;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 33px;
+      border-radius: 0 $border-radius-xl $border-radius-xl 0;
+    }
   }
 
   &.-text {
