@@ -37,4 +37,13 @@
   margin-bottom: 19px;
   grid-template-rows: min-content min-content max-content;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 46px;
+    margin-bottom: 32px;
+    grid-template-rows: none;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    text-align: start;
+  }
 }

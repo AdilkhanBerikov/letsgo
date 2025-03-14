@@ -3,12 +3,23 @@
 .footnote {
   padding-top: 14px;
   border-top: 1px solid var(--color-footer-footnote-border);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    border-top: none;
+  }
 }
 
 .footnote__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    justify-content: end;
+    gap: 23px;
+  }
 
   &:hover .footnote__text,
   &:hover .footnote__logo {
@@ -26,6 +37,11 @@
   line-height: 16px;
   color: var(--color-footer-footnote-text);
   transition: opacity $transition-duration;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+    line-height: 20px;
+  }
 }
 
 .footnote__logo {
