@@ -29,6 +29,7 @@ $color-blue-dark-5: #132576;
 $color-blue-dark-5-opacity: rgba($color-blue-dark-5, 0.7);
 $color-blue-dark-5-opacity-light: rgba($color-blue-dark-5, 0.3);
 $color-blue-dark-6: #182044;
+$color-blue-dark-7: #141B3B;
 $color-yellow: #FFD74B;
 $color-yellow-opacity: rgba($color-yellow, 0.3);
 $color-yellow-dark: #FFBD30;
@@ -245,6 +246,7 @@ $color-сoral: #F97676;
 
     //About-section
     --color-about-section-background: #{$color-blue-dark-6};
+    --color-about-section-before: #{$color-blue-dark-7};
 
     //Rate-section
     --color-rate-section-background: #{$color-blue-light-1};

@@ -100,20 +100,19 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 @media (min-width: 768px) {
   :root {
     --font-h1: 700 60px/70px #{$font-family-main};
-    --font-h2: 500 60px/71px #{$font-family-main}; //поменял
-    --font-h3: 700 45px/45px #{$font-family-main}; //поменял
-    --font-h4: 700 24px/24px #{$font-family-main};
-    --font-h5: 700 24px/24px #{$font-family-main}; //поменял
-    --font-h5-tablet: 700 30px/30px #{$font-family-main}; //другое
-    --font-h6: 700 20px/20px #{$font-family-main}; //поменял
+    --font-h2: 500 60px/71px #{$font-family-main};
+    --font-h3: 700 45px/45px #{$font-family-main};
+    --font-h4: 700 30px/30px #{$font-family-main};
+    --font-h5: 700 24px/24px #{$font-family-main};
+    --font-h6: 700 20px/20px #{$font-family-main};
 
-    --font-body-bold: 700 28px/28px #{$font-family-main}; //поменял
-    --font-body-bold-tablet: 700 21px/25px #{$font-family-main}; //другое
-    --font-body-medium: 500 20px/20px #{$font-family-main}; //поменял
-    --font-body-regular: 400 20px/23px #{$font-family-main}; //поменял
-    --font-body-regular-tablet: 400 28px/28px #{$font-family-main}; //поменял
-    --font-body-light: 300 28px/33px #{$font-family-main}; //поменял
-    --font-body-light-tablet: 300 22px/28px #{$font-family-main}; //поменял
+    --font-body-bold: 700 28px/28px #{$font-family-main};
+    --font-body-bold-2: 700 21px/25px #{$font-family-main}; //другое
+    --font-body-medium: 500 20px/20px #{$font-family-main};
+    --font-body-regular: 400 20px/23px #{$font-family-main};
+    --font-body-regular-2: 400 28px/28px #{$font-family-main}; //другое
+    --font-body-light: 300 28px/33px #{$font-family-main};
+    --font-body-light-2: 300 22px/28px #{$font-family-main}; //другое
 
     --font-caption-regular: 400 14px/14px #{$font-family-main};
 
@@ -121,28 +120,28 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
     //Main
     //Main-section
-    --font-main-section-testimonial-author: var(--font-body-bold-tablet);
+    --font-main-section-testimonial-author: var(--font-body-bold-2);
 
     //Steps
-    --font-steps-item: var(--font-h5-tablet);
+    --font-steps-item: var(--font-h4);
 
     //About-section
-    --font-about-section-text: var(--font-body-bold-tablet);
+    --font-about-section-text: var(--font-body-bold-2);
 
     //Companions-section
-    --font-companions-section-subheading: var(--font-body-bold-tablet);
+    --font-companions-section-subheading: var(--font-body-bold-2);
 
     //Progress-bar
     --font-progress-bar-level-number: var(--font-h5);
     --font-progress-bar-level-text: var(--font-caption-regular);
 
     //Rate-section
-    --font-rate-section-item-before-text: var(--font-body-regular-tablet);
+    --font-rate-section-item-before-text: var(--font-body-regular-2);
     --font-rate-section-button: var(--font-h6);
 
     //Business-rates
-    --font-business-rates-name: var(--font-body-light-tablet);
-    --font-business-rates-price: var(--font-body-light-tablet);
+    --font-business-rates-name: var(--font-body-light-2);
+    --font-business-rates-price: var(--font-body-light-2);
     --font-business-rates-button: var(--font-h5);
   }
 }
