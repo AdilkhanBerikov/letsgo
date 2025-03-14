@@ -127,6 +127,10 @@
     &:active {
       color: var(--color-button-rectangle-outline-text-active);
     }
+
+    @media (min-width: $tablet-width) {
+      padding: 28px 36px;
+    }
   }
 }
 
