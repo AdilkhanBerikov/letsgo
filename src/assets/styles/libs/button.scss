@@ -1,7 +1,7 @@
 @use "../variables" as *;
 
 .button {
-  padding: 10px 81px 10px 78px;
+  padding: 10px 39px 10px 40px;
   display: inline-block;
   background-color: var(--color-button-background);
   color: var(--color-button-text);
@@ -13,6 +13,10 @@
   cursor: pointer;
   transition: background-color $transition-duration, color $transition-duration, box-shadow $transition-duration;
 
+  @media (min-width: $tablet-width) {
+    padding: 15px 28px 15px 29px;
+  }
+
   &:hover {
     background-color: var(--color-button-background-hover);
   }
@@ -22,8 +26,12 @@
   }
 
   &.-alternate {
-    padding: 10px 39px 10px 40px;
-    line-height: 20px;
+    padding: 15px 81px 15px 78px;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px 35px 15px 33px;
+      font-weight: 400;
+    }
   }
 
   &.-round,
@@ -32,6 +40,10 @@
     border-radius: $border-radius-large;
     display: inline-flex;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      border-radius: $border-radius-xl;
+    }
   }
 
   &.-round {
@@ -47,14 +59,23 @@
   &.-rectangle {
     padding: 22px 24px;
     width: 100%;
-    font: var(--font-button-square);
+    font: var(--font-button-rectangle);
     justify-content: space-between;
     text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 28px 33px;
+    }
   }
 
   &.-square {
     padding: 22px 25px;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 33px;
+      border-radius: 0 $border-radius-xl $border-radius-xl 0;
+    }
   }
 
   &.-text {
@@ -106,5 +127,19 @@
     &:active {
       color: var(--color-button-rectangle-outline-text-active);
     }
+
+    @media (min-width: $tablet-width) {
+      padding: 28px 36px;
+    }
+  }
+}
+
+.button__icon {
+
+  @media (min-width: $tablet-width) {
+    --button-icon-tablet-width: 14px;
+    --button-icon-tablet-height: 13px;
+    width: var(--button-icon-tablet-width);
+    height: var(--button-icon-tablet-height);
   }
 }

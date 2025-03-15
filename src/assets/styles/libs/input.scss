@@ -12,6 +12,11 @@
   outline: none;
   transition: color $transition-duration, background-color $transition-duration, box-shadow $transition-duration;
 
+  @media (min-width: $tablet-width) {
+    padding: 25px 36px;
+    border-radius: $border-radius-xl 0 0 $border-radius-xl;
+  }
+
   &::placeholder {
     font: var(--font-input-placeholder);
     color: var(--color-input-placeholder-text);

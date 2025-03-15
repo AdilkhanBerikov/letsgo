@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function closeMenuOnClick(event) {
     if (!menu || toggles.length === 0) return;
-    const nav = document.querySelector(".header-nav");
+    const nav = document.querySelector(".header__nav");
 
     if (!menu.contains(event.target) && !nav.contains(event.target)) {
       menu.classList.remove("-open");

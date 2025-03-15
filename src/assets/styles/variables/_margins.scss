@@ -3,3 +3,11 @@
   --map-margin-top-negative: -52px;
   --map-margin-bottom-negative: -110px;
 }
+
+@media (min-width: 768px) {
+  :root {
+    --section-margin-top-negative: -60px;
+    --map-margin-top-negative: -60px;
+    --map-margin-bottom-negative: -70px;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../variables" as *;
+
+.contact__link {
+  --contacts-text: var(--color-contacts-text);
+  --contact-wrapper: var(--color-contact-wrapper);
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: var(--contacts-text);
+  transition: color $transition-duration ease;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+
+  &:hover {
+    --contacts-text: var(--color-contacts-text-hover);
+    --contact-wrapper: var(--color-contact-wrapper-hover);
+  }
+
+  &:active {
+    --contacts-text: var(--color-contacts-text-active);
+    --contact-wrapper: var(--color-contact-wrapper-active);
+  }
+
+  &.-alternate {
+    color: var(--color-contacts-alternate);
+
+    &:hover {
+      color: var(--color-contacts-alternate-hover);
+    }
+
+    &:active {
+      color: var(--color-contacts-alternate-active);
+    }
+  }
+}
+
+.contact__wrapper {
+  --contact-wrapper-size: 45px;
+  width: var(--contact-wrapper-size);
+  height: var(--contact-wrapper-size);
+  border: none;
+  border-radius: 50%;
+  color: var(--contact-wrapper);
+  background-color: var(--color-contact-wrapper-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color $transition-duration ease;
+
+  @media (min-width: $tablet-width) {
+    --contact-wrapper-tablet-size: 68px;
+    width: var(--contact-wrapper-tablet-size);
+    height: var(--contact-wrapper-tablet-size);
+  }
+}
+
+.contact__icon {
+
+  @media (min-width: $tablet-width) {
+    &.-mobile {
+      --contact-icon-tablet-mobile-width: 27.2px;
+      --contact-icon-tablet-mobile-height: 25.69px;
+      width: var(--contact-icon-tablet-mobile-width);
+      height: var(--contact-icon-tablet-mobile-height);
+    }
+
+    &.-mail {
+      --contact-icon-tablet-mail-width: 35.51px;
+      --contact-icon-tablet-mail-height: 37.78px;
+      width: var(--contact-icon-mail-mobile-width);
+      height: var(--contact-icon-tablet-mail-height);
+    }
+  }
+}
+
+.contact__text {
+  font: var(--font-menu-contacts);
+  text-transform: uppercase;
+}

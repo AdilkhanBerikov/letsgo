@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 
 .user-card {
+  --user-card-width: 270px;
+  width: var(--user-card-width);
   display: grid;
   border-radius: $border-radius-large;
   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
@@ -8,6 +10,11 @@
   &:hover {
     transform: scale(1.01);
     box-shadow: 0 4px 9px 0 var(--color-user-card-hover-shadow);
+  }
+
+  @media (min-width: $tablet-width) {
+    --user-card-width: 285px;
+    border-radius: $border-radius-xl;
   }
 }
 
@@ -28,6 +35,11 @@
   position: absolute;
   top: 17px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 22px;
+  }
 }
 
 .user-card__body {
@@ -38,10 +50,16 @@
   text-align: center;
   display: grid;
   gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+    border-radius: 0 0 $border-radius-xl $border-radius-xl;
+    gap: 19px;
+  }
 }
 
 .user-card__flag-list {
-  margin-top: -11px;
+  margin-top: -12px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -54,6 +72,10 @@
   text-align: center;
   display: grid;
   gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
 }
 
 .user-card__name {
@@ -78,13 +100,26 @@
   &.-online::before {
     background-color: var(--color-user-card-name-online-before);
   }
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      left: -22px;
+    }
+  }
 }
 
 .user-card__hashtags {
-  padding-left: 5px;
   color: var(--color-user-card-hashtags);
   font: var(--font-user-card-hashtags);
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 23px;
+  }
 }
 
 .user-card__icons {
@@ -92,6 +127,10 @@
   display: flex;
   gap: 6px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
 }
 
 .user-card__icon {

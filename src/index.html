@@ -10,104 +10,121 @@
   <header class="page-header">
     <div class="grid -header box">
       <a class="header__logo" href="#">
-        <img class="header__logo-default" src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
-        <img class="header__logo-scrolled" src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        <picture class="header__logo-default">
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-white.png" width="166" height="42">
+          <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+        </picture>
+        <picture class="header__logo-scrolled">
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+          <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        </picture>
       </a>
-      <nav class="header-nav">
+      <nav class="header__nav">
         <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
       </nav>
+      <div class="header__button">
+        <a class="button" href="#">Авторизация</a>
+      </div>
     </div>
   </header>
 
   <section class="mobile-menu">
-    <div class="mobile-menu__header">
-      <a class="mobile-menu__logo" href="#">
-        <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
-      </a>
-      <div class="mobile-menu__toggle">
-        <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
+    <div class="box">
+      <div class="mobile-menu__header">
+        <a class="mobile-menu__logo" href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+            <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
+          </picture>
+        </a>
+        <div class="mobile-menu__toggle">
+          <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
+        </div>
+        <div class="mobile-menu__header-button">
+          <a class="button -alternate" href="#">Авторизация</a>
+        </div>
       </div>
-    </div>
-    <div class="mobile-menu__wrapper">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+      <div class="mobile-menu__wrapper">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
             <span class="mobile-menu__link-animation" data-hover="О сервисе">
               О сервисе
             </span>
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
             <span class="mobile-menu__link-animation" data-hover="Направления">
               Направления
             </span>
-          </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
             <span class="mobile-menu__link-animation" data-hover="Попутчики">
               Попутчики
             </span>
-          </a>
-        </li>
-      </ul>
-      <div class="mobile-menu__button">
-        <a class="button -default" href="#">Авторизация</a>
-      </div>
-      <div class="mobile-menu__footer">
-        <ul class="mobile-menu__contacts">
-          <li class="contact">
-            <a href="tel:88005558628" class="contact__link">
-              <div class="contact__icon">
-                <svg width="18" height="17" aria-hidden="true">
-                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
-                </svg>
-              </div>
-              <p class="contact__text">8 800 555-86-28</p>
-            </a>
-          </li>
-          <li class="contact">
-            <a href="mailto:mail@htmlacademy.ru" class="contact__link">
-              <div class="contact__icon">
-                <svg width="24" height="25" aria-hidden="true">
-                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
-                </svg>
-              </div>
-              <p class="contact__text">mail@htmlacademy.ru</p>
             </a>
           </li>
         </ul>
-        <ul class="mobile-menu__socials">
-          <li class="mobile-menu__socials-item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon" width="11" height="21" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-menu__socials-item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon" width="23" height="12" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-menu__socials-item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon" width="18" height="18" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="mobile-menu__button">
+          <a class="button -alternate" href="#">Авторизация</a>
+        </div>
+        <div class="mobile-menu__footer">
+          <ul class="mobile-menu__contacts">
+            <li class="contact">
+              <a href="tel:88005558628" class="contact__link">
+                <div class="contact__wrapper">
+                  <svg class="contact__icon -mobile" width="18" height="17" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
+                  </svg>
+                </div>
+                <p class="contact__text">8 800 555-86-28</p>
+              </a>
+            </li>
+            <li class="contact">
+              <a href="mailto:mail@htmlacademy.ru" class="contact__link">
+                <div class="contact__wrapper">
+                  <svg class="contact__icon -mail" width="24" height="25" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
+                  </svg>
+                </div>
+                <p class="contact__text">mail@htmlacademy.ru</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__socials">
+            <li class="mobile-menu__socials-item">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon -facebook" width="11" height="21" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon -vkontakte" width="23" height="12" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon -instagram" width="18" height="18" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <main class="page__main">
     <section class="main-section">
-      <div class="box">
+      <div class="grid -section box">
         <h1 class="main-section__heading">В путешествие<br>
           с крутыми<br>
           попутчиками!
@@ -123,14 +140,14 @@
               <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
             </svg>
           </a>
-          <a class="button -alternate -default" href="#">Авторизация</a>
+          <a class="button" href="#">Авторизация</a>
         </div>
         <blockquote class="main-section__testimonial">
           <p class="main-section__testimonial-text">«Лучшее приложение,<br>
             что я видел в жизни!»</p>
           <footer class="main-section__testimonial-author">
             Мурат Эльтазин,<br>
-            главный редактор<br>
+            главный редактор <br class="main-section__paragraph">
             газеты <cite>гаджетлайф</cite>
           </footer>
         </blockquote>
@@ -165,21 +182,32 @@
     </section>
 
     <section class="about-section">
-      <div class="box">
+      <div class="grid -section box">
         <div class="about-section__wrapper">
           <h2 class="about-section__heading">О сервисе</h2>
           <p class="about-section__description">
-            Любое путешествие веселее<br>
-            с попутчиками, которые на<br>
-            одной волне с тобой! Делитесь<br>
-            своими идеями путешествий и<br>
+            Любое путешествие веселее<br class="about-section__paragraph">
+            с попутчиками, которые на<br class="about-section__paragraph">
+            одной волне с тобой! Делитесь<br class="about-section__paragraph">
+            своими идеями путешествий и<br class="about-section__paragraph">
             черпайте вдохновение в чужих.
           </p>
           <p class="about-section__text">
-            А если найдете кого-то<br>
-            близкого по духу — скорее<br>
+            А если найдете кого-то<br class="about-section__paragraph">
+            близкого по духу — скорее<br class="about-section__paragraph">
             зовите в совместный трип!
           </p>
+        </div>
+        <div class="about-section__button">
+          <a class="button -rectangle -text" href="#">
+            <p class="button__text">Подробнее</p>
+            <svg class="button__icon" width="11" height="12" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="about-section__image">
+          <img src="assets/images/background/tablet-about-section-image.png" alt="Phone with photo of travelers">
         </div>
       </div>
     </section>
@@ -198,9 +226,15 @@
           </div>
           <ul class="direction-section__countries">
             <li class="direction-section__country">
-              <img class="country__image" src="../src/assets/images/image/thailand-mobile-1.png" width="270" height="110" alt="Thailand image">
+              <picture class="country__image">
+                <source media="(min-width: 768px)" srcset="assets/images/image/thailand-desktop.png" width="186" height="140">
+                <img src="../src/assets/images/image/thailand-mobile-1.png" width="270" height="110" alt="Thailand image">
+              </picture>
               <div class="country__body">
-                <img class="country__flag" src="../src/assets/images/image/thailand-flag-1.png" width="35" height="24" alt="Thailand flag">
+                <picture class="country__flag">
+                  <source media="(min-width: 768px)" srcset="assets/images/image/thailand-flag-1.png" width="70" height="47">
+                  <img src="../src/assets/images/image/thailand-flag-1.png" width="35" height="24" alt="Thailand flag">
+                </picture>
                 <div class="country__title">
                   <h3 class="country__heading">Таиланд</h3>
                   <p class="country__subheading">Джунгли зовут!</p>
@@ -216,9 +250,15 @@
               </div>
             </li>
             <li class="direction-section__country">
-              <img class="country__image" src="../src/assets/images/image/france-mobile-1.png" width="270" height="110" alt="France image">
+              <picture class="country__image">
+                <source media="(min-width: 768px)" srcset="assets/images/image/france-desktop.png" width="186" height="140">
+                <img src="../src/assets/images/image/france-mobile-1.png" width="270" height="110" alt="France image">
+              </picture>
               <div class="country__body">
-                <img class="country__flag" src="../src/assets/images/image/france-flag-1.png" width="35" height="24" alt="France flag">
+                <picture class="country__flag">
+                  <source media="(min-width: 768px)" srcset="assets/images/image/france-flag-1.png" width="70" height="47">
+                  <img src="../src/assets/images/image/france-flag-1.png" width="35" height="24" alt="France flag">
+                </picture>
                 <div class="country__title">
                   <h3 class="country__heading">Франция</h3>
                   <p class="country__subheading">Трэ бьен, манифик!</p>
@@ -234,9 +274,15 @@
               </div>
             </li>
             <li class="direction-section__country">
-              <img class="country__image" src="../src/assets/images/image/czech-mobile-1.png" width="270" height="110" alt="Czech image">
+              <picture class="country__image">
+                <source media="(min-width: 768px)" srcset="assets/images/image/czech-desktop.png" width="186" height="140">
+                <img src="../src/assets/images/image/czech-mobile-1.png" width="270" height="110" alt="Czech image">
+              </picture>
               <div class="country__body">
-                <img class="country__flag" src="../src/assets/images/image/czech-flag-1.png" width="35" height="24" alt="Czech flag">
+                <picture class="country__flag">
+                  <source media="(min-width: 768px)" srcset="assets/images/image/czech-flag-1.png" width="70" height="47">
+                  <img src="../src/assets/images/image/czech-flag-1.png" width="35" height="24" alt="Czech flag">
+                </picture>
                 <div class="country__title">
                   <h3 class="country__heading">Чехия</h3>
                   <p class="country__subheading">Закоулки старой Европы</p>
@@ -253,7 +299,7 @@
             </li>
           </ul>
           <div class="direction-section__button">
-            <a class="button -rectangle -default -text" href="#">
+            <a class="button -rectangle -text" href="#">
               <p class="button__text">Показать все</p>
               <svg class="button__icon" width="11" height="12" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-play"></use>
@@ -271,15 +317,14 @@
             Попутчики
           </h2>
           <p class="companions-section__text">
-            Все мы индивидуальны и у<br>
-            каждого свой взгляд на<br>
-            идеальный отдых. Одному<br>
-            нужен пляж и коктейль, а<br>
-            другому маршрут для хайкинга.
+            Все мы индивидуальны и у каждого<br class="companions-section__paragraph">
+            свой взгляд на идеальный отдых.<br class="companions-section__paragraph">
+            Одному нужен пляж и коктейль,<br class="companions-section__paragraph">
+            а другому маршрут для хайкинга.<br class="companions-section__paragraph">
           </p>
           <h3 class="companions-section__subheading">
-            Теперь можно легко найти<br>
-            единомышленников!
+            Теперь можно легко<br class="companions-section__paragraph">
+            найти единомышленников!
           </h3>
         </div>
         <ul class="companions-section__users">
@@ -430,7 +475,7 @@
           </li>
         </ul>
         <div class="companions-section__button">
-          <a class="button -rectangle -default -text" href="#">
+          <a class="button -rectangle -text" href="#">
             <p class="button__text">Показать всех</p>
             <svg class="button__icon" width="11" height="12" aria-hidden="true">
               <use xlink:href="assets/icons/icons.svg#icon-play"></use>
@@ -473,7 +518,15 @@
               </p>
             </li>
           </ul>
-          <button class="rate-section__button">Показать тарифы для бизнеса</button>
+          <div class="rate-section__modal">
+            <button class="rate-section__button">
+              <svg class="rate-section__button-icon" width="28" height="28" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-businessman"></use>
+              </svg>
+              Показать тарифы для бизнеса
+            </button>
+            <img class="rate-section__button-image" src="../src/assets/images/illustration/rates.png" width="100" height="100" alt="Icon mobile with credit card">
+          </div>
         </div>
       </div>
     </section>
@@ -486,7 +539,7 @@
           </h2>
           <p class="feedback-section__registration">
             Зарегистрируйтесь,<br class="mobile-break">
-            это быстро и бесплатно!<br class="mobile-break">
+            это быстро и бесплатно!<br>
             Уже зарегистрированы? Тогда<br class="mobile-break">
             скорее <a class="feedback-section__link" href="#">авторизуйтесь.</a>
           </p>
@@ -494,7 +547,7 @@
         <form class="feedback-section__form" action="#" method="post">
           <label class="feedback-section__label" for="email"> E-mail </label>
           <input class="input" id="email" type="email" name="email" placeholder="E-mail" maxlength="254" autocomplete="email" required="">
-          <button class="feedback-section__button button -square -default -text" type="submit" aria-label="Отправить">
+          <button class="feedback-section__button button -square -text" type="submit" aria-label="Отправить">
             <svg class="button__icon" width="11" height="12" aria-hidden="true">
               <use xlink:href="assets/icons/icons.svg#icon-play"></use>
             </svg>
@@ -507,8 +560,8 @@
         <ul class="feedback-section__contacts">
           <li class="contact">
             <a href="tel:88005558628" class="contact__link -alternate">
-              <div class="contact__icon">
-                <svg width="18" height="17" aria-hidden="true">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mobile" width="18" height="17" aria-hidden="true">
                   <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
                 </svg>
               </div>
@@ -517,8 +570,8 @@
           </li>
           <li class="contact">
             <a href="mailto:mail@htmlacademy.ru" class="contact__link -alternate">
-              <div class="contact__icon">
-                <svg width="24" height="25" aria-hidden="true">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mail" width="24" height="25" aria-hidden="true">
                   <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
                 </svg>
               </div>
@@ -563,13 +616,16 @@
   <footer class="page-footer">
     <div class="grid -footer box">
       <a class="footer__logo" href="#">
-        <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+          <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+        </picture>
       </a>
       <ul class="footer__socials">
         <li class="footer__socials-item">
           <a class="socials__link" href="#">
             <div class="socials__icon -footer">
-              <svg  width="11" height="21" aria-hidden="true">
+              <svg class="socials__facebook -footer" width="11" height="21" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
               </svg>
             </div>
@@ -578,7 +634,7 @@
         <li class="footer__socials-item">
           <a class="socials__link" href="#">
             <div class="socials__icon -footer">
-              <svg width="23" height="12" aria-hidden="true">
+              <svg class="socials__vkontakte -footer" width="23" height="12" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
               </svg>
             </div>
@@ -587,7 +643,7 @@
         <li class="footer__socials-item">
           <a class="socials__link" href="#">
             <div class="socials__icon -footer">
-              <svg width="18" height="18" aria-hidden="true">
+              <svg class="socials__instagram -footer" width="18" height="18" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
               </svg>
             </div>

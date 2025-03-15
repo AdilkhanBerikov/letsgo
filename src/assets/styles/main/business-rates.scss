@@ -7,6 +7,11 @@
   height: var(--business-rates-height);
   background-color: var(--color-business-rates-background);
   border-radius: $border-radius-xl;
+
+  @media (min-width: $tablet-width) {
+    --business-rates-width: 688px;
+    --business-rates-height: 526px;
+  }
 }
 
 .business-rates__heading {
@@ -14,11 +19,19 @@
   text-align: center;
   font: var(--font-business-rates-heading);
   color: var(--color-business-rates-heading);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
 }
 
 .business-rates__list {
   padding: 0 26px 34px 26px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 92px 52px 90px;
+  }
 }
 
 .business-rates__item {
@@ -26,18 +39,32 @@
   border-top: 1px solid var(--color-business-rates-item-border);
   border-bottom: 1px solid var(--color-business-rates-item-border);
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .business-rates__name {
   font: var(--font-business-rates-name);
   line-height: 22px;
   color: var(--color-business-rates-name);
+
+  @media (min-width: $tablet-width) {
+    line-height: 28px;
+  }
 }
 
 .business-rates__price {
   font: var(--font-business-rates-price);
   line-height: 22px;
   color: var(--color-business-rates-price);
+
+  @media (min-width: $tablet-width) {
+    line-height: 28px;
+  }
 }
 
 .business-rates__button {
@@ -61,5 +88,10 @@
   &:active {
     color: var(--color-business-rates-button-text-active);
     background-color: var(--color-business-rates-button-background-active);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 0;
+    text-transform: none;
   }
 }

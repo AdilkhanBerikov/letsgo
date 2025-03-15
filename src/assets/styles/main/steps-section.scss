@@ -9,6 +9,12 @@
 .steps__list {
   padding-bottom: 39px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 96px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .steps__item {
@@ -21,13 +27,38 @@
   justify-content: space-between;
   flex-direction: row-reverse;
 
+  @media (min-width: $tablet-width) {
+    --steps-item-tablet-height: 140px;
+    margin-top: -140px;
+    margin-right: -21px;
+    padding: 30px 0 22px 33px;
+    height: var(--steps-item-tablet-height);
+    border-radius: $border-radius-xl 0 0 0;
+    //display: grid;
+    //grid-template-rows: min-content min-content;
+    justify-content: start;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
   &:nth-child(2) {
     background-color: var(--color-steps-item-2-background);
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+      border-radius: $border-radius-xl $border-radius-xl 0 0;
+    }
   }
 
   &:nth-child(3) {
     padding-bottom: 76px;
     background-color: var(--color-steps-item-3-background);
+
+    @media (min-width: $tablet-width) {
+      margin-top: -70px;
+      padding-bottom: 33px;
+      border-radius: 0 0 0 $border-radius-xl;
+    }
   }
 
   &:last-child {
@@ -35,6 +66,13 @@
     padding-bottom: 24px;
     border-radius: $border-radius-large;
     background-color: var(--color-steps-item-4-background);
+
+    @media (min-width: $tablet-width) {
+      margin-top: -70px;
+      margin-right: 0;
+      padding-bottom: 33px;
+      border-radius: 0 0 $border-radius-xl $border-radius-xl;
+    }
   }
 }
 
