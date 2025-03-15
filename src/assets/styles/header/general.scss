@@ -26,6 +26,13 @@
   }
 }
 
+.header__logo {
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
 .header__logo-scrolled {
   display: none;
 }
@@ -34,11 +41,16 @@
   position: relative;
   width: auto;
 
-  @media (min-width: $tablet-width) {
-    //justify-self: center;
-    //margin: 0 auto;
-    //position: absolute;
-    //transform: translateX(-50%);
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+  }
+}
+
+.header__wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -55,5 +67,18 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+    display: flex;
+  }
+}
+
+.header__button-contacts {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
