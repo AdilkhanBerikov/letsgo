@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".page-header");
+  const gridHeader = document.querySelector(".grid.-header.box"); // Находим .grid.-header.box
   const menu = document.querySelector(".mobile-menu");
+  const navList = document.querySelector(".nav__list");
   const toggles = document.querySelectorAll(".toggle");
+  const navLinks = document.querySelectorAll(".nav__link"); // Находим все ссылки меню
 
   function toggleMenu() {
     if (!menu || toggles.length === 0) return;
@@ -20,15 +23,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function handleScroll() {
-    if (window.scrollY > 0) {
+    const scrollThreshold = window.innerWidth >= 1440 ? 750 : 0; // 750px для десктопа, 0px для мобайл
+
+    if (window.scrollY > scrollThreshold) {
       header.classList.add("-scrolled");
+      gridHeader.classList.add("-scrolled"); // Добавляем/убираем -scrolled
+      navList.classList.add("-scrolled");
+      navLinks.forEach((link) => link.classList.add("-scrolled")); // Добавляем класс к ссылкам
     } else {
       header.classList.remove("-scrolled");
+      gridHeader.classList.remove("-scrolled"); // Добавляем/убираем -scrolled
+      navList.classList.remove("-scrolled");
+      navLinks.forEach((link) => link.classList.remove("-scrolled")); // Убираем класс у ссылок
     }
   }
 
   toggles.forEach((btn) => btn.addEventListener("click", toggleMenu));
   document.addEventListener("click", closeMenuOnClick);
   window.addEventListener("scroll", handleScroll);
-  handleScroll();
+  handleScroll(); // Запускаем сразу, чтобы проверить начальное состояние
 });

@@ -54,6 +54,10 @@
     position: relative;
     border-radius: 50%;
     justify-content: center;
+
+    @media (min-width: $desktop-width) {
+      --button-round-size: 50px;
+    }
   }
 
   &.-rectangle {

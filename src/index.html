@@ -11,18 +11,57 @@
     <div class="grid -header box">
       <a class="header__logo" href="#">
         <picture class="header__logo-default">
+          <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-white.svg" width="200" height="52">
           <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-white.png" width="166" height="42">
           <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
         </picture>
         <picture class="header__logo-scrolled">
+          <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue.svg" width="200" height="60">
           <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
           <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
         </picture>
       </a>
       <nav class="header__nav">
         <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="header__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="О сервисе">
+                  О сервисе
+                </span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="Направления">
+                  Направления
+                </span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="Попутчики">
+                  Попутчики
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="header__button">
+        <div class="header__button-contacts">
+          <a class="button -round -primary" href="#">
+            <svg width="18" height="18" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-call"></use>
+            </svg>
+          </a>
+          <a class="button -round -secondary" href="#">
+            <svg width="18" height="15.75" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
+            </svg>
+          </a>
+        </div>
         <a class="button" href="#">Авторизация</a>
       </div>
     </div>
@@ -44,27 +83,27 @@
           <a class="button -alternate" href="#">Авторизация</a>
         </div>
       </div>
-      <div class="mobile-menu__wrapper">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
-            <span class="mobile-menu__link-animation" data-hover="О сервисе">
-              О сервисе
-            </span>
+      <div class="mobile-menu__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="О сервисе">
+                О сервисе
+              </span>
             </a>
           </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
-            <span class="mobile-menu__link-animation" data-hover="Направления">
-              Направления
-            </span>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="Направления">
+                Направления
+              </span>
             </a>
           </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
-            <span class="mobile-menu__link-animation" data-hover="Попутчики">
-              Попутчики
-            </span>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="Попутчики">
+                Попутчики
+              </span>
             </a>
           </li>
         </ul>
