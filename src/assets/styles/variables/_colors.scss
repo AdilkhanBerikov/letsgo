@@ -258,7 +258,7 @@ $color-сoral: #F97676;
 @media (min-width: 1440px) {
   :root {
     //Header
-    --color-page-header-background: #{$color-blue-dark-6};
+    --color-page-header-background: #{$color-blue-dark};
     --color-nav-list-before: #{$color-white};
     --color-nav-list-before-scrolled: #{$color-blue-dark-2};
     --color-nav-link-text: #{$color-white};
@@ -266,7 +266,7 @@ $color-сoral: #F97676;
 
     //Main
     //Main-section
-    --color-main-section-background: #{$color-blue-dark-6};
+    --color-main-section-background: #{$color-blue-dark};
 
     //Steps
     --color-steps-background: #{$color-blue-dark-6};
