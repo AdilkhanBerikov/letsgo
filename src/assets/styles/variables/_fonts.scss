@@ -170,6 +170,9 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
     --font-tooltip: 400 20px/20px #{$font-family-main};
 
+    //Button
+    --font-button-square: var(--font-h5);
+
     //Header
     --font-nav-link: var(--font-body-medium);
 

@@ -14,6 +14,11 @@
     padding-bottom: 60px;
     border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 169px;
+    padding-bottom: 103px;
+  }
 }
 
 .feedback-section__title {
@@ -74,6 +79,12 @@
     padding-left: 35px;
     padding-right: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .feedback-section__label {
@@ -85,6 +96,14 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+  }
+}
+
+.feedback-section__button-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -108,5 +127,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 35px;
     justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
   }
 }

@@ -80,6 +80,13 @@
       padding: 33px;
       border-radius: 0 $border-radius-xl $border-radius-xl 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 29px 33px 28px 42px;
+      font: var(--font-button-square);
+      text-transform: none;
+      gap: 96px;
+    }
   }
 
   &.-text {
