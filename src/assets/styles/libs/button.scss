@@ -153,4 +153,9 @@
     width: var(--button-icon-tablet-width);
     height: var(--button-icon-tablet-height);
   }
+
+  @media (min-width: $desktop-width) {
+    --button-icon-tablet-width: 15px;
+    --button-icon-tablet-height: 15px;
+  }
 }
