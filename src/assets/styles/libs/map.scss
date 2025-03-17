@@ -12,4 +12,8 @@
   @media (min-width: $tablet-width) {
     --map-height: 594px;
   }
+
+  @media (min-width: $desktop-width) {
+    --map-height: 524px;
+  }
 }
