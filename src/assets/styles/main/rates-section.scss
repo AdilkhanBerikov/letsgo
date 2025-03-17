@@ -14,6 +14,11 @@
     padding-bottom: 45px;
     border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 167px;
+    padding-bottom: 165px;
+  }
 }
 
 .rate-section__container {
@@ -37,6 +42,11 @@
     margin-bottom: 72px;
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 131px;
+    position: relative;
+  }
 }
 
 .rate-section__heading {
@@ -49,6 +59,13 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    bottom: -333px;
+    right: 100px;
   }
 }
 
@@ -74,6 +91,19 @@
       width: var(--rate-section-price-before-width);
       height: var(--rate-section-price-before-height);
       z-index: $z-index-negative;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+    margin-right: 365px;
+    padding: 0 0 0 161px;
+
+    &::after {
+      --rate-section-price-before-width: 446px;
+      --rate-section-price-before-height: 300px;
+      top: -51px;
+      right: -161px;
     }
   }
 }
@@ -160,6 +190,11 @@
     justify-content: space-between;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 161px;
+    text-align: start;
+  }
 }
 
 .rate-section__button {
@@ -196,6 +231,14 @@
       cursor: pointer;
     }
   }
+
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      top: -26px;
+      left: 71px;
+    }
+  }
 }
 
 .rate-section__button-icon {
@@ -207,6 +250,11 @@
     top: 35px;
     left: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -5px;
+    left: 92px;
+  }
 }
 
 .rate-section__button-image {
@@ -214,5 +262,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
