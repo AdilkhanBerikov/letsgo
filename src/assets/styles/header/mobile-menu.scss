@@ -16,6 +16,10 @@
     opacity: 1;
     visibility: visible;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .mobile-menu__header {
@@ -41,7 +45,7 @@
   }
 }
 
-.mobile-menu__wrapper {
+.mobile-menu__nav {
   margin-left: auto;
   margin-right: auto;
   max-width: 270px; /* Растягиваем на всю ширину */
@@ -54,58 +58,6 @@
     padding: 0 57px;
     max-width: none;
     gap: 144px;
-  }
-}
-
-.mobile-menu__list {
-  text-align: center;
-  line-height: 0;
-
-  @media (min-width: $tablet-width) {
-    text-align: start;
-  }
-}
-
-.mobile-menu__link {
-  position: relative;
-  display: inline-block;
-  font: var(--font-menu-link);
-  color: var(--color-mobile-menu-link-text);
-  outline: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-
-  .mobile-menu__link-animation{
-    position: relative;
-    display: inline-block;
-    transition: transform $transition-duration;
-
-    &::before {
-      content: attr(data-hover);
-      position: absolute;
-      width: 100%;
-      top: 100%;
-      font-weight: 700;
-      letter-spacing: -0.7px;
-      color: var(--color-mobile-menu-link-animation-text-before);
-      transform: translate3d(0, 0, 0);
-      white-space: nowrap;
-      transition: color $transition-duration;
-
-      @media (min-width: $tablet-width) {
-        letter-spacing: -1.3px;
-      }
-    }
-  }
-
-  &:hover .mobile-menu__link-animation,
-  &:focus .mobile-menu__link-animation {
-    transform: translateY(-100%);
-  }
-
-  &:active .mobile-menu__link-animation::before {
-    color: var(--color-mobile-menu-link-text-active);
   }
 }
 

@@ -9,4 +9,8 @@
   @media (min-width: $tablet-width) {
     padding-inline: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-inline: 60px;
+  }
 }

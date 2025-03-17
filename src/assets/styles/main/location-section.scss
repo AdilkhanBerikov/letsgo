@@ -14,6 +14,11 @@
     padding-bottom: 84px;
     border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 56px;
+  }
 }
 
 .location-section__wrapper {
@@ -25,6 +30,16 @@
     margin-left: 35px;
     gap: 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 70px;
+    margin-left: 223px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 147px;
+  }
 }
 
 .location-section__title {
@@ -35,10 +50,14 @@
   @media (min-width: $tablet-width) {
     gap: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 31px;
+  }
 }
 
 .location-section__icon {
-  padding: 12px 12px;
+  padding: 12px;
   color: var(--color-location-section-icon);
   background-color: var(--color-location-section-icon-background);
   border-radius: 50%;
@@ -47,7 +66,11 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 18px;
+    padding: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px;
   }
 }
 
@@ -56,6 +79,10 @@
     --location-section-icon-svg-size: 32px;
     width: var(--location-section-icon-svg-size);
     height: var(--location-section-icon-svg-size);
+  }
+
+  @media (min-width: $desktop-width) {
+    --location-section-icon-svg-size: 42px;
   }
 }
 
@@ -67,10 +94,15 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-right: 0;
     line-height: 28px;
   }
 }
 
 .location-section__button {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 324px;
+  }
 }

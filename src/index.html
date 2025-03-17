@@ -11,18 +11,57 @@
     <div class="grid -header box">
       <a class="header__logo" href="#">
         <picture class="header__logo-default">
+          <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-white.svg" width="200" height="52">
           <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-white.png" width="166" height="42">
           <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
         </picture>
         <picture class="header__logo-scrolled">
+          <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue.svg" width="200" height="60">
           <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
           <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
         </picture>
       </a>
       <nav class="header__nav">
         <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="header__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="О сервисе">
+                  О сервисе
+                </span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="Направления">
+                  Направления
+                </span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="Попутчики">
+                  Попутчики
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="header__button">
+        <div class="header__button-contacts">
+          <a class="button -round -primary" href="#">
+            <svg width="18" height="18" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-call"></use>
+            </svg>
+          </a>
+          <a class="button -round -secondary" href="#">
+            <svg width="18" height="15.75" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
+            </svg>
+          </a>
+        </div>
         <a class="button" href="#">Авторизация</a>
       </div>
     </div>
@@ -44,27 +83,27 @@
           <a class="button -alternate" href="#">Авторизация</a>
         </div>
       </div>
-      <div class="mobile-menu__wrapper">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
-            <span class="mobile-menu__link-animation" data-hover="О сервисе">
-              О сервисе
-            </span>
+      <div class="mobile-menu__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="О сервисе">
+                О сервисе
+              </span>
             </a>
           </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
-            <span class="mobile-menu__link-animation" data-hover="Направления">
-              Направления
-            </span>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="Направления">
+                Направления
+              </span>
             </a>
           </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
-            <span class="mobile-menu__link-animation" data-hover="Попутчики">
-              Попутчики
-            </span>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="Попутчики">
+                Попутчики
+              </span>
             </a>
           </li>
         </ul>
@@ -125,8 +164,8 @@
   <main class="page__main">
     <section class="main-section">
       <div class="grid -section box">
-        <h1 class="main-section__heading">В путешествие<br>
-          с крутыми<br>
+        <h1 class="main-section__heading">В путешествие
+          с крутыми
           попутчиками!
         </h1>
         <div class="main-section__button">
@@ -148,7 +187,7 @@
           <footer class="main-section__testimonial-author">
             Мурат Эльтазин,<br>
             главный редактор <br class="main-section__paragraph">
-            газеты <cite>гаджетлайф</cite>
+            газеты <cite>«гаджетлайф»</cite>
           </footer>
         </blockquote>
       </div>
@@ -207,7 +246,10 @@
           </a>
         </div>
         <div class="about-section__image">
-          <img src="assets/images/background/tablet-about-section-image.png" alt="Phone with photo of travelers">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="assets/images/background/desktop-about-section-image.png" width="630" height="665">
+            <img src="assets/images/background/tablet-about-section-image.png" alt="Phone with photo of travelers">
+          </picture>
         </div>
       </div>
     </section>
@@ -311,7 +353,7 @@
     </section>
 
     <section class="companions-section">
-      <div class="box">
+      <div class="grid -section box">
         <div class="companions-section__title">
           <h2 class="companions-section__heading">
             Попутчики
@@ -490,7 +532,10 @@
         <div class="rate-section__container">
           <div class="rate-section__title">
             <h2 class="rate-section__heading">Добавьте свой профиль</h2>
-            <img class="rate-section__image" src="../src/assets/images/illustration/rates.png" width="100" height="100" alt="Icon mobile with credit card">
+            <picture class="rate-section__image">
+              <source media="(min-width: 1440px)" srcset="../src/assets/images/illustration/rates-desktop.png" width="198" height="198">
+              <img src="../src/assets/images/illustration/rates.png" width="100" height="100" alt="Icon mobile with credit card">
+            </picture>
           </div>
           <ul class="rate-section__list">
             <li class="rate-section__item">
@@ -548,6 +593,7 @@
           <label class="feedback-section__label" for="email"> E-mail </label>
           <input class="input" id="email" type="email" name="email" placeholder="E-mail" maxlength="254" autocomplete="email" required="">
           <button class="feedback-section__button button -square -text" type="submit" aria-label="Отправить">
+            <p class="feedback-section__button-text button__text">Регистрация</p>
             <svg class="button__icon" width="11" height="12" aria-hidden="true">
               <use xlink:href="assets/icons/icons.svg#icon-play"></use>
             </svg>
@@ -617,6 +663,7 @@
     <div class="grid -footer box">
       <a class="footer__logo" href="#">
         <picture>
+          <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue-footer.svg" width="200" height="55">
           <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
           <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
         </picture>

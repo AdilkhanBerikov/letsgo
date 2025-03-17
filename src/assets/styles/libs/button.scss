@@ -54,6 +54,10 @@
     position: relative;
     border-radius: 50%;
     justify-content: center;
+
+    @media (min-width: $desktop-width) {
+      --button-round-size: 50px;
+    }
   }
 
   &.-rectangle {
@@ -75,6 +79,13 @@
     @media (min-width: $tablet-width) {
       padding: 33px;
       border-radius: 0 $border-radius-xl $border-radius-xl 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 29px 33px 28px 42px;
+      font: var(--font-button-square);
+      text-transform: none;
+      gap: 96px;
     }
   }
 
@@ -141,5 +152,10 @@
     --button-icon-tablet-height: 13px;
     width: var(--button-icon-tablet-width);
     height: var(--button-icon-tablet-height);
+  }
+
+  @media (min-width: $desktop-width) {
+    --button-icon-tablet-width: 15px;
+    --button-icon-tablet-height: 15px;
   }
 }

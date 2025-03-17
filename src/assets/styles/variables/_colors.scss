@@ -42,6 +42,7 @@ $color-orange-light: #FFA530;
 $color-orange-dark: #F26926;
 $color-green: #81E31E;
 $color-сoral: #F97676;
+$gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $color-blue-light-1 100%);
 
 :root {
   /* Компонентные цвета */
@@ -128,9 +129,9 @@ $color-сoral: #F97676;
   //Header
   //Mobile Menu
   --color-mobile-menu-background: #{$color-white};
-  --color-mobile-menu-link-text: #{$color-blue-dark-2};
-  --color-mobile-menu-link-animation-text-before: #{$color-yellow-dark};
-  --color-mobile-menu-link-text-active: #{$color-yellow-dark-opacity};
+  --color-nav-link-text: #{$color-blue-dark-2};
+  --color-nav-link-animation-text-before: #{$color-yellow-dark};
+  --color-nav-link-text-active: #{$color-yellow-dark-opacity};
   //Scroll Menu
   --color-scroll-menu-background: #{$color-white};
   //Page Header
@@ -247,6 +248,36 @@ $color-сoral: #F97676;
     //About-section
     --color-about-section-background: #{$color-blue-dark-6};
     --color-about-section-before: #{$color-blue-dark-7};
+
+    //Rate-section
+    --color-rate-section-background: #{$color-blue-light-1};
+    --color-rate-section-price-before-tablet: #{$color-white-dark-2};
+    --color-rate-section-button-icon-background: #{$color-white-dark-2};
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    //Header
+    --color-page-header-background: #{$color-blue-dark};
+    --color-nav-list-before: #{$color-white};
+    --color-nav-list-before-scrolled: #{$color-blue-dark-2};
+    --color-nav-link-text: #{$color-white};
+    --color-nav-link-text-scrolled: #{$color-blue-dark-2};
+
+    //Main
+    //Main-section
+    --color-main-section-background: #{$color-blue-dark};
+
+    //Steps
+    --color-steps-background: #{$color-blue-dark-6};
+
+    //About-section
+    --color-about-section-background: #{$color-blue-dark-2};
+    --color-about-section-before: #{$color-blue-dark-7};
+
+    //Direction-section
+    --color-tablet-direction-section-countries-after: #{$gradient-white-to-blue};
 
     //Rate-section
     --color-rate-section-background: #{$color-blue-light-1};
