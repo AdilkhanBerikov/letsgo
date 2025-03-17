@@ -23,9 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function handleScroll() {
-    const scrollThreshold = window.innerWidth >= 1440 ? 750 : 0; // 750px для десктопа, 0px для мобайл
-
-    if (window.scrollY > scrollThreshold) {
+    if (window.scrollY > 0) {
       header.classList.add("-scrolled");
       gridHeader.classList.add("-scrolled"); // Добавляем/убираем -scrolled
       navList.classList.add("-scrolled");

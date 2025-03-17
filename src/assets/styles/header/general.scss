@@ -11,6 +11,7 @@
     left: 0;
     width: 100%;
     background-color: var(--color-page-header-scrolled-background);
+    z-index: $z-index-lg;
 
     .header__logo-default {
       display: none; // Скрываем светлый логотип
