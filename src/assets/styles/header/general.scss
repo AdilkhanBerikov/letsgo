@@ -25,6 +25,10 @@
       color: var(--color-scroll-toggle); // Меняем цвет бургера
     }
   }
+
+  &.-alternate {
+    background-color: var(--color-page-header-alternate-background);
+  }
 }
 
 .header__logo {

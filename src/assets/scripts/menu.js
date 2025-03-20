@@ -23,16 +23,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function handleScroll() {
+    const isDirectionPage = document.body.classList.contains("direction-page");
+
     if (window.scrollY > 0) {
       header.classList.add("-scrolled");
       gridHeader.classList.add("-scrolled"); // Добавляем/убираем -scrolled
       navList.classList.add("-scrolled");
       navLinks.forEach((link) => link.classList.add("-scrolled")); // Добавляем класс к ссылкам
+
+      if (isDirectionPage) {
+        header.classList.remove("-alternate"); // Убираем только на direction-page
+      }
     } else {
       header.classList.remove("-scrolled");
       gridHeader.classList.remove("-scrolled"); // Добавляем/убираем -scrolled
       navList.classList.remove("-scrolled");
       navLinks.forEach((link) => link.classList.remove("-scrolled")); // Убираем класс у ссылок
+
+      if (isDirectionPage) {
+        header.classList.add("-alternate"); // Возвращаем только на direction-page
+      }
     }
   }
 

@@ -12,10 +12,20 @@
 
 .progress__bar-circle {
   transform: rotate(-90deg);
+
+  &.-alternate {
+    --progress-bar-circle-size: 100px;
+    width: var(--progress-bar-circle-size);
+    height: var(--progress-bar-circle-size);
+  }
 }
 
 .progress__bar-bg {
   fill: var(--color-progress-bar-background);
+
+  &.-alternate {
+    fill: transparent;
+  }
 }
 
 .progress__bar-stroke {
@@ -29,6 +39,11 @@
   stroke-dasharray: $circle-length; /* Длина окружности = 2 × π × r = 2 × 3.1416 × 28 ≈ 176 */
   stroke-dashoffset: calc($circle-length - (var(--progress) * $circle-length / 100)); /* Управление заполнением; 176 / 100 — определяет, сколько пикселей приходится на 1% заполнения. */
   transition: stroke-dashoffset $transition-duration-medium ease;
+
+  &.-alternate {
+    $radius: 50px;
+    stroke-width: 2;
+  }
 }
 
 .progress__level {
@@ -39,6 +54,10 @@
   display: grid;
   gap: 1px;
   transform: translate(-50%, -50%); // центрируем по Х и У
+
+  &.-alternate {
+    gap: 6px;
+  }
 }
 
 .progress__level-number {
@@ -46,9 +65,21 @@
   border-bottom: 1px solid var(--color-progress-bar-level-number-border);
   color: var(--color-progress-bar-level-number);
   font: var(--font-progress-bar-level-number);
+
+  &.-alternate {
+    padding: 0 3px 6px 3px;
+    border-bottom: 1px solid var(--color-progress-bar-level-number-border-alternate);
+    color: var(--color-progress-bar-level-number-alternate);
+    font: var(--font-progress-bar-level-number-alternate);
+  }
 }
 
 .progress__level-text {
   color: var(--color-progress-bar-level-text);
   font: var(--font-progress-bar-level-text);
+
+  &.-alternate {
+    color: var(--color-progress-bar-level-text-alternate);
+    font: var(--font-progress-bar-level-text-alternate);
+  }
 }

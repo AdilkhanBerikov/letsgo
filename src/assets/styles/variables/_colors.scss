@@ -9,6 +9,7 @@ $color-white-dark-2: #E2E5F2;
 $color-white-opacity: rgba($color-white, 0.3);
 $color-grey-light: #F2F2F2;
 $color-grey-light-2: #E6E8F1;
+$color-grey-light-3: #CBCED9;
 $color-grey: #CCCCCC;
 $color-grey-dark: #444444;
 $color-grey-dark-opacity: rgba($color-grey-dark, 0.3);
@@ -18,6 +19,7 @@ $color-blue-opacity-light: rgba($color-blue, 0.15);
 $color-blue-opacity: rgba($color-blue, 0.3);
 $color-blue-light-1: #EDEFF6;
 $color-blue-light-2: #DFE3F0;
+$color-blue-light-3: #D1D7E9;
 $color-blue-dark: #161C35;
 $color-blue-dark-opacity: rgba($color-blue-dark, 0.3);
 $color-blue-dark-2: #192144;
@@ -72,6 +74,11 @@ $gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $c
   --color-button-rectangle-outline-text-hover: #{$color-white};
   --color-button-rectangle-outline-text-active: #{$color-white-opacity};
 
+  --color-button-light-background: #{$color-blue-light-2};
+  --color-button-light-background-hover: #{$color-blue-light-3};
+  --color-button-light-text: #{$color-blue-dark};
+  --color-button-light-text-active: #{$color-blue-dark-opacity};
+
   //Toggle
   --color-header-toggle: #{$color-white};
   --color-mobile-toggle: #{$color-grey};
@@ -98,6 +105,7 @@ $gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $c
   --color-transport-wrapper-after-background: #{$color-blue-dark-4};
   --color-transport-wrapper-after-text: #{$color-white};
   --color-transport-wrapper-before-border: #{$color-blue-dark-4};
+  --color-transport-wrapper-alternate-background: #{$color-white};
 
   //User-card
   --color-user-card-hover-shadow: #{$color-black-opacity-medium};
@@ -112,7 +120,10 @@ $gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $c
   --color-progress-bar-stroke: #{$color-orange};
   --color-progress-bar-level-number: #{$color-white};
   --color-progress-bar-level-number-border: #{$color-white-opacity};
+  --color-progress-bar-level-number-border-alternate: #{$color-grey-dark};
+  --color-progress-bar-level-number-alternate: #{$color-blue-dark};
   --color-progress-bar-level-text: #{$color-white};
+  --color-progress-bar-level-text-alternate: #{$color-grey-dark};
 
   //Input
   --color-input-background: #{$color-white};
@@ -231,6 +242,26 @@ $gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $c
   --color-location-section-icon-background: #{$color-blue-dark-3};
   --color-location-section-icon: #{$color-yellow};
   --color-location-section-address-text: #{$color-blue};
+
+
+  //Direction-page
+  //Page-header
+  --color-page-header-alternate-background: #{$color-blue-dark-6};
+
+  //Heading-section
+  --color-heading-section-background: #{$color-blue-dark-6};
+  --color-heading-section-title: #{$color-white};
+  --color-heading-section-title-before-background: #{$color-orange};
+
+  //Profile-section
+  --color-profile-section-background: #{$color-blue-light-1};
+  --color-profile-section-tags-box-shadow: #{$color-grey-light-3};
+  --color-profile-section-transport-box-shadow: #{$color-grey-light-3};
+  --color-profile-section-tags-heading: #{$color-blue};
+  --color-profile-section-tags-heading-background: #{$color-blue-light-1};
+  --color-profile-section-tags-text: #{$color-grey-dark-opacity-medium};
+  --color-profile-section-transport-heading: #{$color-blue};
+  --color-profile-section-transport-heading-background: #{$color-blue-light-1};
 }
 
 @media (min-width: 768px) {
