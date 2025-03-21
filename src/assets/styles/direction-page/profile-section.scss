@@ -42,37 +42,39 @@
 
 .profile-section__tags {
   margin-bottom: 25px;
-  padding: 26px 28px 26px 25px;
   position: relative;
-  border-radius: $border-radius-large;
-  box-shadow: inset 0 0 0 1px var(--color-profile-section-tags-box-shadow);
 }
 
-.profile-section__tags-heading {
+.profile-section__tags-label {
   padding: 6px 17px;
   position: absolute;
   top: -15px;
   left: calc(100px + 50vw - 158px);
-  font: var(--font-profile-section-tags-heading);
-  color: var(--color-profile-section-tags-heading);
-  background-color: var(--color-profile-section-tags-heading-background);
-
-  //&::before {
-  //  --profile-section-tags-heading-before-width: 70px;
-  //  --profile-section-tags-heading-before-height: 30px;
-  //  content: "";
-  //  position: absolute;
-  //  top: -7px;
-  //  left: -17px;
-  //  background-color: var(--color-profile-section-tags-heading-background);
-  //  width: var(--profile-section-tags-heading-before-width);
-  //  height: var(--profile-section-tags-heading-before-height);
-  //}
+  font: var(--font-profile-section-tags-label);
+  color: var(--color-profile-section-tags-label);
+  background-color: var(--color-profile-section-tags-label-background);
 }
 
-.profile-section__tags-text {
-  font: var(--font-profile-section-tags-text);
-  color: var(--color-profile-section-tags-text);
+.profile-section__tags-textarea {
+  padding: 26px 28px 26px 25px;
+  font: var(--font-profile-section-tags-textarea);
+  color: var(--color-profile-section-tags-textarea);
+  background-color: var(--color-profile-section-tags-textarea-background);
+  box-shadow: inset 0 0 0 1px var(--color-profile-section-tags-textarea-box-shadow);
+  border: none;
+  outline: none;
+  border-radius: $border-radius-large;
+  width: 100%;
+  transition: color $transition-duration, box-shadow $transition-duration;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px var(--color-profile-section-tags-textarea-box-shadow-hover);
+  }
+
+  &:focus {
+    color: var(--color-profile-section-tags-textarea-active);
+    box-shadow: inset 0 0 0 1px var(--color-profile-section-tags-textarea-box-shadow-active);
+  }
 }
 
 .profile-section__transport {
@@ -92,13 +94,13 @@
   background-color: var(--color-profile-section-transport-heading-background);
 }
 
-.profile-section__icons {
+.profile-section__transport-list {
   margin: auto;
   display: flex;
   align-items: center;
 }
 
-.profile-section__icon {
+.profile-section__transport-item {
   position: relative;
   cursor: pointer;
 }

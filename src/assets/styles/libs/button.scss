@@ -178,3 +178,51 @@
     --button-icon-tablet-height: 15px;
   }
 }
+
+.button__transport {
+  --button-transport-width: 32px;
+  --button-transport-height: 32px;
+  position: relative;
+  border-radius: 50%;
+  color: var(--color-button-transport);
+  background-color: var(--color-button-transport-background);
+  width: var(--button-transport-width);
+  height: var(--button-transport-height);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: color $transition-duration, box-shadow $transition-duration, background-color $transition-duration;
+
+  &:hover {
+    color: var(--color-button-transport-hover);
+    box-shadow: 0 2px 6px 0 var(--color-button-transport-box-shadow-hover);
+  }
+
+  &:active {
+    color: var(--color-button-transport-active);
+    background-color: var(--color-button-transport-background-active);
+  }
+
+  &.-off {
+    color: var(--color-button-transport-off);
+
+    &:hover {
+      color: var(--color-button-transport-off-hover);
+      box-shadow: 0 2px 6px 0 var(--color-button-transport-box-shadow-hover);
+    }
+
+    &:active {
+      color: var(--color-button-transport-off-active);
+      background-color: var(--color-button-transport-background-active-off);
+    }
+  }
+}
+
+.button__transport svg {
+  --transport-icon-alternate-width: 17px;
+  --transport-icon-alternate-height: 16px;
+  color: inherit;
+  width: var(--transport-icon-alternate-width);
+  height: var(--transport-icon-alternate-height);
+}

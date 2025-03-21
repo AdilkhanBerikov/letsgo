@@ -198,42 +198,40 @@
         </div>
       </div>
       <div class="profile-section__tags">
-        <h3 class="profile-section__tags-heading">
+        <label for="tags" class="profile-section__tags-label">
           Тэги
-        </h3>
-        <p class="profile-section__tags-text">
-          #бургер #бар #футбол #концерт #крафт
-        </p>
+        </label>
+        <textarea class="profile-section__tags-textarea" id="tags" placeholder="Коротко о себе в виде 5-8 хештэгов"></textarea>
       </div>
       <div class="profile-section__transport">
         <h3 class="profile-section__transport-heading">
           Транспорт
         </h3>
-        <ul class="profile-section__icons">
-          <li class="profile-section__icon">
-            <div class="transport__wrapper -alternate" data-tooltip="Авиаперелет">
-              <svg class="transport__icon -alternate" width="20.83" height="21.12" aria-hidden="true">
+        <ul class="profile-section__transport-list">
+          <li class="profile-section__transport-item">
+            <div class="button__transport" data-tooltip="Авиаперелет">
+              <svg width="20.83" height="21.12" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
               </svg>
             </div>
           </li>
-          <li class="profile-section__icon">
-            <div class="transport__wrapper -alternate" data-tooltip="Автотранспорт">
-              <svg class="transport__icon -alternate" width="17.04" height="19.2" aria-hidden="true">
+          <li class="profile-section__transport-item">
+            <div class="button__transport" data-tooltip="Автотранспорт">
+              <svg width="17.04" height="19.2" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
               </svg>
             </div>
           </li>
-          <li class="profile-section__icon">
-            <div class="transport__wrapper -alternate" data-tooltip="Велосипед">
-              <svg class="transport__icon -alternate -off" width="23.67" height="24" aria-hidden="true">
+          <li class="profile-section__transport-item">
+            <div class="button__transport" data-tooltip="Велосипед">
+              <svg width="23.67" height="24" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
               </svg>
             </div>
           </li>
-          <li class="profile-section__icon">
-            <div class="transport__wrapper -alternate" data-tooltip="Пешком">
-              <svg class="transport__icon -alternate" width="20.65" height="23.04" aria-hidden="true">
+          <li class="profile-section__transport-item">
+            <div class="button__transport" data-tooltip="Пешком">
+              <svg width="20.65" height="23.04" aria-hidden="true">
                 <use xlink:href="assets/icons/icons.svg#icon-run"></use>
               </svg>
             </div>
@@ -341,5 +339,6 @@
 <script type="module" src="./index.js"></script>
 <script src="assets/scripts/menu.js" type="module" defer></script>
 <script src="assets/scripts/progress-bar.js" type="module" defer></script>
+<script src="assets/scripts/button-transport.js" type="module" defer></script>
 
 </html>
