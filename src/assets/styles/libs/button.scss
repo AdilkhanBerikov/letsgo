@@ -184,7 +184,7 @@
   --button-transport-height: 32px;
   position: relative;
   border-radius: 50%;
-  color: var(--color-button-transport);
+  color: var(--color-button-transport-off);
   background-color: var(--color-button-transport-background);
   width: var(--button-transport-width);
   height: var(--button-transport-height);
@@ -195,26 +195,36 @@
   transition: color $transition-duration, box-shadow $transition-duration, background-color $transition-duration;
 
   &:hover {
-    color: var(--color-button-transport-hover);
+    color: var(--color-button-transport-off-hover);
     box-shadow: 0 2px 6px 0 var(--color-button-transport-box-shadow-hover);
   }
 
   &:active {
-    color: var(--color-button-transport-active);
-    background-color: var(--color-button-transport-background-active);
+    color: var(--color-button-transport-off-active);
+    background-color: var(--color-button-transport-background-active-off);
   }
+}
 
-  &.-off {
-    color: var(--color-button-transport-off);
+.button__transport-checkbox {
+  display: none;
+
+  &:checked {
 
     &:hover {
-      color: var(--color-button-transport-off-hover);
       box-shadow: 0 2px 6px 0 var(--color-button-transport-box-shadow-hover);
+    }
+  }
+
+  &:checked + svg {
+    color: var(--color-button-transport);
+
+    &:hover {
+      color: var(--color-button-transport-hover);
     }
 
     &:active {
-      color: var(--color-button-transport-off-active);
-      background-color: var(--color-button-transport-background-active-off);
+      color: var(--color-button-transport-active);
+      background-color: var(--color-button-transport-background-active);
     }
   }
 }
