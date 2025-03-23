@@ -85,16 +85,16 @@ $gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $c
   --color-button-light-text: #{$color-blue-dark};
   --color-button-light-text-active: #{$color-blue-dark-opacity};
 
-  --color-button-transport: #{$color-blue};
-  --color-button-transport-hover: #{$color-blue-opacity-dark};
-  --color-button-transport-active: #{$color-blue-opacity};
-  --color-button-transport-off: #{$color-white-dark-4};
-  --color-button-transport-off-hover: #{$color-grey-2};
-  --color-button-transport-off-active: #{$color-blue-opacity-light};
-  --color-button-transport-background: #{$color-white};
-  --color-button-transport-background-active: #{$color-white-dark-3};
-  --color-button-transport-background-active-off: #{$color-white-dark-3};
-  --color-button-transport-box-shadow-hover: #{$color-blue-dark-opacity-light};
+  --color-transport-button: #{$color-blue};
+  --color-transport-button-hover: #{$color-blue-opacity-dark};
+  --color-transport-button-active: #{$color-blue-opacity};
+  --color-transport-button-off: #{$color-white-dark-4};
+  --color-transport-button-off-hover: #{$color-grey-2};
+  --color-transport-button-off-active: #{$color-blue-opacity-light};
+  --color-transport-button-background: #{$color-white};
+  --color-transport-button-background-active: #{$color-white-dark-3};
+  --color-transport-button-background-active-off: #{$color-white-dark-3};
+  --color-transport-button-box-shadow-hover: #{$color-blue-dark-opacity-light};
 
   //Toggle
   --color-header-toggle: #{$color-white};

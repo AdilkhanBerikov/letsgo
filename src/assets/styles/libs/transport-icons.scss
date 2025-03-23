@@ -89,3 +89,53 @@
   //  }
   //}
 }
+
+.transport__button {
+  --transport-button-width: 32px;
+  --transport-button-height: 32px;
+  position: relative;
+  border-radius: 50%;
+  color: var(--color-transport-button-off);
+  background-color: var(--color-transport-button-background);
+  width: var(--transport-button-width);
+  height: var(--transport-button-height);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: color $transition-duration, box-shadow $transition-duration, background-color $transition-duration;
+
+  &:hover {
+    color: var(--color-transport-button-off-hover);
+    box-shadow: 0 2px 6px 0 var(--color-transport-button-box-shadow-hover);
+  }
+
+  &:active {
+    color: var(--color-transport-button-off-active);
+    background-color: var(--color-transport-button-background-active-off);
+  }
+}
+
+.transport__checkbox {
+  display: none;
+}
+
+.transport__checkbox:checked + svg {
+  color: var(--color-transport-button);
+}
+
+.transport__checkbox:checked + svg:hover {
+  color: var(--color-transport-button-hover);
+}
+
+.transport__checkbox:checked:hover + svg {
+  color: var(--color-transport-button-hover);
+}
+
+.transport__button svg {
+  --transport-icon-alternate-width: 17px;
+  --transport-icon-alternate-height: 16px;
+  color: inherit;
+  width: var(--transport-icon-alternate-width);
+  height: var(--transport-icon-alternate-height);
+}
