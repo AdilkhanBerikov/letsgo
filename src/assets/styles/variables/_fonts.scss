@@ -9,19 +9,25 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-h4: 700 21px/21px #{$font-family-main};
   --font-h5: 700 18px/18px #{$font-family-main};
   --font-h6: 700 17px/20px #{$font-family-main};
+  --font-h7: 700 38px/38px #{$font-family-main};
 
   --font-body-bold: 700 16px/18px #{$font-family-main};
   --font-body-medium: 500 16px/18px #{$font-family-main};
+  --font-body-medium-2: 500 20px/18px #{$font-family-main};
   --font-body-regular: 400 16px/22px #{$font-family-main};
+  --font-body-regular-2: 400 16px/18px #{$font-family-main};
   --font-body-light: 300 16px/18px #{$font-family-main};
 
   --font-caption-regular: 400 14px/14px #{$font-family-main};
+  --font-caption-regular-2: 400 18px/18px #{$font-family-main};
 
   --font-tooltip: 400 20px/20px #{$font-family-main};
 
   //Buttons
   --font-button: var(--font-h6);
+  --font-button-square: var(--font-h5);
   --font-button-rectangle: var(--font-h5);
+  --font-button-change: var(--font-body-medium-2);
 
   //User-card
   --font-user-card-name: var(--font-h4);
@@ -30,6 +36,8 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   //Progress-bar
   --font-progress-bar-level-number: var(--font-h3);
   --font-progress-bar-level-text: var(--font-caption-regular);
+  --font-progress-bar-level-number-alternate: var(--font-h7);
+  --font-progress-bar-level-text-alternate: var(--font-caption-regular-2);
 
   //Icons
   //Contact-icons
@@ -94,6 +102,16 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Location-section
   --font-location-section-address: var(--font-body-bold);
+
+
+  //Direction-page
+  //Heading-section
+  --font-heading-section-title: var(--font-h1);
+
+  //Profile-section
+  --font-profile-section-tags-label: var(--font-body-bold);
+  --font-profile-section-tags-textarea: var(--font-body-regular-2);
+  --font-profile-section-transport-heading: var(--font-body-bold);
 }
 
 

@@ -89,6 +89,12 @@
     }
   }
 
+  &.-change {
+    padding: 11px 67px 11px 68px;
+    font: var(--font-button-change);
+    border-radius: $border-radius-xl;
+  }
+
   &.-text {
     color: var(--color-button-text-alternate);
 
@@ -141,6 +147,19 @@
 
     @media (min-width: $tablet-width) {
       padding: 28px 36px;
+    }
+  }
+
+  &.-light {
+    background-color: var(--color-button-light-background);
+    color: var(--color-button-light-text);
+
+    &:hover {
+      background-color: var(--color-button-light-background-hover);
+    }
+
+    &:active {
+      color: var(--color-button-light-text-active);
     }
   }
 }

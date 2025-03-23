@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.heading-section {
+  padding: 40px 0 12px 0;
+  position: relative;
+  background-color: var(--color-heading-section-background);
+  border-radius: 0 0 $border-radius-xl $border-radius-xl;
+  z-index: $z-index-low;
+}
+
+.heading-section__title {
+  position: relative;
+  color: var(--color-heading-section-title);
+  font: var(--font-heading-section-title);
+  line-height: 36px;
+
+  &::before {
+    --heading-section-title-before-width: 214px;
+    --heading-section-title-before-height: 5px;
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    background-color: var(--color-heading-section-title-before-background);
+    width: var(--heading-section-title-before-width);
+    height: var(--heading-section-title-before-height);
+    border-radius: $border-radius-medium;
+  }
+}
