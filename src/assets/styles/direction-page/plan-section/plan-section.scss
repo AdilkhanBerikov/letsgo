@@ -1,0 +1,51 @@
+@use "../../variables" as *;
+
+.plan-section {
+  margin-top: var(--section-margin-top-negative);
+  padding: 30px 0 73px 0;
+  background-color: var(--color-plan-section-background);
+  border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+}
+
+.plan-section__title {
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-section__heading {
+  color: var(--color-plan-section-header);
+  font: var(--font-plan-section-header);
+}
+
+.plan-section__points {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.plan-section__point {
+  --plan-section-point-size: 5px;
+  background-color: var(--color-plan-section-point-background);
+  border-radius: 50%;
+  width: var(--plan-section-point-size);
+  height: var(--plan-section-point-size);
+  transition: background-color $transition-duration;
+
+  &.-selected {
+    background-color: var(--color-plan-section-point-background-selected);
+  }
+}
+
+.plan-section__steps {
+  display: grid;
+  gap: 10px;
+}
+
+.plan-section__step {
+  padding: 24px 24px 11px 24px;
+  background-color: var(--color-plan-section-step-background);
+  border-radius: $border-radius-large;
+  display: grid;
+}
