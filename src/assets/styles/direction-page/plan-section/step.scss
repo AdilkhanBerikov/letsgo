@@ -320,7 +320,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: $gradient-transparent-to-white;
+    background: var(--color-step-plans-title-after-background);
     width: var(--step-plans-title-after-width);
     height: var(--step-plans-title-after-height);
     z-index: $z-index-low;
@@ -331,8 +331,8 @@
   position: absolute;
   top: 4px;
   left: 11px;
-  color: $color-blue;
-  font: var(--font-h5);
+  color: var(--color-step-plans-name);
+  font: var(--font-step-plans-name);
 }
 
 .step__plans-flag {
@@ -348,10 +348,10 @@
   --step-plans-textarea-size: 220px;
   padding: 11px 14px;
   position: relative;
-  color: $color-grey-dark;
-  border: 1px solid $color-grey-light-3;
+  color: var(--color-step-plans-textarea);
+  border: 1px solid var(--color-step-plans-textarea-border);
   border-radius: $border-radius-medium;
-  font: var(--font-body-regular);
+  font: var(--font-step-plans-textarea);
   width: 100%;
   height: var(--step-plans-textarea-size);
   overflow-y: auto;
@@ -362,11 +362,11 @@
   }
 
   &:hover {
-    border-color: $color-grey-light-5;
+    border-color: var(--color-step-plans-textarea-border-hover);
   }
 
   &:focus {
-    border-color: $color-blue-dark;
+    border-color: var(--color-step-plans-textarea-border-focus);
 
     &::placeholder {
       opacity: 1;

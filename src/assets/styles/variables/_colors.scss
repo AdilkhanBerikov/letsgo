@@ -360,6 +360,12 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
   --color-step-button-flag-border: #{$color-grey-light-3};
   --color-step-button-close-background: #{$color-blue-light-1};
   --color-step-button-close-svg: #{$color-grey-light-5};
+  --color-step-plans-title-after-background: #{$gradient-transparent-to-white};
+  --color-step-plans-name: #{$color-blue};
+  --color-step-plans-textarea: #{$color-grey-dark};
+  --color-step-plans-textarea-border: #{$color-grey-light-3};
+  --color-step-plans-textarea-border-hover: #{$color-grey-light-5};
+  --color-step-plans-textarea-border-focus: #{$color-blue-dark};
   //Calendar
   --color-calendar-header-border: #{$color-white-dark-5};
   --color-calendar-month-year: #{$color-blue};
