@@ -10,16 +10,21 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-h5: 700 18px/18px #{$font-family-main};
   --font-h6: 700 17px/20px #{$font-family-main};
   --font-h7: 700 38px/38px #{$font-family-main};
+  --font-h8: 700 20px/20px #{$font-family-main};
 
   --font-body-bold: 700 16px/18px #{$font-family-main};
   --font-body-medium: 500 16px/18px #{$font-family-main};
   --font-body-medium-2: 500 20px/18px #{$font-family-main};
+  --font-body-medium-3: 500 14px/14px #{$font-family-main};
+  --font-body-medium-4: 500 16px/16px #{$font-family-main};
   --font-body-regular: 400 16px/22px #{$font-family-main};
   --font-body-regular-2: 400 16px/18px #{$font-family-main};
+  --font-body-regular-3: 400 15px/15px #{$font-family-main};
   --font-body-light: 300 16px/18px #{$font-family-main};
 
   --font-caption-regular: 400 14px/14px #{$font-family-main};
   --font-caption-regular-2: 400 18px/18px #{$font-family-main};
+  --font-caption-regular-3: 400 14px/18px #{$font-family-main};
 
   --font-tooltip: 400 20px/20px #{$font-family-main};
 
@@ -28,6 +33,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-button-square: var(--font-h5);
   --font-button-rectangle: var(--font-h5);
   --font-button-change: var(--font-body-medium-2);
+  --font-button-modify: var(--font-body-medium-3);
 
   //User-card
   --font-user-card-name: var(--font-h4);
@@ -49,6 +55,8 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-input-text: var(--font-h5);
   --font-input-placeholder: var(--font-h5);
   --font-feedback-section-questions: var(--font-body-light);
+
+  --font-input-number: var(--font-body-medium-3);
 
   //Header
   --font-nav-link: var(--font-h2);
@@ -112,6 +120,35 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-profile-section-tags-label: var(--font-body-bold);
   --font-profile-section-tags-textarea: var(--font-body-regular-2);
   --font-profile-section-transport-heading: var(--font-body-bold);
+
+  //Plans-section
+  --font-plans-section-header: var(--font-h3);
+  --font-plans-section-item-header: var(--font-body-medium);
+  --font-plans-section-countries: var(--font-body-bold);
+  --font-plans-section-item-body: var(--font-body-medium-3);
+
+  //Plan-section
+  --font-plan-section-header: var(--font-h3);
+  --font-plan-section-item-header: var(--font-body-medium);
+  --font-plan-section-countries: var(--font-body-bold);
+  --font-plan-section-item-body: var(--font-body-medium-3);
+  //Step
+  --font-step-heading: var(--font-h8);
+  --font-step-description: var(--font-body-regular);
+  --font-step-form-description: var(--font-body-medium-4);
+  --font-step-form-label: var(--font-body-medium-4);
+  --font-step-checkbox-label: var(--font-body-regular-3);
+  --font-step-plans-name: var(--font-h5);
+  --font-step-plans-textarea: var(--font-body-regular);
+  //Calendar
+  --font-calendar-month-year: var(--font-h8);
+  --font-calendar-week-days: var(--font-caption-regular-3);
+  --font-calendar-week-days-before: var(--font-caption-regular-3);
+  //Dropdown-menu
+  --font-dropdown-menu-heading: var(--font-body-medium-3);
+  --font-dropdown-menu-letter: var(--font-body-medium-3);
+  --font-dropdown-menu-country: var(--font-body-regular);
+  --font-step-country-name: var(--font-body-medium-3);
 }
 
 

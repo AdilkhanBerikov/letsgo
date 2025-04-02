@@ -41,3 +41,44 @@
     color: var(--color-input-is-error-text);
   }
 }
+
+.input__number-label {
+  display: none;
+}
+
+.input__number-button {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform $transition-duration-low, color $transition-duration;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.8);
+    border: none;
+  }
+}
+
+.input__number-button svg {
+  color: var(--color-input-number-button-svg);
+  transition: color $transition-duration;
+
+}
+
+.input__number {
+  padding: 14px;
+  text-align: center;
+  color: var(--color-input-number);
+  font: var(--font-input-number);
+  background: none;
+  border: none;
+  outline: none;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}

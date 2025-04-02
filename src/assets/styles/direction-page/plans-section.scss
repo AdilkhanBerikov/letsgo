@@ -1,0 +1,51 @@
+@use "../variables" as *;
+
+.plans-section {
+  margin-top: var(--section-margin-top-negative);
+  padding: 28px 0 60px 0;
+  background-color: var(--color-plans-section-background);
+  border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+}
+
+.plans-section__header {
+  margin-bottom: 29px;
+  text-align: start;
+  font: var(--font-plans-section-header);
+  color: var(--color-plans-section-header);
+}
+
+.plans-section__list {
+  display: grid;
+  gap: 10px;
+}
+
+.plans-section__item {
+  padding: 24px 25px 23px 25px;
+  background-color: var(--color-plans-section-item-background);
+  border-radius: $border-radius-large;
+  width: 100%;
+  display: grid;
+}
+
+.plans-section__item-header {
+  margin-bottom: 20px;
+  color: var(--color-plans-section-item-header);
+  font: var(--font-plans-section-item-header);
+  line-height: 16px;
+  display: flex;
+  gap: 5px;
+}
+
+.plans-section__counties {
+  font: var(--font-plans-section-countries);
+}
+
+.plans-section__item-body {
+  margin-bottom: 24px;
+  color: var(--color-plans-section-item-body);
+  font: var(--font-plans-section-item-body);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: grid;
+  gap: 5px;
+}
