@@ -201,6 +201,41 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-business-rates-name: var(--font-body-light-2);
     --font-business-rates-price: var(--font-body-light-2);
     --font-business-rates-button: var(--font-h5);
+
+    //Direction-page
+    //Profile-section
+    --font-profile-section-tags-label: var(--font-body-medium);
+    --font-profile-section-tags-textarea: var(--font-body-regular);
+    --font-profile-section-transport-heading: var(--font-body-medium);
+
+    //Plans-section
+    --font-plans-section-header: var(--font-h3);
+    --font-plans-section-item-header: var(--font-body-medium);
+    --font-plans-section-countries: var(--font-body-bold);
+    --font-plans-section-item-body: var(--font-body-medium-3);
+
+    //Plan-section
+    --font-plan-section-header: var(--font-h3);
+    --font-plan-section-item-header: var(--font-body-medium);
+    --font-plan-section-countries: var(--font-body-bold);
+    --font-plan-section-item-body: var(--font-body-medium-3);
+    //Step
+    --font-step-heading: var(--font-h8);
+    --font-step-description: var(--font-body-regular);
+    --font-step-form-description: var(--font-body-medium-4);
+    --font-step-form-label: var(--font-body-medium-4);
+    --font-step-checkbox-label: var(--font-body-regular-3);
+    --font-step-plans-name: var(--font-h5);
+    --font-step-plans-textarea: var(--font-body-regular);
+    //Calendar
+    --font-calendar-month-year: var(--font-h8);
+    --font-calendar-week-days: var(--font-caption-regular-3);
+    --font-calendar-week-days-before: var(--font-caption-regular-3);
+    //Dropdown-menu
+    --font-dropdown-menu-heading: var(--font-body-medium-3);
+    --font-dropdown-menu-letter: var(--font-body-medium-3);
+    --font-dropdown-menu-country: var(--font-body-regular);
+    --font-step-country-name: var(--font-body-medium-3);
   }
 }
 

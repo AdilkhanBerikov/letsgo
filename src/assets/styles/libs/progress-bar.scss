@@ -17,6 +17,10 @@
     --progress-bar-circle-size: 100px;
     width: var(--progress-bar-circle-size);
     height: var(--progress-bar-circle-size);
+
+    @media (min-width: $tablet-width) {
+      --progress-bar-circle-size: 94px;
+    }
   }
 }
 

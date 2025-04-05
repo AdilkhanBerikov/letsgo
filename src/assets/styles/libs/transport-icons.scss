@@ -75,6 +75,11 @@
   cursor: pointer;
   transition: color $transition-duration, box-shadow $transition-duration, background-color $transition-duration;
 
+  @media (min-width: $tablet-width) {
+    --transport-button-width: 43px;
+    --transport-button-height: 43px;
+  }
+
   &:hover {
     color: var(--color-transport-button-off-hover);
     box-shadow: 0 2px 6px 0 var(--color-transport-button-box-shadow-hover);
@@ -104,4 +109,9 @@
   color: inherit;
   width: var(--transport-icon-alternate-width);
   height: var(--transport-icon-alternate-height);
+
+  @media (min-width: $tablet-width) {
+    --transport-icon-alternate-width: 23px;
+    --transport-icon-alternate-height: 22px;
+  }
 }

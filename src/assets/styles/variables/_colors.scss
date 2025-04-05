@@ -431,6 +431,12 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
 
 @media (min-width: 1440px) {
   :root {
+
+    //Progress-bar
+    --color-progress-bar-level-number-border-alternate: #{$color-white-opacity};
+    --color-progress-bar-level-number-alternate: #{$color-white};
+    --color-progress-bar-level-text-alternate: #{$color-white};
+
     //Header
     --color-page-header-background: #{$color-blue-dark};
     --color-nav-list-before: #{$color-white};
