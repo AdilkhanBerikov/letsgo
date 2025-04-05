@@ -93,6 +93,19 @@
     padding: 11px 67px 11px 68px;
     font: var(--font-button-change);
     border-radius: $border-radius-xl;
+
+    @media (min-width: $tablet-width) {
+      padding: 22px 67px 20px 68px;
+      border-radius: $border-radius-large;
+      width: 100%;
+      letter-spacing: 0.09em;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 70px 13px 71px;
+      border-radius: 0 0 $border-radius-large $border-radius-large;
+      letter-spacing: 0;
+    }
   }
 
   &.-modify {
