@@ -5,6 +5,16 @@
   padding: 28px 0 60px 0;
   background-color: var(--color-plans-section-background);
   border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 35px 106px 35px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 0 124px 64px;
+    border-radius: $border-radius-tablet-3xl $border-radius-tablet-3xl 0 0;
+  }
 }
 
 .plans-section__header {
@@ -12,11 +22,28 @@
   text-align: start;
   font: var(--font-plans-section-header);
   color: var(--color-plans-section-header);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+    margin-left: 7px;
+  }
 }
 
 .plans-section__list {
   display: grid;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 15px;
+  }
 }
 
 .plans-section__item {
@@ -25,15 +52,52 @@
   border-radius: $border-radius-large;
   width: 100%;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 1fr min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 42px 36px 43px;
+    grid-template-rows: min-content;
+    grid-template-columns: 584px 1fr min-content;
+    align-items: center;
+  }
 }
 
 .plans-section__item-header {
   margin-bottom: 20px;
   color: var(--color-plans-section-item-header);
-  font: var(--font-plans-section-item-header);
   line-height: 16px;
   display: flex;
+  align-items: center;
   gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 40px 32px 34px 40px;
+    border-bottom: 1px solid var(--color-plans-section-item-header-border);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0;
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border-bottom: none;
+    flex-direction: row;
+    justify-content: start;
+    gap: 36px;
+    grid-column: 1;
+  }
+}
+
+.plans-section__number {
+  font: var(--font-plans-section-number);
 }
 
 .plans-section__counties {
@@ -44,8 +108,45 @@
   margin-bottom: 24px;
   color: var(--color-plans-section-item-body);
   font: var(--font-plans-section-item-body);
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   display: grid;
   gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 20px 77px 14px 40px;
+    grid-template-columns: 177px 1fr;
+    grid-row: 2;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-row: 1;
+  }
+}
+
+.plans-section__companions {
+  letter-spacing: 0.06em;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.1em;
+  }
+}
+
+.plans-section__dates {
+  letter-spacing: 0.06em;
+}
+
+.plans-section__item-button {
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 40px 14px 0;
+    grid-row: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-row: 1;
+  }
 }

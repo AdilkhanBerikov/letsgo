@@ -18,6 +18,7 @@ $color-white-dark-5: #D6D9E6;
 $color-grey-light: #F2F2F2;
 $color-grey-light-2: #E6E8F1;
 $color-grey-light-3: #CBCED9;
+$color-grey-light-3-opacity: rgba($color-grey-light-3, 0.3);;
 $color-grey-light-4: #AEB4CB;
 $color-grey-light-5: #959BB2;
 $color-grey-light-5: #AFB0B5;
@@ -317,6 +318,7 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
   --color-plans-section-header: #{$color-blue};
   --color-plans-section-item-background: #{$color-white};
   --color-plans-section-item-header: #{$color-blue};
+  --color-plans-section-item-header-border: #{$color-grey-light-3-opacity};
   --color-plans-section-item-body: #{$color-blue};
 
   //Plan-section

@@ -123,7 +123,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Plans-section
   --font-plans-section-header: var(--font-h3);
-  --font-plans-section-item-header: var(--font-body-medium);
+  --font-plans-section-number: var(--font-body-medium);
   --font-plans-section-countries: var(--font-body-bold);
   --font-plans-section-item-body: var(--font-body-medium-3);
 
@@ -157,6 +157,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-h1: 700 60px/70px #{$font-family-main};
     --font-h2: 500 60px/71px #{$font-family-main};
     --font-h3: 700 45px/45px #{$font-family-main};
+    --font-h3-2: 700 36px/36px #{$font-family-main};
     --font-h4: 700 30px/30px #{$font-family-main};
     --font-h5: 700 24px/24px #{$font-family-main};
     --font-h6: 700 20px/20px #{$font-family-main};
@@ -172,6 +173,9 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-caption-regular: 400 14px/14px #{$font-family-main};
 
     --font-tooltip: 400 20px/20px #{$font-family-main};
+
+    //Buttons
+    --font-button-modify: var(--font-body-medium);
 
     //Main
     //Main-section
@@ -209,10 +213,9 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-profile-section-transport-heading: var(--font-body-medium);
 
     //Plans-section
-    --font-plans-section-header: var(--font-h3);
-    --font-plans-section-item-header: var(--font-body-medium);
-    --font-plans-section-countries: var(--font-body-bold);
-    --font-plans-section-item-body: var(--font-body-medium-3);
+    --font-plans-section-header: var(--font-h3-2);
+    --font-plans-section-countries: var(--font-h5);
+    --font-plans-section-item-body: var(--font-body-medium);
 
     //Plan-section
     --font-plan-section-header: var(--font-h3);
