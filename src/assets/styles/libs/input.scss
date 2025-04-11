@@ -64,7 +64,30 @@
 .input__number-button svg {
   color: var(--color-input-number-button-svg);
   transition: color $transition-duration;
+}
 
+.input__number-button.-plus svg {
+  --input-number-button-plus-width: 14px;
+  --input-number-button-plus-height: 14px;
+  width: var(--input-number-button-plus-width);
+  height: var(--input-number-button-plus-height);
+
+  @media (min-width: $tablet-width) {
+    --input-number-button-plus-width: 20px;
+    --input-number-button-plus-height: 20px;
+  }
+}
+
+.input__number-button.-minus svg {
+  --input-number-button-minus-width: 14px;
+  --input-number-button-minus-height: 2px;
+  width: var(--input-number-button-minus-width);
+  height: var(--input-number-button-minus-height);
+
+  @media (min-width: $tablet-width) {
+    --input-number-button-minus-width: 20px;
+    --input-number-button-minus-height: 2px;
+  }
 }
 
 .input__number {
@@ -75,6 +98,10 @@
   background: none;
   border: none;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px;
+  }
 
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {

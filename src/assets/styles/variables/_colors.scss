@@ -65,6 +65,7 @@ $color-green: #81E31E;
 $color-сoral: #F97676;
 $gradient-white-to-blue: linear-gradient(to bottom, rgba($color-white, 0) 0%, $color-blue-light-1 100%);
 $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 0%, $color-white 40%);
+$gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 0) 0%, $color-white-dark 90%);
 
 :root {
   /* Компонентные цвета */
@@ -330,6 +331,9 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
   //Step
   --color-step-heading: #{$color-blue};
   --color-step-description: #{$color-grey-dark};
+  --color-step-nav-name: #{$color-black-opacity-medium};
+  --color-step-nav-name-selected: #{$color-black};
+  --color-step-form-wrapper-border: #{$color-white-dark};
   --color-step-form-description: #{$color-blue};
   --color-step-form-label: #{$color-blue-opacity};
   --color-step-input-background: #{$color-white};
@@ -343,6 +347,7 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
   --color-step-checkbox-icon: #{$color-blue-dark};
   --color-step-checkbox-icon-active: #{$color-blue-dark-opacity};
   --color-step-checkbox-label: #{$color-blue};
+  --color-step-countries-border: #{$color-white-dark};
   --color-step-country-select-background: #{$color-white};
   --color-step-country-select-border: #{$color-grey-light-3};
   --color-step-country-select-border-hover: #{$color-grey-light-5};
@@ -352,6 +357,7 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
   --color-step-country-before-box-shadow: #{$color-grey-light-3};
   --color-step-country-before-active-background: #{$color-blue};
   --color-step-country-before-choose-background: #{$color-blue-light-1};
+  --color-step-country-after-background: #{$gradient-white-dark-to-transparent};
   --color-step-button-add-svg: #{$color-black-opacity-light-3};
   --color-step-button-add-svg-hover: #{$color-black-opacity};
   --color-step-button-add-svg-active: #{$color-black-opacity-light-2};
@@ -362,6 +368,7 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
   --color-step-button-flag-border: #{$color-grey-light-3};
   --color-step-button-close-background: #{$color-blue-light-1};
   --color-step-button-close-svg: #{$color-grey-light-5};
+  --color-step-plans-border: #{$color-white-dark};
   --color-step-plans-title-after-background: #{$gradient-transparent-to-white};
   --color-step-plans-name: #{$color-blue};
   --color-step-plans-textarea: #{$color-grey-dark};
@@ -452,6 +459,7 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
 
     //Steps
     --color-steps-background: #{$color-blue-dark-6};
+    --color-step-form-label: #{$color-blue};
 
     //About-section
     --color-about-section-background: #{$color-blue-dark-2};
@@ -464,5 +472,10 @@ $gradient-transparent-to-white: linear-gradient(to right, rgba($color-white, 0) 
     --color-rate-section-background: #{$color-blue-light-1};
     --color-rate-section-price-before-tablet: #{$color-white-dark-2};
     --color-rate-section-button-icon-background: #{$color-white-dark-2};
+
+    //Direction-page
+    //Plan-section
+    //Step
+    --color-step-country-after-background: #{$color-white-dark};
   }
 }

@@ -129,26 +129,28 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Plan-section
   --font-plan-section-header: var(--font-h3);
-  --font-plan-section-item-header: var(--font-body-medium);
-  --font-plan-section-countries: var(--font-body-bold);
-  --font-plan-section-item-body: var(--font-body-medium-3);
+  //--font-plan-section-item-header: var(--font-body-medium);
+  //--font-plan-section-countries: var(--font-body-bold);
+  //--font-plan-section-item-body: var(--font-body-medium-3);
   //Step
   --font-step-heading: var(--font-h8);
   --font-step-description: var(--font-body-regular);
+  --font-step-nav-name: var(--font-body-regular);
   --font-step-form-description: var(--font-body-medium-4);
   --font-step-form-label: var(--font-body-medium-4);
   --font-step-checkbox-label: var(--font-body-regular-3);
   --font-step-plans-name: var(--font-h5);
   --font-step-plans-textarea: var(--font-body-regular);
+  --font-step-country-name: var(--font-body-medium-3);
   //Calendar
   --font-calendar-month-year: var(--font-h8);
   --font-calendar-week-days: var(--font-caption-regular-3);
   --font-calendar-week-days-before: var(--font-caption-regular-3);
+  --font-calendar-day: var(--font-caption-regular-3);
   //Dropdown-menu
   --font-dropdown-menu-heading: var(--font-body-medium-3);
   --font-dropdown-menu-letter: var(--font-body-medium-3);
   --font-dropdown-menu-country: var(--font-body-regular);
-  --font-step-country-name: var(--font-body-medium-3);
 }
 
 
@@ -165,17 +167,24 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-body-bold: 700 28px/28px #{$font-family-main};
     --font-body-bold-2: 700 21px/25px #{$font-family-main}; //другое
     --font-body-medium: 500 20px/20px #{$font-family-main};
+    --font-body-medium-4: 500 20px/18px #{$font-family-main};
     --font-body-regular: 400 20px/23px #{$font-family-main};
     --font-body-regular-2: 400 28px/28px #{$font-family-main}; //другое
     --font-body-light: 300 28px/33px #{$font-family-main};
     --font-body-light-2: 300 22px/28px #{$font-family-main}; //другое
 
     --font-caption-regular: 400 14px/14px #{$font-family-main};
+    --font-caption-regular-2: 400 18px/18px #{$font-family-main};
 
     --font-tooltip: 400 20px/20px #{$font-family-main};
 
     //Buttons
     --font-button-modify: var(--font-body-medium);
+    --font-button-step: var(--font-h5);
+
+    //Icons
+    //Input
+    --font-input-number: var(--font-body-medium);
 
     //Main
     //Main-section
@@ -218,27 +227,26 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-plans-section-item-body: var(--font-body-medium);
 
     //Plan-section
-    --font-plan-section-header: var(--font-h3);
-    --font-plan-section-item-header: var(--font-body-medium);
-    --font-plan-section-countries: var(--font-body-bold);
-    --font-plan-section-item-body: var(--font-body-medium-3);
+    --font-plan-section-header: var(--font-h3-2);
     //Step
-    --font-step-heading: var(--font-h8);
-    --font-step-description: var(--font-body-regular);
-    --font-step-form-description: var(--font-body-medium-4);
-    --font-step-form-label: var(--font-body-medium-4);
-    --font-step-checkbox-label: var(--font-body-regular-3);
-    --font-step-plans-name: var(--font-h5);
-    --font-step-plans-textarea: var(--font-body-regular);
+    --font-step-heading: var(--font-h3-2);
+    //--font-step-form-description: var(--font-body-medium-4);
+    //--font-step-form-label: var(--font-body-medium-4);
+    --font-step-checkbox-label: var(--font-body-medium);
+    --font-step-plans-name: var(--font-h4);
+    //--font-step-plans-textarea: var(--font-body-regular);
+    --font-step-country-name: var(--font-body-medium);
     //Calendar
-    --font-calendar-month-year: var(--font-h8);
-    --font-calendar-week-days: var(--font-caption-regular-3);
-    --font-calendar-week-days-before: var(--font-caption-regular-3);
+    --font-calendar-month-year: var(--font-h3-2);
+    --font-calendar-week-days: var(--font-caption-regular-2);
+    --font-calendar-week-days-before: var(--font-caption-regular-2);
+    --font-calendar-day: var(--font-body-medium);
+    --font-calendar-day-disabled: var(--font-caption-regular-2);
     //Dropdown-menu
-    --font-dropdown-menu-heading: var(--font-body-medium-3);
-    --font-dropdown-menu-letter: var(--font-body-medium-3);
-    --font-dropdown-menu-country: var(--font-body-regular);
-    --font-step-country-name: var(--font-body-medium-3);
+    --font-dropdown-menu-heading: var(--font-body-medium);
+    --font-dropdown-menu-letter: var(--font-body-medium);
+    //--font-dropdown-menu-country: var(--font-body-regular);
+    //--font-step-country-name: var(--font-body-medium-3);
   }
 }
 
@@ -254,12 +262,14 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-body-bold: 700 28px/28px #{$font-family-main};
     --font-body-bold-2: 700 21px/25px #{$font-family-main};
     --font-body-medium: 500 20px/20px #{$font-family-main};
+    --font-body-medium-4: 500 20px/18px #{$font-family-main};
     --font-body-regular: 400 20px/23px #{$font-family-main};
     --font-body-regular-2: 400 28px/28px #{$font-family-main};
     --font-body-light: 300 28px/33px #{$font-family-main};
     --font-body-light-2: 300 22px/28px #{$font-family-main};
 
     --font-caption-regular: 400 14px/14px #{$font-family-main};
+    --font-caption-regular-2: 400 18px/18px #{$font-family-main};
 
     --font-tooltip: 400 20px/20px #{$font-family-main};
 
@@ -297,47 +307,11 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-business-rates-name: var(--font-body-light-2);
     --font-business-rates-price: var(--font-body-light-2);
     --font-business-rates-button: var(--font-h5);
+
+    //Direction-page
+    //Plan-section
+    //Calendar
+    --font-calendar-day: var(--font-caption-regular-2);
+    --font-calendar-day-disabled: var(--font-caption-regular-2);
   }
 }
-
-
-
-//
-//// Адаптивные изменения для десктопов
-//@media (min-width: 1024px) {
-//  :root {
-//    --font-h1: 700 48px/52px #{$font-family-main};
-//    --font-h2: 500 38px/44px #{$font-family-main};
-//    --font-h3: 700 32px/36px #{$font-family-main};
-//    --font-h4: 700 28px/32px #{$font-family-main};
-//    --font-h5: 700 24px/28px #{$font-family-main};
-//    --font-h6: 700 20px/32px #{$font-family-main};
-//
-//    --font-body-bold: 700 20px/24px #{$font-family-main};
-//    --font-body-medium: 500 20px/24px #{$font-family-main};
-//    --font-body-regular: 400 20px/26px #{$font-family-main};
-//    --font-body-light: 300 18px/22px #{$font-family-main};
-//  }
-//}
-
-//// Основной шрифт
-//$font-family-main: "Blogger Sans", "Arial", sans-serif;
-//
-//// Заголовки
-//$font-mobile-h1: 700 36px/40px $font-family-main;
-//$font-mobile-h2: 500 30px/35px $font-family-main;
-//$font-mobile-h3: 700 24px/24px $font-family-main;
-//$font-mobile-h4: 700 21px/21px $font-family-main;
-//$font-mobile-h5: 700 18px/18px $font-family-main;
-//$font-mobile-h6: 700 17px/30px $font-family-main;
-//
-//// Основной текст
-//$font-mobile-body-bold: 700 16px/18px $font-family-main;
-//$font-mobile-body-medium: 500 16px/18px $font-family-main;
-//$font-mobile-body-regular: 400 16px/22px $font-family-main;
-//$font-mobile-body-small: 300 16px/18px $font-family-main;
-//
-//// Меню
-//$font-mobile-button: $font-mobile-h6;
-//$font-mobile-menu-link: $font-mobile-h2;
-//$font-mobile-menu-contacts: $font-mobile-body-bold;

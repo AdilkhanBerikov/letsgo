@@ -135,6 +135,17 @@
     padding: 10px 43px 10px 42px;
     color: var(--color-button-step);
 
+    @media (min-width: $tablet-width) {
+      padding: 29px 37px 27px 34px;
+      border-radius: $border-radius-xl;
+      font: var(--font-button-step);
+      width: 286px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: none;
+    }
+
     &:active {
       color: var(--color-button-step-active);
     }
@@ -144,6 +155,13 @@
     padding: 0;
     background: none;
     color: var(--color-button-back);
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      text-transform: none;
+    }
 
     &:hover {
       color: var(--color-button-back-hover);
@@ -239,5 +257,17 @@
   @media (min-width: $desktop-width) {
     --button-icon-tablet-width: 15px;
     --button-icon-tablet-height: 15px;
+  }
+
+  &.-alternate {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &.-back {
+    transform: rotate(180deg);
   }
 }
