@@ -9,12 +9,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 126px;
     padding-bottom: 98.5px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 133px;
     padding-bottom: 125.5px;
-    position: relative;
   }
 }
 
@@ -40,7 +40,8 @@
     padding: 0;
     position: absolute;
     top: -129px;
-    right: 155px;
+    //right: calc(50% + 236px);
+    right: 11%;
     align-items: center;
     grid-template-columns: min-content 1fr;
     row-gap: 0;
@@ -62,6 +63,14 @@
 
 .profile-section__image {
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
 }
 
 .profile-section__image img {
@@ -173,49 +182,34 @@
 
 .profile-section__transport {
   padding: 16px 71px 15px 71px;
-  position: relative;
   border-radius: $border-radius-large;
   box-shadow: inset 0 0 0 1px var(--color-profile-section-transport-box-shadow);
 
   @media (min-width: $tablet-width) {
     padding: 25px 68px 26px 68px;
+    width: 308px;
+    position: absolute;
+    top: 126px;
+    left: calc(50vw - 154px);
   }
 
   @media (min-width: $desktop-width) {
+    position: static;
     width: 384px;
     grid-row: 1;
     grid-column: 4 / 5;
   }
+}
 
-  &.-mobile {
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
-
-  &.-tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
+.profile-section__transport-wrapper {
+  position: relative;
 }
 
 .profile-section__transport-heading {
   padding: 6px 14px;
   position: absolute;
-  top: -15px;
-  left: calc(100px + 50vw - 178px);
+  top: -31px;
+  left: calc(50vw - 150px);
   font: var(--font-profile-section-transport-heading);
   color: var(--color-profile-section-transport-heading);
   background-color: var(--color-profile-section-transport-heading-background);
@@ -223,13 +217,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 6px 20px;
-    top: 78px;
-    left: calc(100px + 50vw - 402px);
+    top: 52px;
+    left: 10px;
     letter-spacing: 0.08em;
   }
 
   @media (min-width: $desktop-width) {
-    left: 29.569%;
+    left: 47px;
     letter-spacing: 0.09em;
   }
 }

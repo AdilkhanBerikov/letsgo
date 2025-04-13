@@ -138,6 +138,7 @@
   border-radius: 0 0 $border-radius-medium $border-radius-medium;
   max-height: 317px;
   display: grid;
+  grid-auto-rows: min-content;
   gap: 4px;
   overflow-y: auto;
 

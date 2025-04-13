@@ -369,6 +369,8 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-step-button-close-background: #{$color-blue-light-1};
   --color-step-button-close-svg: #{$color-grey-light-5};
   --color-step-plans-border: #{$color-white-dark};
+  --color-step-plans-form-before: #{$color-blue};
+  --color-step-plans-title-before: #{$color-blue};
   --color-step-plans-title-after-background: #{$gradient-transparent-to-white};
   --color-step-plans-name: #{$color-blue};
   --color-step-plans-textarea: #{$color-grey-dark};
