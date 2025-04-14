@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .calendar__header {
@@ -16,6 +24,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .calendar__month-year {
@@ -31,6 +47,14 @@
   transition: transform $transition-duration, color $transition-duration;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    padding: 21px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0;
+  }
+
   &:hover {
     color: var(--color-calendar-button-hover);
   }
@@ -42,22 +66,60 @@
   }
 }
 
+.calendar__prev svg {
+
+  @media (min-width: $tablet-width) {
+    --calendar-prev-width: 29px;
+    --calendar-prev-height: 40px;
+    width: var(--calendar-prev-width);
+    height: var(--calendar-prev-height);
+  }
+
+  @media (min-width: $desktop-width) {
+    --calendar-prev-width: 24px;
+    --calendar-prev-height: 35px;
+  }
+}
+
+.calendar__next svg {
+
+  @media (min-width: $tablet-width) {
+    --calendar-next-width: 29px;
+    --calendar-next-height: 40px;
+    width: var(--calendar-next-width);
+    height: var(--calendar-next-height);
+  }
+
+  @media (min-width: $desktop-width) {
+    --calendar-next-width: 24px;
+    --calendar-next-height: 35px;
+  }
+}
+
 .calendar__week,
 .calendar__grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  font: var(--font-calendar-week-days);
   width: 100%;
   text-align: center;
 }
 
 .calendar__week {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    text-align: start;
+  }
 }
 
 .calendar__week-day {
   color: var(--color-calendar-week-day);
-  text-transform: uppercase;
+  font: var(--font-calendar-week-days);
 
   @media (max-width: $mobile-max-width) {
     font-size: 0;
@@ -66,6 +128,10 @@
       content: attr(data-short);
       font: var(--font-calendar-week-days-before);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
   }
 
   &.-weekend {
@@ -78,15 +144,32 @@
   color: var(--color-calendar-day);
   background-color: var(--color-calendar-day-background);
   border: 1px solid var(--color-calendar-day-border);
-  font-weight: 500;
+  font: var(--font-calendar-day);
   transition: background-color $transition-duration, color $transition-duration, box-shadow $transition-duration, font-weight $transition-duration;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --calendar-day-width: 142px;
+    --calendar-day-height: 71px;
+    padding: 13px 0 0 15px;
+    min-width: var(--calendar-day-width);
+    min-height: var(--calendar-day-height);
+    text-align: start;
+  }
 
   &.-disabled {
     color: var(--color-calendar-day-disabled);
     background-color: var(--color-calendar-day-disabled-background);
     font-weight: 400;
     cursor: default;
+
+    @media (min-width: $tablet-width) {
+      font: var(--font-calendar-day-disabled);
+    }
 
     &:hover {
       color: var(--color-calendar-day-disabled);

@@ -2,45 +2,56 @@
 
 .plan-section {
   margin-top: var(--section-margin-top-negative);
+  margin-bottom: var(--section-margin-top-negative);
   padding: 30px 0 73px 0;
   background-color: var(--color-plan-section-background);
   border-radius: $border-radius-3xl $border-radius-3xl 0 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 53px 35px 123px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 133px 0;
+    border-radius: $border-radius-tablet-3xl $border-radius-tablet-3xl 0 0;
+  }
 }
 
 .plan-section__title {
   margin-bottom: 29px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .plan-section__heading {
   color: var(--color-plan-section-header);
   font: var(--font-plan-section-header);
-}
 
-.plan-section__points {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.plan-section__point {
-  --plan-section-point-size: 5px;
-  background-color: var(--color-plan-section-point-background);
-  border-radius: 50%;
-  width: var(--plan-section-point-size);
-  height: var(--plan-section-point-size);
-  transition: background-color $transition-duration;
-
-  &.-selected {
-    background-color: var(--color-plan-section-point-background-selected);
+  @media (min-width: $desktop-width) {
+    margin-left: 69px;
   }
 }
 
 .plan-section__steps {
+  position: relative;
   display: grid;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 44px;
+  }
 }
 
 .plan-section__step {
@@ -48,4 +59,14 @@
   background-color: var(--color-plan-section-step-background);
   border-radius: $border-radius-large;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 40px 56px 40px;
+    border-radius: $border-radius-3xl;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 160px 104px 160px;
+    border-radius: $border-radius-tablet-3xl;
+  }
 }

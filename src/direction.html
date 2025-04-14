@@ -204,43 +204,45 @@
         <textarea class="profile-section__tags-textarea" id="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
       </div>
       <div class="profile-section__transport">
-        <h3 class="profile-section__transport-heading">
-          Транспорт
-        </h3>
-        <ul class="profile-section__transport-list">
-          <li class="profile-section__transport-item">
-            <label class="transport__button">
-              <input type="checkbox" class="transport__checkbox" checked />
-              <svg width="20.83" height="21.12" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
-              </svg>
-            </label>
-          </li>
-          <li class="profile-section__transport-item">
-            <label class="transport__button">
-              <input type="checkbox" class="transport__checkbox" checked />
-              <svg width="17.04" height="19.2" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
-              </svg>
-            </label>
-          </li>
-          <li class="profile-section__transport-item">
-            <label class="transport__button">
-              <input type="checkbox" class="transport__checkbox" />
-              <svg width="23.67" height="24" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
-              </svg>
-            </label>
-          </li>
-          <li class="profile-section__transport-item">
-            <label class="transport__button">
-              <input type="checkbox" class="transport__checkbox" checked />
-              <svg width="20.65" height="23.04" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-run"></use>
-              </svg>
-            </label>
-          </li>
-        </ul>
+        <div class="profile-section__transport-wrapper">
+          <h3 class="profile-section__transport-heading">
+            Транспорт
+          </h3>
+          <ul class="profile-section__transport-list">
+            <li class="profile-section__transport-item">
+              <label class="transport__button">
+                <input type="checkbox" class="transport__checkbox" checked />
+                <svg width="20.83" height="21.12" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="profile-section__transport-item">
+              <label class="transport__button">
+                <input type="checkbox" class="transport__checkbox" checked />
+                <svg width="17.04" height="19.2" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="profile-section__transport-item">
+              <label class="transport__button">
+                <input type="checkbox" class="transport__checkbox" />
+                <svg width="23.67" height="24" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="profile-section__transport-item">
+              <label class="transport__button">
+                <input type="checkbox" class="transport__checkbox" checked />
+                <svg width="20.65" height="23.04" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-run"></use>
+                </svg>
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -301,66 +303,79 @@
     <div class="box">
       <div class="plan-section__title">
         <h2 class="plan-section__heading">Добавить план:</h2>
-        <ul class="plan-section__points">
-          <li class="plan-section__point"></li>
-          <li class="plan-section__point"></li>
-          <li class="plan-section__point"></li>
-        </ul>
       </div>
       <ul class="plan-section__steps">
         <li class="plan-section__step">
-          <h3 class="step__heading">
-            Шаг 1.<br>
-            Даты пребывания
-          </h3>
-          <p class="step__description">
-            Укажите предпочтительное количество попутчиков, которых
-            вы хотели бы позвать в поездку, и ее предполагаемую длительность.
-          </p>
+          <div class="step__title">
+            <h3 class="step__heading">
+              Шаг 1.<br class="step__heading-break">
+              Даты пребывания
+            </h3>
+            <p class="step__description">
+              Укажите предпочтительное количество попутчиков, которых
+              вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+            </p>
+            <ul class="step__nav">
+              <li class="step__nav-item -selected">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Даты</p>
+              </li>
+              <li class="step__nav-item">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Маршрут</p>
+              </li>
+              <li class="step__nav-item">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Развлечения</p>
+              </li>
+            </ul>
+          </div>
           <form class="step__form" action="#">
-            <div class="step__form-wrapper">
-              <p class="step__form-description">ищу попутчиков:</p>
-              <p class="step__form-label">чел.</p>
-              <div class="step__input">
-                <label class="input__number-label" for="people">человек</label>
-                <button class="input__number-button -minus" type="button" aria-label="Уменьшить">
-                  <svg width="14" height="2" aria-hidden="true">
-                    <use xlink:href="assets/icons/icons.svg#icon-minus"></use>
-                  </svg>
-                </button>
-                <input class="input__number" type="number" id="people" name="people" min="1" max="100" value="2">
-                <button class="input__number-button -plus" type="button" aria-label="Увеличить">
-                  <svg width="14" height="14" aria-hidden="true">
-                    <use xlink:href="assets/icons/icons.svg#icon-plus"></use>
-                  </svg>
-                </button>
+            <div class="step__form-body">
+              <div class="step__form-wrapper -companions">
+                <p class="step__form-description">ищу попутчиков:</p>
+                <p class="step__form-label">чел.</p>
+                <div class="step__input">
+                  <label class="input__number-label" for="people">человек</label>
+                  <button class="input__number-button -minus" type="button" aria-label="Уменьшить">
+                    <svg aria-hidden="true">
+                      <use xlink:href="assets/icons/icons.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <input class="input__number" type="number" id="people" name="people" min="1" max="100" value="2">
+                  <button class="input__number-button -plus" type="button" aria-label="Увеличить">
+                    <svg aria-hidden="true">
+                      <use xlink:href="assets/icons/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="step__form-wrapper">
-              <p class="step__form-description">длительность:</p>
-              <p class="step__form-label">дн.</p>
-              <div class="step__input">
-                <label class="input__number-label" for="days">дни</label>
-                <button class="input__number-button -minus" type="button" aria-label="Уменьшить">
-                  <svg width="14" height="2" aria-hidden="true">
-                    <use xlink:href="assets/icons/icons.svg#icon-minus"></use>
-                  </svg>
-                </button>
-                <input class="input__number" type="number" id="days" name="days" min="1" max="100" value="3">
-                <button class="input__number-button -plus" type="button" aria-label="Увеличить">
-                  <svg width="14" height="14" aria-hidden="true">
-                    <use xlink:href="assets/icons/icons.svg#icon-plus"></use>
-                  </svg>
-                </button>
+              <div class="step__form-wrapper -duration">
+                <p class="step__form-description">длительность:</p>
+                <p class="step__form-label">дн.</p>
+                <div class="step__input">
+                  <label class="input__number-label" for="days">дни</label>
+                  <button class="input__number-button -minus" type="button" aria-label="Уменьшить">
+                    <svg aria-hidden="true">
+                      <use xlink:href="assets/icons/icons.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <input class="input__number" type="number" id="days" name="days" min="1" max="100" value="3">
+                  <button class="input__number-button -plus" type="button" aria-label="Увеличить">
+                    <svg aria-hidden="true">
+                      <use xlink:href="assets/icons/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
+              <label class="step__checkbox">
+                <input class="step__checkbox-input" type="checkbox" checked>
+                <svg class="step__checkbox-icon" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                </svg>
+                <span class="step__checkbox-label">Можно с детьми</span>
+              </label>
             </div>
-            <label class="step__checkbox">
-              <input class="step__checkbox-input" type="checkbox" checked>
-              <svg class="step__checkbox-icon" width="14" height="13" aria-hidden="true">
-                <use xlink:href="assets/icons/icons.svg#icon-check"></use>
-              </svg>
-              <span class="step__checkbox-label">Можно с детьми</span>
-            </label>
             <div class="calendar">
               <div class="calendar__header">
                 <button class="calendar__button calendar__prev" type="button">
@@ -387,18 +402,39 @@
               <div class="calendar__grid"></div>
             </div>
             <div class="step__button">
-              <button class="button -step" type="button">Следующий шаг</button>
+              <button class="button -step" type="button">
+                <span class="button__text">Следующий шаг</span>
+                <svg class="button__icon -alternate" width="11" height="12" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </li>
         <li class="plan-section__step">
-          <h3 class="step__heading">
-            Шаг 2.<br>
-            Маршрут
-          </h3>
-          <p class="step__description">
-            Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
-          </p>
+          <div class="step__title">
+            <h3 class="step__heading">
+              Шаг 2.<br class="step__heading-break">
+              Маршрут
+            </h3>
+            <p class="step__description">
+              Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+            </p>
+            <ul class="step__nav">
+              <li class="step__nav-item">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Даты</p>
+              </li>
+              <li class="step__nav-item -selected">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Маршрут</p>
+              </li>
+              <li class="step__nav-item">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Развлечения</p>
+              </li>
+            </ul>
+          </div>
           <form class="step__form" action="#">
             <div class="step__countries">
               <div class="step__country -active">
@@ -413,7 +449,7 @@
                   </button>
                 </div>
                 <div class="step__country-flag">
-                  <img src="assets/images/image/bosnia-and-Herzegovina-flag.png" width="35" height="24" alt="Bosnia and Herzegovina flag">
+                  <img src="assets/images/image/bosnia-and-Herzegovina-flag.png" alt="Bosnia and Herzegovina flag">
                 </div>
                 <button class="step__button-close" type="button">
                   <svg width="9" height="9" aria-hidden="true">
@@ -433,7 +469,7 @@
                   </button>
                 </div>
                 <div class="step__country-flag">
-                  <img src="assets/images/image/czech-flag-1.png" width="35" height="24" alt="Bosnia and Herzegovina flag">
+                  <img src="assets/images/image/czech-flag-1.png" alt="Bosnia and Herzegovina flag">
                 </div>
                 <button class="step__button-close" type="button">
                   <svg width="9" height="9" aria-hidden="true">
@@ -451,147 +487,147 @@
                       <use xlink:href="assets/icons/icons.svg#icon-arrow-back"></use>
                     </svg>
                   </button>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu__header">
+                      <p class="dropdown-menu__heading">Выберите страну</p>
+                      <button class="dropdown-menu__button" type="button">
+                        <svg width="10" height="10" aria-hidden="true">
+                          <use xlink:href="assets/icons/icons.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu__alphabet">
+                      <button class="dropdown-menu__letter" type="button" data-letter="А">А</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Б">Б</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="В">В</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Г">Г</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Д">Д</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Е">Е</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="З">З</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="И">И</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="К">К</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Л">Л</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="М">М</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Н">Н</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="О">О</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="П">П</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Р">Р</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="С">С</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Т">Т</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="У">У</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Ф">Ф</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Х">Х</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Ч">Ч</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Ш">Ш</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="З">Э</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Ю">Ю</button>
+                      <button class="dropdown-menu__letter" type="button" data-letter="Я">Я</button>
+                    </div>
+                    <div class="dropdown-menu__grid">
+                      <button class="dropdown-menu__country" type="button">Австралия</button>
+                      <button class="dropdown-menu__country" type="button">Австрия</button>
+                      <button class="dropdown-menu__country" type="button">Азербайджан</button>
+                      <button class="dropdown-menu__country" type="button">Албания</button>
+                      <button class="dropdown-menu__country" type="button">Алжир</button>
+                      <button class="dropdown-menu__country" type="button">Ангола</button>
+                      <button class="dropdown-menu__country" type="button">Андорра</button>
+                      <button class="dropdown-menu__country" type="button">Антигуа и Барбуда</button>
+                      <button class="dropdown-menu__country" type="button">Аргентина</button>
+                      <button class="dropdown-menu__country" type="button">Армения</button>
+                      <button class="dropdown-menu__country" type="button">Афганистан</button>
+                      <button class="dropdown-menu__country" type="button">Багамы</button>
+                      <button class="dropdown-menu__country" type="button">Бангладеш</button>
+                      <button class="dropdown-menu__country" type="button">Барбадос</button>
+                      <button class="dropdown-menu__country" type="button">Бахрейн</button>
+                      <button class="dropdown-menu__country" type="button">Беларусь</button>
+                      <button class="dropdown-menu__country" type="button">Белиз</button>
+                      <button class="dropdown-menu__country" type="button">Бельгия</button>
+                      <button class="dropdown-menu__country" type="button">Бенин</button>
+                      <button class="dropdown-menu__country" type="button">Болгария</button>
+                      <button class="dropdown-menu__country" type="button">Боливия</button>
+                      <button class="dropdown-menu__country" type="button">Босния и Герцеговина</button>
+                      <button class="dropdown-menu__country" type="button">Ботсвана</button>
+                      <button class="dropdown-menu__country" type="button">Бразилия</button>
+                      <button class="dropdown-menu__country" type="button">Бруней</button>
+                      <button class="dropdown-menu__country" type="button">Буркина-Фасо</button>
+                      <button class="dropdown-menu__country" type="button">Бурунди</button>
+                      <button class="dropdown-menu__country" type="button">Бутан</button>
+                      <button class="dropdown-menu__country" type="button">Вануату</button>
+                      <button class="dropdown-menu__country" type="button">Ватикан</button>
+                      <button class="dropdown-menu__country" type="button">Великобритания</button>
+                      <button class="dropdown-menu__country" type="button">Венгрия</button>
+                      <button class="dropdown-menu__country" type="button">Венесуэла</button>
+                      <button class="dropdown-menu__country" type="button">Вьетнам</button>
+                      <button class="dropdown-menu__country" type="button">Габон</button>
+                      <button class="dropdown-menu__country" type="button">Гаити</button>
+                      <button class="dropdown-menu__country" type="button">Гайана</button>
+                      <button class="dropdown-menu__country" type="button">Гамбия</button>
+                      <button class="dropdown-menu__country" type="button">Гана</button>
+                      <button class="dropdown-menu__country" type="button">Гватемала</button>
+                      <button class="dropdown-menu__country" type="button">Гвинея</button>
+                      <button class="dropdown-menu__country" type="button">Германия</button>
+                      <button class="dropdown-menu__country" type="button">Гондурас</button>
+                      <button class="dropdown-menu__country" type="button">Греция</button>
+                      <button class="dropdown-menu__country" type="button">Грузия</button>
+                      <button class="dropdown-menu__country" type="button">Дания</button>
+                      <button class="dropdown-menu__country" type="button">Джибути</button>
+                      <button class="dropdown-menu__country" type="button">Доминика</button>
+                      <button class="dropdown-menu__country" type="button">Доминиканская Республика</button>
+                      <button class="dropdown-menu__country" type="button">Египет</button>
+                      <button class="dropdown-menu__country" type="button">Замбия</button>
+                      <button class="dropdown-menu__country" type="button">Зимбабве</button>
+                      <button class="dropdown-menu__country" type="button">Израиль</button>
+                      <button class="dropdown-menu__country" type="button">Индия</button>
+                      <button class="dropdown-menu__country" type="button">Индонезия</button>
+                      <button class="dropdown-menu__country" type="button">Иордания</button>
+                      <button class="dropdown-menu__country" type="button">Ирак</button>
+                      <button class="dropdown-menu__country" type="button">Иран</button>
+                      <button class="dropdown-menu__country" type="button">Ирландия</button>
+                      <button class="dropdown-menu__country" type="button">Исландия</button>
+                      <button class="dropdown-menu__country" type="button">Испания</button>
+                      <button class="dropdown-menu__country" type="button">Италия</button>
+                      <button class="dropdown-menu__country" type="button">Казахстан</button>
+                      <button class="dropdown-menu__country" type="button">Канада</button>
+                      <button class="dropdown-menu__country" type="button">Катар</button>
+                      <button class="dropdown-menu__country" type="button">Кения</button>
+                      <button class="dropdown-menu__country" type="button">Кипр</button>
+                      <button class="dropdown-menu__country" type="button">Китай</button>
+                      <button class="dropdown-menu__country" type="button">Колумбия</button>
+                      <button class="dropdown-menu__country" type="button">Куба</button>
+                      <button class="dropdown-menu__country" type="button">Латвия</button>
+                      <button class="dropdown-menu__country" type="button">Ливан</button>
+                      <button class="dropdown-menu__country" type="button">Литва</button>
+                      <button class="dropdown-menu__country" type="button">Малайзия</button>
+                      <button class="dropdown-menu__country" type="button">Мексика</button>
+                      <button class="dropdown-menu__country" type="button">Монако</button>
+                      <button class="dropdown-menu__country" type="button">Монголия</button>
+                      <button class="dropdown-menu__country" type="button">Нидерланды</button>
+                      <button class="dropdown-menu__country" type="button">Норвегия</button>
+                      <button class="dropdown-menu__country" type="button">ОАЭ</button>
+                      <button class="dropdown-menu__country" type="button">Пакистан</button>
+                      <button class="dropdown-menu__country" type="button">Польша</button>
+                      <button class="dropdown-menu__country" type="button">Португалия</button>
+                      <button class="dropdown-menu__country" type="button">Россия</button>
+                      <button class="dropdown-menu__country" type="button">США</button>
+                      <button class="dropdown-menu__country" type="button">Таджикистан</button>
+                      <button class="dropdown-menu__country" type="button">Таиланд</button>
+                      <button class="dropdown-menu__country" type="button">Турция</button>
+                      <button class="dropdown-menu__country" type="button">Узбекистан</button>
+                      <button class="dropdown-menu__country" type="button">Украина</button>
+                      <button class="dropdown-menu__country" type="button">Финляндия</button>
+                      <button class="dropdown-menu__country" type="button">Франция</button>
+                      <button class="dropdown-menu__country" type="button">Чехия</button>
+                      <button class="dropdown-menu__country" type="button">Швейцария</button>
+                      <button class="dropdown-menu__country" type="button">Швеция</button>
+                      <button class="dropdown-menu__country" type="button">Япония</button>
+                    </div>
+                  </div>
                 </div>
                 <button class="step__button-close" type="button">
                   <svg width="10" height="10" aria-hidden="true">
                     <use xlink:href="assets/icons/icons.svg#icon-close"></use>
                   </svg>
                 </button>
-                <div class="dropdown-menu">
-                  <div class="dropdown-menu__header">
-                    <p class="dropdown-menu__heading">Выберите страну</p>
-                    <button class="dropdown-menu__button" type="button">
-                      <svg width="10" height="10" aria-hidden="true">
-                        <use xlink:href="assets/icons/icons.svg#icon-close"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="dropdown-menu__alphabet">
-                    <button class="dropdown-menu__letter" type="button" data-letter="А">А</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Б">Б</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="В">В</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Г">Г</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Д">Д</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Е">Е</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="З">З</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="И">И</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="К">К</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Л">Л</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="М">М</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Н">Н</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="О">О</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="П">П</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Р">Р</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="С">С</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Т">Т</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="У">У</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Ф">Ф</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Х">Х</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Ч">Ч</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Ш">Ш</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="З">Э</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Ю">Ю</button>
-                    <button class="dropdown-menu__letter" type="button" data-letter="Я">Я</button>
-                  </div>
-                  <div class="dropdown-menu__grid">
-                    <button class="dropdown-menu__country" type="button">Австралия</button>
-                    <button class="dropdown-menu__country" type="button">Австрия</button>
-                    <button class="dropdown-menu__country" type="button">Азербайджан</button>
-                    <button class="dropdown-menu__country" type="button">Албания</button>
-                    <button class="dropdown-menu__country" type="button">Алжир</button>
-                    <button class="dropdown-menu__country" type="button">Ангола</button>
-                    <button class="dropdown-menu__country" type="button">Андорра</button>
-                    <button class="dropdown-menu__country" type="button">Антигуа и Барбуда</button>
-                    <button class="dropdown-menu__country" type="button">Аргентина</button>
-                    <button class="dropdown-menu__country" type="button">Армения</button>
-                    <button class="dropdown-menu__country" type="button">Афганистан</button>
-                    <button class="dropdown-menu__country" type="button">Багамы</button>
-                    <button class="dropdown-menu__country" type="button">Бангладеш</button>
-                    <button class="dropdown-menu__country" type="button">Барбадос</button>
-                    <button class="dropdown-menu__country" type="button">Бахрейн</button>
-                    <button class="dropdown-menu__country" type="button">Беларусь</button>
-                    <button class="dropdown-menu__country" type="button">Белиз</button>
-                    <button class="dropdown-menu__country" type="button">Бельгия</button>
-                    <button class="dropdown-menu__country" type="button">Бенин</button>
-                    <button class="dropdown-menu__country" type="button">Болгария</button>
-                    <button class="dropdown-menu__country" type="button">Боливия</button>
-                    <button class="dropdown-menu__country" type="button">Босния и Герцеговина</button>
-                    <button class="dropdown-menu__country" type="button">Ботсвана</button>
-                    <button class="dropdown-menu__country" type="button">Бразилия</button>
-                    <button class="dropdown-menu__country" type="button">Бруней</button>
-                    <button class="dropdown-menu__country" type="button">Буркина-Фасо</button>
-                    <button class="dropdown-menu__country" type="button">Бурунди</button>
-                    <button class="dropdown-menu__country" type="button">Бутан</button>
-                    <button class="dropdown-menu__country" type="button">Вануату</button>
-                    <button class="dropdown-menu__country" type="button">Ватикан</button>
-                    <button class="dropdown-menu__country" type="button">Великобритания</button>
-                    <button class="dropdown-menu__country" type="button">Венгрия</button>
-                    <button class="dropdown-menu__country" type="button">Венесуэла</button>
-                    <button class="dropdown-menu__country" type="button">Вьетнам</button>
-                    <button class="dropdown-menu__country" type="button">Габон</button>
-                    <button class="dropdown-menu__country" type="button">Гаити</button>
-                    <button class="dropdown-menu__country" type="button">Гайана</button>
-                    <button class="dropdown-menu__country" type="button">Гамбия</button>
-                    <button class="dropdown-menu__country" type="button">Гана</button>
-                    <button class="dropdown-menu__country" type="button">Гватемала</button>
-                    <button class="dropdown-menu__country" type="button">Гвинея</button>
-                    <button class="dropdown-menu__country" type="button">Германия</button>
-                    <button class="dropdown-menu__country" type="button">Гондурас</button>
-                    <button class="dropdown-menu__country" type="button">Греция</button>
-                    <button class="dropdown-menu__country" type="button">Грузия</button>
-                    <button class="dropdown-menu__country" type="button">Дания</button>
-                    <button class="dropdown-menu__country" type="button">Джибути</button>
-                    <button class="dropdown-menu__country" type="button">Доминика</button>
-                    <button class="dropdown-menu__country" type="button">Доминиканская Республика</button>
-                    <button class="dropdown-menu__country" type="button">Египет</button>
-                    <button class="dropdown-menu__country" type="button">Замбия</button>
-                    <button class="dropdown-menu__country" type="button">Зимбабве</button>
-                    <button class="dropdown-menu__country" type="button">Израиль</button>
-                    <button class="dropdown-menu__country" type="button">Индия</button>
-                    <button class="dropdown-menu__country" type="button">Индонезия</button>
-                    <button class="dropdown-menu__country" type="button">Иордания</button>
-                    <button class="dropdown-menu__country" type="button">Ирак</button>
-                    <button class="dropdown-menu__country" type="button">Иран</button>
-                    <button class="dropdown-menu__country" type="button">Ирландия</button>
-                    <button class="dropdown-menu__country" type="button">Исландия</button>
-                    <button class="dropdown-menu__country" type="button">Испания</button>
-                    <button class="dropdown-menu__country" type="button">Италия</button>
-                    <button class="dropdown-menu__country" type="button">Казахстан</button>
-                    <button class="dropdown-menu__country" type="button">Канада</button>
-                    <button class="dropdown-menu__country" type="button">Катар</button>
-                    <button class="dropdown-menu__country" type="button">Кения</button>
-                    <button class="dropdown-menu__country" type="button">Кипр</button>
-                    <button class="dropdown-menu__country" type="button">Китай</button>
-                    <button class="dropdown-menu__country" type="button">Колумбия</button>
-                    <button class="dropdown-menu__country" type="button">Куба</button>
-                    <button class="dropdown-menu__country" type="button">Латвия</button>
-                    <button class="dropdown-menu__country" type="button">Ливан</button>
-                    <button class="dropdown-menu__country" type="button">Литва</button>
-                    <button class="dropdown-menu__country" type="button">Малайзия</button>
-                    <button class="dropdown-menu__country" type="button">Мексика</button>
-                    <button class="dropdown-menu__country" type="button">Монако</button>
-                    <button class="dropdown-menu__country" type="button">Монголия</button>
-                    <button class="dropdown-menu__country" type="button">Нидерланды</button>
-                    <button class="dropdown-menu__country" type="button">Норвегия</button>
-                    <button class="dropdown-menu__country" type="button">ОАЭ</button>
-                    <button class="dropdown-menu__country" type="button">Пакистан</button>
-                    <button class="dropdown-menu__country" type="button">Польша</button>
-                    <button class="dropdown-menu__country" type="button">Португалия</button>
-                    <button class="dropdown-menu__country" type="button">Россия</button>
-                    <button class="dropdown-menu__country" type="button">США</button>
-                    <button class="dropdown-menu__country" type="button">Таджикистан</button>
-                    <button class="dropdown-menu__country" type="button">Таиланд</button>
-                    <button class="dropdown-menu__country" type="button">Турция</button>
-                    <button class="dropdown-menu__country" type="button">Узбекистан</button>
-                    <button class="dropdown-menu__country" type="button">Украина</button>
-                    <button class="dropdown-menu__country" type="button">Финляндия</button>
-                    <button class="dropdown-menu__country" type="button">Франция</button>
-                    <button class="dropdown-menu__country" type="button">Чехия</button>
-                    <button class="dropdown-menu__country" type="button">Швейцария</button>
-                    <button class="dropdown-menu__country" type="button">Швеция</button>
-                    <button class="dropdown-menu__country" type="button">Япония</button>
-                  </div>
-                </div>
               </div>
               <div class="step__country -choose">
                 <div class="step__country-select -add">
@@ -606,29 +642,57 @@
                 </div>
               </div>
             </div>
-            <div class="step__button">
-              <button class="button -step" type="button">Следующий шаг</button>
-            </div>
-            <div class="step__button-back">
-              <button class="button -back" type="button">На шаг назад</button>
+            <div class="step__footer">
+              <div class="step__button">
+                <button class="button -step" type="button">
+                  <span class="button__text">Следующий шаг</span>
+                  <svg class="button__icon -alternate" width="11" height="12" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="step__button-back">
+                <button class="button -back" type="button">
+                  <svg class="button__icon -alternate -back" width="11" height="12" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+                  </svg>
+                  <span class="button__text">На шаг назад</span>
+                </button>
+              </div>
             </div>
           </form>
         </li>
         <li class="plan-section__step">
-          <h3 class="step__heading">
-            Шаг 3.<br>
-            Развлечения
-          </h3>
-          <p class="step__description">
-            Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-          </p>
+          <div class="step__title">
+            <h3 class="step__heading">
+              Шаг 3.<br class="step__heading-break">
+              Развлечения
+            </h3>
+            <p class="step__description">
+              Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+            </p>
+            <ul class="step__nav">
+              <li class="step__nav-item">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Даты</p>
+              </li>
+              <li class="step__nav-item">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Маршрут</p>
+              </li>
+              <li class="step__nav-item -selected">
+                <div class="step__nav-point"></div>
+                <p class="step__nav-name">Развлечения</p>
+              </li>
+            </ul>
+          </div>
           <form class="step__form" action="#" novalidate>
             <div class="step__plans">
               <div class="step__plans-form">
-                <div class="step__plans-title -line">
+                <div class="step__plans-title">
                   <label class="step__plans-name" for="message-bosnia">Босния и Герцеговина</label>
                   <picture class="step__plans-flag">
-                    <img src="assets/images/image/bosnia-and-Herzegovina-flag.png" width="35" height="24" alt="Bosnia and Herzegovina flag">
+                    <img src="assets/images/image/bosnia-and-Herzegovina-flag.png" alt="Bosnia and Herzegovina flag">
                   </picture>
                 </div>
                 <div class="step__plans-wrapper">
@@ -648,7 +712,7 @@
                 <div class="step__plans-title">
                   <label class="step__plans-name" for="message-czech">Чехия</label>
                   <picture class="step__plans-flag">
-                    <img src="assets/images/image/czech-flag-1.png" width="35" height="24" alt="Czech flag">
+                    <img src="assets/images/image/czech-flag-1.png" alt="Czech flag">
                   </picture>
                 </div>
                 <div class="step__plans-wrapper">
@@ -660,16 +724,28 @@
                             maxlength="200"
                             aria-invalid="false"
                             aria-describedby="error-message-czech"
-                            required></textarea>
+                            required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   <span id="error-message-czech" class="step__error-message" aria-live="polite">Это поле должно быть заполнено</span>
                 </div>
               </div>
             </div>
-            <div class="step__button">
-              <button class="button -step" type="submit">Отправить</button>
-            </div>
-            <div class="step__button-back">
-              <button class="button -back" type="button">На шаг назад</button>
+            <div class="step__footer">
+              <div class="step__button">
+                <button class="button -step" type="submit">
+                  <span class="button__text">Отправить</span>
+                  <svg class="button__icon -alternate" width="11" height="12" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="step__button-back">
+                <button class="button -back" type="button">
+                  <svg class="button__icon -alternate -back" width="11" height="12" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-play"></use>
+                  </svg>
+                  <span class="button__text">На шаг назад</span>
+                </button>
+              </div>
             </div>
           </form>
         </li>

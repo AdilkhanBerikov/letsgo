@@ -6,6 +6,15 @@
   background-color: var(--color-heading-section-background);
   border-radius: 0 0 $border-radius-xl $border-radius-xl;
   z-index: $z-index-low;
+
+  @media (min-width: $tablet-width) {
+    padding: 94px 0 66px 35px;
+    border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 0 68px 64px;
+  }
 }
 
 .heading-section__title {
@@ -13,6 +22,10 @@
   color: var(--color-heading-section-title);
   font: var(--font-heading-section-title);
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+  }
 
   &::before {
     --heading-section-title-before-width: 214px;
@@ -25,5 +38,15 @@
     width: var(--heading-section-title-before-width);
     height: var(--heading-section-title-before-height);
     border-radius: $border-radius-medium;
+
+    @media (min-width: $tablet-width) {
+      --heading-section-title-before-width: 358px;
+      --heading-section-title-before-height: 8px;
+      bottom: -70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -72px;
+    }
   }
 }

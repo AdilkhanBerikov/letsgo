@@ -93,12 +93,34 @@
     padding: 11px 67px 11px 68px;
     font: var(--font-button-change);
     border-radius: $border-radius-xl;
+
+    @media (min-width: $tablet-width) {
+      padding: 22px 67px 20px 68px;
+      border-radius: $border-radius-large;
+      width: 100%;
+      letter-spacing: 0.09em;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 70px 13px 71px;
+      border-radius: 0 0 $border-radius-large $border-radius-large;
+      letter-spacing: 0;
+    }
   }
 
   &.-modify {
     padding: 0;
     font: var(--font-button-modify);
     background: none;
+    letter-spacing: 0.03em;
+
+    @media (min-width: $tablet-width) {
+      letter-spacing: 0.1em;
+    }
+
+    @media (min-width: $desktop-width) {
+      letter-spacing: 0.08em;
+    }
   }
 
   &.-text {
@@ -113,6 +135,17 @@
     padding: 10px 43px 10px 42px;
     color: var(--color-button-step);
 
+    @media (min-width: $tablet-width) {
+      padding: 29px 37px 27px 34px;
+      border-radius: $border-radius-xl;
+      font: var(--font-button-step);
+      width: 286px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: none;
+    }
+
     &:active {
       color: var(--color-button-step-active);
     }
@@ -122,6 +155,13 @@
     padding: 0;
     background: none;
     color: var(--color-button-back);
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      text-transform: none;
+    }
 
     &:hover {
       color: var(--color-button-back-hover);
@@ -217,5 +257,17 @@
   @media (min-width: $desktop-width) {
     --button-icon-tablet-width: 15px;
     --button-icon-tablet-height: 15px;
+  }
+
+  &.-alternate {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &.-back {
+    transform: rotate(180deg);
   }
 }
