@@ -816,6 +816,7 @@
   height: var(--step-plans-textarea-size);
   overflow-y: auto;
   transition: border-color $transition-duration;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     --step-plans-textarea-size: 142px;

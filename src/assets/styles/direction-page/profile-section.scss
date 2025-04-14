@@ -164,6 +164,7 @@
   border-radius: $border-radius-large;
   width: 100%;
   transition: color $transition-duration, box-shadow $transition-duration;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding: 35px 40px;
