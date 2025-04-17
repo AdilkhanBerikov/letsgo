@@ -135,4 +135,22 @@
     </g>
   </symbol>
 
+  <symbol id="icon-filter" viewBox="0 0 23 15">
+    <rect x="11" width="12" height="3" fill="currentColor"/>
+    <rect x="11" y="12" width="12" height="3" fill="currentColor"/>
+    <rect y="6" width="12" height="3" fill="currentColor"/>
+    <rect x="6" width="3" height="3" fill="currentColor"/>
+    <rect x="6" y="12" width="3" height="3" fill="currentColor"/>
+    <rect x="14" y="6" width="3" height="3" fill="currentColor"/>
+    <rect width="4" height="3" fill="currentColor"/>
+    <rect y="12" width="4" height="3" fill="currentColor"/>
+    <rect x="19" y="6" width="4" height="3" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-points" viewBox="0 0 30 6">
+    <circle cx="3" cy="3" r="3" fill="currentColor"/>
+    <circle cx="15" cy="3" r="3" fill="currentColor"/>
+    <circle cx="27" cy="3" r="3" fill="currentColor"/>
+  </symbol>
+
 </svg>

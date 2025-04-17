@@ -1,0 +1,414 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <title>Погнали</title>
+</head>
+<body class="page__body">
+
+<header class="page-header -alternate">
+  <div class="grid -header box">
+    <a class="header__logo" href="#">
+      <picture class="header__logo-default">
+        <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-white.svg" width="200" height="52">
+        <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-white.png" width="166" height="42">
+        <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+      </picture>
+      <picture class="header__logo-scrolled">
+        <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue.svg" width="200" height="60">
+        <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+        <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+      </picture>
+    </a>
+    <nav class="header__nav">
+      <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="header__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="О сервисе">
+                  О сервисе
+                </span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="direction.html">
+                <span class="nav__link-animation" data-hover="Направления">
+                  Направления
+                </span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="companions.html">
+                <span class="nav__link-animation" data-hover="Попутчики">
+                  Попутчики
+                </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__button">
+      <div class="header__button-contacts">
+        <a class="button -round -primary" href="#">
+          <svg width="18" height="18" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-call"></use>
+          </svg>
+        </a>
+        <a class="button -round -secondary" href="#">
+          <svg width="18" height="15.75" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
+          </svg>
+        </a>
+      </div>
+      <a class="button" href="#">Авторизация</a>
+    </div>
+  </div>
+</header>
+
+<section class="mobile-menu">
+  <div class="box">
+    <div class="mobile-menu__header">
+      <a class="mobile-menu__logo" href="#">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+          <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
+        </picture>
+      </a>
+      <div class="mobile-menu__toggle">
+        <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
+      </div>
+      <div class="mobile-menu__header-button">
+        <a class="button -alternate" href="#">Авторизация</a>
+      </div>
+    </div>
+    <div class="mobile-menu__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="О сервисе">
+                О сервисе
+              </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="direction.html">
+              <span class="nav__link-animation" data-hover="Направления">
+                Направления
+              </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="companions.html">
+              <span class="nav__link-animation" data-hover="Попутчики">
+                Попутчики
+              </span>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__button">
+        <a class="button -alternate" href="#">Авторизация</a>
+      </div>
+      <div class="mobile-menu__footer">
+        <ul class="mobile-menu__contacts">
+          <li class="contact">
+            <a href="tel:88005558628" class="contact__link">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mobile" width="18" height="17" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
+                </svg>
+              </div>
+              <p class="contact__text">8 800 555-86-28</p>
+            </a>
+          </li>
+          <li class="contact">
+            <a href="mailto:mail@htmlacademy.ru" class="contact__link">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mail" width="24" height="25" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
+                </svg>
+              </div>
+              <p class="contact__text">mail@htmlacademy.ru</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon -facebook" width="11" height="21" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon -vkontakte" width="23" height="12" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon -instagram" width="18" height="18" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="page__main">
+
+  <section class="heading-section">
+    <div class="box">
+      <h1 class="heading-section__title">Попутчики</h1>
+    </div>
+  </section>
+
+  <section class="filter-section">
+    <div class="box">
+      <div class="filter-header">
+        <div class="filter-header__title">
+          <svg class="filter-header__icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-filter"></use>
+          </svg>
+          <h2 class="filter-header__heading">Фильтрация по странам:</h2>
+        </div>
+        <button class="filter-header__button dropdown-trigger">
+          <span class="filter-header__button-text">Показать все</span>
+          <svg class="filter-header__button-icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-points"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="filter-menu dropdown-menu">
+      <div class="filter-menu__header filter-header">
+        <div class="filter-header__title">
+          <svg class="filter-header__icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-filter"></use>
+          </svg>
+          <h2 class="filter-header__heading">Фильтрация по странам:</h2>
+        </div>
+        <button class="filter-header__button dropdown-menu__button">
+          <svg class="filter-header__icon-close" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="filter-menu__continents">
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button -active">Европа</button>
+        </li>
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button">Азия</button>
+        </li>
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button">Америка</button>
+        </li>
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button">Острова</button>
+        </li>
+      </ul>
+      <div class="filter-menu__wrapper">
+        <div class="filter-menu__alphabet dropdown-menu__alphabet">
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="А">А</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Б">Б</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="В">В</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Г">Г</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Д">Д</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Е">Е</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="З">З</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="И">И</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="К">К</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Л">Л</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="М">М</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Н">Н</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="О">О</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="П">П</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Р">Р</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="С">С</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Т">Т</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="У">У</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ф">Ф</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Х">Х</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ч">Ч</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ш">Ш</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="З">Э</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ю">Ю</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Я">Я</button>
+        </div>
+        <div class="filter-menu__grid dropdown-menu__grid">
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Австралия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Австрия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Азербайджан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Албания</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Алжир</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Ангола</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Андорра</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Антигуа и Барбуда</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Аргентина</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Армения</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Афганистан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Багамы</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бангладеш</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Барбадос</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бахрейн</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Беларусь</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Белиз</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бельгия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бенин</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Болгария</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Боливия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Босния и Герцеговина</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Ботсвана</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бразилия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бруней</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Буркина-Фасо</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бурунди</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Бутан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Вануату</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Ватикан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Великобритания</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Венгрия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Венесуэла</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Вьетнам</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Габон</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гаити</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гайана</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гамбия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гана</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гватемала</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гвинея</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Германия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Гондурас</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Греция</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Грузия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Дания</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Джибути</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Доминика</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Доминиканская Республика</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Египет</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Замбия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Зимбабве</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Израиль</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Индия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Индонезия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Иордания</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Ирак</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Иран</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Ирландия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Исландия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Испания</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Италия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Казахстан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Канада</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Катар</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Кения</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Кипр</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Китай</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Колумбия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Куба</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Латвия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Ливан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Литва</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Малайзия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Мексика</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Монако</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Монголия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Нидерланды</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Норвегия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">ОАЭ</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Пакистан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Польша</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Португалия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Россия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">США</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Таджикистан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Таиланд</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Турция</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Узбекистан</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Украина</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Финляндия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Франция</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Чехия</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Швейцария</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Швеция</button>
+          <button class="filter-menu__countries dropdown-menu__country" type="button">Япония</button>
+        </div>
+      </div>
+      <div class="filter-menu__button dropdown-menu__button">
+        <button class="button -collapse">
+          <svg class="button__icon -close" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-close"></use>
+          </svg>
+          <span>Свернуть</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <div class="grid -footer box">
+    <a class="footer__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue-footer.svg" width="200" height="55">
+        <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+        <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+      </picture>
+    </a>
+    <ul class="footer__socials">
+      <li class="footer__socials-item">
+        <a class="socials__link" href="#">
+          <div class="socials__icon -footer">
+            <svg class="socials__facebook -footer" width="11" height="21" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="footer__socials-item">
+        <a class="socials__link" href="#">
+          <div class="socials__icon -footer">
+            <svg class="socials__vkontakte -footer" width="23" height="12" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="footer__socials-item">
+        <a class="socials__link" href="#">
+          <div class="socials__icon -footer">
+            <svg class="socials__instagram -footer" width="18" height="18" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="footnote">
+      <a class="footnote__link" href="#">
+        <span class="footnote__text">Разработано</span>
+        <svg class="footnote__logo" width="27" height="34" aria-hidden="true">
+          <use xlink:href="assets/icons/icons.svg#icon-logo-academy"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script type="module" src="./index.js"></script>
+<script src="assets/scripts/menu.js" type="module" defer></script>
+<script src="assets/scripts/progress-bar.js" type="module" defer></script>
+<script src="assets/scripts/dropdown-menu.js" type="module" defer></script>
+<script src="assets/scripts/dropdown-alphabet-letters.js" type="module" defer></script>
+
+</html>

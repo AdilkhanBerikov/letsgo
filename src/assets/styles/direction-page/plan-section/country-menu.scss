@@ -1,23 +1,9 @@
 @use "../../variables" as *;
 
-.dropdown-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--color-dropdown-menu-background);
+.country-menu {
+  background: var(--color-country-menu-background);
   border-radius: $border-radius-medium;
-  box-shadow: 0 4px 10px var(--color-dropdown-menu-box-shadow);
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: $z-index-sm;
-
-  &.-open {
-    opacity: 1;
-    visibility: visible;
-  }
+  box-shadow: 0 4px 10px var(--color-country-menu-box-shadow);
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -25,9 +11,9 @@
   }
 }
 
-.dropdown-menu__header {
+.country-menu__header {
   padding: 13px 17px;
-  background-color: var(--color-dropdown-menu-header-background);
+  background-color: var(--color-country-menu-header-background);
   border-radius: $border-radius-medium $border-radius-medium 0 0;
   display: flex;
   align-items: center;
@@ -43,9 +29,9 @@
   }
 }
 
-.dropdown-menu__heading {
-  color: var(--color-dropdown-menu-heading);
-  font: var(--font-dropdown-menu-heading);
+.country-menu__heading {
+  color: var(--color-country-menu-heading);
+  font: var(--font-country-menu-heading);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 
@@ -54,40 +40,40 @@
   }
 }
 
-.dropdown-menu__button {
+.country-menu__button {
   padding: 0;
-  color: var(--color-dropdown-menu-button);
+  color: var(--color-country-menu-button);
   background: none;
   border: none;
-  height: var(--dropdown-menu-button-size);
+  height: var(--country-menu-button-size);
   transition: color $transition-duration;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    --dropdown-menu-button-size: 22px;
+    --country-menu-button-size: 22px;
   }
 
   &:hover {
-    color: var(--color-dropdown-menu-button-hover);
+    color: var(--color-country-menu-button-hover);
   }
 
   &:active {
-    color: var(--color-dropdown-menu-button-active);
+    color: var(--color-country-menu-button-active);
   }
 }
 
-.dropdown-menu__button svg {
-  width: var(--dropdown-menu-button-svg-size);
-  height: var(--dropdown-menu-button-svg-size);
+.country-menu__button svg {
+  width: var(--country-menu-button-svg-size);
+  height: var(--country-menu-button-svg-size);
 
   @media (min-width: $tablet-width) {
-    --dropdown-menu-button-svg-size: 22px;
+    --country-menu-button-svg-size: 22px;
   }
 }
 
-.dropdown-menu__alphabet {
-  border-right: 0.5px solid var(--color-dropdown-menu-alphabet-border);
-  border-left: 0.5px solid var(--color-dropdown-menu-alphabet-border);
+.country-menu__alphabet {
+  border-right: 0.5px solid var(--color-country-menu-alphabet-border);
+  border-left: 0.5px solid var(--color-country-menu-alphabet-border);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -103,12 +89,12 @@
   }
 }
 
-.dropdown-menu__letter {
+.country-menu__letter {
   padding: 12px 0 12px 0;
-  color: var(--color-dropdown-menu-letter);
-  background-color: var(--color-dropdown-menu-letter-background);
-  font: var(--font-dropdown-menu-letter);
-  border: 0.5px solid var(--color-dropdown-menu-letter-border);
+  color: var(--color-country-menu-letter);
+  background-color: var(--color-country-menu-letter-background);
+  font: var(--font-country-menu-letter);
+  border: 0.5px solid var(--color-country-menu-letter-border);
   transition: color $transition-duration, background-color $transition-duration, border-color $transition-duration;
   cursor: pointer;
 
@@ -121,19 +107,19 @@
   }
 
   &:hover {
-    border-color: var(--color-dropdown-menu-letter-border-hover);
+    border-color: var(--color-country-menu-letter-border-hover);
   }
 
   &:focus {
-    color: var(--color-dropdown-menu-letter-focus);
-    background-color: var(--color-dropdown-menu-letter-background-focus);
+    color: var(--color-country-menu-letter-focus);
+    background-color: var(--color-country-menu-letter-background-focus);
   }
 }
 
-.dropdown-menu__grid {
+.country-menu__grid {
   padding: 20px;
-  background-color: var(--color-dropdown-menu-grid-background);
-  border: 1px solid var(--color-dropdown-menu-grid-border);
+  background-color: var(--color-country-menu-grid-background);
+  border: 1px solid var(--color-country-menu-grid-border);
   border-top-width: 0.5px;
   border-radius: 0 0 $border-radius-medium $border-radius-medium;
   max-height: 317px;
@@ -157,20 +143,20 @@
   }
 }
 
-.dropdown-menu__country {
+.country-menu__countries {
   text-align: start;
   background: none;
   border: none;
-  color: var(--color-dropdown-menu-country);
-  font: var(--font-dropdown-menu-country);
+  color: var(--color-country-menu-countries);
+  font: var(--font-country-menu-countries);
   transition: color $transition-duration;
   cursor: pointer;
 
   &:hover {
-    color: var(--color-dropdown-menu-country-hover);
+    color: var(--color-country-menu-countries-hover);
   }
 
   &:active {
-    color: var(--color-dropdown-menu-country-active);
+    color: var(--color-country-menu-countries-active);
   }
 }

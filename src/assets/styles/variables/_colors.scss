@@ -36,6 +36,8 @@ $color-blue-light-1: #EDEFF6;
 $color-blue-light-2: #DFE3F0;
 $color-blue-light-3: #D1D7E9;
 $color-blue-light-4: #D4D9EB;
+$color-blue-light-5: #D6DAED;
+$color-blue-light-6: #C8CEE8;
 $color-blue-dark: #161C35;
 $color-blue-dark-opacity: rgba($color-blue-dark, 0.3);
 $color-blue-dark-opacity-light: rgba($color-blue-dark, 0.17);
@@ -120,6 +122,11 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-button-step-active: #{$color-blue-opacity};
   --color-button-back-hover: #{$color-blue-opacity-dark};
   --color-button-back-active: #{$color-blue-opacity};
+
+  --color-button-collapse: #{$color-blue-dark-2};
+  --color-button-collapse-active: #{$color-blue-dark-2-opacity-light};
+  --color-button-collapse-background: #{$color-blue-light-5};
+  --color-button-collapse-background-hover: #{$color-blue-light-6};
 
   //Toggle
   --color-header-toggle: #{$color-white};
@@ -395,26 +402,52 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-calendar-day-disabled-background: #{$color-white};
   --color-calendar-day-chosen: #{$color-white};
   --color-calendar-day-chosen-background: #{$color-blue};
-  //Dropdown-menu
-  --color-dropdown-menu-background: #{$color-white};
-  --color-dropdown-menu-box-shadow: #{$color-black-opacity-light-2};
-  --color-dropdown-menu-header-background: #{$color-blue};
-  --color-dropdown-menu-heading: #{$color-white};
-  --color-dropdown-menu-button: #{$color-white-opacity};
-  --color-dropdown-menu-button-hover: #{$color-white};
-  --color-dropdown-menu-button-active: #{$color-white-opacity-light};
-  --color-dropdown-menu-alphabet-border: #{$color-grey-light-3};
-  --color-dropdown-menu-letter: #{$color-blue};
-  --color-dropdown-menu-letter-focus: #{$color-white};
-  --color-dropdown-menu-letter-background: #{$color-white};
-  --color-dropdown-menu-letter-background-focus: #{$color-blue};
-  --color-dropdown-menu-letter-border: #{$color-grey-light-3};
-  --color-dropdown-menu-letter-border-hover: #{$color-grey-light-5};
-  --color-dropdown-menu-grid-background: #{$color-white};
-  --color-dropdown-menu-grid-border: #{$color-grey-light-3};
-  --color-dropdown-menu-country: #{$color-grey-dark};
-  --color-dropdown-menu-country-hover: #{$color-blue};
-  --color-dropdown-menu-country-active: #{$color-blue-opacity};
+  //Country-menu
+  --color-country-menu-background: #{$color-white};
+  --color-country-menu-box-shadow: #{$color-black-opacity-light-2};
+  --color-country-menu-header-background: #{$color-blue};
+  --color-country-menu-heading: #{$color-white};
+  --color-country-menu-button: #{$color-white-opacity};
+  --color-country-menu-button-hover: #{$color-white};
+  --color-country-menu-button-active: #{$color-white-opacity-light};
+  --color-country-menu-alphabet-border: #{$color-grey-light-3};
+  --color-country-menu-letter: #{$color-blue};
+  --color-country-menu-letter-focus: #{$color-white};
+  --color-country-menu-letter-background: #{$color-white};
+  --color-country-menu-letter-background-focus: #{$color-blue};
+  --color-country-menu-letter-border: #{$color-grey-light-3};
+  --color-country-menu-letter-border-hover: #{$color-grey-light-5};
+  --color-country-menu-grid-background: #{$color-white};
+  --color-country-menu-grid-border: #{$color-grey-light-3};
+  --color-country-menu-countries: #{$color-grey-dark};
+  --color-country-menu-countries-hover: #{$color-blue};
+  --color-country-menu-countries-active: #{$color-blue-opacity};
+
+
+  //Companions-page
+  //Filter-section
+  --color-filter-section-background: #{$color-white-dark-2};
+  //Filter-header
+  --color-filter-header-icon: #{$color-blue-dark-2};
+  --color-filter-header-heading: #{$color-blue-dark-2};
+  --color-filter-header-button: #{$color-blue-dark-2};
+  --color-filter-header-button-hover: #{$color-blue-dark-2-opacity-medium};
+  --color-filter-header-button-active: #{$color-blue-dark-2-opacity-light};
+  //Filter-menu
+  --color-filter-menu-background: #{$color-white-dark-2};
+  --color-filter-menu-continent-button: #{$color-blue-dark-2-opacity-light};
+  --color-filter-menu-continent-button-hover: #{$color-blue-dark-2-opacity-medium};
+  --color-filter-menu-continent-button-active: #{$color-blue-dark-2};
+  --color-filter-menu-alphabet-border: #{$color-grey-light-3};
+  --color-filter-menu-letter: #{$color-blue};
+  --color-filter-menu-letter-focus: #{$color-white};
+  --color-filter-menu-letter-background: #{$color-white};
+  --color-filter-menu-letter-background-focus: #{$color-blue};
+  --color-filter-menu-letter-border: #{$color-grey-light-3};
+  --color-filter-menu-letter-border-hover: #{$color-grey-light-5};
+  --color-filter-menu-countries: #{$color-grey-dark};
+  --color-filter-menu-countries-hover: #{$color-blue};
+  --color-filter-menu-countries-active: #{$color-blue-opacity};
 }
 
 @media (min-width: 768px) {

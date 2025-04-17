@@ -1,0 +1,119 @@
+@use "../../variables" as *;
+
+.filter-menu {
+  padding: 52px 25px 28px 25px;
+  background-color: var(--color-filter-menu-background);
+  border-radius: 0 0 $border-radius-xl $border-radius-xl;
+}
+
+.filter-menu__continents {
+  margin: 33px 0 22px 25px;
+  display: grid;
+  gap: 9px;
+}
+
+.filter-menu__continent-button {
+  padding: 0;
+  color: var(--color-filter-menu-continent-button);
+  font: var(--font-filter-menu-continent-button);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color $transition-duration;
+
+  &.-active {
+    color: var(--color-filter-menu-continent-button-active);
+  }
+
+  &:hover {
+    color: var(--color-filter-menu-continent-button-hover);
+  }
+
+  &:active {
+    color: var(--color-filter-menu-continent-button-active);
+  }
+}
+
+.filter-menu__wrapper {
+  margin-bottom: 28px;
+  padding: 0 25px;
+  display: grid;
+  gap: 15px;
+}
+
+.filter-menu__alphabet {
+  border-right: 0.5px solid var(--color-filter-menu-alphabet-border);
+  border-left: 0.5px solid var(--color-filter-menu-alphabet-border);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.filter-menu__letter {
+  padding: 12px 0 12px 0;
+  color: var(--color-filter-menu-letter);
+  background-color: var(--color-filter-menu-letter-background);
+  font: var(--font-filter-menu-letter);
+  border: 0.5px solid var(--color-filter-menu-letter-border);
+  transition: color $transition-duration, background-color $transition-duration, border-color $transition-duration;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
+  &:hover {
+    border-color: var(--color-filter-menu-letter-border-hover);
+  }
+
+  &:focus {
+    color: var(--color-filter-menu-letter-focus);
+    background-color: var(--color-filter-menu-letter-background-focus);
+  }
+}
+
+.filter-menu__grid {
+  max-height: 242px;
+  display: grid;
+  grid-auto-rows: min-content;
+  overflow-y: auto;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.filter-menu__countries {
+  text-align: start;
+  background: none;
+  border: none;
+  color: var(--color-filter-menu-countries);
+  font: var(--font-filter-menu-countries);
+  transition: color $transition-duration;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-filter-menu-countries-hover);
+  }
+
+  &:active {
+    color: var(--color-filter-menu-countries-active);
+  }
+}

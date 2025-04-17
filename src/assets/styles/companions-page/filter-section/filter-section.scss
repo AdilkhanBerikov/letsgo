@@ -1,0 +1,10 @@
+@use "../../variables" as *;
+
+.filter-section {
+  margin-top: var(--section-margin-top-negative);
+  padding-top: 52px;
+  padding-bottom: 15px;
+  position: relative;
+  background-color: var(--color-filter-section-background);
+  border-radius: 0 0 $border-radius-xl $border-radius-xl;
+}
