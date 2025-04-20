@@ -153,4 +153,8 @@
     <circle cx="27" cy="3" r="3" fill="currentColor"/>
   </symbol>
 
+  <symbol id="icon-polygon" viewBox="0 0 10 5">
+    <path d="M5 0L9.33013 4.5H0.669873L5 0Z" fill="currentColor"/>
+  </symbol>
+
 </svg>

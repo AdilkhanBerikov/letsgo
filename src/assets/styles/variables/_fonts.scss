@@ -7,6 +7,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-h2: 500 30px/35px #{$font-family-main};
   --font-h3: 700 24px/24px #{$font-family-main};
   --font-h4: 700 21px/21px #{$font-family-main};
+  --font-h4-2: 700 22px/22px #{$font-family-main};
   --font-h5: 700 18px/18px #{$font-family-main};
   --font-h6: 700 17px/20px #{$font-family-main};
   --font-h7: 700 38px/38px #{$font-family-main};
@@ -163,6 +164,14 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-filter-menu-continent-button: var(--font-body-bold);
   --font-filter-menu-letter: var(--font-body-medium-3);
   --font-filter-menu-countries: var(--font-body-regular);
+
+  //Selection-section
+  //Selection-filter
+  --font-selection-filter-heading: var(--font-h4-2);
+  --font-selection-filter-control-heading: var(--font-body-bold);
+  --font-selection-filter-checkbox-label: var(--font-body-regular-3);
+  //Level-control
+  --font-level-control-input: var(--font-body-medium-3);
 }
 
 

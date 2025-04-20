@@ -1,0 +1,45 @@
+@use "../../variables" as *;
+
+.range-control {
+  --range-control-width: 220px;
+  position: relative;
+  width: var(--range-control-width);
+}
+
+.range-control__scale {
+  --range-control-scale-width: 220px;
+  --range-control-scale-height: 2px;
+  position: relative;
+  background: var(--color-range-control-scale-background);
+  width: var(--range-control-scale-width);
+  height: var(--range-control-scale-height);
+}
+
+.range-control__bar {
+  position: absolute;
+  top: 0;
+  background-color: var(--color-range-control-bar-background);
+  height: 100%;
+}
+
+.range-control__toggle {
+  --range-control-toggle-size: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--range-control-toggle-size);
+  height: var(--range-control-toggle-size);
+  background: var(--color-range-control-toogle-background);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: width $transition-duration, height $transition-duration, box-shadow $transition-duration;
+
+  &:hover {
+    --range-control-toggle-size: 15px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 var(--color-range-control-toogle-active-box-shadow);
+  }
+}

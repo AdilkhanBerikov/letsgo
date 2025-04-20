@@ -9,6 +9,7 @@ $color-black-opacity-medium-2: rgba($color-black, 0.5);
 $color-white: #ffffff;
 $color-white-opacity-light: rgba($color-white, 0.1);
 $color-white-opacity: rgba($color-white, 0.3);
+$color-white-opacity-medium: rgba($color-white, 0.6);
 $color-white-light: #F3F4F8;
 $color-white-dark: #E1E3E9;
 $color-white-dark-2: #E2E5F2;
@@ -25,6 +26,7 @@ $color-grey-light-5: #AFB0B5;
 $color-grey: #CCCCCC;
 $color-grey-2: #B2B2B2;
 $color-grey-3: #C2C4C9;
+$color-grey-4: #C4C4C4;
 $color-grey-dark: #444444;
 $color-grey-dark-opacity: rgba($color-grey-dark, 0.3);
 $color-grey-dark-opacity-medium: rgba($color-grey-dark, 0.5);
@@ -55,6 +57,7 @@ $color-yellow: #FFD74B;
 $color-yellow-opacity: rgba($color-yellow, 0.3);
 $color-yellow-dark: #FFBD30;
 $color-yellow-dark-opacity: rgba($color-yellow-dark, 0.3);
+$color-yellow-dark-2: #F3C72B;
 $color-red: #FF0000;
 $color-red-2: #FF5C23;
 $color-red-light: #F47E7E;
@@ -127,6 +130,11 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-button-collapse-active: #{$color-blue-dark-2-opacity-light};
   --color-button-collapse-background: #{$color-blue-light-5};
   --color-button-collapse-background-hover: #{$color-blue-light-6};
+
+  --color-button-submit-background: #{$color-white};
+  --color-button-submit-hover-box-shadow: #{$color-black-opacity-light-3};
+  --color-button-submit-active: #{$color-blue-dark-opacity};
+  --color-button-submit-active-background: #{$color-yellow-dark-2};
 
   //Toggle
   --color-header-toggle: #{$color-white};
@@ -448,6 +456,40 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-filter-menu-countries: #{$color-grey-dark};
   --color-filter-menu-countries-hover: #{$color-blue};
   --color-filter-menu-countries-active: #{$color-blue-opacity};
+
+  //Selection-section
+  --color-selection-section-background: #{$color-blue-light-1};
+  //Selection-filter
+  --color-selection-filter-background: #{$color-yellow};
+  --color-selection-filter-heading: #{$color-blue};
+  --color-selection-filter-control-border: #{$color-yellow-dark-2};
+  --color-selection-filter-control-heading: #{$color-blue};
+  --color-selection-filter-control-heading-hover: #{$color-blue-opacity-dark};
+  --color-selection-filter-control-heading-active: #{$color-blue-opacity};
+  --color-selection-filter-control-icon: #{$color-blue-dark-2};
+  --color-selection-filter-control-icon-hover: #{$color-blue-dark-2-opacity-medium};
+  --color-selection-filter-control-icon-active: #{$color-blue-dark-2-opacity-light};
+  --color-selection-filter-checkbox-input-background: #{$color-white};
+  --color-selection-filter-checkbox-input-background-hover: #{$color-white-opacity-medium};
+  --color-selection-filter-checkbox-input-background-active: #{$color-white-opacity};
+  --color-selection-filter-checkbox-icon: #{$color-blue-dark};
+  --color-selection-filter-checkbox-icon-active: #{$color-blue-dark-opacity};
+  --color-selection-filter-checkbox-label: #{$color-black};
+  --color-selection-filter-checkbox-label-hover: #{$color-black-opacity-medium};
+  --color-selection-filter-checkbox-label-active: #{$color-black-opacity};
+  //Level-control
+  --color-level-control-before-background: #{$color-white};
+  --color-level-control-after-background: #{$color-grey-light-3};
+  --color-level-control-input: #{$color-blue};
+  --color-level-control-input-background: #{$color-white};
+  --color-level-control-input-border: #{$color-grey-light-3};
+  --color-level-control-input-border-hover: #{$color-grey-light-5};
+  --color-level-control-input-border-active: #{$color-blue-dark};
+  //Range-control
+  --color-range-control-scale-background: #{$color-blue-opacity-light};
+  --color-range-control-bar-background: #{$color-blue};
+  --color-range-control-toogle-background: #{$color-blue};
+  --color-range-control-toogle-active-box-shadow: #{$color-black-opacity};
 }
 
 @media (min-width: 768px) {

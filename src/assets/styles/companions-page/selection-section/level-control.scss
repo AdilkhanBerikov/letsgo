@@ -1,0 +1,89 @@
+@use "../../variables" as *;
+
+.level-control {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    --level-control-before-width: 2px;
+    --level-control-before-height: 12px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-level-control-before-background);
+    width: var(--level-control-before-width);
+    height: var(--level-control-before-height);
+    z-index: $z-index-low-2;
+  }
+
+  &::after {
+    --level-control-after-width: 16px;
+    --level-control-after-height: 1px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--level-control-after-width);
+    height: var(--level-control-after-height);
+    background-color: var(--color-level-control-after-background);
+    z-index: $z-index-low-2;
+  }
+}
+
+.level-control__label {
+  display: none;
+}
+
+.level-control__input {
+  --level-control-input-width: 110px;
+  padding: 8px 0 8px 0;
+  position: relative;
+  background-color: var(--color-level-control-input-background);
+  border: 1px solid var(--color-level-control-input-border);
+  outline: none;
+  color: var(--color-level-control-input);
+  font: var(--font-level-control-input);
+  width: var(--level-control-input-width);
+  text-align: center;
+  transition: border-color $transition-duration;
+  z-index: 0;
+
+  &.-from {
+    margin-right: -0.5px;
+    border-radius: $border-radius-medium 0 0 $border-radius-medium;
+
+    &:hover {
+      z-index: $z-index-low;
+    }
+
+    &:focus {
+      z-index: $z-index-low;
+    }
+  }
+
+  &.-before {
+    margin-left: -0.5px;
+    border-radius: 0 $border-radius-medium $border-radius-medium 0;
+
+    &:hover {
+      z-index: $z-index-low;
+    }
+
+    &:focus {
+      z-index: $z-index-low;
+    }
+  }
+
+  &:hover {
+    border-color: var(--color-level-control-input-border-hover);
+  }
+
+  &:focus {
+    border-color: var(--color-level-control-input-border-active);
+  }
+}

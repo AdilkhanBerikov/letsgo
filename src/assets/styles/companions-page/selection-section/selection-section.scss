@@ -1,0 +1,9 @@
+@use "../../variables" as *;
+
+.selection-section {
+  margin-top: var(--section-margin-top-negative);
+  margin-bottom: var(--section-margin-top-negative);
+  padding-top: 51px;
+  padding-bottom: 76px;
+  background-color: var(--color-selection-section-background);
+}
