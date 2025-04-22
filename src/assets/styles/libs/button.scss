@@ -126,16 +126,6 @@
   &.-submit {
     padding: 10.5px;
     width: 100%;
-    background-color: var(--color-button-submit-background);
-
-    &:hover {
-      box-shadow: 0 3px 6px 0 var(--color-button-submit-hover-box-shadow);
-    }
-
-    &:active {
-      color: var(--color-button-submit-active);
-      background-color: var(--color-button-submit-active-background);
-    }
   }
 
   &.-text {
@@ -283,6 +273,19 @@
 
     &:active {
       color: var(--color-button-transparent-active);
+    }
+  }
+
+  &.-white {
+    background-color: var(--color-button-submit-background);
+
+    &:hover {
+      box-shadow: 0 3px 6px 0 var(--color-button-submit-hover-box-shadow);
+    }
+
+    &:active {
+      color: var(--color-button-submit-active);
+      background-color: var(--color-button-submit-active-background);
     }
   }
 }

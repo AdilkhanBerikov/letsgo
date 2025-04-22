@@ -22,12 +22,22 @@
       --progress-bar-circle-size: 94px;
     }
   }
+
+  &.-secondary {
+    --progress-bar-circle-mobile-size: 45px;
+    width: var(--progress-bar-circle-mobile-size);
+    height: var(--progress-bar-circle-mobile-size);
+  }
 }
 
 .progress__bar-bg {
   fill: var(--color-progress-bar-background);
 
   &.-alternate {
+    fill: transparent;
+  }
+
+  &.-secondary {
     fill: transparent;
   }
 }
@@ -47,6 +57,10 @@
   &.-alternate {
     $radius: 50px;
     stroke-width: 2;
+  }
+
+  &.-secondary {
+    $radius: 22.5px;
   }
 }
 
@@ -76,6 +90,12 @@
     color: var(--color-progress-bar-level-number-alternate);
     font: var(--font-progress-bar-level-number-alternate);
   }
+
+  &.-secondary {
+    padding: 0 0 2px 0;
+    border-bottom: none;
+    color: $color-blue;
+  }
 }
 
 .progress__level-text {
@@ -85,5 +105,9 @@
   &.-alternate {
     color: var(--color-progress-bar-level-text-alternate);
     font: var(--font-progress-bar-level-text-alternate);
+  }
+
+  &.-secondary {
+    display: none;
   }
 }

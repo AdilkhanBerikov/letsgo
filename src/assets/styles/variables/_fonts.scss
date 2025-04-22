@@ -14,13 +14,16 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-h8: 700 20px/20px #{$font-family-main};
 
   --font-body-bold: 700 16px/18px #{$font-family-main};
+  --font-body-bold-2: 700 14px/16px #{$font-family-main};
   --font-body-medium: 500 16px/18px #{$font-family-main};
   --font-body-medium-2: 500 20px/18px #{$font-family-main};
   --font-body-medium-3: 500 14px/14px #{$font-family-main};
   --font-body-medium-4: 500 16px/16px #{$font-family-main};
+  --font-body-medium-5: 500 15px/15px #{$font-family-main};
   --font-body-regular: 400 16px/22px #{$font-family-main};
   --font-body-regular-2: 400 16px/18px #{$font-family-main};
   --font-body-regular-3: 400 15px/15px #{$font-family-main};
+  --font-body-regular-4: 400 15px/18px #{$font-family-main};
   --font-body-light: 300 16px/18px #{$font-family-main};
 
   --font-caption-regular: 400 14px/14px #{$font-family-main};
@@ -166,6 +169,13 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-filter-menu-countries: var(--font-body-regular);
 
   //Selection-section
+  --font-selection-section-card-heading: var(--font-h8);
+  --font-selection-section-card-hashtags: var(--font-body-regular-4);
+  --font-selection-section-card-countries-before: var(--font-body-regular-4);
+  --font-selection-section-country-name: var(--font-body-medium-5);
+  --font-selection-section-transport-list-before: var(--font-body-regular-4);
+  --font-selection-section-like-number: var(--font-body-bold-2);
+  --font-selection-section-button-text: var(--font-h6);
   //Selection-filter
   --font-selection-filter-heading: var(--font-h4-2);
   --font-selection-filter-control-heading: var(--font-body-bold);
