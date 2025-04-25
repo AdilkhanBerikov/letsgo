@@ -139,19 +139,28 @@
   gap: 10px;
   grid-row: 3;
   grid-column: 1 / 4;
+}
 
-  &::before {
-    --selection-section-card-countries-before-width: 117px;
-    content: "хочет посетить:";
-    position: absolute;
-    top: -12px;
-    left: 15px;
-    background-color: var(--color-selection-section-card-countries-before-background);
-    color: var(--color-selection-section-card-countries-before);
-    font: var(--font-selection-section-card-countries-before);
-    width: var(--selection-section-card-countries-before-width);
-    display: flex;
-    justify-content: center;
+.selection-section__card-label {
+  --selection-section-card-label-width: 117px;
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background-color: var(--color-selection-section-card-countries-before-background);
+  color: var(--color-selection-section-card-countries-before);
+  font: var(--font-selection-section-card-countries-before);
+  width: var(--selection-section-card-label-width);
+  display: flex;
+  justify-content: center;
+
+  &.-transport {
+    --selection-section-card-label-width: 87px;
+  }
+
+  &.-level {
+    --selection-section-card-label-width: 64px;
+    top: -27px;
+    left: -8px;
   }
 }
 
@@ -177,6 +186,7 @@
 
 .selection-section__card-wrapper {
   padding: 16px 21px 14px 21px;
+  position: relative;
   border-top: 1px solid var(--color-selection-section-card-wrapper-border);
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -189,20 +199,6 @@
   position: relative;
   display: flex;
   gap: 1px;
-
-  &::before {
-    --selection-section-transport-list-before-width: 87px;
-    content: "транспорт:";
-    position: absolute;
-    top: -34px;
-    left: -6px;
-    background-color: var(--color-selection-section-transport-list-before-background);
-    color: var(--color-selection-section-transport-list-before);
-    font: var(--font-selection-section-transport-list-before);
-    width: var(--selection-section-transport-list-before-width);
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .selection-section__card-progress {
@@ -210,20 +206,6 @@
   position: relative;
   width: var(--selection-section-card-progress-size);
   height: var(--selection-section-card-progress-size);
-
-  &::before {
-    --selection-section-card-progress-before-width: 64px;
-    content: "левел:";
-    position: absolute;
-    top: -28px;
-    left: -10px;
-    background-color: var(--color-selection-section-transport-list-before-background);
-    color: var(--color-selection-section-transport-list-before);
-    font: var(--font-selection-section-transport-list-before);
-    width: var(--selection-section-card-progress-before-width);
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .selection-section__card-button {
