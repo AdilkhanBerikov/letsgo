@@ -65,6 +65,9 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Header
   --font-nav-link: var(--font-h2);
+  //Heading-section
+  --font-heading-section-title: var(--font-h1);
+  --font-heading-section-button-text: var(--font-h6);
 
   //Footer
   --font-footnote-text: var(--font-body-regular);
@@ -118,9 +121,6 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
 
   //Direction-page
-  //Heading-section
-  --font-heading-section-title: var(--font-h1);
-
   //Profile-section
   --font-profile-section-tags-label: var(--font-body-bold);
   --font-profile-section-tags-textarea: var(--font-body-regular-2);

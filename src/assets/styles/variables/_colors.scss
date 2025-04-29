@@ -221,6 +221,13 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   //Page Header
   --color-page-header-background: #{$color-blue-dark};
   --color-page-header-scrolled-background: #{$color-white};
+  //Heading-section
+  --color-heading-section-background: #{$color-blue-dark-6};
+  --color-heading-section-title: #{$color-white};
+  --color-heading-section-title-before-background: #{$color-orange};
+  --color-heading-section-button: #{$color-white};
+  --color-heading-section-button-hover: #{$color-white-opacity-medium};
+  --color-heading-section-button-active: #{$color-white-opacity-light};
 
   //Footer
   --color-footer-background: #{$color-white};
@@ -320,11 +327,6 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   //Direction-page
   //Page-header
   --color-page-header-alternate-background: #{$color-blue-dark-6};
-
-  //Heading-section
-  --color-heading-section-background: #{$color-blue-dark-6};
-  --color-heading-section-title: #{$color-white};
-  --color-heading-section-title-before-background: #{$color-orange};
 
   //Profile-section
   --color-profile-section-background: #{$color-blue-light-1};
