@@ -178,6 +178,7 @@
           </svg>
           <h2 class="filter-header__heading">Фильтрация по странам:</h2>
         </div>
+        <div class="filter-header__continents"></div>
         <button class="filter-header__button dropdown-trigger">
           <span class="filter-header__button-text">Показать все</span>
           <svg class="filter-header__button-icon" aria-hidden="true">
@@ -187,7 +188,7 @@
       </div>
     </div>
     <div class="filter-menu dropdown-menu">
-      <div class="filter-menu__header filter-header">
+      <div class="filter-menu__header">
         <div class="filter-header__title">
           <svg class="filter-header__icon" aria-hidden="true">
             <use xlink:href="assets/icons/icons.svg#icon-filter"></use>
@@ -195,6 +196,7 @@
           <h2 class="filter-header__heading">Фильтрация по странам:</h2>
         </div>
         <button class="filter-header__button dropdown-menu__button">
+          <span class="filter-header__button-text">Свернуть</span>
           <svg class="filter-header__icon-close" aria-hidden="true">
             <use xlink:href="assets/icons/icons.svg#icon-close"></use>
           </svg>
@@ -242,103 +244,312 @@
           <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ю">Ю</button>
           <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Я">Я</button>
         </div>
-        <div class="filter-menu__grid dropdown-menu__grid">
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Австралия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Австрия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Азербайджан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Албания</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Алжир</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Ангола</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Андорра</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Антигуа и Барбуда</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Аргентина</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Армения</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Афганистан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Багамы</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бангладеш</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Барбадос</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бахрейн</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Беларусь</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Белиз</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бельгия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бенин</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Болгария</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Боливия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Босния и Герцеговина</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Ботсвана</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бразилия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бруней</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Буркина-Фасо</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бурунди</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Бутан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Вануату</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Ватикан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Великобритания</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Венгрия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Венесуэла</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Вьетнам</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Габон</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гаити</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гайана</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гамбия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гана</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гватемала</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гвинея</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Германия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Гондурас</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Греция</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Грузия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Дания</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Джибути</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Доминика</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Доминиканская Республика</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Египет</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Замбия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Зимбабве</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Израиль</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Индия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Индонезия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Иордания</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Ирак</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Иран</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Ирландия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Исландия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Испания</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Италия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Казахстан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Канада</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Катар</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Кения</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Кипр</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Китай</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Колумбия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Куба</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Латвия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Ливан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Литва</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Малайзия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Мексика</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Монако</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Монголия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Нидерланды</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Норвегия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">ОАЭ</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Пакистан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Польша</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Португалия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Россия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">США</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Таджикистан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Таиланд</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Турция</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Узбекистан</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Украина</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Финляндия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Франция</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Чехия</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Швейцария</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Швеция</button>
-          <button class="filter-menu__countries dropdown-menu__country" type="button">Япония</button>
+        <div class="filter-menu__countries dropdown-menu__grid">
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">А</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Австралия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Австрия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Азербайджан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Албания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Алжир</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ангола</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Андорра</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Антигуа и Барбуда</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Аргентина</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Армения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Афганистан</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Б</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Багамы</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бангладеш</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Барбадос</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бахрейн</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Беларусь</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Белиз</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бельгия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бенин</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Болгария</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Боливия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Босния и Герцеговина</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ботсвана</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бразилия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бруней</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Буркина-Фасо</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бурунди</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бутан</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">В</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Вануату</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ватикан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Великобритания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Венгрия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Венесуэла</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Вьетнам</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Г</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Габон</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гаити</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гайана</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гамбия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гана</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гватемала</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гвинея</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Германия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гондурас</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Греция</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Грузия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Д</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Дания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Джибути</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Доминика</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Доминикана</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Е</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Египет</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">З</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Замбия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Зимбабве</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">И</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Израиль</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Индия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Индонезия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Иордания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ирак</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Иран</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ирландия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Исландия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Испания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Италия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">К</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кабо-Верде</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Казахстан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Камбоджа</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Камерун</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Канада</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Катар</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кипр</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Киргизия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кирибати</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Китай</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Колумбия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Куба</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Л</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Лаос</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Латвия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Лесото</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Либерия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ливан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ливия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Литва</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Лихтенштейн</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Люксембург</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">М</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Маврикий</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мавритания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мадагаскар</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Малави</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Малайзия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мали</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мексика</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Монако</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Монголия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Н</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Намибия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Науру</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Непал</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Нигерия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Нидерланды</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Никарагуа</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Новая Зеландия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Нидерланды</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Норвегия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">О</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">ОАЭ</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">П</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Пакистан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Палау</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Панама</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Папуа - Новая Гвинея</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Парагвай</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Перу</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Польша</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Португалия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Р</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Россия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">С</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сальвадор</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Самоа</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сан-Марино</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Саудовская Аравия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сейшелы</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сенегал</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сербия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сингапур</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сирия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Словакия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Словения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">США</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Т</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Таджикистан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Таиланд</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Танзания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Того</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тонга</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тринидад и Тобаго</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тувалу</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тунис</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Туркмения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Турция</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">У</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Узбекистан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Украина</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ф</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Финляндия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Франция</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Х</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Хорватия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ч</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Чад</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Черногория</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Чехия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Чили</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ш</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Швейцария</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Швеция</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Э</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эквадор</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эритрея</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эсватини</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эстония</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эфиопия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ю</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">ЮАР</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Южный Судан</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Я</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ямайка</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Япония</button>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="filter-menu__button dropdown-menu__button">
@@ -1049,5 +1260,6 @@
 <script src="assets/scripts/selection-filter-control.js" type="module" defer></script>
 <script src="assets/scripts/level-control.js" type="module" defer></script>
 <script src="assets/scripts/like-button.js" type="module" defer></script>
+<script src="assets/scripts/filter-menu-continents.js" type="module" defer></script>
 
 </html>

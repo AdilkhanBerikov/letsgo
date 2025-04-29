@@ -4,12 +4,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 1fr 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px 0 20px;
+    grid-template-columns: max-content 1fr 185px;
+  }
 }
 
 .filter-header__title {
   display: flex;
   gap: 12px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    gap: 22px;
+    display: flex;
+  }
 }
 
 .filter-header__icon {
@@ -18,12 +39,25 @@
   color: var(--color-filter-header-icon);
   width: var(--filter-section-icon-width);
   height: var(--filter-section-icon-height);
+
+  @media (min-width: $desktop-width) {
+    --filter-section-icon-width: 23px;
+    --filter-section-icon-height: 15px;
+  }
 }
 
 .filter-header__heading {
   color: var(--color-filter-header-heading);
   font: var(--font-filter-header-heading);
   text-transform: uppercase;
+}
+
+.filter-header__continents {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .filter-header__button {
@@ -41,6 +75,11 @@
   line-height: 0;
   transition: color $transition-duration;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: space-between;
+  }
+
   &:hover {
     color: var(--color-filter-header-button-hover);
   }
@@ -52,6 +91,10 @@
 
 .filter-header__button-text {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .filter-header__button-icon {
@@ -63,6 +106,11 @@
   //display: flex;
   //align-items: center;
   //gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    --filter-header-button-icon-width: 30px;
+    --filter-header-button-icon-height: 6px;
+  }
 }
 
 //.filter-header__dot {
@@ -78,4 +126,8 @@
   color: inherit;
   width: var(--filter-header-icon-close-size);
   height: var(--filter-header-icon-close-size);
+
+  @media (min-width: $tablet-width) {
+    --filter-header-icon-close-size: 24px;
+  }
 }

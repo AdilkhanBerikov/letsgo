@@ -166,6 +166,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   //Filter-menu
   --font-filter-menu-continent-button: var(--font-body-bold);
   --font-filter-menu-letter: var(--font-body-medium-3);
+  --font-filter-menu-countries-letter: var(--font-h1);
   --font-filter-menu-countries: var(--font-body-regular);
 
   //Selection-section
@@ -278,6 +279,13 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-country-menu-letter: var(--font-body-medium);
     //--font-country-menu-countries: var(--font-body-regular);
     //--font-step-country-name: var(--font-body-medium-3);
+
+    //Companions-page
+    //Filter-section
+    //Filter-header
+    //Filter-menu
+    --font-filter-menu-continent-button: var(--font-h6);
+    --font-filter-menu-letter: var(--font-h1);
   }
 }
 
@@ -344,5 +352,15 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     //Calendar
     --font-calendar-day: var(--font-caption-regular-2);
     --font-calendar-day-disabled: var(--font-caption-regular-2);
+
+    //Companions-page
+    //Filter-section
+    //Filter-header
+    --font-filter-header-heading: var(--font-h6);
+    //--font-filter-header-button: var(--font-h6);
+    //Filter-menu
+    //--font-filter-menu-continent-button: var(--font-body-bold);
+    //--font-filter-menu-letter: var(--font-body-medium-3);
+    //--font-filter-menu-countries: var(--font-body-regular);
   }
 }

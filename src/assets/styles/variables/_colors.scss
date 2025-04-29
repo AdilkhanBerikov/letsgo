@@ -464,6 +464,7 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-filter-menu-letter-background-focus: #{$color-blue};
   --color-filter-menu-letter-border: #{$color-grey-light-3};
   --color-filter-menu-letter-border-hover: #{$color-grey-light-5};
+  --color-filter-menu-countries-letter: #{$color-blue-dark-2};
   --color-filter-menu-countries: #{$color-grey-dark};
   --color-filter-menu-countries-hover: #{$color-blue};
   --color-filter-menu-countries-active: #{$color-blue-opacity};
@@ -560,6 +561,12 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
     --color-rate-section-background: #{$color-blue-light-1};
     --color-rate-section-price-before-tablet: #{$color-white-dark-2};
     --color-rate-section-button-icon-background: #{$color-white-dark-2};
+
+    //Companions-page
+    //Filter-menu
+    --color-filter-menu-letter: #{$color-blue-dark-2-opacity-light};
+    --color-filter-menu-letter-hover: #{$color-blue-dark-2-opacity-medium};
+    --color-filter-menu-letter-focus: #{$color-blue-dark-2};
   }
 }
 
