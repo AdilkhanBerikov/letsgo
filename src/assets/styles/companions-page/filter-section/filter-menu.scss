@@ -4,6 +4,8 @@
   padding: 52px 25px 28px 25px;
   background-color: var(--color-filter-menu-background);
   border-radius: 0 0 $border-radius-xl $border-radius-xl;
+  max-height: 90vw;
+  overflow-y: auto;
 
   @media (min-width: $tablet-width) {
     padding: 123px 72px 79px 72px;
@@ -16,6 +18,7 @@
   @media (min-width: $desktop-width) {
     padding: 123px 60px 79px 60px;
     grid-template-columns: 343px 1fr 174px;
+    max-height: 99vw;
   }
 }
 
