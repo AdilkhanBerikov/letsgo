@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const controlButtons = document.querySelectorAll(".selection-filter__control-button");
+  const controlButtons = document.querySelectorAll(".selection-filter__control-header");
 
   controlButtons.forEach(button => {
     button.addEventListener("click", function () {

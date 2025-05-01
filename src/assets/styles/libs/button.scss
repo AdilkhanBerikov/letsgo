@@ -126,6 +126,10 @@
   &.-submit {
     padding: 10.5px;
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px;
+    }
   }
 
   &.-text {

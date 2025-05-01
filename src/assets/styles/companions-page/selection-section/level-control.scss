@@ -6,6 +6,16 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
   &::before {
     --level-control-before-width: 2px;
     --level-control-before-height: 12px;
@@ -18,6 +28,15 @@
     width: var(--level-control-before-width);
     height: var(--level-control-before-height);
     z-index: $z-index-low-2;
+
+    @media (min-width: $tablet-width) {
+      --level-control-before-width: 3px;
+      --level-control-before-height: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      --level-control-before-height: 14px;
+    }
   }
 
   &::after {
@@ -32,6 +51,14 @@
     height: var(--level-control-after-height);
     background-color: var(--color-level-control-after-background);
     z-index: $z-index-low-2;
+
+    @media (min-width: $tablet-width) {
+      --level-control-after-width: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      --level-control-after-width: 20px;
+    }
   }
 }
 
@@ -41,17 +68,29 @@
 
 .level-control__input {
   --level-control-input-width: 110px;
-  padding: 8px 0 8px 0;
+  padding: 8px 0;
   position: relative;
   background-color: var(--color-level-control-input-background);
   border: 1px solid var(--color-level-control-input-border);
   outline: none;
   color: var(--color-level-control-input);
   font: var(--font-level-control-input);
+  letter-spacing: 0.06em;
   width: var(--level-control-input-width);
   text-align: center;
   transition: border-color $transition-duration;
   z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    --level-control-input-width: 75px;
+    padding: 14px 0;
+    letter-spacing: 0.04em;
+  }
+
+  @media (min-width: $desktop-width) {
+    --level-control-input-width: 96px;
+    padding: 10px 0;
+  }
 
   &.-from {
     margin-right: -0.5px;

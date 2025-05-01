@@ -177,6 +177,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-selection-section-transport-list-before: var(--font-body-regular-4);
   --font-selection-section-like-number: var(--font-body-bold-2);
   --font-selection-section-button-text: var(--font-h6);
+  --font-selection-section-pagination-number: var(--font-h8);
   //Selection-filter
   --font-selection-filter-heading: var(--font-h4-2);
   --font-selection-filter-control-heading: var(--font-body-bold);
@@ -197,11 +198,13 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-h6: 700 20px/20px #{$font-family-main};
 
     --font-body-bold: 700 28px/28px #{$font-family-main};
-    --font-body-bold-2: 700 21px/25px #{$font-family-main}; //другое
+    --font-body-bold-2: 700 21px/25px #{$font-family-main};
+    --font-body-bold-3: 700 20px/20px #{$font-family-main}; //другое
     --font-body-medium: 500 20px/20px #{$font-family-main};
     --font-body-medium-4: 500 20px/18px #{$font-family-main};
     --font-body-regular: 400 20px/23px #{$font-family-main};
-    --font-body-regular-2: 400 28px/28px #{$font-family-main}; //другое
+    --font-body-regular-2: 400 28px/28px #{$font-family-main};
+    --font-body-regular-4: 400 15px/18px #{$font-family-main}; //другое
     --font-body-light: 300 28px/33px #{$font-family-main};
     --font-body-light-2: 300 22px/28px #{$font-family-main}; //другое
 
@@ -286,6 +289,19 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     //Filter-menu
     --font-filter-menu-continent-button: var(--font-h6);
     --font-filter-menu-letter: var(--font-h1);
+
+    //Selection-section
+    --font-selection-section-card-heading: var(--font-h4);
+    --font-selection-section-card-hashtags: var(--font-body-regular);
+    --font-selection-section-card-countries-before: var(--font-body-regular-4);
+    --font-selection-section-country-name: var(--font-body-medium);
+    --font-selection-section-like-number: var(--font-body-bold-3);
+    //Selection-filter
+    --font-selection-filter-heading: var(--font-h4);
+    --font-selection-filter-control-heading: var(--font-body-medium);
+    --font-selection-filter-checkbox-label: var(--font-tooltip);
+    //Level-control
+    --font-level-control-input: var(--font-body-medium);
   }
 }
 

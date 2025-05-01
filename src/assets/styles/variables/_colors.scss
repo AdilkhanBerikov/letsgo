@@ -188,9 +188,12 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-progress-bar-level-number: #{$color-white};
   --color-progress-bar-level-number-border: #{$color-white-opacity};
   --color-progress-bar-level-number-border-alternate: #{$color-grey-dark};
+  --color-progress-bar-level-number-border-secondary: #{$color-black-opacity-light-2};
   --color-progress-bar-level-number-alternate: #{$color-blue-dark};
+  --color-progress-bar-level-number-secondary: #{$color-blue};
   --color-progress-bar-level-text: #{$color-white};
   --color-progress-bar-level-text-alternate: #{$color-grey-dark};
+  --color-progress-bar-level-text-secondary: #{$color-black-opacity-medium-2};
 
   //Input
   --color-input-background: #{$color-white};
@@ -505,11 +508,16 @@ $gradient-white-dark-to-transparent: linear-gradient(to top, rgba($color-white, 
   --color-selection-section-button-icon-hover: #{$color-blue-opacity-dark};
   --color-selection-section-button-icon-active: #{$color-blue-opacity};
   --color-selection-section-button-text: #{$color-blue};
-  --color-selection-section-slider-button-background: #{$color-white};
-  --color-selection-section-slider-button-border: #{$color-blue-light-1};
-  --color-selection-section-slider-icon: #{$color-blue};
-  --color-selection-section-slider-icon-hover: #{$color-blue-opacity-dark};
-  --color-selection-section-slider-icon-active: #{$color-blue-opacity};
+  --color-selection-section-pagination-background: #{$color-white};
+  --color-selection-section-pagination-number: #{$color-blue};
+  --color-selection-section-pagination-number-hover: #{$color-blue-opacity-dark};
+  --color-selection-section-pagination-number-chosen: #{$color-yellow};
+  --color-selection-section-pages-button-background: #{$color-white};
+  --color-selection-section-pages-button-border: #{$color-blue-light-1};
+  --color-selection-section-pages-button-border-hover: #{$color-blue-opacity};
+  --color-selection-section-pages-icon: #{$color-blue};
+  --color-selection-section-pages-icon-hover: #{$color-blue-opacity-dark};
+  --color-selection-section-pages-icon-active: #{$color-blue-opacity};
   //Selection-filter
   --color-selection-filter-background: #{$color-yellow};
   --color-selection-filter-heading: #{$color-blue};

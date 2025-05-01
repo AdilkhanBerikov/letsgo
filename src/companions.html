@@ -5,7 +5,7 @@
   <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
   <title>Погнали</title>
 </head>
-<body class="page__body">
+<body class="companions-page page__body">
 
 <header class="page-header -alternate">
   <div class="grid -header box">
@@ -572,7 +572,7 @@
   </section>
 
   <section class="selection-section">
-    <div class="box">
+    <div class="box grid -section">
       <div class="selection-filter">
         <h2 class="selection-filter__heading">
           Подберите
@@ -1192,17 +1192,41 @@
           <span class="selection-section__button-text">Показать еще</span>
         </button>
       </div>
-      <div class="selection-section__slider">
-        <button class="selection-section__slider-button -back">
-          <svg class="selection-section__slider-icon -back" aria-hidden="true">
-            <use xlink:href="assets/icons/icons.svg#icon-arrow-polygon"></use>
-          </svg>
-        </button>
-        <button class="selection-section__slider-button -forth">
-          <svg class="selection-section__slider-icon -forth" aria-hidden="true">
-            <use xlink:href="assets/icons/icons.svg#icon-arrow-polygon"></use>
-          </svg>
-        </button>
+      <div class="selection-section__pagination">
+        <ul class="selection-section__pagination-list">
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number -chosen" type="button" aria-current="true">
+              1
+            </button>
+          </li>
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number" type="button" aria-current="true">
+              2
+            </button>
+          </li>
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number" type="button" aria-current="true">
+              3
+            </button>
+          </li>
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number" type="button" aria-current="true">
+              4
+            </button>
+          </li>
+        </ul>
+        <div class="selection-section__pagination-pages">
+          <button class="selection-section__pages-button -back">
+            <svg class="selection-section__pages-icon -back" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-arrow-polygon"></use>
+            </svg>
+          </button>
+          <button class="selection-section__pages-button -forth">
+            <svg class="selection-section__pages-icon -forth" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-arrow-polygon"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>

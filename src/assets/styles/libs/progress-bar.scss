@@ -27,6 +27,10 @@
     --progress-bar-circle-mobile-size: 45px;
     width: var(--progress-bar-circle-mobile-size);
     height: var(--progress-bar-circle-mobile-size);
+
+    @media (min-width: $tablet-width) {
+      --progress-bar-circle-mobile-size: 60px;
+    }
   }
 }
 
@@ -61,6 +65,10 @@
 
   &.-secondary {
     $radius: 22.5px;
+
+    @media (min-width: $tablet-width) {
+      $radius: 30px;
+    }
   }
 }
 
@@ -94,7 +102,12 @@
   &.-secondary {
     padding: 0 0 2px 0;
     border-bottom: none;
-    color: $color-blue;
+    color: var(--color-progress-bar-level-number-secondary);
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      border-bottom: 1px solid var(--color-progress-bar-level-number-border-secondary);
+    }
   }
 }
 
@@ -109,5 +122,10 @@
 
   &.-secondary {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      color: var(--color-progress-bar-level-text-secondary);
+    }
   }
 }

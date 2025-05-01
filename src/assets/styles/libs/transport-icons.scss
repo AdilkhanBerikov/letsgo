@@ -56,6 +56,12 @@
     --transport-wrapper-height: 32px;
     background: var(--color-transport-wrapper-alternate-background);
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      --transport-wrapper-width: 100%;
+      --transport-wrapper-height: 100%;
+      background: none;
+    }
   }
 }
 
@@ -71,6 +77,11 @@
     --transport-icon-plane-height: 16px;
     width: var(--transport-icon-plane-width);
     height: var(--transport-icon-plane-height);
+
+    @media (min-width: $tablet-width) {
+      --transport-icon-plane-width: 22.85px;
+      --transport-icon-plane-height: 22px;
+    }
   }
 
   &.-bus {
@@ -78,6 +89,11 @@
     --transport-icon-bus-height: 16px;
     width: var(--transport-icon-bus-width);
     height: var(--transport-icon-bus-height);
+
+    @media (min-width: $tablet-width) {
+      --transport-icon-bus-width: 18.72px;
+      --transport-icon-bus-height: 20px;
+    }
   }
 
   &.-bicycle {
@@ -85,6 +101,11 @@
     --transport-icon-bicycle-height: 17px;
     width: var(--transport-icon-bicycle-width);
     height: var(--transport-icon-bicycle-height);
+
+    @media (min-width: $tablet-width) {
+      --transport-icon-bicycle-width: 26px;
+      --transport-icon-bicycle-height: 25px;
+    }
   }
 
   &.-run {
@@ -92,6 +113,11 @@
     --transport-icon-run-height: 17px;
     width: var(--transport-icon-run-width);
     height: var(--transport-icon-run-height);
+
+    @media (min-width: $tablet-width) {
+      --transport-icon-run-width: 22.69px;
+      --transport-icon-run-height: 24px;
+    }
   }
 }
 

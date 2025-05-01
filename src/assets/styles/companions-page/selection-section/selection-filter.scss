@@ -5,6 +5,19 @@
   padding: 26px 25px 22px 25px;
   background-color: var(--color-selection-filter-background);
   border-radius: $border-radius-xl;
+  grid-column: 1 / 3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+    padding: 37px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 46px 45px 48px 48px;
+    grid-row: 1;
+    grid-column: 4;
+  }
 }
 
 .selection-filter__heading {
@@ -12,18 +25,52 @@
   color: var(--color-selection-filter-heading);
   font: var(--font-selection-filter-heading);
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .selection-filter__form {
   display: grid;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+    padding-top: 21px;
+    padding-bottom: 31px;
+    border-top: 1px solid var(--color-selection-filter-control-border);
+    border-bottom: 1px solid var(--color-selection-filter-control-border);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .selection-filter__control {
   padding: 12px 0;
   border-top: 1px solid var(--color-selection-filter-control-border);
   display: grid;
-  //grid-template-columns: 1fr min-content;
-  //align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    grid-template-columns: 122px 1fr;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0;
+    grid-template-columns: 1fr;
+  }
 
   &.-open {
     .selection-filter__control-icon {
@@ -34,8 +81,6 @@
     .selection-filter__level-control,
     .selection-filter__transport-list {
       display: grid;
-      //grid-row: 2;
-      //grid-column: 1 / 3;
     }
   }
 
@@ -43,6 +88,14 @@
   .selection-filter__level-control,
   .selection-filter__transport-list {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
@@ -77,7 +130,6 @@
   font: var(--font-selection-filter-control-heading);
   text-transform: uppercase;
   transition: color $transition-duration;
-  //grid-column: 1;
 }
 
 .selection-filter__control-button {
@@ -86,7 +138,14 @@
   background: none;
   outline: none;
   cursor: pointer;
-  //grid-column: 2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .selection-filter__control-icon {
@@ -103,6 +162,20 @@
   margin-top: 13px;
   margin-bottom: 9px;
   gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    margin-bottom: 14px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 .selection-filter__checkbox {
@@ -110,6 +183,14 @@
   display: flex;
   align-items: center;
   gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    gap: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 13px;
+  }
 
   &:hover .selection-filter__checkbox-input {
     background-color: var(--color-selection-filter-checkbox-input-background-hover);
@@ -144,6 +225,10 @@
   cursor: pointer;
   transition: background-color $transition-duration;
 
+  @media (min-width: $tablet-width) {
+    --selection-filter-checkbox-input-size: 24px;
+  }
+
   &:checked + .selection-filter__checkbox-icon {
     display: block;
   }
@@ -161,6 +246,13 @@
   height: var(--selection-filter-checkbox-icon-height);
   pointer-events: none;
   transition: color $transition-duration;
+
+  @media (min-width: $tablet-width) {
+    --selection-filter-checkbox-icon-width: 18px;
+    --selection-filter-checkbox-icon-height: 17px;
+    top: 3px;
+    left: 3px;
+  }
 }
 
 .selection-filter__checkbox-label {
@@ -175,6 +267,15 @@
   margin-bottom: 9px;
   grid-template-columns: repeat(4, min-content);
   gap: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
 }
 
 .selection-filter__level-control {
@@ -182,4 +283,21 @@
   margin-bottom: 13px;
   justify-content: center;
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: start;
+    gap: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    grid-template-columns: min-content;
+    justify-content: center;
+    gap: 36px;
+  }
 }

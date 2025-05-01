@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function handleScroll() {
     const isDirectionPage = document.body.classList.contains("direction-page");
+    const isCompanionsPage = document.body.classList.contains("companions-page");
 
     if (window.scrollY > 0) {
       header.classList.add("-scrolled");
@@ -34,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isDirectionPage) {
         header.classList.remove("-alternate"); // Убираем только на direction-page
       }
+
+      if (isCompanionsPage) {
+        header.classList.remove("-alternate"); // Убираем только на direction-page
+      }
+
     } else {
       header.classList.remove("-scrolled");
       gridHeader.classList.remove("-scrolled"); // Добавляем/убираем -scrolled
@@ -41,6 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.forEach((link) => link.classList.remove("-scrolled")); // Убираем класс у ссылок
 
       if (isDirectionPage) {
+        header.classList.add("-alternate"); // Возвращаем только на direction-page
+      }
+
+      if (isCompanionsPage) {
         header.classList.add("-alternate"); // Возвращаем только на direction-page
       }
     }
