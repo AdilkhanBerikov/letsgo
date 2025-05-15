@@ -1,19 +1,28 @@
-@use "../variables" as *;
+@use "../variables/index" as *;
 
 .heading-section {
   padding: 40px 0 12px 0;
   position: relative;
   background-color: var(--color-heading-section-background);
   border-radius: 0 0 $border-radius-xl $border-radius-xl;
-  z-index: $z-index-low;
+  z-index: $z-index-md;
 
   @media (min-width: $tablet-width) {
-    padding: 94px 0 66px 35px;
+    padding: 94px 35px 66px 35px;
     border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 78px 0 68px 64px;
+    padding: 78px 64px 68px 64px;
+  }
+}
+
+.heading-section__wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -49,4 +58,36 @@
       bottom: -72px;
     }
   }
+}
+
+.heading-section__button {
+  color: var(--color-heading-section-button);
+  display: none;
+  transition: color $transition-duration;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &:hover {
+    color: var(--color-heading-section-button-hover);
+  }
+
+  &:active {
+    color: var(--color-heading-section-button-active);
+  }
+}
+
+.heading-section__button-text {
+  font: var(--font-heading-section-button-text);
+  text-transform: uppercase;
+}
+
+.heading-section__button-icon {
+  --heading-section-button-icon-width: 32px;
+  --heading-section-button-icon-height: 16px;
+  width: var(--heading-section-button-icon-width);
+  height: var(--heading-section-button-icon-height);
 }

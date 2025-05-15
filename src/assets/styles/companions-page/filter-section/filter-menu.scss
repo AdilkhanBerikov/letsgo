@@ -1,0 +1,245 @@
+@use "../../variables" as *;
+
+.filter-menu {
+  padding: 52px 25px 28px 25px;
+  background-color: var(--color-filter-menu-background);
+  border-radius: 0 0 $border-radius-xl $border-radius-xl;
+  max-height: 90vw;
+  overflow-y: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 123px 72px 79px 72px;
+    border-radius: 0 0 $border-radius-tablet-3xl $border-radius-tablet-3xl;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 60px 79px 60px;
+    grid-template-columns: 343px 1fr 174px;
+    max-height: 99vw;
+  }
+}
+
+.filter-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px 0 20px;
+    grid-template-columns: 1fr 174px;
+    grid-row: 1;
+    grid-column: 1 / 4;
+  }
+}
+
+.filter-menu__continents {
+  margin: 33px 0 22px 25px;
+  display: grid;
+  gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-template-columns: repeat(4, max-content);
+    gap: 28px;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 32px;
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+.filter-menu__continent-button {
+  padding: 0;
+  color: var(--color-filter-menu-continent-button);
+  font: var(--font-filter-menu-continent-button);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color $transition-duration;
+
+  &.-active {
+    color: var(--color-filter-menu-continent-button-active);
+  }
+
+  &:hover {
+    color: var(--color-filter-menu-continent-button-hover);
+  }
+
+  &:active {
+    color: var(--color-filter-menu-continent-button-active);
+  }
+}
+
+.filter-menu__wrapper {
+  margin-bottom: 28px;
+  padding: 0 25px;
+  display: grid;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    margin-bottom: 77px;
+    padding: 0;
+    grid-template-columns: 1fr 174px;
+    gap: 0;
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 49px;
+    padding: 0 35px;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 4;
+  }
+}
+
+.filter-menu__alphabet {
+  border-right: 0.5px solid var(--color-filter-menu-alphabet-border);
+  border-left: 0.5px solid var(--color-filter-menu-alphabet-border);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    grid-template-columns: repeat(5, min-content);
+    row-gap: 7px;
+    column-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.filter-menu__letter {
+  padding: 12px 0 12px 0;
+  color: var(--color-filter-menu-letter);
+  background-color: var(--color-filter-menu-letter-background);
+  font: var(--font-filter-menu-letter);
+  border: 0.5px solid var(--color-filter-menu-letter-border);
+  transition: color $transition-duration, background-color $transition-duration, border-color $transition-duration;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  &:hover {
+    border-color: var(--color-filter-menu-letter-border-hover);
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      color: var(--color-filter-menu-letter-hover);
+    }
+  }
+
+  &:focus {
+    color: var(--color-filter-menu-letter-focus);
+    background-color: var(--color-filter-menu-letter-background-focus);
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
+}
+
+.filter-menu__countries {
+  max-height: 242px;
+  display: grid;
+  grid-auto-rows: min-content;
+  overflow-y: auto;
+
+  @media (min-width: $tablet-width) {
+    max-height: 378px;
+    gap: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: none;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, max-content);
+    row-gap: 47px;
+    overflow-y: inherit;
+  }
+}
+
+.filter-menu__countries-group {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    gap: 25px;
+  }
+}
+
+.filter-menu__countries-letter {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    color: var(--color-filter-menu-countries-letter);
+    font: var(--font-filter-menu-countries-letter);
+  }
+}
+
+.filter-menu__countries-list {
+  display: grid;
+  grid-auto-rows: min-content;
+
+  @media (min-width: $tablet-width) {
+    gap: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow-y: inherit;
+  }
+}
+
+.filter-menu__country {
+  padding: 0;
+  text-align: start;
+  background: none;
+  border: none;
+  color: var(--color-filter-menu-countries);
+  font: var(--font-filter-menu-countries);
+  transition: color $transition-duration;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-filter-menu-countries-hover);
+  }
+
+  &:active {
+    color: var(--color-filter-menu-countries-active);
+  }
+}
+
+.filter-menu__button {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+  }
+}

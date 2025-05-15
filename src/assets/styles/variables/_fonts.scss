@@ -7,19 +7,23 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-h2: 500 30px/35px #{$font-family-main};
   --font-h3: 700 24px/24px #{$font-family-main};
   --font-h4: 700 21px/21px #{$font-family-main};
+  --font-h4-2: 700 22px/22px #{$font-family-main};
   --font-h5: 700 18px/18px #{$font-family-main};
   --font-h6: 700 17px/20px #{$font-family-main};
   --font-h7: 700 38px/38px #{$font-family-main};
   --font-h8: 700 20px/20px #{$font-family-main};
 
   --font-body-bold: 700 16px/18px #{$font-family-main};
+  --font-body-bold-2: 700 14px/16px #{$font-family-main};
   --font-body-medium: 500 16px/18px #{$font-family-main};
   --font-body-medium-2: 500 20px/18px #{$font-family-main};
   --font-body-medium-3: 500 14px/14px #{$font-family-main};
   --font-body-medium-4: 500 16px/16px #{$font-family-main};
+  --font-body-medium-5: 500 15px/15px #{$font-family-main};
   --font-body-regular: 400 16px/22px #{$font-family-main};
   --font-body-regular-2: 400 16px/18px #{$font-family-main};
   --font-body-regular-3: 400 15px/15px #{$font-family-main};
+  --font-body-regular-4: 400 15px/18px #{$font-family-main};
   --font-body-light: 300 16px/18px #{$font-family-main};
 
   --font-caption-regular: 400 14px/14px #{$font-family-main};
@@ -34,6 +38,7 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-button-rectangle: var(--font-h5);
   --font-button-change: var(--font-body-medium-2);
   --font-button-modify: var(--font-body-medium-3);
+  --font-button-collapse: var(--font-h6);
 
   //User-card
   --font-user-card-name: var(--font-h4);
@@ -60,6 +65,9 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
   //Header
   --font-nav-link: var(--font-h2);
+  //Heading-section
+  --font-heading-section-title: var(--font-h1);
+  --font-heading-section-button-text: var(--font-h6);
 
   //Footer
   --font-footnote-text: var(--font-body-regular);
@@ -113,9 +121,6 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
 
 
   //Direction-page
-  //Heading-section
-  --font-heading-section-title: var(--font-h1);
-
   //Profile-section
   --font-profile-section-tags-label: var(--font-body-bold);
   --font-profile-section-tags-textarea: var(--font-body-regular-2);
@@ -147,10 +152,38 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
   --font-calendar-week-days: var(--font-caption-regular-3);
   --font-calendar-week-days-before: var(--font-caption-regular-3);
   --font-calendar-day: var(--font-caption-regular-3);
-  //Dropdown-menu
-  --font-dropdown-menu-heading: var(--font-body-medium-3);
-  --font-dropdown-menu-letter: var(--font-body-medium-3);
-  --font-dropdown-menu-country: var(--font-body-regular);
+  //Country-menu
+  --font-country-menu-heading: var(--font-body-medium-3);
+  --font-country-menu-letter: var(--font-body-medium-3);
+  --font-country-menu-countries: var(--font-body-regular);
+
+
+  //Companions-page
+  //Filter-section
+  //Filter-header
+  --font-filter-header-heading: var(--font-body-bold);
+  --font-filter-header-button: var(--font-h6);
+  //Filter-menu
+  --font-filter-menu-continent-button: var(--font-body-bold);
+  --font-filter-menu-letter: var(--font-body-medium-3);
+  --font-filter-menu-countries-letter: var(--font-h1);
+  --font-filter-menu-countries: var(--font-body-regular);
+
+  //Selection-section
+  --font-selection-section-card-heading: var(--font-h8);
+  --font-selection-section-card-hashtags: var(--font-body-regular-4);
+  --font-selection-section-card-countries-before: var(--font-body-regular-4);
+  --font-selection-section-country-name: var(--font-body-medium-5);
+  --font-selection-section-transport-list-before: var(--font-body-regular-4);
+  --font-selection-section-like-number: var(--font-body-bold-2);
+  --font-selection-section-button-text: var(--font-h6);
+  --font-selection-section-pagination-number: var(--font-h8);
+  //Selection-filter
+  --font-selection-filter-heading: var(--font-h4-2);
+  --font-selection-filter-control-heading: var(--font-body-bold);
+  --font-selection-filter-checkbox-label: var(--font-body-regular-3);
+  //Level-control
+  --font-level-control-input: var(--font-body-medium-3);
 }
 
 
@@ -165,11 +198,13 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-h6: 700 20px/20px #{$font-family-main};
 
     --font-body-bold: 700 28px/28px #{$font-family-main};
-    --font-body-bold-2: 700 21px/25px #{$font-family-main}; //другое
+    --font-body-bold-2: 700 21px/25px #{$font-family-main};
+    --font-body-bold-3: 700 20px/20px #{$font-family-main}; //другое
     --font-body-medium: 500 20px/20px #{$font-family-main};
     --font-body-medium-4: 500 20px/18px #{$font-family-main};
     --font-body-regular: 400 20px/23px #{$font-family-main};
-    --font-body-regular-2: 400 28px/28px #{$font-family-main}; //другое
+    --font-body-regular-2: 400 28px/28px #{$font-family-main};
+    --font-body-regular-4: 400 15px/18px #{$font-family-main}; //другое
     --font-body-light: 300 28px/33px #{$font-family-main};
     --font-body-light-2: 300 22px/28px #{$font-family-main}; //другое
 
@@ -243,10 +278,30 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     --font-calendar-day: var(--font-body-medium);
     --font-calendar-day-disabled: var(--font-caption-regular-2);
     //Dropdown-menu
-    --font-dropdown-menu-heading: var(--font-body-medium);
-    --font-dropdown-menu-letter: var(--font-body-medium);
-    //--font-dropdown-menu-country: var(--font-body-regular);
+    --font-country-menu-heading: var(--font-body-medium);
+    --font-country-menu-letter: var(--font-body-medium);
+    //--font-country-menu-countries: var(--font-body-regular);
     //--font-step-country-name: var(--font-body-medium-3);
+
+    //Companions-page
+    //Filter-section
+    //Filter-header
+    //Filter-menu
+    --font-filter-menu-continent-button: var(--font-h6);
+    --font-filter-menu-letter: var(--font-h1);
+
+    //Selection-section
+    --font-selection-section-card-heading: var(--font-h4);
+    --font-selection-section-card-hashtags: var(--font-body-regular);
+    --font-selection-section-card-countries-before: var(--font-body-regular-4);
+    --font-selection-section-country-name: var(--font-body-medium);
+    --font-selection-section-like-number: var(--font-body-bold-3);
+    //Selection-filter
+    --font-selection-filter-heading: var(--font-h4);
+    --font-selection-filter-control-heading: var(--font-body-medium);
+    --font-selection-filter-checkbox-label: var(--font-tooltip);
+    //Level-control
+    --font-level-control-input: var(--font-body-medium);
   }
 }
 
@@ -313,5 +368,15 @@ $font-family-main: "Blogger Sans", "Arial", sans-serif;
     //Calendar
     --font-calendar-day: var(--font-caption-regular-2);
     --font-calendar-day-disabled: var(--font-caption-regular-2);
+
+    //Companions-page
+    //Filter-section
+    //Filter-header
+    --font-filter-header-heading: var(--font-h6);
+    //--font-filter-header-button: var(--font-h6);
+    //Filter-menu
+    //--font-filter-menu-continent-button: var(--font-body-bold);
+    //--font-filter-menu-letter: var(--font-body-medium-3);
+    //--font-filter-menu-countries: var(--font-body-regular);
   }
 }

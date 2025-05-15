@@ -22,12 +22,26 @@
       --progress-bar-circle-size: 94px;
     }
   }
+
+  &.-secondary {
+    --progress-bar-circle-mobile-size: 45px;
+    width: var(--progress-bar-circle-mobile-size);
+    height: var(--progress-bar-circle-mobile-size);
+
+    @media (min-width: $tablet-width) {
+      --progress-bar-circle-mobile-size: 60px;
+    }
+  }
 }
 
 .progress__bar-bg {
   fill: var(--color-progress-bar-background);
 
   &.-alternate {
+    fill: transparent;
+  }
+
+  &.-secondary {
     fill: transparent;
   }
 }
@@ -47,6 +61,14 @@
   &.-alternate {
     $radius: 50px;
     stroke-width: 2;
+  }
+
+  &.-secondary {
+    $radius: 22.5px;
+
+    @media (min-width: $tablet-width) {
+      $radius: 30px;
+    }
   }
 }
 
@@ -76,6 +98,17 @@
     color: var(--color-progress-bar-level-number-alternate);
     font: var(--font-progress-bar-level-number-alternate);
   }
+
+  &.-secondary {
+    padding: 0 0 2px 0;
+    border-bottom: none;
+    color: var(--color-progress-bar-level-number-secondary);
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      border-bottom: 1px solid var(--color-progress-bar-level-number-border-secondary);
+    }
+  }
 }
 
 .progress__level-text {
@@ -85,5 +118,14 @@
   &.-alternate {
     color: var(--color-progress-bar-level-text-alternate);
     font: var(--font-progress-bar-level-text-alternate);
+  }
+
+  &.-secondary {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      color: var(--color-progress-bar-level-text-secondary);
+    }
   }
 }

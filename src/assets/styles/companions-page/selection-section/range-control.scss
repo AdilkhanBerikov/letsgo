@@ -1,0 +1,78 @@
+@use "../../variables" as *;
+
+.range-control {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+
+.range-control__scale {
+  --range-control-scale-width: 220px;
+  --range-control-scale-height: 2px;
+  position: relative;
+  background: var(--color-range-control-scale-background);
+  width: var(--range-control-scale-width);
+  height: var(--range-control-scale-height);
+
+  @media (min-width: $tablet-width) {
+    --range-control-scale-width: 275px;
+    --range-control-scale-height: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --range-control-scale-width: 189px;
+  }
+}
+
+.range-control__bar {
+  position: absolute;
+  top: 0;
+  background-color: var(--color-range-control-bar-background);
+  height: 100%;
+}
+
+.range-control__toggle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: var(--color-range-control-toogle-background);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: width $transition-duration, height $transition-duration, box-shadow $transition-duration;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
+
+  &:hover {
+    width: 15px;
+    height: 15px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 var(--color-range-control-toogle-active-box-shadow);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range-control__toggle {
+
+    &:hover {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

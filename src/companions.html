@@ -1,0 +1,1297 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <title>Погнали</title>
+</head>
+<body class="companions-page page__body">
+
+<header class="page-header -alternate">
+  <div class="grid -header box">
+    <a class="header__logo" href="index.html">
+      <picture class="header__logo-default">
+        <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-white.svg" width="200" height="52">
+        <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-white.png" width="166" height="42">
+        <img src="assets/images/logo/logo-mobile3.svg" width="96" height="15" alt="Logotype Let's go!">
+      </picture>
+      <picture class="header__logo-scrolled">
+        <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue.svg" width="200" height="60">
+        <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+        <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+      </picture>
+    </a>
+    <nav class="header__nav">
+      <button class="toggle header-toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="header__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+                <span class="nav__link-animation" data-hover="О сервисе">
+                  О сервисе
+                </span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="direction.html">
+                <span class="nav__link-animation" data-hover="Направления">
+                  Направления
+                </span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="companions.html">
+                <span class="nav__link-animation" data-hover="Попутчики">
+                  Попутчики
+                </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__button">
+      <div class="header__button-contacts">
+        <a class="button -round -primary" href="#">
+          <svg width="18" height="18" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-call"></use>
+          </svg>
+        </a>
+        <a class="button -round -secondary" href="#">
+          <svg width="18" height="15.75" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-mail"></use>
+          </svg>
+        </a>
+      </div>
+      <a class="button" href="#">Авторизация</a>
+    </div>
+  </div>
+</header>
+
+<section class="mobile-menu">
+  <div class="box">
+    <div class="mobile-menu__header">
+      <a class="mobile-menu__logo" href="#">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+          <img src="assets/images/logo/logo-mobile1.svg" width="100" height="15" alt="Logotype Let's go!">
+        </picture>
+      </a>
+      <div class="mobile-menu__toggle">
+        <button class="toggle mobile-toggle" type="button" aria-label="Закрыть меню"></button>
+      </div>
+      <div class="mobile-menu__header-button">
+        <a class="button -alternate" href="#">Авторизация</a>
+      </div>
+    </div>
+    <div class="mobile-menu__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+              <span class="nav__link-animation" data-hover="О сервисе">
+                О сервисе
+              </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="direction.html">
+              <span class="nav__link-animation" data-hover="Направления">
+                Направления
+              </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="companions.html">
+              <span class="nav__link-animation" data-hover="Попутчики">
+                Попутчики
+              </span>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__button">
+        <a class="button -alternate" href="#">Авторизация</a>
+      </div>
+      <div class="mobile-menu__footer">
+        <ul class="mobile-menu__contacts">
+          <li class="contact">
+            <a href="tel:88005558628" class="contact__link">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mobile" width="18" height="17" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mobile"></use>
+                </svg>
+              </div>
+              <p class="contact__text">8 800 555-86-28</p>
+            </a>
+          </li>
+          <li class="contact">
+            <a href="mailto:mail@htmlacademy.ru" class="contact__link">
+              <div class="contact__wrapper">
+                <svg class="contact__icon -mail" width="24" height="25" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-contacts-mail"></use>
+                </svg>
+              </div>
+              <p class="contact__text">mail@htmlacademy.ru</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon -facebook" width="11" height="21" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon -vkontakte" width="23" height="12" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon -instagram" width="18" height="18" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="page__main">
+
+  <section class="heading-section">
+    <div class="box">
+      <div class="heading-section__wrapper">
+        <h1 class="heading-section__title">Попутчики</h1>
+        <a class="heading-section__button" href="index.html">
+          <span class="heading-section__button-text">На главную</span>
+          <svg class="heading-section__button-icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-arrow-bend"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-section">
+    <div class="box">
+      <div class="filter-header">
+        <div class="filter-header__title">
+          <svg class="filter-header__icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-filter"></use>
+          </svg>
+          <h2 class="filter-header__heading">Фильтрация по странам:</h2>
+        </div>
+        <div class="filter-header__continents"></div>
+        <button class="filter-header__button dropdown-trigger">
+          <span class="filter-header__button-text">Показать все</span>
+          <svg class="filter-header__button-icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-points"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="filter-menu dropdown-menu">
+      <div class="filter-menu__header">
+        <div class="filter-header__title">
+          <svg class="filter-header__icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-filter"></use>
+          </svg>
+          <h2 class="filter-header__heading">Фильтрация по странам:</h2>
+        </div>
+        <button class="filter-header__button dropdown-menu__button">
+          <span class="filter-header__button-text">Свернуть</span>
+          <svg class="filter-header__icon-close" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="filter-menu__continents">
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button -active">Европа</button>
+        </li>
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button">Азия</button>
+        </li>
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button">Америка</button>
+        </li>
+        <li class="filter-menu__continent">
+          <button class="filter-menu__continent-button">Острова</button>
+        </li>
+      </ul>
+      <div class="filter-menu__wrapper">
+        <div class="filter-menu__alphabet dropdown-menu__alphabet">
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="А">А</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Б">Б</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="В">В</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Г">Г</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Д">Д</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Е">Е</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="З">З</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="И">И</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="К">К</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Л">Л</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="М">М</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Н">Н</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="О">О</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="П">П</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Р">Р</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="С">С</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Т">Т</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="У">У</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ф">Ф</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Х">Х</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ч">Ч</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ш">Ш</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="З">Э</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Ю">Ю</button>
+          <button class="filter-menu__letter dropdown-menu__letter" type="button" data-letter="Я">Я</button>
+        </div>
+        <div class="filter-menu__countries dropdown-menu__grid">
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">А</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Австралия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Австрия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Азербайджан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Албания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Алжир</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ангола</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Андорра</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Антигуа и Барбуда</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Аргентина</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Армения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Афганистан</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Б</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Багамы</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бангладеш</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Барбадос</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бахрейн</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Беларусь</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Белиз</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бельгия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бенин</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Болгария</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Боливия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Босния и Герцеговина</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ботсвана</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бразилия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бруней</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Буркина-Фасо</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бурунди</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Бутан</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">В</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Вануату</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ватикан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Великобритания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Венгрия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Венесуэла</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Вьетнам</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Г</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Габон</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гаити</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гайана</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гамбия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гана</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гватемала</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гвинея</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Германия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Гондурас</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Греция</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Грузия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Д</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Дания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Джибути</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Доминика</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Доминикана</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Е</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Египет</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">З</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Замбия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Зимбабве</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">И</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Израиль</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Индия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Индонезия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Иордания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ирак</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Иран</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ирландия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Исландия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Испания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Италия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">К</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кабо-Верде</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Казахстан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Камбоджа</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Камерун</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Канада</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Катар</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кипр</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Киргизия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Кирибати</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Китай</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Колумбия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Куба</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Л</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Лаос</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Латвия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Лесото</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Либерия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ливан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ливия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Литва</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Лихтенштейн</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Люксембург</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">М</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Маврикий</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мавритания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мадагаскар</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Малави</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Малайзия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мали</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Мексика</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Монако</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Монголия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Н</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Намибия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Науру</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Непал</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Нигерия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Нидерланды</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Никарагуа</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Новая Зеландия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Нидерланды</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Норвегия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">О</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">ОАЭ</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">П</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Пакистан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Палау</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Панама</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Папуа - Новая Гвинея</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Парагвай</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Перу</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Польша</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Португалия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Р</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Россия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">С</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сальвадор</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Самоа</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сан-Марино</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Саудовская Аравия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сейшелы</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сенегал</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сербия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сингапур</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Сирия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Словакия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Словения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">США</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Т</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Таджикистан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Таиланд</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Танзания</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Того</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тонга</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тринидад и Тобаго</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тувалу</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Тунис</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Туркмения</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Турция</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">У</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Узбекистан</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Украина</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ф</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Финляндия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Франция</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Х</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Хорватия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ч</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Чад</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Черногория</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Чехия</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Чили</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ш</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Швейцария</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Швеция</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Э</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эквадор</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эритрея</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эсватини</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эстония</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Эфиопия</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Ю</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">ЮАР</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Южный Судан</button>
+            </div>
+          </div>
+
+          <div class="filter-menu__countries-group">
+            <div class="filter-menu__countries-letter">Я</div>
+            <div class="filter-menu__countries-list">
+              <button class="filter-menu__country dropdown-menu__country" type="button">Ямайка</button>
+              <button class="filter-menu__country dropdown-menu__country" type="button">Япония</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="filter-menu__button dropdown-menu__button">
+        <button class="button -collapse">
+          <svg class="button__icon -close" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-close"></use>
+          </svg>
+          <span>Свернуть</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="selection-section">
+    <div class="box grid -section">
+      <div class="selection-filter">
+        <h2 class="selection-filter__heading">
+          Подберите
+          идеального
+          попутчика
+        </h2>
+        <form class="selection-filter__form">
+          <fieldset class="selection-filter__control">
+            <legend class="selection-filter__control-legend visually-hidden">
+              Хобби
+            </legend>
+            <div class="selection-filter__control-header">
+              <div class="selection-filter__control-heading">
+                Хобби
+              </div>
+              <button class="selection-filter__control-button" type="button" aria-label="Открыть фильтр">
+                <svg class="selection-filter__control-icon" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-polygon"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="selection-filter__control-list">
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="hobby" value="gym">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Спортзал</span>
+                </label>
+              </li>
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="hobby" value="hookah">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Кальян</span>
+                </label>
+              </li>
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="hobby" value="sofa">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Диван</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="selection-filter__control -open">
+            <legend class="selection-filter__control-legend visually-hidden">
+              Музыка
+            </legend>
+            <div class="selection-filter__control-header">
+              <div class="selection-filter__control-heading">
+                Музыка
+              </div>
+              <button class="selection-filter__control-button" type="button" aria-label="Открыть фильтр">
+                <svg class="selection-filter__control-icon" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-polygon"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="selection-filter__control-list">
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="music" value="hard-rok" checked>
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Тяжелый рок</span>
+                </label>
+              </li>
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="music" value="russian-rap" checked>
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Русский рэп</span>
+                </label>
+              </li>
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="music" value="euro-dance">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Евроденс</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="selection-filter__control">
+            <legend class="selection-filter__control-legend visually-hidden">
+              Eда
+            </legend>
+            <div class="selection-filter__control-header">
+              <div class="selection-filter__control-heading">
+                Eда
+              </div>
+              <button class="selection-filter__control-button" type="button" aria-label="Открыть фильтр">
+                <svg class="selection-filter__control-icon" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-polygon"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="selection-filter__control-list">
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="food" value="meat-eater">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Мясоед</span>
+                </label>
+              </li>
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="food" value="proper nutrition">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Сидит на ПП</span>
+                </label>
+              </li>
+              <li class="selection-filter__control-item">
+                <label class="selection-filter__checkbox">
+                  <input class="selection-filter__checkbox-input" type="checkbox" name="food" value="raw vegan">
+                  <svg class="selection-filter__checkbox-icon" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="selection-filter__checkbox-label">Веган-сыроед</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="selection-filter__control -open">
+            <legend class="selection-filter__control-legend visually-hidden">
+              Транспорт
+            </legend>
+            <div class="selection-filter__control-header">
+              <div class="selection-filter__control-heading">
+                Транспорт
+              </div>
+              <button class="selection-filter__control-button" type="button" aria-label="Открыть фильтр">
+                <svg class="selection-filter__control-icon" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-polygon"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="selection-filter__transport-list">
+              <li class="selection-filter__transport-item">
+                <label class="transport__button">
+                  <input type="checkbox" class="transport__checkbox" checked />
+                  <svg width="20.83" height="21.12" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="selection-filter__transport-item">
+                <label class="transport__button">
+                  <input type="checkbox" class="transport__checkbox" checked />
+                  <svg width="17.04" height="19.2" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="selection-filter__transport-item">
+                <label class="transport__button">
+                  <input type="checkbox" class="transport__checkbox" />
+                  <svg width="23.67" height="24" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="selection-filter__transport-item">
+                <label class="transport__button">
+                  <input type="checkbox" class="transport__checkbox" checked />
+                  <svg width="20.65" height="23.04" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-run"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="selection-filter__control -open">
+            <legend class="selection-filter__control-legend visually-hidden">
+              Левел
+            </legend>
+            <div class="selection-filter__control-header">
+              <div class="selection-filter__control-heading">
+                Левел
+              </div>
+              <button class="selection-filter__control-button" type="button" aria-label="Открыть фильтр">
+                <svg class="selection-filter__control-icon" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-polygon"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="selection-filter__level-control">
+              <div class="level-control">
+                <div class="level-control__wrapper">
+                  <label class="level-control__label" for="level-min">От</label>
+                  <input class="level-control__input -from" type="number" id="level-min" name="level-min" min="0" max="99" value="30">
+                </div>
+                <div class="level-control__wrapper">
+                  <label class="level-control__label" for="level-max">До</label>
+                  <input class="level-control__input -before" type="number" id="level-max" name="level-max" min="1" max="100" value="100">
+                </div>
+              </div>
+              <div class="range-control">
+                <div class="range-control__scale">
+                  <div class="range-control__bar"></div>
+                </div>
+                <div class="range-control__toggle -min"></div>
+                <div class="range-control__toggle -max"></div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <button class="button -submit -white" type="submit">Показать</button>
+      </div>
+      <ul class="selection-section__cards">
+        <li class="selection-section__card">
+          <div class="selection-section__card-photo">
+            <img class="selection-section__card-image" src="../src/assets/images/users-photo/tanya-firsova.png" alt="Tanya Firsova photo">
+          </div>
+          <h3 class="selection-section__card-heading -offline">
+            Таня Фирсова
+          </h3>
+          <p class="selection-section__card-hashtags">
+            #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+          </p>
+          <ul class="selection-section__card-countries">
+            <li class="selection-section__card-label">
+              хочет посетить:
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/sri-lanka-flag.png" alt="Sri-Lanka flag">
+              <p class="selection-section__country-name">Шри-ланка</p>
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/thailand-flag-1.png" alt="Thailand flag">
+              <p class="selection-section__country-name">Таиланд</p>
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/seychelles_flag.png" alt="Seychelles flag">
+              <p class="selection-section__country-name">Сейшелы</p>
+            </li>
+          </ul>
+          <div class="selection-section__card-wrapper">
+            <div class="selection-section__card-label -transport">
+              транспорт:
+            </div>
+            <ul class="selection-section__transport-list">
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon -plane" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Автотранспорт">
+                  <svg class="transport__icon -off -bus" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Велосипед">
+                  <svg class="transport__icon -off -bicycle" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Пешком">
+                  <svg class="transport__icon -off -run" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-run"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="selection-section__card-progress">
+              <div class="selection-section__card-label -level">
+                левел:
+              </div>
+              <div class="progress">
+                <div class="progress__bar">
+                  <svg class="progress__bar-circle -secondary" width="60" height="60" viewBox="0 0 60 60" style="--progress: 0;">
+                    <circle class="progress__bar-bg -secondary" cx="30" cy="30" r="30"></circle>
+                    <circle class="progress__bar-stroke -secondary" cx="30" cy="30" r="28"></circle>
+                  </svg>
+                  <div class="progress__level">
+                    <p class="progress__level-number -secondary">
+                      99
+                    </p>
+                    <p class="progress__level-text -secondary">
+                      level
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selection-section__card-button">
+            <button class="button -submit" type="submit">Позвать!</button>
+            <div class="selection-section__like">
+              <button class="selection-section__like-button -active">
+                <svg class="selection-section__like-off" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-outline"></use>
+                </svg>
+                <svg class="selection-section__like-active" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-filled"></use>
+                </svg>
+              </button>
+              <p class="selection-section__like-number">1,5 М</p>
+            </div>
+          </div>
+        </li>
+        <li class="selection-section__card">
+          <div class="selection-section__card-photo">
+            <img class="selection-section__card-image" src="../src/assets/images/users-photo/petya-demin.png" alt="Petya Demin photo">
+          </div>
+          <h3 class="selection-section__card-heading -offline">
+            Петя Демин
+          </h3>
+          <p class="selection-section__card-hashtags">
+            #бургер #бар #футбол #концерт #крафт
+          </p>
+          <ul class="selection-section__card-countries">
+            <li class="selection-section__card-label">
+              хочет посетить:
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/belgium-flag.png" alt="belgium flag">
+              <p class="selection-section__country-name">Бельгия</p>
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/czech-flag-1.png" alt="czech flag">
+              <p class="selection-section__country-name">Чехия</p>
+            </li>
+          </ul>
+          <div class="selection-section__card-wrapper">
+            <div class="selection-section__card-label -transport">
+              транспорт:
+            </div>
+            <ul class="selection-section__transport-list">
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon -plane" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Автотранспорт">
+                  <svg class="transport__icon -bus" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Велосипед">
+                  <svg class="transport__icon -off -bicycle" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Пешком">
+                  <svg class="transport__icon -run" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-run"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="selection-section__card-progress">
+              <div class="selection-section__card-label -level">
+                левел:
+              </div>
+              <div class="progress">
+                <div class="progress__bar">
+                  <svg class="progress__bar-circle -secondary" width="60" height="60" viewBox="0 0 60 60" style="--progress: 0;">
+                    <circle class="progress__bar-bg -secondary" cx="30" cy="30" r="30"></circle>
+                    <circle class="progress__bar-stroke -secondary" cx="30" cy="30" r="28"></circle>
+                  </svg>
+                  <div class="progress__level">
+                    <p class="progress__level-number -secondary">
+                      80
+                    </p>
+                    <p class="progress__level-text -secondary">
+                      level
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selection-section__card-button">
+            <button class="button -submit" type="submit">Позвать!</button>
+            <div class="selection-section__like">
+              <button class="selection-section__like-button">
+                <svg class="selection-section__like-off" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-outline"></use>
+                </svg>
+                <svg class="selection-section__like-active" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-filled"></use>
+                </svg>
+              </button>
+              <p class="selection-section__like-number">1500</p>
+            </div>
+          </div>
+        </li>
+        <li class="selection-section__card">
+          <div class="selection-section__card-photo">
+            <img class="selection-section__card-image" src="../src/assets/images/users-photo/smolov.png" alt="Mark Smolov photo">
+          </div>
+          <h3 class="selection-section__card-heading -offline">
+            Марк Смолов
+          </h3>
+          <p class="selection-section__card-hashtags">
+            #рэп #тату #хайпбист #кроссовки #суприм
+          </p>
+          <ul class="selection-section__card-countries">
+            <li class="selection-section__card-label">
+              хочет посетить:
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/usa-flag.png" alt="usa flag">
+              <p class="selection-section__country-name">США</p>
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/australia-flag.png" alt="australia flag">
+              <p class="selection-section__country-name">Австралия</p>
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/dominica_flag.png" alt="dominica flag">
+              <p class="selection-section__country-name">Доминика</p>
+            </li>
+          </ul>
+          <div class="selection-section__card-wrapper">
+            <div class="selection-section__card-label -transport">
+              транспорт:
+            </div>
+            <ul class="selection-section__transport-list">
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon -plane" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Автотранспорт">
+                  <svg class="transport__icon -off -bus" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Велосипед">
+                  <svg class="transport__icon -bicycle" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Пешком">
+                  <svg class="transport__icon -off -run" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-run"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="selection-section__card-progress">
+              <div class="selection-section__card-label -level">
+                левел:
+              </div>
+              <div class="progress">
+                <div class="progress__bar">
+                  <svg class="progress__bar-circle -secondary" width="60" height="60" viewBox="0 0 60 60" style="--progress: 0;">
+                    <circle class="progress__bar-bg -secondary" cx="30" cy="30" r="30"></circle>
+                    <circle class="progress__bar-stroke -secondary" cx="30" cy="30" r="28"></circle>
+                  </svg>
+                  <div class="progress__level">
+                    <p class="progress__level-number -secondary">
+                      25
+                    </p>
+                    <p class="progress__level-text -secondary">
+                      level
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selection-section__card-button">
+            <button class="button -submit" type="submit">Позвать!</button>
+            <div class="selection-section__like">
+              <button class="selection-section__like-button">
+                <svg class="selection-section__like-off" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-outline"></use>
+                </svg>
+                <svg class="selection-section__like-active" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-filled"></use>
+                </svg>
+              </button>
+              <p class="selection-section__like-number">170</p>
+            </div>
+          </div>
+        </li>
+        <li class="selection-section__card">
+          <div class="selection-section__card-photo">
+            <img class="selection-section__card-image" src="../src/assets/images/users-photo/larisa.png" alt="Larisa Rogovaya photo">
+          </div>
+          <h3 class="selection-section__card-heading -online">
+            Лариса Роговая
+          </h3>
+          <p class="selection-section__card-hashtags">
+            #образование #карьера #учеба #линкедин
+          </p>
+          <ul class="selection-section__card-countries">
+            <li class="selection-section__card-label">
+              хочет посетить:
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/uk-flag.png" alt="uk flag">
+              <p class="selection-section__country-name">Великобритания</p>
+            </li>
+            <li class="selection-section__card-country">
+              <img class="selection-section__country-img" src="../src/assets/images/image/germany-flag.png" alt="germany flag">
+              <p class="selection-section__country-name">Германия</p>
+            </li>
+          </ul>
+          <div class="selection-section__card-wrapper">
+            <div class="selection-section__card-label -transport">
+              транспорт:
+            </div>
+            <ul class="selection-section__transport-list">
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon -plane" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-plane"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Автотранспорт">
+                  <svg class="transport__icon -bus" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bus"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Велосипед">
+                  <svg class="transport__icon -off -bicycle" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-bicycle"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="selection-section__transport-item">
+                <div class="transport__wrapper -alternate" data-tooltip="Пешком">
+                  <svg class="transport__icon -off -run" aria-hidden="true">
+                    <use xlink:href="assets/icons/icons.svg#icon-run"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="selection-section__card-progress">
+              <div class="selection-section__card-label -level">
+                левел:
+              </div>
+              <div class="progress">
+                <div class="progress__bar">
+                  <svg class="progress__bar-circle -secondary" width="60" height="60" viewBox="0 0 60 60" style="--progress: 0;">
+                    <circle class="progress__bar-bg -secondary" cx="30" cy="30" r="30"></circle>
+                    <circle class="progress__bar-stroke -secondary" cx="30" cy="30" r="28"></circle>
+                  </svg>
+                  <div class="progress__level">
+                    <p class="progress__level-number -secondary">
+                      50
+                    </p>
+                    <p class="progress__level-text -secondary">
+                      level
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selection-section__card-button">
+            <button class="button -submit" type="submit">Позвать!</button>
+            <div class="selection-section__like">
+              <button class="selection-section__like-button">
+                <svg class="selection-section__like-off" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-outline"></use>
+                </svg>
+                <svg class="selection-section__like-active" aria-hidden="true">
+                  <use xlink:href="assets/icons/icons.svg#icon-heart-filled"></use>
+                </svg>
+              </button>
+              <p class="selection-section__like-number">23</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="selection-section__button-wrapper">
+        <button class="selection-section__button" type="button">
+          <svg class="selection-section__button-icon" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-plus"></use>
+          </svg>
+          <span class="selection-section__button-text">Показать еще</span>
+        </button>
+      </div>
+      <div class="selection-section__pagination">
+        <ul class="selection-section__pagination-list">
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number -chosen" type="button" aria-current="true">
+              1
+            </button>
+          </li>
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number" type="button" aria-current="true">
+              2
+            </button>
+          </li>
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number" type="button" aria-current="true">
+              3
+            </button>
+          </li>
+          <li class="selection-section__pagination-item">
+            <button class="selection-section__pagination-number" type="button" aria-current="true">
+              4
+            </button>
+          </li>
+        </ul>
+        <div class="selection-section__pagination-pages">
+          <button class="selection-section__pages-button -back">
+            <svg class="selection-section__pages-icon -back" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-arrow-polygon"></use>
+            </svg>
+          </button>
+          <button class="selection-section__pages-button -forth">
+            <svg class="selection-section__pages-icon -forth" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-arrow-polygon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <div class="grid -footer box">
+    <a class="footer__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="assets/images/logo/logo-desktop-blue-footer.svg" width="200" height="55">
+        <source media="(min-width: 768px)" srcset="assets/images/logo/logo-tablet-blue.png" width="164" height="42">
+        <img src="assets/images/logo/logo-mobile1.svg" width="96" height="15" alt="Logotype Let's go!">
+      </picture>
+    </a>
+    <ul class="footer__socials">
+      <li class="footer__socials-item">
+        <a class="socials__link" href="#">
+          <div class="socials__icon -footer">
+            <svg class="socials__facebook -footer" width="11" height="21" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="footer__socials-item">
+        <a class="socials__link" href="#">
+          <div class="socials__icon -footer">
+            <svg class="socials__vkontakte -footer" width="23" height="12" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-vkontakte"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="footer__socials-item">
+        <a class="socials__link" href="#">
+          <div class="socials__icon -footer">
+            <svg class="socials__instagram -footer" width="18" height="18" aria-hidden="true">
+              <use xlink:href="assets/icons/icons.svg#icon-instagram"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="footnote">
+      <a class="footnote__link" href="#">
+        <span class="footnote__text">Разработано</span>
+        <svg class="footnote__logo" width="27" height="34" aria-hidden="true">
+          <use xlink:href="assets/icons/icons.svg#icon-logo-academy"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script type="module" src="./index.js"></script>
+<script src="assets/scripts/menu.js" type="module" defer></script>
+<script src="assets/scripts/progress-bar.js" type="module" defer></script>
+<script src="assets/scripts/dropdown-menu.js" type="module" defer></script>
+<script src="assets/scripts/dropdown-alphabet-letters.js" type="module" defer></script>
+<script src="assets/scripts/selection-filter-control.js" type="module" defer></script>
+<script src="assets/scripts/level-control.js" type="module" defer></script>
+<script src="assets/scripts/like-button.js" type="module" defer></script>
+<script src="assets/scripts/filter-menu-continents.js" type="module" defer></script>
+
+</html>
